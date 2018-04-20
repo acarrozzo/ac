@@ -1,0 +1,1516 @@
+/* ACARROZZO 2018 STYLES */
+/* line 2, ../assets/scss/style.scss */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* line 11, ../assets/scss/style.scss */
+.red {
+  color: #DC6B64;
+}
+
+/* line 12, ../assets/scss/style.scss */
+.blue {
+  color: #679CC1;
+}
+
+/* line 13, ../assets/scss/style.scss */
+.green {
+  color: #7FBF62;
+}
+
+/* line 14, ../assets/scss/style.scss */
+.yellow {
+  color: #F3B333;
+}
+
+/* line 15, ../assets/scss/style.scss */
+.purple {
+  color: #9f8ac2;
+}
+
+/* line 16, ../assets/scss/style.scss */
+.gray {
+  color: #999;
+}
+
+/* line 18, ../assets/scss/style.scss */
+.redBG {
+  background: #DC6B64;
+}
+
+/* line 19, ../assets/scss/style.scss */
+.blueBG {
+  background: #679CC1;
+}
+
+/* line 20, ../assets/scss/style.scss */
+.greenBG {
+  background: #7FBF62;
+}
+
+/* line 21, ../assets/scss/style.scss */
+.yellowBG {
+  background: #F3B333;
+}
+
+/* line 22, ../assets/scss/style.scss */
+.purpleBG {
+  background: #9f8ac2;
+}
+
+/* line 23, ../assets/scss/style.scss */
+.grayBG {
+  background: #999;
+}
+
+/* line 61, ../assets/scss/style.scss */
+XXX* {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* ----- MAIN ----- */
+/* line 69, ../assets/scss/style.scss */
+html {
+  font-family: 'Droid Serif', 'Helvetica', sans-serif;
+  line-height: 1em;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 71, ../assets/scss/style.scss */
+body {
+  margin: 0;
+  background: #f7f7f7;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 72, ../assets/scss/style.scss */
+main {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* line 73, ../assets/scss/style.scss */
+a {
+  color: #DC6B64;
+  text-decoration: none;
+  line-height: 1.4em;
+}
+
+/* line 74, ../assets/scss/style.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 75, ../assets/scss/style.scss */
+a[target="_blank"]:after {
+  content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+  margin: 0 3px 0 5px;
+  content: "\f08e";
+  font-family: FontAwesome;
+}
+/* line 80, ../assets/scss/style.scss */
+a[target="_blank"]:after:hover {
+  text-decoration: none;
+}
+
+/* line 82, ../assets/scss/style.scss */
+.btn {
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  background: #DC6B64;
+  color: #fff;
+  padding: 6px;
+  border-radius: 5px;
+  margin: 0 0 10px;
+}
+
+/* line 92, ../assets/scss/style.scss */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 93, ../assets/scss/style.scss */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ----- MISC ----- */
+/* line 99, ../assets/scss/style.scss */
+.noBorder {
+  border: 0;
+}
+
+/* line 100, ../assets/scss/style.scss */
+.hide {
+  display: none;
+}
+
+/* line 101, ../assets/scss/style.scss */
+.clear {
+  clear: both;
+}
+
+/* ----- NAV ----- */
+/* line 103, ../assets/scss/style.scss */
+nav {
+  text-align: center;
+  background: #444;
+  overflow: hidden;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+}
+/* line 114, ../assets/scss/style.scss */
+nav li {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.6);
+}
+/* line 119, ../assets/scss/style.scss */
+nav a {
+  padding: 6px 20px;
+  display: inline-block;
+  color: #fff;
+  font-weight: 900;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 2em;
+  width: 100%;
+}
+/* line 129, ../assets/scss/style.scss */
+nav a.active {
+  color: #333;
+  background: #f7f7f7;
+  pointer-events: none;
+}
+/* line 134, ../assets/scss/style.scss */
+nav a:hover {
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 139, ../assets/scss/style.scss */
+nav .topIcon {
+  font-size: 80px;
+  margin: 10vh auto;
+  display: block;
+}
+
+/* ----- PROFILE IMAGE ----- */
+/* line 150, ../assets/scss/style.scss */
+.cImg {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  float: right;
+  overflow: hidden;
+  margin: 20px 0 0 20px;
+  display: block;
+}
+
+/* ----- SECTIONS ----- */
+/* line 161, ../assets/scss/style.scss */
+section {
+  margin: 0 20px;
+  padding: 20px 0 60px;
+  border-bottom: solid 1px #ccc;
+  clear: both;
+  position: relative;
+  overflow-y: hidden;
+}
+
+/* line 169, ../assets/scss/style.scss */
+hr {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+}
+
+/* ----- TYPE ----- */
+/* line 181, ../assets/scss/style.scss */
+h1 {
+  font-size: 10px;
+  text-transform: uppercase;
+  padding: 5px 0;
+  cursor: default;
+  font-weight: 300;
+  letter-spacing: .7em;
+  background: rgba(0, 0, 0, 0.8);
+  margin: 0;
+}
+
+/* line 191, ../assets/scss/style.scss */
+h2, h3, h4, h5, h6 {
+  line-height: 1.3em;
+  font-style: italic;
+  letter-spacing: -.02em;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 199, ../assets/scss/style.scss */
+h2 {
+  border-left: solid 6px #DC6B64;
+  padding: 0px 20px 0 10px;
+  font-size: 18px;
+  margin: 20px 20px 0;
+  display: inline-block;
+}
+/* line 205, ../assets/scss/style.scss */
+h2 + figure {
+  margin-top: 20px;
+}
+/* line 206, ../assets/scss/style.scss */
+h2 + [id^=slides] {
+  margin-top: 20px;
+}
+
+/* line 209, ../assets/scss/style.scss */
+h3 {
+  font-size: 26px;
+  line-height: 1.2em;
+  margin-top: 20px;
+}
+
+/* line 215, ../assets/scss/style.scss */
+h4 {
+  font-size: 18px;
+  line-height: 1.4em;
+  color: #DC6B64;
+  margin-bottom: 10px;
+}
+
+/* line 221, ../assets/scss/style.scss */
+h5 {
+  font-size: 16px;
+  margin: 15px 0 0px;
+  color: #DC6B64;
+}
+
+/* line 226, ../assets/scss/style.scss */
+p {
+  padding: 10px 0;
+  font-size: 16px;
+  line-height: 1.6em;
+  margin: 0;
+  color: #333;
+}
+/* line 232, ../assets/scss/style.scss */
+p:first-child {
+  padding-top: 0;
+}
+
+/* ----- POSITION STYLES ----- */
+/* line 238, ../assets/scss/style.scss */
+.left {
+  width: 40%;
+  float: left;
+  margin: 10px 20px 10px 0;
+}
+
+/* line 243, ../assets/scss/style.scss */
+.left50 {
+  width: calc(50% - 20px);
+  float: left;
+  margin: 10px 20px 10px 0;
+}
+
+/* line 248, ../assets/scss/style.scss */
+.left20 {
+  width: calc(20% - 10px);
+  float: left;
+  margin: 10px 10px 10px 0;
+}
+
+/* line 253, ../assets/scss/style.scss */
+.left33 {
+  width: 33.33%;
+  float: left;
+  padding: 0 0 0 10px;
+  margin: 10px 10px 0px -10px;
+}
+
+/* line 259, ../assets/scss/style.scss */
+.right {
+  width: 40%;
+  float: right;
+  margin: 10px 0 10px 20px;
+}
+
+/* line 264, ../assets/scss/style.scss */
+.right50 {
+  width: calc(50% - 20px);
+  float: right;
+  margin: 10px 0 10px 20px;
+}
+
+/* line 269, ../assets/scss/style.scss */
+.right20 {
+  width: calc(20% - 10px);
+  float: right;
+  margin: 10px 0 10px 10px;
+}
+
+/* line 274, ../assets/scss/style.scss */
+.right33 {
+  width: 33.33%;
+  float: right;
+  padding: 0 10px 0 0;
+  margin: 10px -10px 0px 10px;
+}
+
+/* ----- photo grid ----- */
+/* line 286, ../assets/scss/style.scss */
+.grid {
+  overflow-x: hidden;
+}
+/* line 288, ../assets/scss/style.scss */
+.grid figure:not(.full) {
+  width: 33.33%;
+  float: left;
+  padding: 0 0px 0 0px;
+  margin: 3px 8px 0px -5px;
+}
+/* line 293, ../assets/scss/style.scss */
+.grid figure:not(.full):nth-of-type(3n+1) {
+  margin-right: -3px;
+}
+/* line 296, ../assets/scss/style.scss */
+.grid figure:not(.full):first-child {
+  width: 100%;
+  margin: 0;
+  float: none;
+}
+/* line 302, ../assets/scss/style.scss */
+.grid.padding figure:not(.full) {
+  padding: 4px;
+  margin: 0px;
+}
+/* line 306, ../assets/scss/style.scss */
+.grid.margin figure:not(.full) {
+  margin: 0px;
+}
+/* line 309, ../assets/scss/style.scss */
+.grid h5 {
+  display: inline-block;
+}
+
+/* line 315, ../assets/scss/style.scss */
+[data-pop].full {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  background: #111;
+  text-align: center;
+  z-index: 1;
+}
+/* line 327, ../assets/scss/style.scss */
+[data-pop].full img {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+/* line 334, ../assets/scss/style.scss */
+[data-pop].full:before {
+  content: "\f066";
+}
+/* line 337, ../assets/scss/style.scss */
+[data-pop].full figcaption {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  text-shadow: 1px 1px 2px #000;
+}
+/* line 347, ../assets/scss/style.scss */
+[data-pop].full.gal .nextFig, [data-pop].full.gal .prevFig {
+  display: block;
+  color: #fff;
+  font-size: 32px;
+  color: #ccc;
+  padding: 20px;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 355, ../assets/scss/style.scss */
+[data-pop].full.gal .nextFig:hover, [data-pop].full.gal .prevFig:hover {
+  color: #fff;
+}
+/* line 357, ../assets/scss/style.scss */
+[data-pop].full.gal .prevFig {
+  left: 0px;
+}
+/* line 358, ../assets/scss/style.scss */
+[data-pop].full.gal .nextFig {
+  right: 0px;
+}
+/* line 360, ../assets/scss/style.scss */
+[data-pop].full.gal:first-of-type .prevFig {
+  display: none;
+}
+/* line 361, ../assets/scss/style.scss */
+[data-pop].full.gal:last-of-type .nextFig {
+  display: none;
+}
+/* line 363, ../assets/scss/style.scss */
+[data-pop].full.hide {
+  display: block;
+}
+
+/* line 365, ../assets/scss/style.scss */
+[data-pop] {
+  cursor: pointer;
+}
+/* line 367, ../assets/scss/style.scss */
+[data-pop]:before {
+  content: "\f065";
+  font-family: FontAwesome;
+  position: absolute;
+  color: #fff;
+  right: 7px;
+  top: 7px;
+  line-height: 1em;
+  font-size: 16px;
+}
+/* line 377, ../assets/scss/style.scss */
+[data-pop] .nextFig, [data-pop] .prevFig {
+  display: none;
+}
+
+/* ----- LIST ----- */
+/* line 381, ../assets/scss/style.scss */
+.list li {
+  border-top: solid 1px #ccc;
+  overflow: hidden;
+  padding: 10px 0;
+}
+/* line 386, ../assets/scss/style.scss */
+.list li:first-child {
+  border: 0;
+}
+/* line 387, ../assets/scss/style.scss */
+.list .left, .list .right {
+  margin-top: 10px;
+}
+/* line 390, ../assets/scss/style.scss */
+.list a p {
+  color: #000;
+  line-height: 1.4em;
+}
+/* line 395, ../assets/scss/style.scss */
+.list.split li {
+  border-top: solid 1px #ccc;
+  padding: 0;
+}
+
+/* ----- MORE ----- */
+/* line 403, ../assets/scss/style.scss */
+.more {
+  display: none;
+}
+
+/* ----- CODE BOXES ----- */
+/* line 406, ../assets/scss/style.scss */
+pre {
+  margin: 0 0 20px;
+  padding: 10px 15px;
+  border: solid 1px #ccc;
+  background: #fff;
+  overflow: auto;
+}
+
+/* ----- MEDIA BOX ----- */
+/* line 414, ../assets/scss/style.scss */
+figure {
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+/* line 420, ../assets/scss/style.scss */
+figcaption, .caption, h5 + p {
+  font-size: 14px;
+  padding: 8px 0;
+  color: #666;
+  line-height: 1.4em;
+}
+
+/* ----- SLIDES JS ----- */
+/* line 428, ../assets/scss/style.scss */
+*[id^='slides'] {
+  display: none;
+  position: relative;
+}
+/* line 431, ../assets/scss/style.scss */
+*[id^='slides'].max {
+  width: 100vw;
+  margin: 0;
+  position: fixed;
+  height: 100%;
+  background: #000;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* line 442, ../assets/scss/style.scss */
+.slidesjs-container {
+  overflow: hidden;
+}
+
+/* line 443, ../assets/scss/style.scss */
+.slidesjs-navigation {
+  position: absolute;
+  font-size: 42px;
+  color: #999;
+  padding: 5px 0;
+}
+
+/* line 444, ../assets/scss/style.scss */
+.slidesjs-previous {
+  left: 0px;
+}
+
+/* line 445, ../assets/scss/style.scss */
+.slidesjs-next {
+  right: 0px;
+}
+
+/* line 446, ../assets/scss/style.scss */
+.slidesjs-pagination {
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+/* line 447, ../assets/scss/style.scss */
+.slidesjs-pagination li {
+  display: inline-block;
+}
+
+/* line 448, ../assets/scss/style.scss */
+.slidesjs-pagination li a {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: solid 2px #999;
+  margin: 0 1px;
+  text-indent: -999px;
+}
+
+/* line 449, ../assets/scss/style.scss */
+.slidesjs-pagination li a.active, .slidesjs-pagination li a:hover.active {
+  background: #999;
+}
+
+/* ----- FOOTER ----- */
+/* line 453, ../assets/scss/style.scss */
+footer {
+  background: #333;
+  color: #eee;
+  text-align: center;
+  clear: both;
+  margin: 0 auto;
+}
+/* line 460, ../assets/scss/style.scss */
+footer section {
+  border: 0;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+}
+/* line 467, ../assets/scss/style.scss */
+footer p {
+  color: #eee;
+  max-width: 800px;
+  margin: 0 auto;
+}
+/* line 472, ../assets/scss/style.scss */
+footer ul {
+  padding: 0px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+}
+/* line 479, ../assets/scss/style.scss */
+footer li {
+  list-style: none;
+  display: inline-block;
+}
+/* line 482, ../assets/scss/style.scss */
+footer li a {
+  display: inline-block;
+  padding: 5px 20px;
+  color: #fff;
+  background: #222;
+  border-radius: 5px;
+  margin: 5px;
+}
+/* line 491, ../assets/scss/style.scss */
+footer .cImg {
+  float: none;
+  display: block;
+  margin: 10px auto 0;
+  width: 80px;
+  height: 80px;
+}
+
+/* line 501, ../assets/scss/style.scss */
+.smallText {
+  font-size: 11px;
+  color: #666;
+}
+
+/* line 508, ../assets/scss/style.scss */
+.mapsFrame {
+  margin: 20px;
+}
+/* line 510, ../assets/scss/style.scss */
+.mapsFrame img {
+  width: 33.333%;
+  float: left;
+}
+
+/* ----- COLLAPSE SECTIONS ----- */
+/* line 518, ../assets/scss/style.scss */
+.collapser {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+/* line 523, ../assets/scss/style.scss */
+.collapser section:first-child {
+  display: block;
+}
+/* line 524, ../assets/scss/style.scss */
+.collapser:before {
+  content: "\f107";
+  font-family: FontAwesome;
+  position: absolute;
+  color: #DC6B64;
+  right: 20px;
+  top: 20px;
+  line-height: 1em;
+  font-size: 24px;
+}
+
+/* line 536, ../assets/scss/style.scss */
+.collapser.expanded:before {
+  content: "\f106";
+}
+
+/* line 538, ../assets/scss/style.scss */
+.collapser:not(.expanded) {
+  border-bottom: solid 1px #ccc;
+  padding-bottom: 20px;
+}
+
+/* line 542, ../assets/scss/style.scss */
+.collapserContent {
+  display: none;
+}
+
+/* line 548, ../assets/scss/style.scss */
+.expanded + .collapserContent {
+  display: block;
+}
+
+/* ------------ RESPONSE  - JUST Tablet */
+/* ------------ RESPONSE  - Bigger than Phone */
+@media (min-width: 500px) {
+  /* line 563, ../assets/scss/style.scss */
+  .cImg {
+    margin-top: 0px;
+  }
+
+  /* line 568, ../assets/scss/style.scss */
+  .list.split li {
+    width: 50%;
+    float: left;
+    padding: 0 20px 0 0;
+  }
+
+  /* line 575, ../assets/scss/style.scss */
+  #top {
+    width: 100%;
+  }
+  /* line 576, ../assets/scss/style.scss */
+  #top *[id^='slides'] {
+    width: 60%;
+    float: left;
+    margin: 0 30px 0 0;
+  }
+
+  /* line 583, ../assets/scss/style.scss */
+  #center {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* line 585, ../assets/scss/style.scss */
+  #left, #left2 {
+    width: 100%;
+    max-width: 35%;
+    float: left;
+    border-right: solid 1px #ccc;
+  }
+
+  /* line 586, ../assets/scss/style.scss */
+  #right, #right2 {
+    width: 100%;
+    max-width: 35%;
+    float: right;
+    border-left: solid 1px #ccc;
+  }
+
+  /* line 587, ../assets/scss/style.scss */
+  #primary {
+    width: 100%;
+    max-width: 65%;
+    display: inline-block;
+  }
+
+  /* line 588, ../assets/scss/style.scss */
+  #secondary {
+    width: 100%;
+    max-width: 35%;
+    float: right;
+  }
+
+  /* line 593, ../assets/scss/style.scss */
+  .justTablet + .collapserContent, .justMobile + .collapserContent {
+    display: block;
+  }
+
+  /* line 597, ../assets/scss/style.scss */
+  .leftDesk {
+    width: 50%;
+    float: left;
+    padding: 10px 20px 10px 0;
+  }
+  /* line 602, ../assets/scss/style.scss */
+  .leftDesk[data-pop]:before {
+    right: 27px;
+    top: 17px;
+  }
+
+  /* line 608, ../assets/scss/style.scss */
+  .rightDesk {
+    width: 50%;
+    float: right;
+    padding: 10px 0 10px 20px;
+  }
+}
+/* Scss Document */
+/* line 42, ../assets/scss/_stickman.scss */
+#stickman {
+  height: 210px;
+  position: relative;
+  width: 300px;
+  margin: 0px auto;
+}
+/* line 48, ../assets/scss/_stickman.scss */
+#stickman .bPart {
+  background: #ccc;
+  position: absolute;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/* line 49, ../assets/scss/_stickman.scss */
+#stickman .bPart .armorPiece {
+  top: 2px;
+  left: 2px;
+  background: #888;
+  position: absolute;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/* line 51, ../assets/scss/_stickman.scss */
+#stickman.heavy .bPart, #stickman.heavy .armorPiece {
+  width: 16px;
+}
+/* line 52, ../assets/scss/_stickman.scss */
+#stickman.light .bPart, #stickman.light .armorPiece {
+  width: 4px;
+}
+/* line 54, ../assets/scss/_stickman.scss */
+#stickman.square .bPart, #stickman.square .armorPiece {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+/* line 55, ../assets/scss/_stickman.scss */
+#stickman.round .bPart, #stickman.round .armorPiece {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 56, ../assets/scss/_stickman.scss */
+#stickman.ellipse .bPart, #stickman.ellipse .armorPiece {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 58, ../assets/scss/_stickman.scss */
+#stickman .upperHalf {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  position: relative;
+  top: 0px;
+}
+/* line 59, ../assets/scss/_stickman.scss */
+#stickman.leanBack .upperHalf {
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  right: 12px;
+}
+/* line 60, ../assets/scss/_stickman.scss */
+#stickman.leanForward .upperHalf {
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  transform: rotate(5deg);
+  right: -12px;
+}
+/* line 62, ../assets/scss/_stickman.scss */
+#stickman.zoomX2 {
+  transform: scale(2);
+  background: #eee;
+}
+
+/* line 64, ../assets/scss/_stickman.scss */
+#stickman #head {
+  top: 48px;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 70, ../assets/scss/_stickman.scss */
+#stickman #head .eyes {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 15px;
+  bottom: 0;
+}
+/* line 71, ../assets/scss/_stickman.scss */
+#stickman #head .eyes > i {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  background: #fff;
+}
+/* line 72, ../assets/scss/_stickman.scss */
+#stickman #head .eyes > i .pupil {
+  width: 7px;
+  height: 7px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  background: #000;
+  top: 7px;
+  left: 7px;
+}
+/* line 73, ../assets/scss/_stickman.scss */
+#stickman #head .eyes .e1 {
+  left: 3px;
+}
+/* line 74, ../assets/scss/_stickman.scss */
+#stickman #head .eyes .e2 {
+  left: 27px;
+}
+
+/* line 80, ../assets/scss/_stickman.scss */
+#body {
+  left: 0;
+  right: 0;
+  top: 105px;
+  width: 10px;
+  height: 40px;
+  margin: 0 auto;
+}
+/* line 84, ../assets/scss/_stickman.scss */
+#body .armorPiece {
+  width: 10px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+/* line 87, ../assets/scss/_stickman.scss */
+#leftArm {
+  left: 0;
+  right: 38px;
+  top: 101px;
+  width: 10px;
+  height: 30px;
+  margin: 0 auto;
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+/* line 92, ../assets/scss/_stickman.scss */
+#leftArm .armorPiece {
+  width: 10px;
+  height: 30px;
+  margin: 0 auto;
+}
+
+/* line 95, ../assets/scss/_stickman.scss */
+#rightArm {
+  left: 38px;
+  right: 0;
+  top: 101px;
+  width: 10px;
+  height: 30px;
+  margin: 0 auto;
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+}
+/* line 100, ../assets/scss/_stickman.scss */
+#rightArm .armorPiece {
+  width: 10px;
+  height: 30px;
+  margin: 0 auto;
+}
+
+/* line 103, ../assets/scss/_stickman.scss */
+#leftLeg {
+  left: 0;
+  right: 32px;
+  top: 145px;
+  width: 10px;
+  height: 40px;
+  margin: 0 auto;
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+/* line 108, ../assets/scss/_stickman.scss */
+#leftLeg .armorPiece {
+  width: 10px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+/* line 110, ../assets/scss/_stickman.scss */
+#rightLeg {
+  left: 32px;
+  right: 0;
+  top: 145px;
+  width: 10px;
+  height: 40px;
+  margin: 0 auto;
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+}
+/* line 115, ../assets/scss/_stickman.scss */
+#rightLeg .armorPiece {
+  width: 10px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+/* line 125, ../assets/scss/_stickman.scss */
+.buttons span {
+  padding: 8px 10px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 2px 0;
+  border-radius: 5px;
+  background: #666;
+  color: #fff;
+}
+/* line 133, ../assets/scss/_stickman.scss */
+.buttons span:hover {
+  background: #DC6B64;
+}
+/* line 134, ../assets/scss/_stickman.scss */
+.buttons span.active {
+  background: #DC6B64;
+}
+
+/* line 146, ../assets/scss/_stickman.scss */
+#stickman .bPart, #skewBox, #raceBox {
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+/* ---------------------------- sword // every weapon */
+/* line 156, ../assets/scss/_stickman.scss */
+#equipped.armRaise #leftArm {
+  -webkit-transform: rotate(115deg);
+  -moz-transform: rotate(115deg);
+  -ms-transform: rotate(115deg);
+  -o-transform: rotate(115deg);
+  transform: rotate(115deg);
+  top: 88px;
+  right: 50px;
+}
+
+/* line 160, ../assets/scss/_stickman.scss */
+#equipped #swordHand {
+  position: relative;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+/* line 167, ../assets/scss/_stickman.scss */
+#equipped.armWeapon #swordHand {
+  -webkit-transform: rotate(-7deg);
+  -moz-transform: rotate(-7deg);
+  -ms-transform: rotate(-7deg);
+  -o-transform: rotate(-7deg);
+  transform: rotate(-7deg);
+  top: 11px;
+  left: 25px;
+}
+
+/* line 172, ../assets/scss/_stickman.scss */
+#equipped.armWeapon #swordHand i {
+  background: #666;
+  position: absolute;
+  border-radius: 10px;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+/* line 177, ../assets/scss/_stickman.scss */
+#equipped.armWeapon #swordHand i.p1 {
+  width: 7px;
+  height: 100px;
+  left: 0;
+  right: 170px;
+  margin: 0 auto;
+  top: -10px;
+}
+
+/* line 183, ../assets/scss/_stickman.scss */
+#equipped.armWeapon #swordHand i.p2 {
+  width: 35px;
+  height: 7px;
+  left: 0;
+  right: 170px;
+  margin: 0 auto;
+  top: 60px;
+}
+
+/* ---------------------------- shield */
+/* line 194, ../assets/scss/_stickman.scss */
+#equipped #shieldHand {
+  position: relative;
+  opacity: 0;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+/* line 199, ../assets/scss/_stickman.scss */
+#equipped.armShield #shieldHand {
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  transform: rotate(20deg);
+  top: 87px;
+  left: 9px;
+  opacity: 1;
+}
+
+/* line 205, ../assets/scss/_stickman.scss */
+#equipped.armShield #shieldHand i {
+  background: #666;
+  position: absolute;
+  border-radius: 10px;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+/* line 210, ../assets/scss/_stickman.scss */
+#equipped.armShield #shieldHand i.p1 {
+  width: 10px;
+  height: 50px;
+  left: 87px;
+  right: 0px;
+  margin: 0 auto;
+  top: 5px;
+}
+
+/* ---------------------------- 2h sword */
+/* line 223, ../assets/scss/_stickman.scss */
+#equipped.arm2h #leftArm {
+  height: 20px;
+  right: 30px;
+}
+
+/* line 227, ../assets/scss/_stickman.scss */
+#equipped.arm2h #leftArm .armorPiece {
+  height: 20px;
+}
+
+/* line 229, ../assets/scss/_stickman.scss */
+#equipped.arm2h #rightArm {
+  right: 37px;
+  -webkit-transform: rotate(50deg);
+  -moz-transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  -o-transform: rotate(50deg);
+  transform: rotate(50deg);
+  height: 32px;
+  top: 101px;
+}
+
+/* line 234, ../assets/scss/_stickman.scss */
+#equipped.arm2h #swordHand {
+  top: 15px;
+  -webkit-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  -o-transform: rotate(-25deg);
+  transform: rotate(-25deg);
+  left: 13px;
+}
+
+/* line 238, ../assets/scss/_stickman.scss */
+#equipped.arm2h #swordHand i.p1 {
+  height: 170px;
+  top: -70px;
+  width: 9px;
+}
+
+/* line 243, ../assets/scss/_stickman.scss */
+#equipped.arm2h #swordHand i.p2 {
+  height: 9px;
+}
+
+/* ---------------------------- dagger */
+/* line 249, ../assets/scss/_stickman.scss */
+#equipped.armDagger #swordHand {
+  top: 25px;
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+  left: -55px;
+}
+
+/* line 253, ../assets/scss/_stickman.scss */
+#equipped.armDagger #swordHand i.p1 {
+  height: 40px;
+  top: 40px;
+  right: 167px;
+}
+
+/* line 258, ../assets/scss/_stickman.scss */
+#equipped.armDagger #swordHand i.p2 {
+  width: 20px;
+  top: 62px;
+  right: 167px;
+}
+
+/* ---------------------------- alt dagger */
+/* line 264, ../assets/scss/_stickman.scss */
+#equipped.armAltDagger #leftArm {
+  -webkit-transform: rotate(55deg);
+  -moz-transform: rotate(55deg);
+  -ms-transform: rotate(55deg);
+  -o-transform: rotate(55deg);
+  transform: rotate(55deg);
+  left: -6px;
+  top: 99px;
+}
+
+/* line 269, ../assets/scss/_stickman.scss */
+#equipped.armAltDagger #swordHand {
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+  top: 75px;
+  left: 35px;
+}
+
+/* line 274, ../assets/scss/_stickman.scss */
+#equipped.armAltDagger #swordHand i.p1 {
+  height: 40px;
+  top: 30px;
+}
+
+/* line 278, ../assets/scss/_stickman.scss */
+#equipped.armAltDagger #swordHand i.p2 {
+  width: 20px;
+  top: 42px;
+}
+
+/* ---------------------------- off hand dagger */
+/* line 284, ../assets/scss/_stickman.scss */
+#equipped.armAltDagger #rightArm {
+  -webkit-transform: rotate(-55deg);
+  -moz-transform: rotate(-55deg);
+  -ms-transform: rotate(-55deg);
+  -o-transform: rotate(-55deg);
+  transform: rotate(-55deg);
+  left: 44px;
+  top: 99px;
+}
+
+/* line 289, ../assets/scss/_stickman.scss */
+#equipped.armAltDagger #shieldHand {
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  transform: rotate(20deg);
+  top: 87px;
+  left: 9px;
+  opacity: 1;
+}
+
+/* line 295, ../assets/scss/_stickman.scss */
+#equipped.armAltDagger #shieldHand i {
+  background: #666;
+  position: absolute;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* line 298, ../assets/scss/_stickman.scss */
+#equipped.armAltDagger #shieldHand i.p1 {
+  width: 7px;
+  height: 40px;
+  left: 92px;
+  right: 0px;
+  margin: 0 auto;
+  top: 18px;
+}
+
+/* line 304, ../assets/scss/_stickman.scss */
+#equipped.armAltDagger #shieldHand i.p2 {
+  width: 20px;
+  height: 7px;
+  left: 92px;
+  right: 0px;
+  margin: 0 auto;
+  top: 31px;
+}
+
+/* ---------------------------- alt dagger - nod head */
+/* line 314, ../assets/scss/_stickman.scss */
+#equipped.armAltDagger .upperHalf {
+  top: 3px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* line 318, ../assets/scss/_stickman.scss */
+#equipped.armAltDagger #head {
+  top: 53px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* ---------------------------- bo staff */
+/* line 325, ../assets/scss/_stickman.scss */
+#equipped.armBo #swordHand {
+  top: 15px;
+  -webkit-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  -o-transform: rotate(-25deg);
+  transform: rotate(-25deg);
+  left: 13px;
+}
+
+/* line 330, ../assets/scss/_stickman.scss */
+#equipped.armBo #swordHand i.p1 {
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+  top: 3px;
+  background-color: #aa6666;
+  right: 167px;
+}
+
+/* line 335, ../assets/scss/_stickman.scss */
+#equipped.armBo #swordHand i.p2 {
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  transform: rotate(60deg);
+  top: 86px;
+  height: 10px;
+  width: 30px;
+  right: 166px;
+  background: #fff;
+  opacity: .5;
+  border-radius: 0;
+}
+
+/* ---------------------------- Warhammer */
+/* line 346, ../assets/scss/_stickman.scss */
+#equipped.armWarhammer #swordHand {
+  top: 14px;
+  -webkit-transform: rotate(-35deg);
+  -moz-transform: rotate(-35deg);
+  -ms-transform: rotate(-35deg);
+  -o-transform: rotate(-35deg);
+  transform: rotate(-35deg);
+  left: -3px;
+}
+
+/* line 350, ../assets/scss/_stickman.scss */
+#equipped.armWarhammer #swordHand i.p1 {
+  height: 160px;
+  top: -62px;
+  border-radius: 0 0 10px 10px;
+  width: 11px;
+}
+
+/* line 356, ../assets/scss/_stickman.scss */
+#equipped.armWarhammer #swordHand i.p2 {
+  height: 70px;
+  top: -58px;
+  width: 70px;
+  border-radius: 0;
+}
+
+/* ---------------------------- BattleAxe */
+/* line 365, ../assets/scss/_stickman.scss */
+#equipped.armBattleAxe #swordHand {
+  -webkit-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  -o-transform: rotate(-25deg);
+  transform: rotate(-25deg);
+  top: 18px;
+  left: 15px;
+}
+
+/* line 371, ../assets/scss/_stickman.scss */
+#equipped.armBattleAxe #swordHand i.p1 {
+  height: 150px;
+  top: -50px;
+  border-radius: 10px;
+  width: 10px;
+}
+
+/* line 377, ../assets/scss/_stickman.scss */
+#equipped.armBattleAxe #swordHand i.p2 {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 70px solid #666;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: none;
+  transform: rotate(-90deg);
+  top: -60px;
+  left: -10px;
+}
+
+/* line 391, ../assets/scss/_stickman.scss */
+#equipped.armBattleAxe #swordHand i.p3 {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 70px solid #666;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: none;
+  transform: rotate(90deg);
+  top: -60px;
+  left: 30px;
+}

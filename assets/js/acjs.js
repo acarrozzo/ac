@@ -1,0 +1,270 @@
+// JavaScript Document
+
+
+// SlidesJS Required ----->
+// WALLPAPERS SLIDES	
+$(function () {
+	$("[id^=slides].wallpapers").slidesjs({ // any id that starts with slides will work
+		width: 1000,
+		height: 625,
+		navigation: true 
+		
+	});
+});
+
+$(function () {
+	$("[id^=slides].landscape").slidesjs({ // any id that starts with slides will work
+		width: 1280,
+		height: 720,
+		navigation: true
+		
+	});
+});
+
+
+// DEFAULT SLIDES	 
+$(function () {
+	$("[id^=slides]").slidesjs({ // any id that starts with slides will work
+		width: 1000,
+		height: 576,
+		navigation: true
+	});
+});
+
+// MAX FULL SCREEN	
+/* $( ".maxBtn" ).on( "click", function (e) {
+		if ( $( '[id^=slides]' ).hasClass( 'max' ) ) {
+			$( '[id^=slides]' ).removeClass( 'max' ); // makes close icon spin back into menu icon
+		} else {
+			$(this).siblings('[id^=slides]').addClass( 'max' );
+			//this.update();
+		}
+	} ); //End mbtn click	
+	
+*/
+
+// ---- NAV / MENU BUTTON - OPENS MENU
+/*
+	$( ".menuBtn" ).on( "click", function (e) {
+		e.preventDefault();
+		if ( $( 'body' ).hasClass( 'menuOpen' ) ) {
+			$( 'body' ).removeClass( 'menuOpen' ); // makes close icon spin back into menu icon
+		} else {
+			$( 'body' ).addClass( 'menuOpen' ); // makes menu icon spin around when clicked, turn into close icon
+		}
+	} ); //End mbtn click
+	
+	
+// ---- THE TOGGLE - SWAPS .alt on the body. maybe use for time of day
+
+	$( ".theToggle" ).on( "click", function (e) {
+		e.preventDefault();
+		if ( $( 'body' ).hasClass( 'toggle' ) ) {
+			$( 'body' ).removeClass( 'toggle' ); // makes close icon spin back into menu icon
+		} else {
+			$( 'body' ).addClass( 'toggle' ); // makes menu icon spin around when clicked, turn into close icon
+		}
+	} ); //End mbtn click
+	
+	
+// ---- MINUS BUTTON - opens up alternative menu
+	$( ".minusBtn, .minus" ).on( "click", function (e) {
+		e.preventDefault();
+		if ( $( 'body' ).hasClass( 'minusOpen' ) ) {
+			$( 'body' ).removeClass( 'minusOpen' ); // makes close icon spin back into menu icon
+		} else {
+			$( 'body' ).addClass( 'minusOpen' ); // makes menu icon spin around when clicked, turn into close icon
+		}
+	} ); //End mbtn click
+	
+	*/
+
+
+$(".result").click(function (e) {
+	e.preventDefault();
+	$("#content").load("web.php");
+});
+
+// ---------- MORE TEXT
+$(".readMore").click(function (e) {
+	e.preventDefault();
+	$(this).fadeOut().parent().next().slideDown();
+});
+
+
+
+
+
+//$('[data-pop]').on("click", function (e) {
+$('[data-pop]').on("click", function () {
+	//e.preventDefault();
+	$(this).toggleClass("full");
+});
+
+
+$("[data-pop].gal").append("<i class='fa fa-angle-right nextFig'></i>");
+$("[data-pop].gal").prepend("<i class='fa fa-angle-left prevFig'></i>");
+
+
+$('.nextFig').on("click", function (e) {
+	//e.preventDefault();
+	e.stopPropagation();
+	$(this).parent("[data-pop]").toggleClass("full");
+	$(this).parent("[data-pop]").nextAll("[data-pop]").first().addClass("full");
+});
+
+$('.prevFig').on("click", function (e) {
+	//e.preventDefault();
+	e.stopPropagation();
+	$(this).parent("[data-pop]").toggleClass("full");
+	$(this).parent("[data-pop]").prevAll("[data-pop]").first().addClass("full");
+});
+
+
+
+// ----- AC CUSTOM COLLAPSER FUNCTION ----->
+
+
+/* --- .on("click")
+
+first, you anchor `.on` to `$("body")` so that the bind gets applied to injected elements
+
+and secondly because `.click` also is used to simulate a click and I think that's gross
+
+
+also `.closest` should be reserved for use on ancestors
+
+I've heard of circumstances of it working with siblings, but it never has for me
+`.next` and `.prev` are used for direct siblings
+but really, it's usually best to find the `.closest` shared ancestor and then `.find` the element you want from there
+
+-->
+*/
+/*
+	$(".expandBtn").on("click",function(e){
+    $(this).closest(".collapser").toggleClass("expanded");
+    $(this).children(".fa").toggleClass("fa-angle-up").toggleClass("fa-angle-down");
+    });
+	*/
+if ($(window).width() >= 800) {  
+	$('.collapser').each(function(){
+		if($(this).hasClass('justTablet')) {
+			$(this).addClass("expanded");
+		}
+	});
+}
+
+if ($(window).width() >= 800) {  
+	$('.collapser').each(function(){
+		if($(this).hasClass('justMobile')) {
+			$(this).addClass("expanded");
+		}
+	});
+}
+
+
+
+$('.nav-column li').each(function(){
+   
+});
+
+
+$(".collapser").on("click", function () {
+	item=$(this);
+	if (item.is('.expanded')) {
+		item.next('.collapserContent').slideUp(500);
+		setTimeout(function(){
+            item.toggleClass('expanded');
+      },450);
+	} 
+	else {
+		item.next('.collapserContent').slideDown(500);
+        item.toggleClass('expanded');
+	}
+});
+
+
+$(".collapser:not(.expanded)").on("click", function (e) {
+
+});
+
+/*--  TC + MIKE CANNON PROJECT - JS REFERENCE 
+
+$(".addInput").on("click",function(e){
+	e.preventDefault();
+	
+ 	var ele = $(this),
+		parent = ele.closest(".table_calculator"),
+		container = parent.find(".inputContain"),
+		last_input = container.find("input[type='text']").last(),
+		input_count = parseInt(last_input.attr("name").match(/([0-9]+)$/)),
+		markup = last_input[0].outerHTML,
+		new_element;
+	
+	input_count++;
+	
+	container.append(markup);
+	
+	new_element = container.find("input[type='text']").last();
+	
+	new_element.attr("name", "s" + (input_count));
+	
+	if(input_count >= 5){
+		$(".addInput").addClass("hide");
+	}
+	
+	
+});
+
+
+
+-->
+
+
+
+	<!--
+<script>
+			$(function() {
+				var demo1 = $("[id^=gallery]").slippry({
+					//transition: 'horizontal',
+					// useCSS: true,
+					// speed: 1000,
+					// pause: 3000,
+					// auto: true,
+					// preload: 'visible',
+					// autoHover: false
+				});
+
+				$('.stop').click(function () {
+					demo1.stopAuto();
+				});
+
+				$('.start').click(function () {
+					demo1.startAuto();
+				});
+
+				$('.prev').click(function () {
+					demo1.goToPrevSlide();
+					return false;
+				});
+				$('.next').click(function () {
+					demo1.goToNextSlide();
+					return false;
+				});
+				$('.reset').click(function () {
+					demo1.destroySlider();
+					return false;
+				});
+				$('.reload').click(function () {
+					demo1.reloadSlider();
+					return false;
+				});
+				$('.init').click(function () {
+					demo1 = $("#demo1").slippry();
+					return false;
+				});
+			});
+		</script>
+		
+-->
+*/
