@@ -17,7 +17,7 @@
 			<span class="cImg">
 				<img src="img/intro/anthony-carrozzo-square1bw.jpg" width="360" height="360" alt="Anthony Carrozzo"/>
 			</span>
-			<p>I have been working as a Designer and Developer for about 15 years now at a handful of equally amazing jobs.</p>
+			<p>I have been working as a Designer and Developer for well over 10 years now at a handful of equally amazing jobs.</p>
 			<p>I currently work as a Senior Developer for Newsday where I specialize in front-end UI & UX. I have past experience in retail marketing, brand identity, music production & photography. And I always have a whole mess of other creative projects in the works.</p>
 			<h5>Skills that pay the bills:</h5>
 			<p>UI, UX, SEO, HTML, SCSS, JS, PHP, Photoshop, Illustrator, InDesign</p>
@@ -33,13 +33,13 @@
 		<h2>What's New & Cool</h2>
 	</div>
 	<div class="collapserContent">
-	
+
 		<section>
 			<h3>Newsday Special Projects</h3>
 			<h4>Isn't that special</h4>
 			<div id="slides-nd">
-				<img src="img/nd/football-helmets.jpg" width="1000" height="576" alt="Newsday Football Helmets Preview"/>
 				<img src="img/nd/zombie-home.jpg" width="1000" height="576" alt="Newsday Zombie Home Preview"/>
+				<img src="img/nd/football-helmets.jpg" width="1000" height="576" alt="Newsday Football Helmets Preview"/>
 				<img src="img/nd/arod.jpg" width="1000" height="576" alt="Newsday Aprils of Arod Preview"/>
 				<img src="img/nd/article1.jpg" width="1000" height="576" alt="Newsday Article Preview"/>
 				<img src="img/nd/pope-francis.jpg" width="1000" height="576" alt="Newsday Tell the Pope Preview"/>
@@ -60,7 +60,7 @@
 			<!--<p><a href="https://projects.newsday.com/long-island/zombie-houses/" target="_blank">Pizza Smackdown</a></p>
 			<p><a href="https://projects.newsday.com/long-island/zombie-houses/" target="_blank">The Aprils of Arod</a></p>-->
 		</section>
-		
+
 		<section id="weidman">
 			<h3>The Fighter & The Father</h3>
 			<h4>Chris Weidman</h4>
@@ -79,11 +79,11 @@
 			<p>View site: <a href="http://projects.newsday.com/projects/sports/mma/chris-weidman-ufc-life/" target="_blank">Chris Weidman: Father & Fighter </a>
 			</p>
 		</section>
-		
-		
+
+
 		<section>
 		<h3>Pathway to Power</h3>
-		<h4>One man's rise shines light on LI's corrosive system</h4>	
+		<h4>One man's rise shines light on LI's corrosive system</h4>
 		<div id="slides-pathway" class="">
 			<img src="img/nd/pathway/comp1.jpg" width="1000" height="563" alt="Pathway to Power preview"/>
 			<img src="img/nd/pathway/video.jpg" width="1000" height="563" alt="Pathway to Power video preview"/>
@@ -99,9 +99,9 @@
 		<p>These are the stories journalists live for and it was satisfying to be a part of the team and make it all come together.</p>
 		<p><strong>Pathway to Power:</strong> <a href="https://projects.newsday.com/long-island/melius-investigation-oheka/" target='_blank'>Chapter Select</a> | <a href="https://projects.newsday.com/long-island/melius-oheka-politics-video/" target='_blank'>Video</a> | <a href="https://projects.newsday.com/long-island/melius-oheka-shooting-politics/" target='_blank'>Full Story</a></p>
 		</section>
-		
-		
-		
+
+
+
 		<section>
 			<h3>BFTZ</h3>
 			<h4>Banned from the Zoo</h4>
@@ -148,7 +148,7 @@
 			<figure class="gal" data-pop>
 				<img src="img/es/esbizcard1.jpg" width="650" height="300" alt="Exotic Snakes Business Card Preview"/>
 			</figure>
-			
+
 			<p>Man you don't know? My dad is big time in the snake biz. Here's the new card I made him.</p>
 			<figure class="gal left" data-pop>
 				<img src="img/es/esbizcard2010_r1.jpg" width="650" height="447" alt="Exotic Snakes Business Card - Step 1"/>
@@ -176,7 +176,7 @@
 				<a href="#" class="slidesjs-previous slidesjs-navigation"><i class="fa fa-angle-left"></i></a>
 				<a href="#" class="slidesjs-next slidesjs-navigation"><i class="fa fa-angle-right"></i></a>
 			</div>
-			
+
 				<div class="rightDesk">
 					<figure class="left33 gal" data-pop>
 						<img src="img/mob/mobileistic_catalog_page2.jpg" width="612" height="612" alt="Mobileistic Table of Contents"/>
@@ -270,8 +270,8 @@
 			<figure class="left33 gal" data-pop>
 				<img src="img/poly/polyads-3.jpg" width="544" height="700" alt="PolyPlastic Forms - 3d Engraving flyer"/>
 			</figure>
-			
-			
+
+
 		</section>
 	</div>
 </div>
