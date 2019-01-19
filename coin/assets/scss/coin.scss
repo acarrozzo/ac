@@ -1,0 +1,152 @@
+// Coin & Castle Styles - ac
+@import 'buttons';
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+body {
+    font-size     : 18px;
+    font-family   :  'Press Start 2P', "Courier New", "Lucida Sans Typewriter", "Lucida Typewriter", Courier, monospace;
+    padding       : 0;
+    margin        : 0;
+line-height: 2em;
+    letter-spacing: -0.02em;
+    color:#333;
+    background:#eee;
+}
+
+.btnX:hover, .btnX:focus {
+    background-color: #e7e7e7;
+    box-shadow: inset -6px -6px #adafbc;
+}
+.btnX:active {
+    box-shadow: inset 4px 4px #adafbc;
+}
+.btnX::before, .btnX::after {
+    position: absolute;
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+    content: "";
+    border-color: #212529;
+    border-style: solid;
+    border-width: 4px;
+}
+.btnX::before {
+    top: -4px;
+    left: 0;
+    border-right: 2px;
+    border-left: 2px;
+}
+.btnX:after {
+    top: 0;
+    left: -4px;
+    border-top: 2px;
+    border-bottom: 2px;
+}
+
+
+
+h1 {
+    font-size : 1em;
+    padding   : 5px 15px;
+    margin    : 0 0 30px;
+    background: #333;
+    color     : #aaa;
+}
+
+h2 {
+
+    display: table;
+    padding: 0 12px;
+    margin: -1.9em -12px .9em;
+    font-size: 1em;
+    background-color: #eee;
+
+}
+p {
+    margin : 0;
+    padding: 0;
+
+}
+
+i {
+    color     : #999;
+    font-size : .8em;
+    font-style: normal;
+}
+
+section {
+    margin: 20px 20px 40px;
+    border: solid 6px #333;
+    border-radius: 6px;
+    padding: 15px 20px;
+}
+
+.disabled {
+    pointer-events : none;
+    cusor          : default;
+    opacity        : 0.15;
+    text-decoration: none;
+}
+
+#message {
+  width:100%;
+    padding   : 15px 25px 15px 15px;
+    opacity   : .5;
+    transition: 2s all;
+    background: #fff;
+    display   : inline-block;
+}
+
+#message.active {
+    opacity   : 1;
+    transition: 0s all;
+}
+
+#counter {
+    position : absolute;
+    bottom   : 0;
+    right    : 0;
+    font-size: 12px;
+    margin   : 15px;
+    color    : #999;
+}
+
+.bar {
+
+    border: 3px solid #333;
+    height: 29px;
+    width: 100px;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0 0 -8px;
+    border-radius: 6px;
+    opacity:0;
+  }
+  .once, .infinite {opacity:1;}
+.bar.infinite .inner {
+    animation                : fill 1s linear 1;
+    animation-iteration-count: infinite;
+    height                   : 100%;
+    background-color         : #000;
+}
+
+.bar.once .inner {
+    animation                : fill 1s linear 1;
+    animation-iteration-count: 1;
+    height                   : 100%;
+    background-color         : #000;
+}
+@keyframes fill {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 101%;
+    }
+}

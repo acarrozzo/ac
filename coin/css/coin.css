@@ -1,0 +1,309 @@
+/* line 26, ../assets/scss/_buttons.scss */
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 10px 12px;
+  margin: 12px 0;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #eee;
+  cursor: pointer;
+  box-shadow: inset -4px -4px #adafbc;
+  border: 0;
+  font-family: 'Press Start 2P', "Courier New", "Lucida Sans Typewriter", "Lucida Typewriter", Courier, monospace;
+  font-size: 18px;
+  color: #333;
+  color: #333;
+  background-color: #fff;
+  box-shadow: inset -4px -4px #adafbc;
+}
+/* line 14, ../assets/scss/_buttons.scss */
+.btn:hover, .btn:focus {
+  background-color: #e7e7e7;
+  box-shadow: inset -6px -6px #adafbc;
+}
+/* line 20, ../assets/scss/_buttons.scss */
+.btn:active {
+  box-shadow: inset 4px 4px #adafbc;
+}
+/* line 52, ../assets/scss/_buttons.scss */
+.btn::before, .btn::after {
+  position: absolute;
+  box-sizing: content-box;
+  width: 100%;
+  height: 100%;
+  content: "";
+  border-color: #333;
+  border-style: solid;
+  border-width: 5px;
+}
+/* line 64, ../assets/scss/_buttons.scss */
+.btn::before {
+  top: -5px;
+  left: 0;
+  border-right: 2.5px;
+  border-left: 2.5px;
+}
+/* line 71, ../assets/scss/_buttons.scss */
+.btn::after {
+  top: 0;
+  left: -5px;
+  border-top: 2.5px;
+  border-bottom: 2.5px;
+}
+/* line 78, ../assets/scss/_buttons.scss */
+.btn:focus {
+  outline: 0;
+}
+/* line 92, ../assets/scss/_buttons.scss */
+.btn.brown {
+  color: #fff;
+  background-color: #AA8568;
+  box-shadow: inset -4px -4px #765D47;
+}
+/* line 14, ../assets/scss/_buttons.scss */
+.btn.brown:hover, .btn.brown:focus {
+  background-color: #927259;
+  box-shadow: inset -6px -6px #765D47;
+}
+/* line 20, ../assets/scss/_buttons.scss */
+.btn.brown:active {
+  box-shadow: inset 4px 4px #765D47;
+}
+/* line 92, ../assets/scss/_buttons.scss */
+.btn.blue {
+  color: #fff;
+  background-color: #209cee;
+  box-shadow: inset -4px -4px #006bb3;
+}
+/* line 14, ../assets/scss/_buttons.scss */
+.btn.blue:hover, .btn.blue:focus {
+  background-color: #108de0;
+  box-shadow: inset -6px -6px #006bb3;
+}
+/* line 20, ../assets/scss/_buttons.scss */
+.btn.blue:active {
+  box-shadow: inset 4px 4px #006bb3;
+}
+/* line 92, ../assets/scss/_buttons.scss */
+.btn.green {
+  color: #fff;
+  background-color: #92cc41;
+  box-shadow: inset -4px -4px #4aa52e;
+}
+/* line 14, ../assets/scss/_buttons.scss */
+.btn.green:hover, .btn.green:focus {
+  background-color: #76c442;
+  box-shadow: inset -6px -6px #4aa52e;
+}
+/* line 20, ../assets/scss/_buttons.scss */
+.btn.green:active {
+  box-shadow: inset 4px 4px #4aa52e;
+}
+/* line 92, ../assets/scss/_buttons.scss */
+.btn.yellow {
+  color: #333;
+  background-color: #f7d51d;
+  box-shadow: inset -4px -4px #e59400;
+}
+/* line 14, ../assets/scss/_buttons.scss */
+.btn.yellow:hover, .btn.yellow:focus {
+  background-color: #f2c409;
+  box-shadow: inset -6px -6px #e59400;
+}
+/* line 20, ../assets/scss/_buttons.scss */
+.btn.yellow:active {
+  box-shadow: inset 4px 4px #e59400;
+}
+/* line 92, ../assets/scss/_buttons.scss */
+.btn.red {
+  color: #fff;
+  background-color: #e76e55;
+  box-shadow: inset -4px -4px #8c2022;
+}
+/* line 14, ../assets/scss/_buttons.scss */
+.btn.red:hover, .btn.red:focus {
+  background-color: #ce372b;
+  box-shadow: inset -6px -6px #8c2022;
+}
+/* line 20, ../assets/scss/_buttons.scss */
+.btn.red:active {
+  box-shadow: inset 4px 4px #8c2022;
+}
+
+/* line 4, ../assets/scss/coin.scss */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+/* line 10, ../assets/scss/coin.scss */
+body {
+  font-size: 18px;
+  font-family: 'Press Start 2P', "Courier New", "Lucida Sans Typewriter", "Lucida Typewriter", Courier, monospace;
+  padding: 0;
+  margin: 0;
+  line-height: 2em;
+  letter-spacing: -0.02em;
+  color: #333;
+  background: #eee;
+}
+
+/* line 27, ../assets/scss/coin.scss */
+.btnX:hover, .btnX:focus {
+  background-color: #e7e7e7;
+  box-shadow: inset -6px -6px #adafbc;
+}
+
+/* line 31, ../assets/scss/coin.scss */
+.btnX:active {
+  box-shadow: inset 4px 4px #adafbc;
+}
+
+/* line 34, ../assets/scss/coin.scss */
+.btnX::before, .btnX::after {
+  position: absolute;
+  box-sizing: content-box;
+  width: 100%;
+  height: 100%;
+  content: "";
+  border-color: #212529;
+  border-style: solid;
+  border-width: 4px;
+}
+
+/* line 44, ../assets/scss/coin.scss */
+.btnX::before {
+  top: -4px;
+  left: 0;
+  border-right: 2px;
+  border-left: 2px;
+}
+
+/* line 50, ../assets/scss/coin.scss */
+.btnX:after {
+  top: 0;
+  left: -4px;
+  border-top: 2px;
+  border-bottom: 2px;
+}
+
+/* line 59, ../assets/scss/coin.scss */
+h1 {
+  font-size: 1em;
+  padding: 5px 15px;
+  margin: 0 0 30px;
+  background: #333;
+  color: #aaa;
+}
+
+/* line 67, ../assets/scss/coin.scss */
+h2 {
+  display: table;
+  padding: 0 12px;
+  margin: -1.9em -12px .9em;
+  font-size: 1em;
+  background-color: #eee;
+}
+
+/* line 76, ../assets/scss/coin.scss */
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 82, ../assets/scss/coin.scss */
+i {
+  color: #999;
+  font-size: .8em;
+  font-style: normal;
+}
+
+/* line 88, ../assets/scss/coin.scss */
+section {
+  margin: 20px 20px 40px;
+  border: solid 6px #333;
+  border-radius: 6px;
+  padding: 15px 20px;
+}
+
+/* line 95, ../assets/scss/coin.scss */
+.disabled {
+  pointer-events: none;
+  cusor: default;
+  opacity: 0.15;
+  text-decoration: none;
+}
+
+/* line 102, ../assets/scss/coin.scss */
+#message {
+  width: 100%;
+  padding: 15px 25px 15px 15px;
+  opacity: .5;
+  transition: 2s all;
+  background: #fff;
+  display: inline-block;
+}
+
+/* line 111, ../assets/scss/coin.scss */
+#message.active {
+  opacity: 1;
+  transition: 0s all;
+}
+
+/* line 116, ../assets/scss/coin.scss */
+#counter {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 12px;
+  margin: 15px;
+  color: #999;
+}
+
+/* line 125, ../assets/scss/coin.scss */
+.bar {
+  border: 3px solid #333;
+  height: 29px;
+  width: 100px;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0 0 -8px;
+  border-radius: 6px;
+  opacity: 0;
+}
+
+/* line 136, ../assets/scss/coin.scss */
+.once, .infinite {
+  opacity: 1;
+}
+
+/* line 137, ../assets/scss/coin.scss */
+.bar.infinite .inner {
+  animation: fill 1s linear 1;
+  animation-iteration-count: infinite;
+  height: 100%;
+  background-color: #000;
+}
+
+/* line 144, ../assets/scss/coin.scss */
+.bar.once .inner {
+  animation: fill 1s linear 1;
+  animation-iteration-count: 1;
+  height: 100%;
+  background-color: #000;
+}
+
+@keyframes fill {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 101%;
+  }
+}

@@ -1,0 +1,96 @@
+// https://en.wikipedia.org/wiki/List_of_video_game_console_palettes#NES
+
+// $color-black: #212529;
+// $color-white: #fff;
+
+
+$main-color:#333;
+
+@mixin btn-style($color, $background, $hover-background, $shadow) {
+  color: $color;
+  background-color: $background;
+  box-shadow: inset -4px -4px $shadow;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-background;
+    box-shadow: inset -6px -6px $shadow;
+  }
+
+  &:active {
+    box-shadow: inset 4px 4px $shadow;
+  }
+}
+
+// Default style
+.btn {
+
+
+  $border-size: 5px;
+  position: relative;
+display: inline-block;
+padding: 10px 12px;
+margin: 12px 0;
+text-align: center;
+vertical-align: middle;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+background-color: #eee;
+cursor:pointer;
+box-shadow: inset -4px -4px #adafbc;
+    border         : 0;
+    //background     : 0;
+    font-family   :  'Press Start 2P', "Courier New", "Lucida Sans Typewriter", "Lucida Typewriter", Courier, monospace;
+    font-size      : 18px;
+    color:#333;
+
+
+  @include btn-style($main-color, #fff, #e7e7e7, #adafbc);
+
+  &::before,
+  &::after {
+    position: absolute;
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+    content: "";
+    border-color: $main-color;
+    border-style: solid;
+    border-width: $border-size;
+  }
+
+  &::before {
+    top: $border-size * -1;
+    left: 0;
+    border-right: $border-size / 2;
+    border-left: $border-size / 2;
+  }
+
+  &::after {
+    top: 0;
+    left: $border-size * -1;
+    border-top: $border-size / 2;
+    border-bottom: $border-size / 2;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  // Other styles
+  // prettier-ignore
+  $types:
+  "brown" #fff #AA8568 #927259 #765D47,
+  "blue" #fff #209cee #108de0 #006bb3,
+    "green" #fff #92cc41 #76c442 #4aa52e,
+    "yellow" $main-color #f7d51d #f2c409 #e59400,
+    "red" #fff #e76e55 #ce372b #8c2022;
+
+  @each $type in $types {
+    &.#{nth($type, 1)} {
+      @include btn-style(nth($type, 2), nth($type, 3), nth($type, 4), nth($type, 5));
+    }
+  }
+}
