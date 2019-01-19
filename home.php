@@ -17,7 +17,7 @@
 			<span class="cImg">
 				<img src="img/intro/anthony-carrozzo-square1bw.jpg" width="360" height="360" alt="Anthony Carrozzo"/>
 			</span>
-			<p>I have been working as a Designer and Developer for well over 10 years now at a handful of equally amazing jobs.</p>
+			<p>I have been working as a Designer and Developer for over 10 years at a handful of equally amazing jobs.</p>
 			<p>I currently work as a Senior Developer for Newsday where I specialize in front-end UI & UX. I have past experience in retail marketing, brand identity, music production & photography. And I always have a whole mess of other creative projects in the works.</p>
 			<h5>Skills that pay the bills:</h5>
 			<p>UI, UX, SEO, HTML, SCSS, JS, PHP, Photoshop, Illustrator, InDesign</p>
