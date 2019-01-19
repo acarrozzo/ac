@@ -1,14 +1,5 @@
 
 <div id="right">
-	<div class="collapser">
-		<h2 class="">Intro</h2>
-	</div>
-	<div class="collapserContent">
-		<section>
-			<p>What's up party people! Welcome to acarrozzo.com. I've had this site for well over 20 years now where it originally started as a fun place to share goofy photoshop stuff I made and post photos of friends and family. It has since evolved to become a proper portfolio of my professional work, and remains a creative outlet for whatever I want. So please, feel free to look around.</p>
-			<p>-ac</p>
-		</section>
-	</div>
 	<div class="collapser justMobile">
 		<h2>About Me</h2>
 	</div>
@@ -17,10 +8,10 @@
 			<span class="cImg">
 				<img src="img/intro/anthony-carrozzo-square1bw.jpg" width="360" height="360" alt="Anthony Carrozzo"/>
 			</span>
-			<p>I have been working as a Designer and Developer for over 10 years at a handful of equally amazing jobs.</p>
-			<p>I currently work as a Senior Developer for Newsday where I specialize in front-end UI & UX. I have past experience in retail marketing, brand identity, music production & photography. And I always have a whole mess of other creative projects in the works.</p>
+			<p>I have been working as a designer for over 10 years now at a handful of equally amazing jobs and I currently work as a Senior Developer for Newsday where I specialize in front-end UI & UX.</p>
+			<p> I have past experience in retail marketing, brand identity, music production & photography. And I always have a whole mess of other creative projects in the works.</p>
 			<h5>Skills that pay the bills:</h5>
-			<p>UI, UX, SEO, HTML, SCSS, JS, PHP, Photoshop, Illustrator, InDesign</p>
+			<p>UI, UX, SEO, HTML, SCSS, JS, PHP, Photoshop, Illustrator, InDesign, After Effects, Wordpress, Github,   </p>
 			<h5>Skills that don't pay any bills whatsoever:</h5>
 			<p>Music, Photography, Writing, Numchucks.</p>
 			<h5>Feel free to contact me:</h5>
