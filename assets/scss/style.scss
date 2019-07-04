@@ -6,14 +6,28 @@ $blue:#679CC1;
 $green:#7FBF62;
 $yellow:#F3B333;
 $purple:#9f8ac2;
-$gray:#999; 
+$gray:#999;
+
+
+
+$red:#ef404a;
+$red2:#c41520;
+$green:#70bf54;
+$green2:#079c42;
+
+$blue:#00aeef;
+$blue2:#006cb3;
+$yellow:#ffc20e;
+$yellow2:#dc661e;
+$purple:#a880b9;
+$purple2:#5e3b91;
 
 .red {color:$red;}
 .blue {color:$blue;}
 .green {color:$green;}
 .yellow {color:$yellow;}
 .purple {color:$purple;}
-.gray {color:$gray;} 
+.gray {color:$gray;}
 
 .redBG {background:$red;}
 .blueBG {background:$blue;}
@@ -23,8 +37,8 @@ $gray:#999;
 .grayBG {background:$gray;}
 
 
-$mainWidth:1000px;
-$phoneBreak:500px;
+$mainWidth:1200px;
+$phoneBreak:680px;
 $midBreak:800px;
 $padding:20px;
 $center:800px;
@@ -57,20 +71,20 @@ $secondary:35%;
     transform: translateY(-50%);
 }
 //    @include vertical-align(absolute);
- 
+
 XXX* { // TEMPORARY TRANSITION ALL
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-} 
+}
 
 /* ----- MAIN ----- */
 html {   font-family: 'Droid Serif', 'Helvetica', sans-serif; line-height: 1em; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
 
 body { margin: 0; background: #f7f7f7;color: #333;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
 main {width: 100%;max-width: $mainWidth;margin: 0 auto;}
-a {color:$red;text-decoration:none;line-height: 1.4em;} 
+a {color:$red;text-decoration:none;line-height:1.4em;}
 a:hover {text-decoration:underline;}
 a[target="_blank"]:after {
   content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
@@ -80,14 +94,31 @@ a[target="_blank"]:after {
 	&:hover {text-decoration:none;}
 }
 .btn {
+  position: relative;
 	text-align: center;
 	width: 100%;
 	display: inline-block;
 	background: $red;
+  background: linear-gradient($red, $red2);
 	color: #fff;
 	padding: 6px;
-	border-radius: 5px;
+	border-radius: 50px;
 	margin: 0 0 10px;
+      box-shadow: 1px 1px 6px #aaa;
+    &.big {
+      padding: 12px;
+      max-width: 400px;
+      margin: 0 auto;
+      display: block;
+      font-size: 1.2rem;
+      font-weight: 900;
+  }
+    i {
+        position: absolute;
+        right: 18px;
+        font-size: 1.6em;
+        top: 9px;
+    }
 }
 img { width: 100%; height: auto; }
 ul {
@@ -109,24 +140,25 @@ nav {
 	background-size: cover;
 	background-position: center;
 	ul {
-		//background: rgba(0,0,0,.7);
+		background: rgba(0,0,0,.7);
 	}
 	li {
 		display: inline-block;
 		//min-width: 14.08vw;
-		background: rgba(0,0,0,.6);
+	//	background: rgba(0,0,0,.6);
+  //  width:33.333%;
 	}
 	a {
 	  	padding: 6px $padding;
 	display: inline-block;
 	color: #fff;
 	font-weight: 900;
-	font-size: 16px;
+	font-size: 1rem;
 	font-style: italic;
 	line-height: 2em;
 	width: 100%;
-	
-		&.active {				
+
+		&.active {
 			color: #333;
 			background: #f7f7f7;
 			pointer-events:none;
@@ -144,7 +176,7 @@ nav {
 		display: block;
 	}
 }
- 
+
 
 /* ----- PROFILE IMAGE ----- */
 .cImg {
@@ -158,19 +190,20 @@ nav {
 }
 
 /* ----- SECTIONS ----- */
-section { 
-	margin: 0 $padding;
-	padding:$padding 0 $padding*3;
-	border-bottom:solid 1px #ccc;
-	clear: both;
-	position:relative;
-	overflow-y:hidden;
+section {
+margin: -1px 20px 0 15px;
+    padding: 20px 0 60px 15px;
+  clear: both;
+  position: relative;
+  overflow-y: hidden;
+  border-bottom: solid 1px $red;
+  border-left: solid 1px $red;
 }
 hr {
 	border: 0;
 	height: 1px;
 	background: #ccc;
-	//margin: $padding/2 0; 
+	//margin: $padding/2 0;
 	margin:0;
 	display: inline-block;
 	width: 100%;
@@ -179,53 +212,56 @@ hr {
 
 /* ----- TYPE ----- */
 h1 {
-	font-size: 10px;
-	text-transform: uppercase;
-	padding: 5px 0;
-	cursor: default;
-	font-weight: 300;
-	letter-spacing: .7em;
-	background: rgba(0,0,0,.8);
-	margin: 0;
+  font-size: .7rem;
+      text-transform: uppercase;
+      padding: 10px 0;
+      cursor: default;
+      font-weight: 300;
+      letter-spacing: .7em;
+      background: rgba(0,0,0,0.7);
+      position: absolute;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      width: 100%;
 }
-h2, h3, h4, h5, h6 { 
-	line-height: 1.3em; 
-	//font-weight: 700;
+h2, h3, h4, h5, h6 {
+	line-height: 1.3em;
 	font-style:italic;
 	letter-spacing: -.02em;
 	padding: 0;
     margin: 0 ;
 	}
 h2 {
-	border-left: solid 6px $red; 
-	padding:0px 20px 0 10px;
-	font-size: 18px;
-	margin: $padding $padding 0;
-	display:inline-block;
+  padding:20px 20px 0 55px;
+  font-size: 1.8rem;
+  margin: 0;
+  display: inline-block;
 	+ figure {margin-top:$padding;}
 	+ [id^=slides] {margin-top:$padding;}
 
 }
 h3 {
-	font-size: 26px;
+	font-size: 1.6rem;
 	line-height: 1.2em;
 	margin-top: 20px;
 	//&:first-child {margin: 0;}
 }
 h4 {
-	font-size: 18px;
-	line-height: 1.4em;
-	color:$red;
-	margin-bottom:10px; 
+  font-size: 1.2rem;
+  line-height: 1.4em;
+  color: $red;
+  margin: 2px 0 10px;
+
 	}
 h5 {
-	font-size: 16px;
+	font-size: 1.1rem;
 	margin: 15px 0 0px;
-	color: $red;
+	//color: $red;
 }
-p { 
+p {
 	padding:10px 0;
-	font-size: 16px;
+	font-size: 1.1rem;
 	line-height: 1.6em;
 	margin: 0;
 	color: #333;
@@ -234,7 +270,7 @@ p {
 	}
  }
 
-/* ----- POSITION STYLES ----- */	
+/* ----- POSITION STYLES ----- */
 .left {
 	width: 40%;
 	float: left;
@@ -258,15 +294,15 @@ p {
 }
 .right {
 	width: 40%;
-	float: right; 
+	float: right;
 	margin: $padding/2 0 $padding/2 $padding;
 }
 .right50 {
 	width: calc(50% - 20px);
-	float: right; 
+	float: right;
 	margin: $padding/2 0 $padding/2 $padding;
 }
-.right20 { 
+.right20 {
 	width: calc(20% - 10px);
 	float: right;
 	margin: $padding/2 0 $padding/2 $padding/2;
@@ -278,7 +314,7 @@ p {
 	margin: 10px -10px 0px 10px;
 }
 
-/* ----- photo grid ----- */	
+/* ----- photo grid ----- */
 
 #left, #right {
 	//.grid figure {margin:0 0 10px;}
@@ -331,17 +367,18 @@ p {
 		width: auto;
 		height: auto;
 	}
-	&:before { 
+	&:before {
 	content:"\f066";
 	}
-	figcaption { 
+	figcaption {
 		position: absolute;
 		bottom: 10px;
 		left: 0;
 		width: 100%;
 		color: #fff;
-		font-size: 16px;
-		text-shadow:1px 1px 2px #000;
+		font-size: 1rem;
+    text-shadow: 1px 1px 4px #000, 1px 1px 10px #000;
+    font-weight: 900;
 		}
 	&.gal {
 		.nextFig, .prevFig {
@@ -372,19 +409,19 @@ p {
 		right: 7px;
 		top: 7px;
 		line-height: 1em;
-		font-size: 16px;
+		font-size: 1rem;
 	}
 	.nextFig, .prevFig {display:none;}
 }
-/* ----- LIST ----- */	
+/* ----- LIST ----- */
 .list {
 	li {
 		border-top:solid 1px #ccc;
 		overflow:hidden;
 		padding: $padding/2 0;
-	}	
+	}
 	li:first-child {border:0;}
-	.left, .right { 
+	.left, .right {
 		margin-top: 10px;
 	}
 	a p {
@@ -399,18 +436,18 @@ p {
 	}
 }
 
-/* ----- MORE ----- */	
-.more {display:none;} 
+/* ----- MORE ----- */
+.more {display:none;}
 
-/* ----- CODE BOXES ----- */	
+/* ----- CODE BOXES ----- */
 pre {
 	margin: 0 0 20px;
 	padding: 10px 15px;
 	border: solid 1px #ccc;
 	background: #fff;
-	overflow: auto; 
+	overflow: auto;
 }
-/* ----- MEDIA BOX ----- */	
+/* ----- MEDIA BOX ----- */
 figure  {
 	width:100%;
 	margin: 0;
@@ -418,14 +455,15 @@ figure  {
 	//margin:$padding 0 $padding/2;
 }
 figcaption, .caption, h5 + p {
-	font-size: 14px;
-	padding: 8px 0; 
-	color: #666;
-	line-height: 1.4em;
+	font-size: .9rem;
+	padding: 8px 0;
+	color: $red;
+	line-height: 1.5em;
+  font-weight: 900;
 }
 
-/* ----- SLIDES JS ----- */	
-*[id^='slides'] { 
+/* ----- SLIDES JS ----- */
+*[id^='slides'] {
 	display: none;
 	position: relative;
 		&.max {
@@ -440,26 +478,36 @@ figcaption, .caption, h5 + p {
 		}
 }
 .slidesjs-container { overflow: hidden; }
-.slidesjs-navigation {position: absolute;font-size: 42px;color: #999;padding: 5px 0; }
+.slidesjs-navigation {position: absolute;font-size: 42px;color: $red;padding: 5px 0; }
 .slidesjs-previous { left: 0px; }
-.slidesjs-next { right: 0px; } 
+.slidesjs-next { right: 0px; }
 .slidesjs-pagination { padding:$padding;text-align: center;margin: 0;}
 .slidesjs-pagination li { display: inline-block; }
-.slidesjs-pagination li a { display: block; width: 12px; height: 12px; border-radius: 50%; overflow: hidden; border: solid 2px #999; margin: 0 1px; text-indent: -999px; }
-.slidesjs-pagination li a.active,  .slidesjs-pagination li a:hover.active { background: #999; }
+.slidesjs-pagination li a {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: solid 2px $red;
+  margin: 0px 5px;
+  text-indent: -999px;
+ }
+.slidesjs-pagination li a.active,  .slidesjs-pagination li a:hover.active {
+  background: $red;
+  background: linear-gradient($red, $red2);
+ }
 
 
-/* ----- FOOTER ----- */	
+/* ----- FOOTER ----- */
 footer {
     background: #333;
     color: #eee;
-	text-align:center;
-	clear:both;
-	margin: 0 auto;
-
+    text-align:center;
+    clear:both;
+    margin: 0 auto;
 	section {
 		border: 0;
-		//max-width: $mainWidth;
 		margin: 0 auto;
 		padding:$padding;
 		position:relative;
@@ -468,24 +516,33 @@ footer {
 		color:#eee;
 		max-width: 800px;
 		margin: 0 auto;}
- 	//a {color:$red;text-decoration: none;}
 	ul {
 		padding: 0px;
 		width: 100%;
-		display: inline-block;	
+		display: inline-block;
 		text-align: center;
-		margin: 0;
+		margin: 10px 0;
 	}
 	li {
 		list-style: none;
 		display:inline-block;
-		a {  	
+		a {
 			display: inline-block;
 			padding: 5px $padding;
 			color: #fff;
-			background: #222;
-			border-radius: 5px;
+      background: $red;
+      background: linear-gradient($red, $red2);
+      box-shadow: 1px 1px 6px rgba(0,0,0,.5);
+			border-radius: 50px;
 			margin: 5px;
+      &.active {
+        box-shadow: none;
+        background: #222;
+        opacity: 0.6;
+        pointer-events: none;
+        top: 1px;
+        position: relative;
+      }
 		}
 	}
 	.cImg {
@@ -496,10 +553,13 @@ footer {
 		height: 80px;
 	}
 
+  .no-click {
+      pointer-events: none;
+  }
 
 }
 .smallText {
-	font-size: 11px;
+	font-size: .8rem;
 	color: #666;
 	//text-transform: uppercase;
 }
@@ -514,7 +574,7 @@ footer {
 }
 
 
-/* ----- COLLAPSE SECTIONS ----- */	
+/* ----- COLLAPSE SECTIONS ----- */
 .collapser {
 	overflow: hidden;
 	position:relative;
@@ -525,23 +585,33 @@ footer {
 		content:"\f107";
 		font-family:FontAwesome;
 		position: absolute;
-		color: $red;
-		right: $padding;
-		top: $padding;
-		line-height: 1em;
-		font-size: 24px;
+        top: 16px;
+        line-height: 1em;
+        font-size: 1.8rem;
+        color: #fff;
+
+        height: 40px;
+        width: 40px;
+
+        left: 0;
+            border-radius: 0 50% 50% 0;
+    padding: 7px 11px 7px 7px;
+        background: $red;
+        background: linear-gradient($red, $red2);
 	}
 }
 .collapser.expanded {
-	&:before {content:"\f106";}
+	&:before {
+      content:"\f106";
+      padding-top: 4px;}
 	}
 .collapser:not(.expanded) {
-	border-bottom: solid 1px #ccc;
+	//border-bottom: solid 1px #ccc;
 	padding-bottom: 20px;
 }
 .collapserContent {
 		display:none;
-		//margin-bottom: 50px;
+    padding-bottom: 20px;
 		//padding-top:$padding;
 		//p:first-of-type {padding-top:0;}
 }
@@ -551,7 +621,7 @@ footer {
 
 
 /* ------------ RESPONSE  - JUST Tablet */
-@media (max-width: $midBreak) and (min-width: $phoneBreak) {		
+@media (max-width: $midBreak) and (min-width: $phoneBreak) {
 //	#left, #right, #left2, #right2 {width: 50%;float: left;}
 
 
@@ -560,9 +630,19 @@ footer {
 
 /* ------------ RESPONSE  - Bigger than Phone */
 @media (min-width: $phoneBreak) {
-	.cImg { 
+  section {
+    margin: -1px 20px 0 35px;
+  padding: 20px 0 60px 35px;
+  }
+  nav li {
+    width: auto;
+  }
+  .cImg {
 		margin-top:0px;
 	}
+  h2 {
+    padding-left:70px;
+  }
 	.list {
 		&.split {
 			li {
@@ -573,27 +653,31 @@ footer {
 
 
 	#top {width: 100%;
-		*[id^='slides'] { 
+		*[id^='slides'] {
 			//display:inline-block;
 			width:60%;
 			float: left;
 			margin: 0 30px 0 0;
 		}
 	}
-	#center {width: 100%;max-width: $center;margin:0 auto;}
-	//#center {width: 100%;max-width: $center;float:left;}
+	#center {width: 100%;max-width: $center;margin:0 auto;clear:both;}
 	#left,#left2 {width: 100%;max-width: $secondary;float:left;border-right: solid 1px #ccc;}
-	#right,#right2 {width: 100%;max-width: $secondary;float:right;border-left: solid 1px #ccc;}
+	#right,#right2 {width: 100%;max-width: $secondary;float:right;}
 	#primary {width: 100%;max-width: $primary;display: inline-block;}
 	#secondary {width: 100%;max-width: $secondary;float:right;}
-	
+
 	//#center, #right, #left {clear:both;width:100%;max-width:800px;margin:0 auto;float:none;display:block;}
-	
+
 	.justTablet, .justMobile  {
 		+ .collapserContent {display:block;}
 	}
-
-
+  .collapser {
+      &:before {
+        left: 15px;
+        padding: 7px 11px;
+        border-radius: 50%;
+        }
+  }
 	.leftDesk {
 		width:50%;
 		float:left;
@@ -610,8 +694,23 @@ footer {
 		float:right;
 		padding: $padding/2 0 $padding/2 $padding;
 	}
-
+  footer {
+    margin: 0 auto;
+  }
 
 }
+
+/* ------------ RESPONSE  - Bigger than TABLET - hover styles too */
+@media (min-width: $midBreak) {
+  footer li a:hover {
+    background: linear-gradient($red2, $red);
+    text-decoration: none;
+    top: 1px;
+    position: relative;
+    }
+
+}
+
+
 
 @import 'stickman';

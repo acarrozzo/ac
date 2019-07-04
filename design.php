@@ -19,9 +19,9 @@
 				<img src="img/sb/sbchange/sbchange-3.jpg" width="420" height="700" alt="Steve & Barry's Change Marketing Campaign Poster 3"/>
 			</figure>
 			<h3>Change</h3>
-			<h4>Fall 2006 Campaign</h4>			
+			<h4>Fall 2006 Campaign</h4>
 			<p>Marketing campaign to make S&B appear more fashionable, modern and clean. I was part of the photoshoot and responsible for layout and typography.</p>
-		</section> 
+		</section>
 		<section>
 			<figure class="gal" data-pop>
 				<img src="img/sb/denimpanels/denimpanel_women.jpg" width="1000" height="500" alt="Steve & Barry's Denim Printed Panel"/>
@@ -60,9 +60,9 @@
 			<h3>Get out of the Cold</h3>
 			<h4>and into some more store visuals.</h4>
 
-		</section>		
-				
-		
+		</section>
+
+
 	</div>
 	<div class="collapser justTablet">
 		<h2>Celebrity Brands</h2>
@@ -109,13 +109,13 @@
 			<h3>dear™ by Amanda Bynes</h3>
 			<h4>2008 Visuals</h4>
 			<p>Celebrity Amanda Bynes exclusive clothing line. These store visuals were created in collaboration with an outside advertising agency.</p>
-			
+
 		</section>
 		<section>
 			<figure class="gal" data-pop>
 				<img src="img/sb/bigben/bigben-550.jpg" width="550" height="250" alt="Big Ben Wallace Print Design"/>
 			</figure>
-			
+
 			<figure class="right20 gal" data-pop>
 				<img src="img/sb/bigben/bigben1.jpg" width="388" height="600" alt="Big Ben Wallace Poster Design"/>
 			</figure>
@@ -152,7 +152,7 @@
 				<img src="img/sb/eleven-lb/eleven-lb-3.jpg" width="396" height="612" alt="Eleven by Venus Williams Sneaker Print"/>
 			</figure>
 		</section>
-		
+
 		<section>
 			<figure class="gal" data-pop>
 				<img src="img/nichart/NicHartPostcard-550.jpg" width="550" height="250" alt="Nicolette Hart Postcard Preview"/>
@@ -188,7 +188,7 @@
 	</div>
 
 	<div class="collapser">
-		<h2>Posters & Flyers</h2>
+		<h2>Posters, Flyers & Cards</h2>
 	</div>
 	<div class="collapserContent">
 		<section>
@@ -213,11 +213,25 @@
 			<figure class="left20 gal" data-pop>
 				<img src="img/camp/camplified_poster_2007.jpg" width="800" height="1236" alt="Camplified Poster Design 2007"/>
 			</figure>
-
-
 		</section>
-		
-		
+
+		<section>
+			<h3>Exotic Snakes</h3>
+			<h4>Business Card Design</h4>
+			<figure class="gal" data-pop>
+				<img src="img/es/esbizcard1.jpg" width="650" height="300" alt="Exotic Snakes Business Card Preview"/>
+			</figure>
+
+			<p>Man you don't know? My dad is big time in the snake biz. Here's the new card I made him.</p>
+			<figure class="gal left" data-pop>
+				<img src="img/es/esbizcard2010_r1.jpg" width="650" height="447" alt="Exotic Snakes Business Card - Step 1"/>
+			</figure>
+			<figure class="gal left" data-pop>
+				<img src="img/es/esbizcard2010_r2.jpg" width="650" height="447" alt="Exotic Snakes Business - Step 2"/>
+			</figure>
+		</section>
+
+
 		<section>
 			<figure class="leftDesk" data-pop>
 				<img src="img/fun/pokerposter.jpg" width="629" height="800" alt="Anthony Carrozzo No Limits Poker Poster Design"/>
@@ -267,7 +281,10 @@
 			<p>Tony the Tiger approves.</p>
 
 		</section>
-			
+
+
+
+
 		<section>
 			<figure class="leftDesk" data-pop>
 				<img src="img/mob/bb-bold.jpg" width="612" height="792" alt="BlackBerry Bold Device Flyer Design"/>
@@ -284,7 +301,7 @@
 			<h4>Parts Center</h4>
 			<p>Direct mail brochure sent to Toyota Part Centers.</p>
 		</section>
-		
+
 	</div>
 
 
@@ -319,7 +336,7 @@
 				<img src="img/logos/logo-inputwireless.jpg" width="1000" height="576" alt="Input Wireless Logo Design"/>
 				<figcaption>Input Wireless Logo</figcaption>
 			</figure>
-			
+
 			<figure class="leftDesk gal" data-pop>
 				<img src="img/logos/logo-touchofelegence.jpg" width="1000" height="576" alt="Touch of Elegance Event Planners Logo Design"/>
 				<figcaption>Touch of Elegance Logo</figcaption>
@@ -342,8 +359,8 @@
 	<div class="collapserContent">
 
 		<section>
-			
-			
+
+
 			<figure class="leftDesk gal" data-pop>
 				<img src="img/web/newsday_sports_superbowl_twitter.jpg" width="1080" height="700" alt="Newsday Sports Twitter Skin Graphic Design"/>
 			</figure>
@@ -426,8 +443,8 @@
 			<figure class="gal left33" data-pop>
 				<img src="img/web-sbportal/web-sbportal-7.jpg" width="941" height="647" alt="S&B Portal Web Design - Big Ben Wallace"/>
 			</figure>
-		</section>		
-		
+		</section>
+
 	</div>
 	<div class="collapser">
 		<h2>Custom Wallpapers</h2>
@@ -493,11 +510,11 @@
 			</figure>
 		</section>
 	</div>
-	
-	
-	
-	
-	
+
+
+
+
+
 	<div class="collapser">
 		<h2>Illustration</h2>
 	</div>
@@ -507,25 +524,25 @@
 				<img src="img/illustration/mask_3.jpg" width="1584" height="1000" alt="Mask cartoon illustration drawing book cover"/>
 			</figure>
 			<h3>Mask</h3>
-			<h4>Illustration</h4>	
+			<h4>Illustration</h4>
 			<p>Check it out, we have a bunch of imposters. A ninja (turtle), a ghost, Batman and Jason Vhorhes. </p>
 		</section>
-		<section>			
+		<section>
 			<figure class="leftDesk" data-pop>
 				<img src="img/illustration/camera_3.jpg" width="1200" height="748" alt="sony digital camera illustration drawing"/>
 			</figure>
 			<h3>Digital Camera</h3>
-			<h4>Illustration</h4>	
+			<h4>Illustration</h4>
 			<p>Detailed rendering of what used to be a top of line 3.2 Megapixel camera.</p>
 		</section>
 		<section>
-			
+
 			<figure class="gal leftDesk" data-pop>
 				<img src="img/illustration/veronica-detail.jpg" width="900" height="600" alt="veronica illustration drawing close up zoom in detail"/>
 			</figure>
-			
+
 			<h3>Veronica</h3>
-			<h4>Senior Project</h4>	
+			<h4>Senior Project</h4>
 			<p>For my Senior Project I went with a 1950's diner theme and illustrated a life size waitress on rollerskates. I worked at Poly at the time so had the sweet hook up for the huge print. Mounted it to some cardboard and put some burgers on a tray and everyone was happy. </p>
 			<figure class="clear gal left33" data-pop>
 				<img src="img/illustration/veronica-photo1.jpg" width="800" height="600" alt="veronica print big printer anthony carrozzo large format"/>
@@ -533,14 +550,14 @@
 			<figure class="gal left20" data-pop>
 				<img src="img/illustration/veronica-photo2.jpg" width="488" height="565" alt="veronica display presentation design print"/>
 			</figure>
-			
+
 		</section>
 	</div>
-	
-	
-	
-	
-	
+
+
+
+
+
 </div>
 <?php include 'inc/bottom.php'; ?>
 <!----- ALL BOTTOM ---->
