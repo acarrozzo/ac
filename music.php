@@ -224,7 +224,7 @@
 			<p>Banned from the Zoo was a 5-member rock band from New York. We performed many shows between 2010 and 2015, mostly in the city, and recorded and released a 4 song demo. You can hear us on spotify and view us on YouTube.</p>
 			<ul class="list">
 				<li><a href="https://www.youtube.com/user/BFTZlive/videos" target="_blank">BFTZ Videos </a></li>
-				<li><a href="/bftz" target="_blank">BFTZ Site</a></li>
+				<li><a href="/bftz/index.html" target="_blank">BFTZ Site</a></li>
 
 			</ul>
 		</section>

@@ -12,7 +12,7 @@
 		<figure class="" data-pop>
 			<img src="img/monsterparty/monster-party-cards-teaser1.jpg" width="1000" height="563" alt="Monster Party Playing Cards - 3 cards"/>
 		</figure>
-				<p><a class="btn big" href="/archimedes">Monster Party Sign Up<i class="fa fa-angle-right"></i></a></p>
+				<p><a class="btn big" href="/archimedes/index.html">Monster Party Sign Up<i class="fa fa-angle-right"></i></a></p>
 		</section>
 	</div>
 

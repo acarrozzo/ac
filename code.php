@@ -1,38 +1,7 @@
 <?php include 'inc/top.php'; ?>
 
 <div id="center">
-<div class="collapser">
-		<h2>AC Collapser</h2>
-	</div>
-	<div class="collapserContent">
-		<section>
-			<p>On every page I am using a custom function to help manage all my content in collapsable columns. You simply click the top headline or arrow and it will display/hide the content within. You can use it on your page if you like, here is the code. </p>
-			<h5>HTML:</h5>
-			<p>Two divs with the following classes:</p>
-			<pre>
-<code>&lt;div class=&quot;collapser&quot;&gt;<br/>	&lt;h2&gt;AC Collapser&lt;/h2&gt;<br/>&lt;/div&gt;<br/>&lt;div class=&quot;collapserContent&quot;&gt;<br/>	&lt;p&gt;Content goes here. &lt;/p&gt;<br/>&lt;/div&gt;</code>
-</pre>
 
-			<h5>JS:</h5>
-			<p> Make sure you have jquery on your page.</p>
-			<pre>
-<code>$(&quot;.collapser&quot;).on(&quot;click&quot;, function () {<br/>	if ($(this).is('.expanded')) {<br/>		$(this).next('.collapserContent').slideUp();<br/>	} <br/>	else {<br/>		$(this).next('.collapserContent').slideDown();<br/>	}<br/>	$(this).toggleClass(&quot;expanded&quot;);<br/>});</code>
-</pre>
-
-
-			<h5>CSS:</h5>
-			<p> The content is hidden by default. the JS makes it visible. I am also using font awesome for the arrows.</p>
-			<pre>
-<code>.collapser {<br/> overflow: hidden;<br/> position: relative;<br/> cursor: pointer; <br/>}<br/>.collapser:before {<br/> content: &quot;\f107&quot;;<br/> font-family: FontAwesome;<br/> position: absolute;<br/> color: #DC6B64;<br/> right: 20px;<br/> top: 20px;<br/> line-height: 1em;<br/> font-size: 24px; <br/>}<br/>.collapser.expanded:before {<br/> content: &quot;\f106&quot;;<br/>}<br/>.collapserContent {<br/> display: none;<br/>}</code>
-</pre>
-
-<p> HTML markup puts content on the page. </p><p>CSS gives it style. </p><p>JS gives actions.</p>
-
-
-		</section>
-
-
-	</div>
 
 
 
@@ -45,6 +14,37 @@
 			<p>Stickman was a project I gave myself to mess around with css transitions. Click some buttons. All animation you see is powered by css. I simply use jquery to swap a class on the top level div and style handles the rest. I eventually want to use something like this to display characters in Light Gray RPG.</p>
 		</section>
 	</div>
+
+	<div class="collapser">
+			<h2>AC Collapser</h2>
+		</div>
+		<div class="collapserContent">
+			<section>
+				<p>On every page I am using a custom function to help manage all my content in collapsable columns. You simply click the top headline or arrow and it will display/hide the content within. You can use it on your page if you like, here is the code. </p>
+				<h5>HTML:</h5>
+				<p>Two divs with the following classes:</p>
+				<pre><code>&lt;div class=&quot;collapser&quot;&gt;<br/>	&lt;h2&gt;AC Collapser&lt;/h2&gt;<br/>&lt;/div&gt;<br/>&lt;div class=&quot;collapserContent&quot;&gt;<br/>	&lt;p&gt;Content goes here. &lt;/p&gt;<br/>&lt;/div&gt;</code>
+	</pre>
+
+				<h5>JS:</h5>
+				<p> Make sure you have jquery on your page.</p>
+				<pre><code>$(&quot;.collapser&quot;).on(&quot;click&quot;, function () {<br/>	if ($(this).is('.expanded')) {<br/>		$(this).next('.collapserContent').slideUp();<br/>	} <br/>	else {<br/>		$(this).next('.collapserContent').slideDown();<br/>	}<br/>	$(this).toggleClass(&quot;expanded&quot;);<br/>});</code>
+	</pre>
+
+
+				<h5>CSS:</h5>
+				<p> The content is hidden by default. the JS makes it visible. I am also using font awesome for the arrows.</p>
+				<pre><code>.collapser {<br/> overflow: hidden;<br/> position: relative;<br/> cursor: pointer; <br/>}<br/>.collapser:before {<br/> content: &quot;\f107&quot;;<br/> font-family: FontAwesome;<br/> position: absolute;<br/> color: #DC6B64;<br/> right: 20px;<br/> top: 20px;<br/> line-height: 1em;<br/> font-size: 24px; <br/>}<br/>.collapser.expanded:before {<br/> content: &quot;\f106&quot;;<br/>}<br/>.collapserContent {<br/> display: none;<br/>}</code>
+	</pre>
+
+	<p> HTML markup puts content on the page. </p><p>CSS gives it style. </p><p>JS gives actions.</p>
+
+
+			</section>
+
+
+		</div>
+
 	<div class="collapser justMobile">
 		<h2>AC Pop</h2>
 	</div>
