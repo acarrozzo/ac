@@ -215,7 +215,7 @@
 				</p>
 				<hr>
 					<figure data-pop class="right">
-						<img src="https://static1.squarespace.com/static/55b7b830e4b0b7d7db7042f8/55cb7d03e4b0084e157f5ccb/55e8855ae4b09880734e1e67/1441301853689/Megan_.jpg?format=2500w" width="1920" height="1080" alt="JLM video and photo"/>
+						<img src="/img/photo/friends/jlm-photo.jpg" width="1024" height="717" alt="JLM video and photo"/>
 				</figure>
 				<p><a href="http://www.jlmvideos.com/" target="_blank">JLM Videos / Photo</a>
 				</p>
