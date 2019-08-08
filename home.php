@@ -8,7 +8,7 @@
 			<span class="cImg">
 				<img src="img/intro/anthony-carrozzo-square1bw.jpg" width="360" height="360" alt="Anthony Carrozzo"/>
 			</span>
-			<p>I have been working as a designer for over 10 years now at a handful of equally amazing places. I am currently the lead designer and front-end developer at Newsday where I specialize in UI & UX for all their digital stuffs.</p>
+			<p>What's up people. My name is Anthony and I have been working as a designer for over a decade now at a handful of equally amazing places. I am currently the lead designer and front-end developer at Newsday where I specialize in UI & UX for all their digital stuffs.</p>
 			<p> I have past experience in retail marketing, brand identity, music production & photography. And I always have a whole mess of other creative projects in the works.</p>
 			<h5>Skills that pay the bills:</h5>
 			<p>UI, UX, SEO, HTML, SCSS, JS, PHP, Photoshop, Illustrator, InDesign, After Effects, Wordpress, Github, all that good stuff.</p>
@@ -33,6 +33,25 @@
 				<img src="img/monsterparty/monster-party-cards-teaser1.jpg" width="1000" height="563" alt="Monster Party Playing Cards - 3 cards"/>
 			</figure>
 				<p><a class="btn big" href="/archimedes/index.html">Monster Party<i class="fa fa-angle-right"></i></a></p>
+		</section>
+
+
+		<!--- DRIFT ----->
+		<section>
+			<h3>Drift</h3>
+			<h4>The Album</h4>
+			<figure class="right50 gal" data-pop>
+			<img src="img/music/art/drift_album_art.jpg" width="800" height="800" alt="Drift Album Art - Strange Sounds for Strange Times - Anthony Carrozzo music">
+			</figure>
+			<p class="">My third instrumental album is available on
+				<a href="https://open.spotify.com/artist/7zvD650rgpU4CLOLzZlEan" target="_blank">Spotify</a>,
+				<a href="https://itunes.apple.com/us/artist/strange-sounds-for-strange-times/1369233894" target="_blank">iTunes</a>, and
+				<a href="https://www.amazon.com/s?k=%22Strange+Sounds+for+Strange+Times%22&i=digital-music&ref=nb_sb_noss" target="_blank">Amazon</a>, as well as a bunch of other places. Or you can give a listen right here. Enjoy these strange sounds in these strange times.
+			</p>
+
+			<iframe class="" src="https://open.spotify.com/embed/album/4jQO9Oi8tdWgxB0XoSTrkV" width="100%" height="320px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+				<p><a class="btn big" href="music.php">All music<i class="fa fa-angle-right"></i></a></p>
 		</section>
 
 
