@@ -1,0 +1,312 @@
+/* ACARROZZO 2018 STYLES */
+
+$red:#ef404a; // bright red
+$red2:#c41520;
+
+$blue:#00aeef;
+$blue2:#006cb3;
+
+$green:#70bf54;
+$green2:#079c42;
+
+$yellow:#ffc20e;
+$yellow2:#dc661e;
+
+$purple:#a880b9;
+$purple2:#5e3b91;
+$gray:#999;
+
+.red {color:$red;}
+.blue {color:$blue;}
+.green {color:$green;}
+.yellow {color:$yellow;}
+.purple {color:$purple;}
+.gray {color:$gray;}
+
+.redBG {background:$red;}
+.blueBG {background:$blue;}
+.greenBG {background:$green;}
+.yellowBG {background:$yellow;}
+.purpleBG {background:$purple;}
+.grayBG {background:$gray;}
+
+
+$mainWidth:1000px;
+$phoneBreak:500px;
+$midBreak:800px;
+$padding:20px;
+$center:800px;
+//$left:25%;
+$primary:65%;
+$secondary:35%;
+
+@mixin transition($prop, $secs) {
+    -webkit-transition: $prop $secs ease-in-out;
+    -moz-transition: $prop $secs ease-in-out;
+    -o-transition: $prop $secs ease-in-out;
+    transition: $prop $secs ease-in-out;
+} //    @include transition(all, .5s);
+
+
+@mixin rotate($deg) {
+		-webkit-transform: rotate($deg);
+		-moz-transform: rotate($deg);
+		-o-transform: rotate($deg);
+		transform: rotate($deg);
+} //    @include rotate(90deg);
+
+
+
+@mixin vertical-align($position: relative) {
+    position: $position;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+//    @include vertical-align(absolute);
+
+XXX* { // TEMPORARY TRANSITION ALL
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+// --- ANIMATION FADE IN - MIXIN
+.animated {
+   -webkit-animation-duration: 1s;
+   animation-duration: 1s;
+   -webkit-animation-fill-mode: both;
+   animation-fill-mode: both;
+}
+@-webkit-keyframes fadeIn {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+}
+@keyframes fadeIn {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+}
+.fadeIn {
+   -webkit-animation-name: fadeIn;
+   animation-name: fadeIn;
+}
+
+
+/* ----- MAIN ----- */
+html {line-height: 1em; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: 'Baloo', cursive;
+margin: 0; background: #f7f7f7;color: #000;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+body {
+  font-family: "Lato", sans-serif;
+  font-size:16px;margin: 0;
+    padding: 0;
+    border: 0;
+        -webkit-font-smoothing: antialiased;
+  }
+  *, :after, :before {
+      box-sizing: border-box;
+  }
+
+main {width: 100%;max-width: $mainWidth;margin: 0 auto;}
+a {color:$red;text-decoration:none;line-height: 1.4em;}
+a:hover {text-decoration:underline;}
+img { width: 100%; height: auto; }
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+h1,h2,h3,h4,h5,h6,p,strong,span, .font, input {
+/*  font-family: 'Fredoka One', cursive;
+font-family: 'Bangers', cursive;
+font-family: 'Lalezar', cursive;
+font-family: 'Changa One', cursive;
+font-family: 'Chicle', cursive;*/
+font-family: 'Baloo', sans-serif;
+}
+h1 {
+  font-size: 0px;
+  padding: 22px 0;
+  max-width: 140px;
+  margin: 0 auto;
+}
+img {width:100%;}
+header {
+  background: url(../img/mp-signup-img2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  background-color: #000;
+  min-height: 100vh;
+  padding: 0 22px 50px;
+
+}
+
+.top {
+  width:100%;max-width: 1000px;margin:0 auto;
+      text-shadow: #000 0px 0px 10px, #000 0px 0px 20px, #000 0px 0px 5px;
+  h2 {
+    font-size: 2.2rem;
+        display: block;
+        color: #fff;
+        line-height: 1em;
+        padding: 0;
+        margin: 0 0 12px;
+  }
+ p {
+   font-size: 1.2rem;
+   display: block;
+   color: #fff;
+   line-height: 1em;
+   width: 60vw;
+   margin: 0 0 12px;
+   max-width: 460px;
+   &.small {
+       font-size: 0.9rem;
+       max-width: 310px;
+           color: #aaa;
+           i {font-size: 1rem;}
+   }
+  }
+  h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 42px 0 8px;
+  }
+  strong {
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 42px 0 8px;
+  }
+}
+.mid {
+  max-width:800px;
+  margin:0 auto 50px;
+  text-align: center;
+  img {width:100%;}
+  span {    font-size: 1.2rem;
+    padding: 12px 0;
+    display: block;}
+  strong{font-size:1.8rem;display:block;}
+  p {    font-size: 1rem;
+    line-height: 1.2em;
+    max-width: 500px;
+    margin: 12px auto 0;
+    padding: 0 22px;
+  }
+
+}
+label {
+    display: block;
+    font-size: 16px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+
+footer {
+  background:#000;text-align: center;
+  padding:22px 22px 50px;
+  a {color:#fff;}
+  .links {margin:12px 0;}
+  .fa {   color:#fff; font-size: 2rem;
+    padding: 6px 12px;
+      &:hover {
+        color: #ffc20e;
+        color: -moz-linear-gradient(top,  #ffc20e 0%, #dc661e 100%);
+        color: -webkit-linear-gradient(top,  #ffc20e 0%,#dc661e 100%);
+        color: linear-gradient(to bottom,  #ffc20e 0%,#dc661e 100%);
+      }
+    }
+}
+
+
+
+/* MailChimp Form Embed Code - Slim - 12/15/2015 v10.7 */
+#mc_embed_signup h2cc {font-weight:bold; padding:0; margin:15px 0; font-size:1.4em;}
+#mc_embed_signup input {border:0; -webkit-appearance:none;}
+#mc_embed_signup input[type=checkbox]{-webkit-appearance:checkbox;}
+#mc_embed_signup input[type=radio]{-webkit-appearance:radio;}
+#mc_embed_signup .button {
+
+  background: #ffc20e;
+  background: -moz-linear-gradient(top,  #ffc20e 0%, #dc661e 100%);
+  background: -webkit-linear-gradient(top,  #ffc20e 0%,#dc661e 100%);
+  background: linear-gradient(to bottom,  #ffc20e 0%,#dc661e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc20e', endColorstr='#dc661e',GradientType=0 );
+    border: 0;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+        color: #000;
+    cursor: pointer;
+    display: block;
+    font-size: 1rem;
+    min-height: 32px;
+    line-height: 32px;
+    margin: 0 5px 10px 0;
+    padding: 5px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+#mc_embed_signup .button:hover {
+  background: #dc661e;
+  background: -moz-linear-gradient(top,  #dc661e 0%, #ffc20e 100%);
+  background: -webkit-linear-gradient(top,  #dc661e 0%,#ffc20e 100%);
+  background: linear-gradient(to bottom,  #dc661e 0%,#ffc20e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc661e', endColorstr='#ffc20e',GradientType=0 );
+}
+#mc_embed_signup .small-meta {font-size: 11px;}
+#mc_embed_signup .nowrap {white-space:nowrap;}
+#mc_embed_signup .clear {clear:none;display:inline;}
+
+#mc_embed_signup input.email {    font-size: 1.2rem;
+    padding: 8px 20px;
+    margin: 0 0 12px;
+    width: 40%;
+    min-width: 150px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+}
+
+#mc_embed_signup div#mce-responses {float:left; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%;margin: 0 5%; clear: both;}
+#mc_embed_signup div.response {margin:1em 0; padding:1em .5em .5em 0; font-weight:bold; float:left; top:-1.5em; z-index:1; width:80%;}
+#mc_embed_signup #mce-error-response {display:none;}
+#mc_embed_signup #mce-success-response {color:$green; display:none;}
+#mc_embed_signup label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}
+/* ------------ RESPONSE  - JUST Tablet */
+@media (max-width: $midBreak) and (min-width: $phoneBreak) {
+
+
+}
+
+
+/* ------------ RESPONSE  - Bigger than Phone */
+@media (min-width: 680px) {
+  header {
+    background: url(../img/mp-signup-img.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #000;
+    min-height: 640px;
+    padding:0 22px;
+  }
+  .top {
+      h2
+    {
+      font-size:2.6rem;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+  }
+}

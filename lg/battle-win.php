@@ -3330,7 +3330,8 @@ $results = $link->query("UPDATE $user SET currency = currency + $currencyadd");
             $bonus = '+ Pearl of Wisdom! [RARE ARTIFACT]<br> ';
             $results = $link->query("UPDATE $user SET pearlofwisdom = pearlofwisdom + 1");
         } else {
-            $bonus = '';
+            $bonus = '+ 20 Purple Balm<br> ';
+            $results = $link->query("UPDATE $user SET purplebalm = purplebalm + 20");
         }
 
         echo $message="<div class='battlewin'><h3>You have defeated $the <span>$enemy!</span></h3>
@@ -4127,15 +4128,406 @@ $results = $link->query("UPDATE $user SET currency = currency + $currencyadd");
 
 
 
+
+
+
+
+
+
+
+    // --------------------------------------------------------------  mithril Rat
+    if ($enemy =='Mithril Rat') {
+        $exp = 500;
+        $currencyadd = rand(50, 100);
+        $rand=rand(1, 4);
+        $KLname= 'KLmithrilrat';
+        if ($rand == 1) {
+            $bonus = '+ 1 Mithril<br> ';
+            $results = $link->query("UPDATE $user SET mithril = mithril + 1");
+        }
+        if ($rand == 2) {
+            $qty = rand(3, 5);
+            $bonus = '+ '.$qty.' Coal<br> ';
+            $results = $link->query("UPDATE $user SET coal = coal + $qty");
+        }
+        if ($rand == 3) {
+            $qty = rand(2, 3);
+            $bonus = '+ '.$qty.' Red Balms<br> ';
+            $results = $link->query("UPDATE $user SET redbalm = redbalm + $qty");
+        }
+        if ($rand == 4) {
+            $rand2 = rand(1, 4);
+            if ($rand2 == 1) {
+                $bonus = '+ Ring of Strength VII<br> ';
+                $results = $link->query("UPDATE $user SET ringofstrengthVII = ringofstrengthVII + 1");
+            }
+            if ($rand2 == 2) {
+                $bonus = '+ Ring of Dexterity VII<br> ';
+                $results = $link->query("UPDATE $user SET ringofdexterityVII = ringofdexterityVII + 1");
+            }
+            if ($rand2 == 3) {
+                $bonus = '+ Ring of Magic VII<br> ';
+                $results = $link->query("UPDATE $user SET ringofmagicVII = ringofmagicVII + 1");
+            }
+            if ($rand2 == 4) {
+                $bonus = '+ Ring of Defense VII<br> ';
+                $results = $link->query("UPDATE $user SET ringofdefenseVII = ringofdefenseVII + 1");
+            }
+        }
+        echo $message="<div class='battlewin'><h3>You have defeated $the <span>$enemy!</span></h3>
+            + $exp xp<br>
+            + $currencyadd $currency<br/>
+            $bonus</div>";
+        include('update_feed_alt.php'); // --- update feed
+            $results = $link->query("UPDATE $user SET xp = xp + $exp"); // xp
+            $results = $link->query("UPDATE $user SET currency = currency + $currencyadd");
+        $results = $link->query("UPDATE $user SET $KLname = $KLname + 1");
+    }
+
+
+    // --------------------------------------------------------------  mithril Crab
+    if ($enemy =='Mithril Crab') {
+        $exp = 500;
+        $currencyadd = rand(50, 100);
+        $rand=rand(1, 4);
+        $KLname= 'KLmithrilcrab';
+        if ($rand == 1) {
+            $bonus = '+ 1 Mithril<br> ';
+            $results = $link->query("UPDATE $user SET mithril = mithril + 1");
+        }
+        if ($rand == 2) {
+            $qty = rand(3, 5);
+            $bonus = '+ '.$qty.' Coal<br> ';
+            $results = $link->query("UPDATE $user SET coal = coal + $qty");
+        }
+        if ($rand == 3) {
+            $qty = rand(2, 3);
+            $bonus = '+ '.$qty.' Yellows<br> ';
+            $results = $link->query("UPDATE $user SET yellows = yellows + $qty");
+        }
+        if ($rand == 4) {
+            $rand2 = rand(1, 4);
+            if ($rand2 == 1) {
+                $bonus = '+ Ring of Strength VII<br> ';
+                $results = $link->query("UPDATE $user SET ringofstrengthVII = ringofstrengthVII + 1");
+            }
+            if ($rand2 == 2) {
+                $bonus = '+ Ring of Dexterity VII<br> ';
+                $results = $link->query("UPDATE $user SET ringofdexterityVII = ringofdexterityVII + 1");
+            }
+            if ($rand2 == 3) {
+                $bonus = '+ Ring of Magic VII<br> ';
+                $results = $link->query("UPDATE $user SET ringofmagicVII = ringofmagicVII + 1");
+            }
+            if ($rand2 == 4) {
+                $bonus = '+ Ring of Defense VII<br> ';
+                $results = $link->query("UPDATE $user SET ringofdefenseVII = ringofdefenseVII + 1");
+            }
+        }
+        echo $message="<div class='battlewin'><h3>You have defeated $the <span>$enemy!</span></h3>
+            + $exp xp<br>
+            + $currencyadd $currency<br/>
+            $bonus</div>";
+        include('update_feed_alt.php'); // --- update feed
+            $results = $link->query("UPDATE $user SET xp = xp + $exp"); // xp
+            $results = $link->query("UPDATE $user SET currency = currency + $currencyadd");
+        $results = $link->query("UPDATE $user SET $KLname = $KLname + 1");
+    }
+
+
+    // --------------------------------------------------------------  mithril Scorpion
+    if ($enemy =='Mithril Scorpion') {
+        $exp = 600;
+        $currencyadd = rand(100, 200);
+        $rand=rand(1, 4);
+        $KLname= 'KLmithrilscorpion';
+        if ($rand == 1) {
+            $qty = rand(2, 3);
+            $bonus = '+ '.$qty.' Blues<br> ';
+            $results = $link->query("UPDATE $user SET blues = blues + $qty");
+        }
+        if ($rand == 2) {
+            $qty = rand(2, 3);
+            $bonus = '+ '.$qty.' Blue Balms<br> ';
+            $results = $link->query("UPDATE $user SET bluebalm = bluebalm + $qty");
+        }
+        if ($rand == 3) {
+            $qty = rand(2, 3);
+            $bonus = '+ '.$qty.' Red Balms<br> ';
+            $results = $link->query("UPDATE $user SET redbalm = redbalm + $qty");
+        }
+        if ($rand == 4) {
+            $rand2 = rand(1, 4);
+            if ($rand2 == 1) {
+                $bonus = '+ Ring of Strength VII<br> ';
+                $results = $link->query("UPDATE $user SET ringofstrengthVII = ringofstrengthVII + 1");
+            }
+            if ($rand2 == 2) {
+                $bonus = '+ Ring of Dexterity VII<br> ';
+                $results = $link->query("UPDATE $user SET ringofdexterityVII = ringofdexterityVII + 1");
+            }
+            if ($rand2 == 3) {
+                $bonus = '+ Ring of Magic VII<br> ';
+                $results = $link->query("UPDATE $user SET ringofmagicVII = ringofmagicVII + 1");
+            }
+            if ($rand2 == 4) {
+                $bonus = '+ Ring of Defense VII<br> ';
+                $results = $link->query("UPDATE $user SET ringofdefenseVII = ringofdefenseVII + 1");
+            }
+        }
+        echo $message="<div class='battlewin'><h3>You have defeated $the <span>$enemy!</span></h3>
+            + $exp xp<br>
+            + $currencyadd $currency<br/>
+            $bonus</div>";
+        include('update_feed_alt.php'); // --- update feed
+            $results = $link->query("UPDATE $user SET xp = xp + $exp"); // xp
+            $results = $link->query("UPDATE $user SET currency = currency + $currencyadd");
+        $results = $link->query("UPDATE $user SET $KLname = $KLname + 1");
+    }
+    // --------------------------------------------------------------  Griffin
+    if ($enemy =='Griffin') {
+        $exp = 1500;
+        $currencyadd = rand(100, 500);
+        $rand=rand(1, 4);
+        $KLname= 'KLgriffin';
+        if ($rand == 1) {
+            $bonus = '+ Ring of Defense XX<br> ';
+            $results = $link->query("UPDATE $user SET ringofdefenseXX = ringofdefenseXX + 1");
+        }
+        if ($rand == 2) {
+            $bonus = '+ Mithril Boomerang<br> ';
+            $results = $link->query("UPDATE $user SET mithrilboomerang = mithrilboomerang + 1");
+        }
+        if ($rand == 3) {
+            $bonus = '+ Ranger Amulet<br> ';
+            $results = $link->query("UPDATE $user SET rangeramulet = rangeramulet + 1");
+        }
+        if ($rand == 4) {
+            $bonus = '+ Vambraces<br>';
+            $results = $link->query("UPDATE $user SET vambraces = vambraces + 1");
+        }
+        echo $message="<div class='battlewin'><h3>You have defeated $the <span>$enemy!</span></h3>
+        + $exp xp<br>
+        + $currencyadd $currency<br/>
+        $bonus</div>";
+        include('update_feed_alt.php'); // --- update feed
+        $results = $link->query("UPDATE $user SET xp = xp + $exp"); // xp
+        $results = $link->query("UPDATE $user SET currency = currency + $currencyadd");
+        $results = $link->query("UPDATE $user SET $KLname = $KLname + 1");
+    }
+
+    // --------------------------------------------------------------  Blue Frog
+    if ($enemy =='Blue Frog') {
+        $exp = 800;
+        $currencyadd = rand(50, 100);
+        $rand=rand(1, 2); /// 50 / 50
+        $KLname= 'KLbluefrog';
+        if ($rand == 1) {
+            $qty = rand(5, 10);
+            $bonus = '+ '.$qty.' Blue Balms<br> ';
+            $results = $link->query("UPDATE $user SET bluebalm = bluebalm + $qty");
+        }
+        if ($rand == 2) {
+            $qty = rand(5, 10);
+            $bonus = '+ '.$qty.' Red Balms<br> ';
+            $results = $link->query("UPDATE $user SET redbalm = redbalm + $qty");
+        }
+        echo $message="<div class='battlewin'><h3>You have defeated $the <span>$enemy!</span></h3>
+        + $exp xp<br>
+        + $currencyadd $currency<br/>
+        $bonus</div>";
+        include('update_feed_alt.php'); // --- update feed
+        $results = $link->query("UPDATE $user SET xp = xp + $exp"); // xp
+        $results = $link->query("UPDATE $user SET currency = currency + $currencyadd");
+        $results = $link->query("UPDATE $user SET $KLname = $KLname + 1");
+    }
+
+
+    // --------------------------------------------------------------  mithril Gator
+    if ($enemy =='Mithril Gator') {
+        $exp = 1000;
+        $currencyadd = rand(100, 200);
+        $rand=rand(1, 4);
+        $KLname= 'KLmithrilgator';
+        if ($rand == 1) {
+            $bonus = '+ Mithril Hammer<br> ';
+            $results = $link->query("UPDATE $user SET mithrilhammer = mithrilhammer + 1");
+        }
+        if ($rand == 2) {
+            $bonus = '+ 30 Leather<br> ';
+            $results = $link->query("UPDATE $user SET leather = leather + 30");
+        }
+        if ($rand == 3) {
+            $qty = rand(30, 50);
+            $bonus = '+ '.$qty.' Raw Meat<br> ';
+            $results = $link->query("UPDATE $user SET rawmeat = rawmeat + $qty");
+        }
+        if ($rand == 4) {
+            $bonus = '+ Ring of Defense XX<br>';
+            $results = $link->query("UPDATE $user SET ringofdefenseXX = ringofdefenseXX + 1");
+        }
+        echo $message="<div class='battlewin'><h3>You have defeated $the <span>$enemy!</span></h3>
+    + $exp xp<br>
+    + $currencyadd $currency<br/>
+    $bonus</div>";
+        include('update_feed_alt.php'); // --- update feed
+    $results = $link->query("UPDATE $user SET xp = xp + $exp"); // xp
+    $results = $link->query("UPDATE $user SET currency = currency + $currencyadd");
+        $results = $link->query("UPDATE $user SET $KLname = $KLname + 1");
+    }
+    // --------------------------------------------------------------  mithril Golem
+    if ($enemy =='Mithril Golem') {
+        $exp = 1800;
+        $currencyadd = rand(100, 200);
+        $rand=rand(1, 4);
+        $KLname= 'KLmithrilgolem';
+        $alwaysbonus = '+ Mithril Pickaxe<br>';
+        $results = $link->query("UPDATE $user SET mithrilpickaxe = mithrilpickaxe + 1");
+        if ($rand == 1) {
+            $qty = rand(2, 5);
+            $bonus = '+ '.$qty.' Mithril<br>';
+            $results = $link->query("UPDATE $user SET mithril = mithril + $qty");
+        }
+        if ($rand == 2) {
+            $bonus = '+ 1 Silver<br>';
+            $results = $link->query("UPDATE $user SET silver = silver + 1");
+        }
+        if ($rand == 3) {
+            $qty = rand(5, 15);
+            $bonus = '+ '.$qty.' Coal<br>';
+            $results = $link->query("UPDATE $user SET coal = coal + $qty");
+        }
+        if ($rand == 4) {
+            $bonus = '+ Ring of Dexterity XIII<br>';
+            $results = $link->query("UPDATE $user SET ringofdexterityXIII = ringofdexterityXIII + 1");
+        }
+        echo $message="<div class='battlewin'><h3>You have defeated $the <span>$enemy!</span></h3>
+    + $exp xp<br>
+    + $currencyadd $currency<br/>
+    $alwaysbonus$bonus</div>";
+        include('update_feed_alt.php'); // --- update feed
+    $results = $link->query("UPDATE $user SET xp = xp + $exp"); // xp
+    $results = $link->query("UPDATE $user SET currency = currency + $currencyadd");
+        $results = $link->query("UPDATE $user SET $KLname = $KLname + 1");
+    }
+
+    // --------------------------------------------------------------  Minotaur
+    if ($enemy =='Minotaur') {
+        $exp = 2000;
+        $currencyadd = rand(500, 1000);
+        $rand=rand(1, 4);
+        $KLname= 'KLminotaur';
+        if ($rand == 1) {
+            $bonus = '+ Mithril Cape<br> ';
+            $results = $link->query("UPDATE $user SET mithrilcape = mithrilcape + 1");
+        }
+        if ($rand == 2) {
+            $bonus = '+ Mithril Ring<br> ';
+            $results = $link->query("UPDATE $user SET mithrilring = mithrilring + 1");
+        }
+        if ($rand == 3) {
+            $bonus = '+ Mithril Necklace<br> ';
+            $results = $link->query("UPDATE $user SET mithrilnecklace = mithrilnecklace + 1");
+        }
+        if ($rand == 4) {
+            $bonus = '+ Gargantuan Warhammer<br>';
+            $results = $link->query("UPDATE $user SET gargantuanwarhammer = gargantuanwarhammer + 1");
+        }
+        echo $message="<div class='battlewin'><h3>You have defeated $the <span>$enemy!</span></h3>
++ $exp xp<br>
++ $currencyadd $currency<br/>
+$bonus</div>";
+        include('update_feed_alt.php'); // --- update feed
+$results = $link->query("UPDATE $user SET xp = xp + $exp"); // xp
+$results = $link->query("UPDATE $user SET currency = currency + $currencyadd");
+        $results = $link->query("UPDATE $user SET $KLname = $KLname + 1");
+    }
+    // --------------------------------------------------------------  Cosmic Mage
+    if ($enemy =='Cosmic Mage') {
+        $exp = 4000;
+        $currencyadd = rand(5000, 10000);
+        $rand=rand(1, 4);
+        $KLname= 'KLcosmicmage';
+        if ($rand == 1) {
+            $bonus = '+ Silk Moccasins<br> ';
+            $results = $link->query("UPDATE $user SET silkmoccasins = silkmoccasins + 1");
+        }
+        if ($rand == 2) {
+            $bonus = '+ Ring of the Maji<br> ';
+            $results = $link->query("UPDATE $user SET ringofthemaji = ringofthemaji + 1");
+        }
+        if ($rand == 3) {
+            $bonus = '+ Neutron Staff<br> ';
+            $results = $link->query("UPDATE $user SET neutronstaff = neutronstaff + 1");
+        }
+        if ($rand == 4) {
+            $bonus = '+ Galaxy Bow<br>';
+            $results = $link->query("UPDATE $user SET galaxybow = galaxybow + 1");
+        }
+        echo $message="<div class='battlewin'><h3>You have defeated $the <span>$enemy!</span></h3>
++ $exp xp<br>
++ $currencyadd $currency<br/>
+$bonus</div>";
+        include('update_feed_alt.php'); // --- update feed
+$results = $link->query("UPDATE $user SET xp = xp + $exp"); // xp
+$results = $link->query("UPDATE $user SET currency = currency + $currencyadd");
+        $results = $link->query("UPDATE $user SET $KLname = $KLname + 1");
+    }
+    // --------------------------------------------------------------  Carbon Beast
+    if ($enemy =='Carbon Beast') {
+        $exp = 4000;
+        $currencyadd = rand(5000, 10000);
+        $rand=rand(1, 4);
+        $KLname= 'KLcarbonbeast';
+        if ($rand == 1) {
+            $bonus = '+ Heater Shield<br> ';
+            $results = $link->query("UPDATE $user SET heatershield = heatershield + 1");
+        }
+        if ($rand == 2) {
+            $bonus = '+ Mithril Nunchaku<br> ';
+            $results = $link->query("UPDATE $user SET mithrilnunchaku = mithrilnunchaku + 1");
+        }
+        if ($rand == 3) {
+            $bonus = '+ Mithril Chakram<br> ';
+            $results = $link->query("UPDATE $user SET mithrilchakram = mithrilchakram + 1");
+        }
+        if ($rand == 4) {
+            $bonus = '+ Fortified Fauchard<br>';
+            $results = $link->query("UPDATE $user SET fortifiedfauchard = fortifiedfauchard + 1");
+        }
+        echo $message="<div class='battlewin'><h3>You have defeated $the <span>$enemy!</span></h3>
++ $exp xp<br>
++ $currencyadd $currency<br/>
+$bonus</div>";
+        include('update_feed_alt.php'); // --- update feed
+$results = $link->query("UPDATE $user SET xp = xp + $exp"); // xp
+$results = $link->query("UPDATE $user SET currency = currency + $currencyadd");
+        $results = $link->query("UPDATE $user SET $KLname = $KLname + 1");
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // --------------------------------------------------------------  Bowman
     if ($enemy =='Bowman') {
         $exp = 300;
         $currencyadd = rand(500, 5000);
         $rand=rand(1, 4);
         $KLname= 'KLbowman';
-
-
-
         $randArrow = rand(10, 20);
         $randBolt = rand(10, 20);
         $bonusalways = '+ '.$randArrow.' Arrows, + '.$randBolt.' Bolts<br> ';
@@ -4625,6 +5017,72 @@ $results = $link->query("UPDATE $user SET currency = currency + $currencyadd");
 + $exp xp<br>
 + $currencyadd $currency<br/>
 $alwaysbonus$bonus</div>";
+        include('update_feed_alt.php'); // --- update feed
+$results = $link->query("UPDATE $user SET xp = xp + $exp"); // xp
+$results = $link->query("UPDATE $user SET currency = currency + $currencyadd");
+        $results = $link->query("UPDATE $user SET $KLname = $KLname + 1");
+    }
+
+
+
+    // --------------------------------------------------------------  Demigod of Strength
+    if ($enemy =='Demigod of Strength') {
+        $exp = 1000;
+        $currencyadd = 200;
+        $rand=rand(1, 4);
+        $KLname= 'KLdemigodofstrength';
+        if ($rand == 1) {
+            $bonus = '+ Silver Necklace<br>';
+            $results = $link->query("UPDATE $user SET silvernecklace = silvernecklace + 1");
+        }
+        if ($rand == 2) {
+            $bonus = '+ Silver Necklace<br>';
+            $results = $link->query("UPDATE $user SET silvernecklace = silvernecklace + 1");
+        }
+        if ($rand == 3) {
+            $bonus = '+ Silver Necklace<br>';
+            $results = $link->query("UPDATE $user SET silvernecklace = silvernecklace + 1");
+        }
+        if ($rand == 4) {
+            $bonus = '+ Silver Necklace<br>';
+            $results = $link->query("UPDATE $user SET silvernecklace = silvernecklace + 1");
+        }
+        echo $message="<div class='battlewin'><h3>You have defeated $the <span>$enemy!</span></h3>
++ $exp xp<br>
++ $currencyadd $currency<br/>
+$bonus</div>";
+        include('update_feed_alt.php'); // --- update feed
+$results = $link->query("UPDATE $user SET xp = xp + $exp"); // xp
+$results = $link->query("UPDATE $user SET currency = currency + $currencyadd");
+        $results = $link->query("UPDATE $user SET $KLname = $KLname + 1");
+    }
+
+    // --------------------------------------------------------------  Demigod of Defense
+    if ($enemy =='Demigod of Defense') {
+        $exp = 1000;
+        $currencyadd = 200;
+        $rand=rand(1, 4);
+        $KLname= 'KLdemigodofdefense';
+        if ($rand == 1) {
+            $bonus = '+ Silver Necklace<br>';
+            $results = $link->query("UPDATE $user SET silvernecklace = silvernecklace + 1");
+        }
+        if ($rand == 2) {
+            $bonus = '+ Silver Necklace<br>';
+            $results = $link->query("UPDATE $user SET silvernecklace = silvernecklace + 1");
+        }
+        if ($rand == 3) {
+            $bonus = '+ Silver Necklace<br>';
+            $results = $link->query("UPDATE $user SET silvernecklace = silvernecklace + 1");
+        }
+        if ($rand == 4) {
+            $bonus = '+ Silver Necklace<br>';
+            $results = $link->query("UPDATE $user SET silvernecklace = silvernecklace + 1");
+        }
+        echo $message="<div class='battlewin'><h3>You have defeated $the <span>$enemy!</span></h3>
++ $exp xp<br>
++ $currencyadd $currency<br/>
+$bonus</div>";
         include('update_feed_alt.php'); // --- update feed
 $results = $link->query("UPDATE $user SET xp = xp + $exp"); // xp
 $results = $link->query("UPDATE $user SET currency = currency + $currencyadd");
@@ -5136,7 +5594,7 @@ $results = $link->query("UPDATE $user SET currency = currency + $currencyadd");
     // --------------------------------------------------------------  Yeti
     if ($enemy =='Yeti') {
         $exp = 1500;
-        $currencyadd = rand(800);
+        $currencyadd = rand(800, 800);
         $rand=rand(1, 4);
         $KLname= 'KLyeti';
         if ($rand==1) { // 25%
@@ -5171,7 +5629,7 @@ $results = $link->query("UPDATE $user SET currency = currency + $currencyadd");
     // --------------------------------------------------------------  Snow Ogre
     if ($enemy =='Snow Ogre') {
         $exp = 2500;
-        $currencyadd = rand(2500);
+        $currencyadd = rand(2500, 2500);
         $rand=rand(1, 4);
         $KLname= 'KLsnowogre';
         if ($rand==1) { // 25%
@@ -5204,7 +5662,7 @@ $results = $link->query("UPDATE $user SET currency = currency + $currencyadd");
     // --------------------------------------------------------------  Snow Ninja
     if ($enemy =='Snow Ninja') {
         $exp = 2500;
-        $currencyadd = rand(2500);
+        $currencyadd = rand(2500, 2500);
         $rand=rand(1, 4);
         $KLname= 'KLsnowninja';
         if ($rand==1) { // 25%
@@ -5236,7 +5694,7 @@ $results = $link->query("UPDATE $user SET currency = currency + $currencyadd");
     // --------------------------------------------------------------  Snow Owl
     if ($enemy =='Snow Owl') {
         $exp = 2500;
-        $currencyadd = rand(2500);
+        $currencyadd = rand(2500, 2500);
         $rand=rand(1, 4);
         $KLname= 'KLsnowowl';
         if ($rand==1) { // 25%
@@ -5513,7 +5971,7 @@ $results = $link->query("UPDATE $user SET currency = currency + $currencyadd");
     // --------------------------------------------------------------  GMG2
     if ($enemy =='GMG2') {
         $exp = 8000;
-        $currencyadd = rand(20000);
+        $currencyadd = rand(20000, 20000);
         $rand=rand(1, 4);
         $KLname= 'KLgmg2';
         if ($rand==1) { // 25%
@@ -5546,7 +6004,7 @@ $results = $link->query("UPDATE $user SET currency = currency + $currencyadd");
     // --------------------------------------------------------------  GK2
     if ($enemy =='GK2') {
         $exp = 8000;
-        $currencyadd = rand(20000);
+        $currencyadd = rand(20000, 20000);
         $rand=rand(1, 4);
         $KLname= 'KLgk2';
         if ($rand==1) { // 25%
@@ -5579,7 +6037,7 @@ $results = $link->query("UPDATE $user SET currency = currency + $currencyadd");
     // --------------------------------------------------------------  KING BLADE
     if ($enemy =='King Blade') {
         $exp = 15000;
-        $currencyadd = rand(50000);
+        $currencyadd = rand(50000, 50000);
         $rand=rand(1, 4);
         $KLname= 'KLkingblade';
         if ($rand==1) { // 25%

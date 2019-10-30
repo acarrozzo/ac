@@ -4035,8 +4035,8 @@ HTML;
 // ---------------------------------------------------- m01
 if ($roomID=='m01') {
     $_SESSION['dangerLVL'] = "20";
-    $dirU='active darkgray';
-    $dirD='active darkgray';
+    $dirU='active brown';
+    $dirD='active brown';
 }
 $_SESSION['descm01'] = <<<HTML
    <html><div class="roomBox"><h3>Mine Level 1</h3>
@@ -4052,8 +4052,8 @@ HTML;
 // ---------------------------------------------------- m02
 if ($roomID=='m02') {
     $_SESSION['dangerLVL'] = "20";
-    $dirU='active darkgray';
-    $dirD='active darkgray';
+    $dirU='active brown';
+    $dirD='active brown';
 }
 $_SESSION['descm02'] = <<<HTML
    <html><div class="roomBox"><h3>Mine Level 2</h3>
@@ -4069,8 +4069,8 @@ HTML;
 // ---------------------------------------------------- m03
 if ($roomID=='m03') {
     $_SESSION['dangerLVL'] = "20";
-    $dirU='active darkgray';
-    $dirD='active darkgray';
+    $dirU='active brown';
+    $dirD='active brown';
 }
 $_SESSION['descm03'] = <<<HTML
    <html><div class="roomBox"><h3>Mine Level 3</h3>
@@ -4086,8 +4086,8 @@ HTML;
 // ---------------------------------------------------- m04
 if ($roomID=='m04') {
     $_SESSION['dangerLVL'] = "20";
-    $dirU='active darkgray';
-    $dirD='active darkgray';
+    $dirU='active brown';
+    $dirD='active brown';
 }
 $_SESSION['descm04'] = <<<HTML
    <html><div class="roomBox"><h3>Mine Level 4</h3>
@@ -4103,8 +4103,8 @@ HTML;
 // ---------------------------------------------------- m05
 if ($roomID=='m05') {
     $_SESSION['dangerLVL'] = "25";
-    $dirU='active darkgray';
-    $dirD='active darkgray';
+    $dirU='active brown';
+    $dirD='active brown';
 }
 $_SESSION['descm05'] = <<<HTML
    <html><div class="roomBox"><h3>Mine Level 5</h3>
@@ -4120,8 +4120,8 @@ HTML;
 // ---------------------------------------------------- m06
 if ($roomID=='m06') {
     $_SESSION['dangerLVL'] = "25";
-    $dirU='active darkgray';
-    $dirD='active darkgray';
+    $dirU='active brown';
+    $dirD='active brown';
 }
 $_SESSION['descm06'] = <<<HTML
    <html><div class="roomBox"><h3>Mine Level 6</h3>
@@ -4137,8 +4137,8 @@ HTML;
 // ---------------------------------------------------- m07
 if ($roomID=='m07') {
     $_SESSION['dangerLVL'] = "25";
-    $dirU='active darkgray';
-    $dirD='active darkgray';
+    $dirU='active brown';
+    $dirD='active brown';
 }
 $_SESSION['descm07'] = <<<HTML
    <html><div class="roomBox"><h3>Mine Level 7</h3>
@@ -4154,8 +4154,8 @@ HTML;
 // ---------------------------------------------------- m08
 if ($roomID=='m08') {
     $_SESSION['dangerLVL'] = "25";
-    $dirU='active darkgray';
-    $dirD='active darkgray';
+    $dirU='active brown';
+    $dirD='active brown';
 }
 $_SESSION['descm08'] = <<<HTML
    <html><div class="roomBox"><h3>Mine Level 8</h3>
@@ -4171,8 +4171,8 @@ HTML;
 // ---------------------------------------------------- m09
 if ($roomID=='m09') {
     $_SESSION['dangerLVL'] = "25";
-    $dirU='active darkgray';
-    $dirD='active darkgray';
+    $dirU='active brown';
+    $dirD='active brown';
 }
 $_SESSION['descm09'] = <<<HTML
    <html><div class="roomBox"><h3>Mine Level 9</h3>
@@ -4188,8 +4188,8 @@ HTML;
 // ---------------------------------------------------- m10
 if ($roomID=='m10') {
     $_SESSION['dangerLVL'] = "30";
-    $dirU='active darkgray';
-    $dirD='active darkgray';
+    $dirU='active brown';
+    $dirD='active brown';
 }
 $_SESSION['descm10'] = <<<HTML
    <html><div class="roomBox"><h3>Mine Level 10</h3>
@@ -4205,8 +4205,8 @@ HTML;
 // ---------------------------------------------------- m11
 if ($roomID=='m11') {
     $_SESSION['dangerLVL'] = "25";
-    $dirU='active darkgray';
-    $dirD='active darkgray';
+    $dirU='active lgray';
+    $dirD='active lgray';
 }
 $_SESSION['descm11'] = <<<HTML
    <html><div class="roomBox"><h3>Mine Level 11</h3>
@@ -4222,8 +4222,8 @@ HTML;
 // ---------------------------------------------------- m12
 if ($roomID=='m12') {
     $_SESSION['dangerLVL'] = "25";
-    $dirU='active darkgray';
-    $dirD='active darkgray';
+    $dirU='active lgray';
+    $dirD='active lgray';
 }
 $_SESSION['descm12'] = <<<HTML
    <html><div class="roomBox"><h3>Mine Level 12</h3>
@@ -4239,8 +4239,8 @@ HTML;
 // ---------------------------------------------------- m13
 if ($roomID=='m13') {
     $_SESSION['dangerLVL'] = "25";
-    $dirU='active darkgray';
-    $dirD='active darkgray';
+    $dirU='active lgray';
+    $dirD='active lgray';
 }
 $_SESSION['descm13'] = <<<HTML
    <html><div class="roomBox"><h3>Mine Level 13</h3>
@@ -4256,8 +4256,8 @@ HTML;
 // ---------------------------------------------------- m14
 if ($roomID=='m14') {
     $_SESSION['dangerLVL'] = "25";
-    $dirU='active darkgray';
-    $dirD='active darkgray';
+    $dirU='active lgray';
+    $dirD='active lgray';
 }
 $_SESSION['descm14'] = <<<HTML
    <html><div class="roomBox"><h3>Mine Level 14</h3>
@@ -4273,8 +4273,8 @@ HTML;
 // ---------------------------------------------------- m15
 if ($roomID=='m15') {
     $_SESSION['dangerLVL'] = "35";
-    $dirU='active darkgray';
-    $dirD='active darkgray';
+    $dirU='active lgray';
+    $dirD='active lgray';
 }
 $_SESSION['descm15'] = <<<HTML
    <html><div class="roomBox"><h3>Mine Level 15 - Ulfberht</h3>
@@ -4290,8 +4290,8 @@ HTML;
 // ---------------------------------------------------- m16
 if ($roomID=='m16') {
     $_SESSION['dangerLVL'] = "35";
-    $dirU='active darkgray';
-    $dirD='active darkgray';
+    $dirU='active lgray';
+    $dirD='active lgray';
 }
 $_SESSION['descm16'] = <<<HTML
    <html><div class="roomBox"><h3>Mine Level 16</h3>
@@ -4307,8 +4307,8 @@ HTML;
 // ---------------------------------------------------- m17
 if ($roomID=='m17') {
     $_SESSION['dangerLVL'] = "35";
-    $dirU='active darkgray';
-    $dirD='active darkgray';
+    $dirU='active lgray';
+    $dirD='active lgray';
 }
 $_SESSION['descm17'] = <<<HTML
    <html><div class="roomBox"><h3>Mine Level 17</h3>
@@ -4324,8 +4324,8 @@ HTML;
 // ---------------------------------------------------- m18
 if ($roomID=='m18') {
     $_SESSION['dangerLVL'] = "35";
-    $dirU='active darkgray';
-    $dirD='active darkgray';
+    $dirU='active lgray';
+    $dirD='active lgray';
 }
 $_SESSION['descm18'] = <<<HTML
    <html><div class="roomBox"><h3>Mine Level 18</h3>
@@ -4341,8 +4341,8 @@ HTML;
 // ---------------------------------------------------- m19
 if ($roomID=='m19') {
     $_SESSION['dangerLVL'] = "35";
-    $dirU='active darkgray';
-    $dirD='active darkgray';
+    $dirU='active lgray';
+    $dirD='active lgray';
 }
 $_SESSION['descm19'] = <<<HTML
    <html><div class="roomBox"><h3>Mine Level 19</h3>
@@ -4358,8 +4358,8 @@ HTML;
 // ---------------------------------------------------- m20
 if ($roomID=='m20') {
     $_SESSION['dangerLVL'] = "40";
-    $dirU='active darkgray';
-    $dirD='active darkgray';
+    $dirU='active lgray';
+    $dirD='active lgray';
 }
 $_SESSION['descm20'] = <<<HTML
    <html><div class="roomBox"><h3>Mine Level 20 - Cyclops</h3>
@@ -4372,6 +4372,187 @@ $_SESSION['descm20'] = <<<HTML
    </form>
 </div></html>
 HTML;
+// ---------------------------------------------------- m21
+if ($roomID=='m21') {
+    $_SESSION['dangerLVL'] = "30";
+    $dirU='active blue';
+    $dirD='active blue';
+}
+$_SESSION['descm21'] = <<<HTML
+   <html><div class="roomBox"><h3>Mine Level 21</h3>
+	<p>You are in the neverending mine. You can mine down another level or mine here some more.
+</p>
+	<form id="mainForm" method="post" action="" name="formInput">
+	<input type="submit" name="input1" value="up" /><br>
+	<input class="brownBG" type="submit" name="input1" value="mine here" />
+	<input class="redBG" type="submit" name="input1" value="mine down" />
+   </form>
+</div></html>
+HTML;
+// ---------------------------------------------------- m22
+if ($roomID=='m22') {
+    $_SESSION['dangerLVL'] = "30";
+    $dirU='active blue';
+    $dirD='active blue';
+}
+$_SESSION['descm22'] = <<<HTML
+   <html><div class="roomBox"><h3>Mine Level 22</h3>
+	<p>You are in the neverending mine. You can mine down another level or mine here some more.
+</p>
+	<form id="mainForm" method="post" action="" name="formInput">
+	<input type="submit" name="input1" value="up" /><br>
+	<input class="brownBG" type="submit" name="input1" value="mine here" />
+	<input class="redBG" type="submit" name="input1" value="mine down" />
+   </form>
+</div></html>
+HTML;
+
+// ---------------------------------------------------- m23
+if ($roomID=='m23') {
+    $_SESSION['dangerLVL'] = "30";
+    $dirU='active blue';
+    $dirD='active blue';
+}
+$_SESSION['descm23'] = <<<HTML
+   <html><div class="roomBox"><h3>Mine Level 23</h3>
+	<p>You are in the neverending mine. You can mine down another level or mine here some more.
+</p>
+	<form id="mainForm" method="post" action="" name="formInput">
+	<input type="submit" name="input1" value="up" /><br>
+	<input class="brownBG" type="submit" name="input1" value="mine here" />
+	<input class="redBG" type="submit" name="input1" value="mine down" />
+   </form>
+</div></html>
+HTML;
+
+// ---------------------------------------------------- m24
+if ($roomID=='m24') {
+    $_SESSION['dangerLVL'] = "40";
+    $dirU='active blue';
+    $dirD='active blue';
+}
+$_SESSION['descm24'] = <<<HTML
+   <html><div class="roomBox"><h3>Mine Level 24</h3>
+	<p>You are in the neverending mine. You can mine down another level or mine here some more.
+</p>
+	<form id="mainForm" method="post" action="" name="formInput">
+	<input type="submit" name="input1" value="up" /><br>
+	<input class="brownBG" type="submit" name="input1" value="mine here" />
+	<input class="redBG" type="submit" name="input1" value="mine down" />
+   </form>
+</div></html>
+HTML;
+
+// ---------------------------------------------------- m25
+if ($roomID=='m25') {
+    $_SESSION['dangerLVL'] = "50";
+    $dirU='active blue';
+    $dirD='active blue';
+}
+$_SESSION['descm25'] = <<<HTML
+   <html><div class="roomBox"><h3>Mine Level 25 - Griffin</h3>
+	<p>You are in the neverending mine. You can mine down another level or mine here some more.
+</p>
+	<form id="mainForm" method="post" action="" name="formInput">
+	<input type="submit" name="input1" value="up" /><br>
+	<input class="brownBG" type="submit" name="input1" value="mine here" />
+	<input class="redBG" type="submit" name="input1" value="mine down" />
+   </form>
+</div></html>
+HTML;
+
+// ---------------------------------------------------- m26
+if ($roomID=='m26') {
+    $_SESSION['dangerLVL'] = "50";
+    $dirU='active blue';
+    $dirD='active blue';
+}
+$_SESSION['descm26'] = <<<HTML
+   <html><div class="roomBox"><h3>Mine Level 26</h3>
+	<p>You are in the neverending mine. You can mine down another level or mine here some more.
+</p>
+	<form id="mainForm" method="post" action="" name="formInput">
+	<input type="submit" name="input1" value="up" /><br>
+	<input class="brownBG" type="submit" name="input1" value="mine here" />
+	<input class="redBG" type="submit" name="input1" value="mine down" />
+   </form>
+</div></html>
+HTML;
+
+// ---------------------------------------------------- m27
+if ($roomID=='m27') {
+    $_SESSION['dangerLVL'] = "50";
+    $dirU='active blue';
+    $dirD='active blue';
+}
+$_SESSION['descm27'] = <<<HTML
+   <html><div class="roomBox"><h3>Mine Level 27</h3>
+	<p>You are in the neverending mine. You can mine down another level or mine here some more.
+</p>
+	<form id="mainForm" method="post" action="" name="formInput">
+	<input type="submit" name="input1" value="up" /><br>
+	<input class="brownBG" type="submit" name="input1" value="mine here" />
+	<input class="redBG" type="submit" name="input1" value="mine down" />
+   </form>
+</div></html>
+HTML;
+
+// ---------------------------------------------------- m28
+if ($roomID=='m28') {
+    $_SESSION['dangerLVL'] = "50";
+    $dirU='active blue';
+    $dirD='active blue';
+}
+$_SESSION['descm28'] = <<<HTML
+   <html><div class="roomBox"><h3>Mine Level 28</h3>
+	<p>You are in the neverending mine. You can mine down another level or mine here some more.
+</p>
+	<form id="mainForm" method="post" action="" name="formInput">
+	<input type="submit" name="input1" value="up" /><br>
+	<input class="brownBG" type="submit" name="input1" value="mine here" />
+	<input class="redBG" type="submit" name="input1" value="mine down" />
+   </form>
+</div></html>
+HTML;
+
+
+// ---------------------------------------------------- m29
+if ($roomID=='m29') {
+    $_SESSION['dangerLVL'] = "50";
+    $dirU='active blue';
+    $dirD='active blue';
+}
+$_SESSION['descm29'] = <<<HTML
+   <html><div class="roomBox"><h3>Mine Level 29</h3>
+	<p>You are in the neverending mine. You can mine down another level or mine here some more.
+</p>
+	<form id="mainForm" method="post" action="" name="formInput">
+	<input type="submit" name="input1" value="up" /><br>
+	<input class="brownBG" type="submit" name="input1" value="mine here" />
+	<input class="redBG" type="submit" name="input1" value="mine down" />
+   </form>
+</div></html>
+HTML;
+// ---------------------------------------------------- m30
+if ($roomID=='m30') {
+    $_SESSION['dangerLVL'] = "60";
+    $dirU='active blue';
+    $dirD='active blue';
+}
+$_SESSION['descm30'] = <<<HTML
+   <html><div class="roomBox"><h3>Mine Level 30 - Minotaur</h3>
+	<p>You are in the neverending mine. You can mine down another level or mine here some more.
+</p>
+	<form id="mainForm" method="post" action="" name="formInput">
+	<input type="submit" name="input1" value="up" /><br>
+	<input class="brownBG" type="submit" name="input1" value="mine here" />
+	<input class="redBG" type="submit" name="input1" value="mine down" />
+   </form>
+</div></html>
+HTML;
+
+
+
 
 
 
@@ -5270,7 +5451,7 @@ $_SESSION['desc425'] = <<<HTML
 	<form id="mainForm" method="post" action="" name="formInput">
 	<input type="submit" class="oceanBG" name="input1" value="evolve" />
 	<input type="submit" class="redBG" name="input1" value="attack guardian" />
-	<input type="submit" name="blueBG" class="goldBG" value="grab master pack" />
+	<input type="submit" name="input1" class="goldBG" value="grab master pack" />
 	<input type="submit" name="input1" class="greenBG" value="rest" />
 		<input type="submit" name="input1" value="northwest" />
 	<input type="submit" name="input1" value="northeast" />

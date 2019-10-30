@@ -1989,28 +1989,28 @@ if($input=='sell mithril boots' && $row['mithrilboots'] >= 1)
 		$query = $link->query("UPDATE $user SET mithrilboots = mithrilboots - 1"); 
 		$query = $link->query("UPDATE $user SET currency = currency + $sellamt"); 
 		}	
-// ---------------------------------------------------------- sell crimsonmocassins
-if($input=='sell silver mocassins' && $row['silvermocassins'] >= 1) 
-{		$sellamt = $_SESSION['COSTsilvermocassins'] * $sellpercent;
-		echo $message = '<span class="sellspan">You sell your silver mocassins for '.$sellamt.' '.$currency.'</span><br>';	
+// ---------------------------------------------------------- sell crimsonmoccasins
+if($input=='sell silver moccasins' && $row['silvermoccasins'] >= 1) 
+{		$sellamt = $_SESSION['COSTsilvermoccasins'] * $sellpercent;
+		echo $message = '<span class="sellspan">You sell your silver moccasins for '.$sellamt.' '.$currency.'</span><br>';	
 		include ('update_feed.php'); // --- update feed
-		$query = $link->query("UPDATE $user SET silvermocassins = silvermocassins - 1"); 
+		$query = $link->query("UPDATE $user SET silvermoccasins = silvermoccasins - 1"); 
 		$query = $link->query("UPDATE $user SET currency = currency + $sellamt"); 
 		}						
-// ---------------------------------------------------------- sell rangermocassins
-if($input=='sell silver mocassins' && $row['silvermocassins'] >= 1) 
-{		$sellamt = $_SESSION['COSTsilvermocassins'] * $sellpercent;
-		echo $message = '<span class="sellspan">You sell your silver mocassins for '.$sellamt.' '.$currency.'</span><br>';	
+// ---------------------------------------------------------- sell rangermoccasins
+if($input=='sell silver moccasins' && $row['silvermoccasins'] >= 1) 
+{		$sellamt = $_SESSION['COSTsilvermoccasins'] * $sellpercent;
+		echo $message = '<span class="sellspan">You sell your silver moccasins for '.$sellamt.' '.$currency.'</span><br>';	
 		include ('update_feed.php'); // --- update feed
-		$query = $link->query("UPDATE $user SET silvermocassins = silvermocassins - 1"); 
+		$query = $link->query("UPDATE $user SET silvermoccasins = silvermoccasins - 1"); 
 		$query = $link->query("UPDATE $user SET currency = currency + $sellamt"); 
 		}					
-// ---------------------------------------------------------- sell silkmocassins
-if($input=='sell silver mocassins' && $row['silvermocassins'] >= 1) 
-{		$sellamt = $_SESSION['COSTsilvermocassins'] * $sellpercent;
-		echo $message = '<span class="sellspan">You sell your silver mocassins for '.$sellamt.' '.$currency.'</span><br>';	
+// ---------------------------------------------------------- sell silkmoccasins
+if($input=='sell silver moccasins' && $row['silvermoccasins'] >= 1) 
+{		$sellamt = $_SESSION['COSTsilvermoccasins'] * $sellpercent;
+		echo $message = '<span class="sellspan">You sell your silver moccasins for '.$sellamt.' '.$currency.'</span><br>';	
 		include ('update_feed.php'); // --- update feed
-		$query = $link->query("UPDATE $user SET silvermocassins = silvermocassins - 1"); 
+		$query = $link->query("UPDATE $user SET silvermoccasins = silvermoccasins - 1"); 
 		$query = $link->query("UPDATE $user SET currency = currency + $sellamt"); 
 		}					
 				

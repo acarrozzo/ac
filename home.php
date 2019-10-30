@@ -28,13 +28,24 @@
 		<!--- MONSTER PARTY TEASER ----->
 		<section>
 			<h3>Monster Party Playing Cards</h3>
-			<h4>Coming Fall 2019</h4>
+			<h4>Available only for a Limited Time</h4>
 			<figure class="" data-pop>
-				<img src="img/monsterparty/monster-party-cards-teaser1.jpg" width="1000" height="563" alt="Monster Party Playing Cards - 3 cards"/>
+				<img src="img/monsterparty/monster-party-kickstarterpromo-b.jpg" width="1000" height="563" alt="Monster Party Playing Cards - Five Suit Deck"/>
 			</figure>
-				<p><a class="btn big" href="/archimedes/index.html">Monster Party<i class="fa fa-angle-right"></i></a></p>
+			<br/>
+			<p>Monster Party Five Suit Deck is finally available! Go <a href="https://www.kickstarter.com/projects/archimedesgames/monster-party-playing-cards">here</a> or visit the link below. </p>
+			<br/>
+			<p><a class="btn big" href="https://www.kickstarter.com/projects/archimedesgames/monster-party-playing-cards">Get Monster Party here<i class="fa fa-angle-right"></i></a></p>
+							<figure class="" data-pop>
+								<img src="img/monsterparty/monster-party-kickstarterabout-graybg.jpg" width="1200" height="675" alt="Monster Party Playing Cards - Five Suit Deck Spread"/>
+							</figure>
+			<br/>
+			<p>You can <i>only</i> get them through Kickstarter and <i>only</i> this month. So check it out!</p>
+				<figure class="" data-pop>
+					<img src="img/monsterparty/monster-party-kickstarterbox-graybg.jpg" width="1000" height="563" alt="Monster Party Playing Cards - Five Suit Deck"/>
+				</figure>
+				<p><a class="btn big" href="https://www.kickstarter.com/projects/archimedesgames/monster-party-playing-cards">Get Monster Party here<i class="fa fa-angle-right"></i></a></p>
 		</section>
-
 
 		<!--- DRIFT ----->
 		<section>

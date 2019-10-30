@@ -426,9 +426,9 @@ $_SESSION['COSTsilverslippers'] 		= 50000;
 
 // feet - TIER 4
 $_SESSION['COSTmithrilboots'] 		= 40000;
-$_SESSION['COSTcrimsonmocassins'] 	= 50000;
-$_SESSION['COSTrangermocassins'] 	= 50000;
-$_SESSION['COSTsilkmocassins'] 		= 50000;
+$_SESSION['COSTcrimsonmoccasins'] 	= 50000;
+$_SESSION['COSTrangermoccasins'] 	= 50000;
+$_SESSION['COSTsilkmoccasins'] 		= 50000;
 
 
 
