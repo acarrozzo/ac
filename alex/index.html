@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Alex C</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="img/favicon3.ico" type="image/x-icon">
+  <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+  <link rel="stylesheet" href="css/alex.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:600,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Abel');
+
+    h1 {
+      font-family: 'Abel', sans-serif;
+      font-weight: 100;
+      font-size: 40px;
+      text-align: center;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    a {
+      outline: 0 !important;
+    }
+
+    .magnific-img img {
+      width: 100%;
+      height: auto;
+    }
+
+    .mfp-bottom-bar,
+    * {
+      font-family: 'Abel', sans-serif;
+    }
+
+    .magnific-img {
+      display: inline-block;
+      width: 33.1%;
+      width:24.7%;
+    }
+
+    .magnific-img.full {
+      width: 100%;
+    }
+
+    .magnific-img.bigger {
+      width: 66.2%;
+    }
+
+    a.image-popup-vertical-fit {
+      cursor: -webkit-zoom-in;
+    }
+
+    .mfp-with-zoom .mfp-container,
+    .mfp-with-zoom.mfp-bg {
+      opacity: 0;
+      -webkit-backface-visibility: hidden;
+      /* ideally, transition speed should match zoom duration */
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+    }
+
+    .mfp-with-zoom.mfp-ready .mfp-container {
+      opacity: 1;
+    }
+
+    .mfp-with-zoom.mfp-ready.mfp-bg {
+      opacity: 0.98;
+    }
+
+    .mfp-with-zoom.mfp-removing .mfp-container,
+    .mfp-with-zoom.mfp-removing.mfp-bg {
+      opacity: 0;
+    }
+
+    .mfp-arrow-left:before {
+      border-right: none !important;
+    }
+
+    .mfp-arrow-right:before {
+      border-left: none !important;
+    }
+
+    button.mfp-arrow,
+    .mfp-counter {
+      opacity: 0 !important;
+      transition: opacity 200ms ease-in, opacity 2000ms ease-out;
+    }
+
+    .mfp-container:hover button.mfp-arrow,
+    .mfp-container:hover .mfp-counter {
+      opacity: 1 !important;
+    }
+
+
+    /* Magnific Popup CSS */
+    .mfp-bg {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1042;
+      overflow: hidden;
+      position: fixed;
+      background: #0b0b0b;
+      opacity: 0.8;
+    }
+
+    .mfp-wrap {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1043;
+      position: fixed;
+      outline: none !important;
+      -webkit-backface-visibility: hidden;
+    }
+
+    .mfp-container {
+      text-align: center;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      padding: 0 8px;
+      box-sizing: border-box;
+    }
+
+    .mfp-container:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+
+    .mfp-align-top .mfp-container:before {
+      display: none;
+    }
+
+    .mfp-content {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 auto;
+      text-align: left;
+      z-index: 1045;
+    }
+
+    .mfp-inline-holder .mfp-content,
+    .mfp-ajax-holder .mfp-content {
+      width: 100%;
+      cursor: auto;
+    }
+
+    .mfp-ajax-cur {
+      cursor: progress;
+    }
+
+    .mfp-zoom-out-cur,
+    .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+      cursor: -moz-zoom-out;
+      cursor: -webkit-zoom-out;
+      cursor: zoom-out;
+    }
+
+    .mfp-zoom {
+      cursor: pointer;
+      cursor: -webkit-zoom-in;
+      cursor: -moz-zoom-in;
+      cursor: zoom-in;
+    }
+
+    .mfp-auto-cursor .mfp-content {
+      cursor: auto;
+    }
+
+    .mfp-close,
+    .mfp-arrow,
+    .mfp-preloader,
+    .mfp-counter {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    .mfp-loading.mfp-figure {
+      display: none;
+    }
+
+    .mfp-hide {
+      display: none !important;
+    }
+
+    .mfp-preloader {
+      color: #CCC;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      text-align: center;
+      margin-top: -0.8em;
+      left: 8px;
+      right: 8px;
+      z-index: 1044;
+    }
+
+    .mfp-preloader a {
+      color: #CCC;
+    }
+
+    .mfp-preloader a:hover {
+      color: #FFF;
+    }
+
+    .mfp-s-ready .mfp-preloader {
+      display: none;
+    }
+
+    .mfp-s-error .mfp-content {
+      display: none;
+    }
+
+    button.mfp-close,
+    button.mfp-arrow {
+      overflow: visible;
+      cursor: pointer;
+      background: transparent;
+      border: 0;
+      -webkit-appearance: none;
+      display: block;
+      outline: none;
+      padding: 0;
+      z-index: 1046;
+      box-shadow: none;
+      touch-action: manipulation;
+    }
+
+    button::-moz-focus-inner {
+      padding: 0;
+      border: 0;
+    }
+
+    .mfp-close {
+      width: 44px;
+      height: 44px;
+      line-height: 44px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      text-decoration: none;
+      text-align: center;
+      opacity: 0.65;
+      padding: 0 0 18px 10px;
+      color: #FFF;
+      font-style: normal;
+      font-size: 28px;
+      font-family: Arial, Baskerville, monospace;
+    }
+
+    .mfp-close:hover,
+    .mfp-close:focus {
+      opacity: 1;
+    }
+
+    .mfp-close:active {
+      top: 1px;
+    }
+
+    .mfp-close-btn-in .mfp-close {
+      color: #333;
+    }
+
+    .mfp-image-holder .mfp-close,
+    .mfp-iframe-holder .mfp-close {
+      color: #FFF;
+      right: -6px;
+      text-align: right;
+      padding-right: 6px;
+      width: 100%;
+    }
+
+    .mfp-counter {
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: #CCC;
+      font-size: 12px;
+      line-height: 18px;
+      white-space: nowrap;
+    }
+
+    .mfp-arrow {
+      position: absolute;
+      opacity: 0.65;
+      margin: 0;
+      top: 50%;
+      margin-top: -55px;
+      padding: 0;
+      width: 90px;
+      height: 110px;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .mfp-arrow:active {
+      margin-top: -54px;
+    }
+
+    .mfp-arrow:hover,
+    .mfp-arrow:focus {
+      opacity: 1;
+    }
+
+    .mfp-arrow:before,
+    .mfp-arrow:after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin-top: 35px;
+      margin-left: 35px;
+      border: medium inset transparent;
+    }
+
+    .mfp-arrow:after {
+      border-top-width: 13px;
+      border-bottom-width: 13px;
+      top: 8px;
+    }
+
+    .mfp-arrow:before {
+      border-top-width: 21px;
+      border-bottom-width: 21px;
+      opacity: 0.7;
+    }
+
+    .mfp-arrow-left {
+      left: 0;
+    }
+
+    .mfp-arrow-left:after {
+      border-right: 17px solid #FFF;
+      margin-left: 31px;
+    }
+
+    .mfp-arrow-left:before {
+      margin-left: 25px;
+      border-right: 27px solid #3F3F3F;
+    }
+
+    .mfp-arrow-right {
+      right: 0;
+    }
+
+    .mfp-arrow-right:after {
+      border-left: 17px solid #FFF;
+      margin-left: 39px;
+    }
+
+    .mfp-arrow-right:before {
+      border-left: 27px solid #3F3F3F;
+    }
+
+    .mfp-iframe-holder {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    .mfp-iframe-holder .mfp-content {
+      line-height: 0;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .mfp-iframe-holder .mfp-close {
+      top: -40px;
+    }
+
+    .mfp-iframe-scaler {
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      padding-top: 56.25%;
+    }
+
+    .mfp-iframe-scaler iframe {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+      background: #000;
+    }
+
+    /* Main image in popup */
+    img.mfp-img {
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      line-height: 0;
+      box-sizing: border-box;
+      padding: 40px 0 40px;
+      margin: 0 auto;
+    }
+
+    /* The shadow behind the image */
+    .mfp-figure {
+      line-height: 0;
+    }
+
+    .mfp-figure:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 40px;
+      bottom: 40px;
+      display: block;
+      right: 0;
+      width: auto;
+      height: auto;
+      z-index: -1;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+      background: #444;
+    }
+
+    .mfp-figure small {
+      color: #BDBDBD;
+      display: block;
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    .mfp-figure figure {
+      margin: 0;
+    }
+
+    .mfp-bottom-bar {
+      margin-top: -36px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      cursor: auto;
+    }
+
+    .mfp-title {
+      text-align: left;
+      line-height: 18px;
+      color: #F3F3F3;
+      word-wrap: break-word;
+      padding-right: 36px;
+    }
+
+    .mfp-image-holder .mfp-content {
+      max-width: 100%;
+    }
+
+    .mfp-gallery .mfp-image-holder .mfp-figure {
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 800px) and (orientation: landscape),
+    screen and (max-height: 300px) {
+
+      /**
+       * Remove all paddings around the image on small screen
+       */
+      .mfp-img-mobile .mfp-image-holder {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .mfp-img-mobile img.mfp-img {
+        padding: 0;
+      }
+
+      .mfp-img-mobile .mfp-figure:after {
+        top: 0;
+        bottom: 0;
+      }
+
+      .mfp-img-mobile .mfp-figure small {
+        display: inline;
+        margin-left: 5px;
+      }
+
+      .mfp-img-mobile .mfp-bottom-bar {
+        background: rgba(0, 0, 0, 0.6);
+        bottom: 0;
+        margin: 0;
+        top: auto;
+        padding: 3px 5px;
+        position: fixed;
+        box-sizing: border-box;
+      }
+
+      .mfp-img-mobile .mfp-bottom-bar:empty {
+        padding: 0;
+      }
+
+      .mfp-img-mobile .mfp-counter {
+        right: 5px;
+        top: 3px;
+      }
+
+      .mfp-img-mobile .mfp-close {
+        top: 0;
+        right: 0;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        background: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        text-align: center;
+        padding: 0;
+      }
+    }
+
+    @media all and (max-width: 900px) {
+      .mfp-arrow {
+        -webkit-transform: scale(0.75);
+        transform: scale(0.75);
+      }
+
+      .mfp-arrow-left {
+        -webkit-transform-origin: 0;
+        transform-origin: 0;
+      }
+
+      .mfp-arrow-right {
+        -webkit-transform-origin: 100%;
+        transform-origin: 100%;
+      }
+
+      .mfp-container {
+        padding-left: 6px;
+        padding-right: 6px;
+      }
+    }
+  </style>
+
+  <body class="fadeIn animated">
+    <header>
+
+    </header>
+
+    <!-- PHOTOS -->
+
+    <div class="container">
+
+      <h1>Alex's First Month</h1>
+      <p>
+        <section class="img-gallery-magnific">
+
+          <!--  <div class="magnific-img">
+        <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-0.jpg" title="">
+          <img src="img/first-month/alex-first-month-0.jpg" alt="alex" />
+        </a>
+      </div>
+    -->
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-1.jpg" title="First photo of Alex - 2 minutes after birth">
+              <img src="img/first-month/alex-first-month-1.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-2.jpg" title="">
+              <img src="img/first-month/alex-first-month-2.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-3.jpg" title="">
+              <img src="img/first-month/alex-first-month-3.jpg" alt="alex" />
+            </a>
+          </div>
+
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-4.jpg" title="">
+              <img src="img/first-month/alex-first-month-4.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-5.jpg" title="">
+              <img src="img/first-month/alex-first-month-5.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-6.jpg" title="">
+              <img src="img/first-month/alex-first-month-6.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-7.jpg" title="">
+              <img src="img/first-month/alex-first-month-7.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-8.jpg" title="">
+              <img src="img/first-month/alex-first-month-8.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-9.jpg" title="">
+              <img src="img/first-month/alex-first-month-9.jpg" alt="alex" />
+            </a>
+          </div>
+
+
+
+
+
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-10.jpg" title="">
+              <img src="img/first-month/alex-first-month-10.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-11.jpg" title="">
+              <img src="img/first-month/alex-first-month-11.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-12.jpg" title="">
+              <img src="img/first-month/alex-first-month-12.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-13.jpg" title="">
+              <img src="img/first-month/alex-first-month-13.jpg" alt="alex" />
+            </a>
+          </div>
+
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-14.jpg" title="">
+              <img src="img/first-month/alex-first-month-14.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-15.jpg" title="">
+              <img src="img/first-month/alex-first-month-15.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-16.jpg" title="">
+              <img src="img/first-month/alex-first-month-16.jpg" alt="alex" />
+            </a>
+          </div>
+
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-17.jpg" title="">
+              <img src="img/first-month/alex-first-month-17.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-18.jpg" title="">
+              <img src="img/first-month/alex-first-month-18.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-19.jpg" title="">
+              <img src="img/first-month/alex-first-month-19.jpg" alt="alex" />
+            </a>
+          </div>
+
+
+
+
+
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-20.jpg" title="">
+              <img src="img/first-month/alex-first-month-20.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-21.jpg" title="">
+              <img src="img/first-month/alex-first-month-21.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-22.jpg" title="">
+              <img src="img/first-month/alex-first-month-22.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-23.jpg" title="">
+              <img src="img/first-month/alex-first-month-23.jpg" alt="alex" />
+            </a>
+          </div>
+
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-24.jpg" title="">
+              <img src="img/first-month/alex-first-month-24.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-25.jpg" title="">
+              <img src="img/first-month/alex-first-month-25.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-26.jpg" title="">
+              <img src="img/first-month/alex-first-month-26.jpg" alt="alex" />
+            </a>
+          </div>
+
+          <div class="magnific-img biggerX">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-27.jpg" title="">
+              <img src="img/first-month/alex-first-month-27.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-28.jpg" title="">
+              <img src="img/first-month/alex-first-month-28.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-29.jpg" title="">
+              <img src="img/first-month/alex-first-month-29.jpg" alt="alex" />
+            </a>
+          </div>
+
+
+
+
+
+
+
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-30.jpg" title="">
+              <img src="img/first-month/alex-first-month-30.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-31.jpg" title="">
+              <img src="img/first-month/alex-first-month-31.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-32.jpg" title="">
+              <img src="img/first-month/alex-first-month-32.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-33.jpg" title="">
+              <img src="img/first-month/alex-first-month-33.jpg" alt="alex" />
+            </a>
+          </div>
+
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-34.jpg" title="">
+              <img src="img/first-month/alex-first-month-34.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-35.jpg" title="">
+              <img src="img/first-month/alex-first-month-35.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-36.jpg" title="">
+              <img src="img/first-month/alex-first-month-36.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-37.jpg" title="">
+              <img src="img/first-month/alex-first-month-37.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-38.jpg" title="">
+              <img src="img/first-month/alex-first-month-38.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-39.jpg" title="">
+              <img src="img/first-month/alex-first-month-39.jpg" alt="alex" />
+            </a>
+          </div>
+
+
+
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-40.jpg" title="">
+              <img src="img/first-month/alex-first-month-40.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-41.jpg" title="">
+              <img src="img/first-month/alex-first-month-41.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-42.jpg" title="">
+              <img src="img/first-month/alex-first-month-42.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-43.jpg" title="">
+              <img src="img/first-month/alex-first-month-43.jpg" alt="alex" />
+            </a>
+          </div>
+
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-44.jpg" title="">
+              <img src="img/first-month/alex-first-month-44.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-45.jpg" title="">
+              <img src="img/first-month/alex-first-month-45.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-46.jpg" title="">
+              <img src="img/first-month/alex-first-month-46.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-47.jpg" title="">
+              <img src="img/first-month/alex-first-month-47.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-48.jpg" title="">
+              <img src="img/first-month/alex-first-month-48.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-49.jpg" title="">
+              <img src="img/first-month/alex-first-month-49.jpg" alt="alex" />
+            </a>
+          </div>
+
+
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-50.jpg" title="">
+              <img src="img/first-month/alex-first-month-50.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-51.jpg" title="First photo of Alex - 2 minutes after birth">
+              <img src="img/first-month/alex-first-month-51.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-52.jpg" title="">
+              <img src="img/first-month/alex-first-month-52.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-53.jpg" title="">
+              <img src="img/first-month/alex-first-month-53.jpg" alt="alex" />
+            </a>
+          </div>
+
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-54.jpg" title="">
+              <img src="img/first-month/alex-first-month-54.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-55.jpg" title="">
+              <img src="img/first-month/alex-first-month-55.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-56.jpg" title="">
+              <img src="img/first-month/alex-first-month-56.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-57.jpg" title="">
+              <img src="img/first-month/alex-first-month-57.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-58.jpg" title="">
+              <img src="img/first-month/alex-first-month-58.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-59.jpg" title="">
+              <img src="img/first-month/alex-first-month-59.jpg" alt="alex" />
+            </a>
+          </div>
+
+
+
+
+
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-60.jpg" title="">
+              <img src="img/first-month/alex-first-month-60.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-61.jpg" title="First photo of Alex - 2 minutes after birth">
+              <img src="img/first-month/alex-first-month-61.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-62.jpg" title="">
+              <img src="img/first-month/alex-first-month-62.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-63.jpg" title="">
+              <img src="img/first-month/alex-first-month-63.jpg" alt="alex" />
+            </a>
+          </div>
+
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-64.jpg" title="">
+              <img src="img/first-month/alex-first-month-64.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-65.jpg" title="">
+              <img src="img/first-month/alex-first-month-65.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-66.jpg" title="">
+              <img src="img/first-month/alex-first-month-66.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-67.jpg" title="">
+              <img src="img/first-month/alex-first-month-67.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-68.jpg" title="">
+              <img src="img/first-month/alex-first-month-68.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-69.jpg" title="">
+              <img src="img/first-month/alex-first-month-69.jpg" alt="alex" />
+            </a>
+          </div>
+
+
+
+
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-70.jpg" title="">
+              <img src="img/first-month/alex-first-month-70.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-71.jpg" title="First photo of Alex - 2 minutes after birth">
+              <img src="img/first-month/alex-first-month-71.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-72.jpg" title="">
+              <img src="img/first-month/alex-first-month-72.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-73.jpg" title="">
+              <img src="img/first-month/alex-first-month-73.jpg" alt="alex" />
+            </a>
+          </div>
+
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-74.jpg" title="">
+              <img src="img/first-month/alex-first-month-74.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-75.jpg" title="">
+              <img src="img/first-month/alex-first-month-75.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-76.jpg" title="">
+              <img src="img/first-month/alex-first-month-76.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-77.jpg" title="">
+              <img src="img/first-month/alex-first-month-77.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-78.jpg" title="">
+              <img src="img/first-month/alex-first-month-78.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-79.jpg" title="">
+              <img src="img/first-month/alex-first-month-79.jpg" alt="alex" />
+            </a>
+          </div>
+
+
+
+
+
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-80.jpg" title="">
+              <img src="img/first-month/alex-first-month-80.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-81.jpg" title="First photo of Alex - 2 minutes after birth">
+              <img src="img/first-month/alex-first-month-81.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-82.jpg" title="">
+              <img src="img/first-month/alex-first-month-82.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-83.jpg" title="">
+              <img src="img/first-month/alex-first-month-83.jpg" alt="alex" />
+            </a>
+          </div>
+
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-84.jpg" title="">
+              <img src="img/first-month/alex-first-month-84.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-85.jpg" title="">
+              <img src="img/first-month/alex-first-month-85.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-86.jpg" title="">
+              <img src="img/first-month/alex-first-month-86.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-87.jpg" title="">
+              <img src="img/first-month/alex-first-month-87.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-88.jpg" title="">
+              <img src="img/first-month/alex-first-month-88.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-89.jpg" title="">
+              <img src="img/first-month/alex-first-month-89.jpg" alt="alex" />
+            </a>
+          </div>
+
+
+
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-90.jpg" title="">
+              <img src="img/first-month/alex-first-month-90.jpg" alt="alex" />
+            </a>
+          </div>
+
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-91.jpg" title="">
+              <img src="img/first-month/alex-first-month-91.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-92.jpg" title="">
+              <img src="img/first-month/alex-first-month-92.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-93.jpg" title="">
+              <img src="img/first-month/alex-first-month-93.jpg" alt="alex" />
+            </a>
+          </div>
+
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-94.jpg" title="">
+              <img src="img/first-month/alex-first-month-94.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-95.jpg" title="">
+              <img src="img/first-month/alex-first-month-95.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-96.jpg" title="">
+              <img src="img/first-month/alex-first-month-96.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-97.jpg" title="">
+              <img src="img/first-month/alex-first-month-97.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-98.jpg" title="">
+              <img src="img/first-month/alex-first-month-98.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-99.jpg" title="">
+              <img src="img/first-month/alex-first-month-99.jpg" alt="alex" />
+            </a>
+          </div>
+
+
+
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-100.jpg" title="">
+              <img src="img/first-month/alex-first-month-100.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-101.jpg" title="">
+              <img src="img/first-month/alex-first-month-101.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-102.jpg" title="">
+              <img src="img/first-month/alex-first-month-102.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-103.jpg" title="">
+              <img src="img/first-month/alex-first-month-103.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-104.jpg" title="">
+              <img src="img/first-month/alex-first-month-104.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-105.jpg" title="">
+              <img src="img/first-month/alex-first-month-105.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-106.jpg" title="">
+              <img src="img/first-month/alex-first-month-106.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-107.jpg" title="">
+              <img src="img/first-month/alex-first-month-107.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-108.jpg" title="">
+              <img src="img/first-month/alex-first-month-108.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-109.jpg" title="">
+              <img src="img/first-month/alex-first-month-109.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-110.jpg" title="">
+              <img src="img/first-month/alex-first-month-110.jpg" alt="alex" />
+            </a>
+          </div>
+
+
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-111.jpg" title="">
+              <img src="img/first-month/alex-first-month-111.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-112.jpg" title="">
+              <img src="img/first-month/alex-first-month-112.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-113.jpg" title="">
+              <img src="img/first-month/alex-first-month-113.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-114.jpg" title="">
+              <img src="img/first-month/alex-first-month-114.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-115.jpg" title="">
+              <img src="img/first-month/alex-first-month-115.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-116.jpg" title="">
+              <img src="img/first-month/alex-first-month-116.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-117.jpg" title="">
+              <img src="img/first-month/alex-first-month-117.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-118.jpg" title="">
+              <img src="img/first-month/alex-first-month-118.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-119.jpg" title="">
+              <img src="img/first-month/alex-first-month-119.jpg" alt="alex" />
+            </a>
+          </div>
+          <div class="magnific-img">
+            <a class="image-popup-vertical-fit" href="img/first-month/alex-first-month-120.jpg" title="">
+              <img src="img/first-month/alex-first-month-120.jpg" alt="alex" />
+            </a>
+          </div>
+        </section>
+      </p>
+    </div>
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+      <div class="links">
+        <p>
+          <a href="https://acarrozzo.com">www.acarrozzo.com</a><br />
+          <a href="mailto:anthony@archimedesgameco.com">anthony@archimedesgameco.com</a></p>
+      </div>
+    </footer>
+
+
+
+    <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.image-popup-vertical-fit').magnificPopup({
+          type: 'image',
+          mainClass: 'mfp-with-zoom',
+          gallery: {
+            enabled: true
+          },
+
+          zoom: {
+            enabled: true,
+
+            duration: 300, // duration of the effect, in milliseconds
+            easing: 'ease-in-out', // CSS transition easing function
+
+            opener: function(openerElement) {
+
+              return openerElement.is('img') ? openerElement : openerElement.find('img');
+            }
+          }
+
+        });
+
+      });
+    </script>
+
+
+
+  </body>
+
+</html>

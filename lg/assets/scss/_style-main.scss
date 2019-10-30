@@ -1,9 +1,9 @@
 /* CSS Document - MAIN ---- */
 body {
 	color: #666;
-	font-size: 14px;
+//	font-size: 14px;
 	font-weight: 300;
-	line-height: 1.5em;
+//	line-height: 1.5em;
 	//background-size: cover;
 	background-position: center;
 	//xbackground-image: url(http://s1.picswalls.com/wallpapers/2016/06/06/hd-beach-wallpaper_090612883_305.jpg);
@@ -48,7 +48,7 @@ section::-webkit-scrollbar-track {
 /* ---------------MAIN */
 body {color:$darkgray;font-size:16px;font-weight:300;line-height:1.5em;}
 .hide {display:none;}
-//.transition {-o-transition:all 1s ease;-moz-transition:all 1s ease;-webkit-transition:all 1s ease;transition:all 1s ease;}
+
 body, input {
 font-family: 'Arial', serif;
 font-family: 'Droid Serif', serif;
@@ -64,8 +64,6 @@ font-family: 'Blinker', sans-serif;
 font-family: 'Rubik', serif;
 -webkit-appearance:none;}
 
-//body.bold, body.bold input {font-weight:bold;}
-//body.bigText, body.bigText input, body.bigText div {font-size:110%!important;}
 
 form, p, span {margin:0;padding:0;}
 #container .clear {clear:both;}
@@ -81,7 +79,7 @@ form, p, span {margin:0;padding:0;}
 
 .btn {
     padding: 5px 20px;
-    margin: 5px auto;
+    margin: 2px auto;
     background: #999;
     color: #fff;
     clear: both;
@@ -99,23 +97,32 @@ h1,h2,h3,h4,h5,h6 {
 h1{    font-size: 46px;
     line-height: 1em;
     padding: 30px 10px 0px;}
-h2 {display:block;font-size:28px;margin:20px -20px 0;color:$gold;border-top: solid 10px #47474A;padding:20px;clear:both;
+h2 {display:block;
+	//font-size:28px;
+	font-size: 1.8rem;
+line-height: 1em;
+			margin:20px -20px 0;color:$gold;border-top: solid 10px #47474A;padding:20px;clear:both;
 	&:first-child {
     	margin-top: 0;
 	}
 }
 h2 i {font-style:normal;float:right;font-size:18px;}
 .input h2 {width:380px;}
-h3 {    font-size: 38px;
-    line-height: 36px;
+h3 {
+	// font-size: 38px;
+  //  line-height: 36px;
+		font-size: 2.2rem;
+    line-height: 2.2rem;
     margin: 0 0 5px;
     letter-spacing: -.03em;}
 nav .lvl { font-size: 26px;}
-h4 {font-size: 28px;
+h4 {
+	//font-size: 28px;
+	    font-size: 1.6rem;
     margin: 0 0 5px;
     letter-spacing: -.03em;}
 h3 + h4 {color: #99999A;
-    margin:-5px 0 10px;
+//    margin:-5px 0 10px;
 }
 
 h5 {font-size:18px;margin:0;font-weight:300;}
@@ -128,9 +135,9 @@ li a {float:left;display:block;background:#ddd;list-style:none;margin:0;padding:
 input {    background: #aaa;
     border: none;
     color: #fff;
-    margin: 3px 0;
+    margin: 2px 0;
     padding: 8px 16px;
-    font-size: 14px;
+  //  font-size: 14px;
     text-transform: capitalize;}
 
 
@@ -236,15 +243,26 @@ nav .h3 {
     margin: 20px 0 0;
 }
 nav .alt2 {color:#77777A;}
-.hilite {font-size: 24px;
-    line-height: 30px;
-    position: relative;}
-.hilite input {    font-size: 16px;
-    text-transform: capitalize;
-    display: inherit;
-    padding: 6px 22px;
+.hilite {
+//	font-size: 24px;
+  //  line-height: 30px;
+//    position: relative;
+font-size: 1.2rem;
+line-height: 1.6em;
+	}
+.hilite input {
+	// font-size: 16px;
+  //  text-transform: capitalize;
+  //  display: inherit;
+  //  padding: 6px 22px;
     background: #444;
-    margin: 10px 0;}
+		background:$blue;
+  //  margin: 10px 0;
+	&.max {
+    background: #00FFFF;
+    color: #000;
+}
+	}
 nav .hilite span {color:$gold;line-height:18px;font-size:28px;}
 nav em {position:absolute;top:32px;color:#999;left:38px;font-size:10px;}
 #game {display:none!important;}
@@ -515,9 +533,17 @@ input.third {width:78px;}
 .descrip {background: #47474A;
     margin:0 0 10px;
     padding: 20px;}
-.spCount {float: right;}
+.spCount {
+	float: right;
+font-size: 1rem;
+}
 
-#container .maxed {background:none;color:#00FFFF;font-size:24px;font-weight:900;padding:5px 0;right: 0;}
+#container .maxed {
+	//background:none;color:#00FFFF;font-size:24px;font-weight:900;padding:5px 0;right: 0;
+
+	color: #0FF;
+	font-size: 1.6rem;
+}
 #skills .px12.gold, #spells .px12.gold {position:absolute;top:8px;right:90px;}
 .menuAction.maxout {color:#00ffff;font-size:30px;padding:20px 10px;}
 
@@ -577,16 +603,17 @@ nav .btn {background:#646569;display:block;text-align:center;text-decoration:non
 }
 .rightScroll .spellBtn {width:170px;background:rgba(255, 255, 255, 0.7);color:#70b9ed;padding:8px 0 7px 35px;text-align:left;position:relative;margin:0 0 3px;}
 /* ---------------------------------------------------------------------------------------------------- COMMAND ICON */
-span.command {
+.command {
 //	margin: 80px 0 0;
-	margin: 50px 0 0;
+		margin: 50px 0 0;
     display: block;
     border-top: solid 1px $gray;
     text-transform: uppercase;
-    font-size: 10px;
+		//font-size: 10px;
+		font-size: .8rem;
     font-weight: 900;
+		color:$blue;
 }
-.cap {text-transform:uppercase;}
 
 
 
@@ -638,7 +665,8 @@ p.content-one, p.content-one2 {display:none;}
 /* --------------- HUD BATTLE STATUS */
 
 
-.battleFrame .battlewin {padding:10px;background:$blue;color:#fff;overflow:hidden;
+.battleFrame {}
+.battlewin {padding:10px;background:$blue;color:#fff;overflow:hidden;
  	h3 {font-size:24px;
   		span {font-size:42px;display:block;}
 	}
@@ -704,10 +732,10 @@ input.teleportBtn {padding:3px;background:#c6e4ff;width:345px;color:#55565A;clea
 .questhead {   color: #f1b238;
     padding: 20px 0;
 }
-#quests h2 {
-   font-size: 46px;
-    line-height: 38px;
-}
+//#quests h2 {
+//   font-size: 46px;
+//    line-height: 38px;
+//}
 #quests h2 i {
     display: block;
     float: none;
@@ -739,7 +767,15 @@ input.teleportBtn {padding:3px;background:#c6e4ff;width:345px;color:#55565A;clea
     font-weight: 900;}
 #quests .startall {font-size: 40px;width: 100%;margin: 60px 0 80px;}
 #quests .completeBtn {background:$green;}
-#quests .qbox {width:24px;margin:5px 5px 0 0;text-align:center;color:#47474A;font-size:12px;border-radius:50%;display: inline-block;}
+#quests .qbox {
+	width: 24px;
+	margin: 5px 5px 0 0;
+	color: #47474A;
+	font-size: 12px;
+	border-radius: 50%;
+	display: inline-block;
+	padding: 2px 0;
+}
 #quests .q0 {background:#646569;}
 #quests .q1 {background:$gold;}
 #quests .q2 {background:#87d63f;}
@@ -769,23 +805,24 @@ width: 27vw;
     margin: 3px;
     float: left;
     padding: 12% 0;
-    text-align: center;    background: $darkestgray;
+    text-align: center;
+		//   background: $darkestgray;
 }
 /* --------------- buy box */
 .buybox {background:#333;padding:10px;color:#fff000;font-size:18px;}
 /* --------------- MENU ACTION - IN FEED */
 .menuAction {
-	background:$darkergray;
+	background:$ddgray;
     padding: 20px;
 	color: #fff;
+	 .fa,  i {    font-size: 28px;
+	    color: #70b9ed;
+	    padding: 0 0 10px;
+	    display: block;}
+	span {color:$gold;}
+	> .goldbox {background:$gold;padding:10px 5px;color:#47474A;display:block;height:30px;float:right;top:-15px;position:relative;border:#47474A solid 3px;width:60px;text-align:center;}
+	em {font-style:normal;}
 }
-.menuAction .fa, .menuAction i {    font-size: 28px;
-    color: #70b9ed;
-    padding: 0 0 10px;
-    display: block;}
-.menuAction span {color:$gold;}
-.menuAction > .goldbox {background:$gold;padding:10px 5px;color:#47474A;display:block;height:30px;float:right;top:-15px;position:relative;border:#47474A solid 3px;width:60px;text-align:center;}
-.menuAction em {font-style:normal;}
 /* --------------- LEVEL WIN BOX */
 .levelWin {background:#87d63f;padding:15px;margin:0 0 10px;font-size:20px;color:#FFF;}
 .levelWin h4 {    color: #FFF;
@@ -851,7 +888,8 @@ XXXli span i.black {font-size:14px;}
 
 
 input, .btn {
-			@include border-radius(50px);
+	//@include border-radius(5px);
+	@include border-radius(50px);
 			@include inset-highlight();
 	}
 
@@ -993,7 +1031,9 @@ overflow:hidden;
 	}
 
 }
-
+[data-pop] .subMenu .active {
+    background: #55565A;
+}
 	[data-pop="stats"] .subMenu .active {color: $purple;}
 	[data-pop="inv"] .subMenu .active {color: $green;}
 	[data-pop="world"] .subMenu .active {color: $blue;}
@@ -1003,7 +1043,7 @@ overflow:hidden;
 		&.active {bottom:0%}
 	}
 	section {    overflow: auto;-webkit-overflow-scrolling: touch;
-    height: 100%;padding:0 20px 150px;
+    height: 100%;padding:0 20px 150px;    position: relative;
 
 	}
 	.closeMenu {
@@ -1060,11 +1100,12 @@ input {    padding: 5px 0;
 	}
 
 		.maxxer {
-       position: absolute;
-    right: 5px;
-    color: #fff;
-        top: -2px;
-    font-size: 18px;
+			position: absolute;
+		    right: 5px;
+		    color: #fff;
+		    top: 0;
+		   // font-size: 18px;
+		    font-size: 1rem;
 }
 }
 
@@ -1110,8 +1151,9 @@ XXX#container {
     width: 100%;
     height: calc(100vh - 320px);
     border: 0;
-		padding:10px 20px;
-	//	padding:10px 0;
+	//	padding:10px 20px;
+	//padding:10px 0;
+	padding:10px 0 0;
     text-align: center;
 }
 .infight #feed-module {
@@ -1228,9 +1270,9 @@ bottom: 115px;
 }
 
 .feed input {
-    width: auto;
-    padding: 8px 16px;
-    color: #fff;
+  //  width: auto;
+//    padding: 8px 16px;
+  //  color: #fff;
 }
 
 .module.feed .infoBlock {
@@ -1269,7 +1311,7 @@ bottom: 115px;
 
 .battleBlock {
     width: 100%;
-	height: 280px;
+	height: 260px;
    // padding: 10px;
     text-align: center;
     z-index: -1;
@@ -1307,10 +1349,12 @@ bottom: 115px;
 	/* --------------- BATTLETABS - action, magic, bag  */
 
 .battleTabs {
-	position: absolute;
-	top: -56px;
-	width: 100%;
+//	position: absolute;
+//	top: -56px;
+//	width: 100%;
 	font-size: 14px;
+background: #eeeeee;
+margin-top: -1px;
 	a {
 		width: 30%;
 		border-radius: 10px 10px 0 0;
@@ -1329,7 +1373,7 @@ bottom: 115px;
     display: none;
 	padding: 10px;
     overflow: auto;
-    height: 280px;
+    height: 205px;
 	&.active {
     display: block;
 	}
@@ -1679,16 +1723,15 @@ bottom: 115px;
 
 
 
-.iStat {
-    float: right;    font-size: 20px;
-
-}
 .statcat {
-font-size: 32px;
+//font-size: 32px;
+font-size: 2rem;
 	line-height: 1em;
 }
 .maxstat {
-    font-size: 32px;
+
+//    font-size: 32px;
+		font-size: 2rem;
 }
 .feed .roomBox {
   //  opacity: .2;
@@ -1713,9 +1756,9 @@ font-size: 32px;
 }
 
 .feed a {
-   padding:10px;
+   padding:8px 16px;
     display: block;
-    margin: 5px 0;
+    margin: 4px 0;
     text-decoration: none;
 	//		@include border-radius(50px);
 			@include inset-highlight();
@@ -1730,8 +1773,15 @@ font-size: 32px;
 
 
 @media (min-width:800px) {
+	body, input {
+	 font-size: 1rem;
+}
+
 	#feed-module {
     height: calc(100vh - 260px);
+	}
+	#map.active {
+    bottom: -37vh;
 	}
 	#container .module.action {
     width: 50%;
@@ -1820,6 +1870,10 @@ width:50%;
 	z-index: -1;
 }
 
+.iStat {
+    float: right;    font-size: 20px;
+
+}
 
 
 
@@ -1878,8 +1932,11 @@ width:50%;
 
 
 
-/* super small response, iphone 5 */
- @media (max-width:340px) {
+/* just phone */
+ @media (max-width:425px) {
+	 body, input {
+    font-size: .8rem;
+}
 .mapFrame {
     width: 40%;
     float: left;

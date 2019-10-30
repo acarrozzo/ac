@@ -303,13 +303,12 @@ $youngsoldierFlag = $row['youngsoldierFlag'];
 
     // ---------------------------------------------------------------------------------- Physical Training
     if ($row['physicaltraining']>=1 && $physicaltraining_cost == 'max') {
-        echo '<div class="hilite">
-Physical Training <span class="green">'. $row['physicaltraining'].'</span><span class="maxed greenBG px14">MAX</span>
-</div>	';
+        echo '<div class="hilite maxed">
+Physical Training <span>'. $row['physicaltraining'].'</span></div>	';
     } elseif ($row['physicaltraining']>=1 && $sp>=$physicaltraining_cost) {
         echo '<div class="hilite">
 Physical Training <span>'. $row['physicaltraining'].'</span> <span class="px14 gray"> / '.$physicaltraining_max.'</span>
-<input type="submit" class="" name="input1" value="learn physical training" />
+<br/><input type="submit" class="" name="input1" value="learn physical training" />
 <input type="submit" class="max" name="input1" value="max physical training" />
 <span class="px12 gold"> '.$physicaltraining_cost.' sp</span>
 </div>	';
@@ -325,13 +324,12 @@ Physical Training <span>'. $row['physicaltraining'].'</span> <span class="px14 g
 
     // ---------------------------------------------------------------------------------- Mental Training
     if ($row['mentaltraining']>=1 && $mentaltraining_cost == 'max') {
-        echo '<div class="hilite">
-Mental Training <span class="green">'. $row['mentaltraining'].'</span><span class="maxed greenBG px14">MAX</span>
-</div>	';
+        echo '<div class="hilite maxed">
+Mental Training <span>'. $row['mentaltraining'].'</span></div>	';
     } elseif ($row['mentaltraining']>=1 && $sp>=$mentaltraining_cost) {
         echo '<div class="hilite">
 Mental Training <span>'. $row['mentaltraining'].'</span> <span class="px14 gray"> / '.$mentaltraining_max.'</span>
-<input type="submit" class="" name="input1" value="learn mental training" />
+<br/><input type="submit" class="" name="input1" value="learn mental training" />
 <input type="submit" class="max" name="input1" value="max mental training" />
 <span class="px12 gold"> '.$mentaltraining_cost.' sp</span>
 </div>	';
@@ -348,9 +346,8 @@ Mental Training <span>'. $row['mentaltraining'].'</span> <span class="px14 gray"
 
     // ----------------------------------------------------------------------------------One Handed
     if ($row['onehanded']>=1 && $onehanded_cost == 'max') {
-        echo '<div class="hilite">
-One Handed <span class="green">'. $row['onehanded'].'</span><span class="maxed greenBG px14">MAX</span>
-</div>	';
+        echo '<div class="hilite maxed">
+One Handed <span>'. $row['onehanded'].'</span></div>	';
     } elseif ($row['onehanded']>=1 && $sp<$onehanded_cost) {
         echo '<div class="hilite">
 One Handed <span>'. $row['onehanded'].'</span> <span class="px14 gray"> / '.$onehanded_max.'</span>
@@ -364,14 +361,14 @@ One Handed <span class="gray px14"> '. $row['onehanded'].' </span><span class="p
     } elseif ($row['onehanded']==0 && $onehanded_cost != 'max') {
         echo '<div class="hilite">
 One Handed <span class="gray px14"> '. $row['onehanded'].' </span><span class="px14 gray"> / '.$onehanded_max.'</span>
-<input type="submit" class="" name="input1" value="learn one handed" />
+<br/><input type="submit" class="" name="input1" value="learn one handed" />
 <input type="submit" class="max" name="input1" value="max one handed" />
 <span class="px12 gold"> '.$onehanded_cost.' sp</span>
 </div>	';
     } elseif ($row['onehanded']>=0 && $sp>=$onehanded_cost) {
         echo '<div class="hilite">
 One Handed <span>'. $row['onehanded'].'</span> <span class="px14 gray"> / '.$onehanded_max.'</span>
-<input type="submit" class="" name="input1" value="learn one handed" />
+<br/><input type="submit" class="" name="input1" value="learn one handed" />
 <input type="submit" class="max" name="input1" value="max one handed" />
 <span class="px12 gold"> '.$onehanded_cost.' sp</span>
 </div>	';
@@ -380,9 +377,8 @@ One Handed <span>'. $row['onehanded'].'</span> <span class="px14 gray"> / '.$one
     }
     // ----------------------------------------------------------------------------------Two Handed
     if ($row['twohanded']>=1 && $twohanded_cost == 'max') {
-        echo '<div class="hilite">
-Two Handed <span class="green">'. $row['twohanded'].'</span><span class="maxed greenBG px14">MAX</span>
-</div>	';
+        echo '<div class="hilite maxed">
+Two Handed <span>'. $row['twohanded'].'</span></div>	';
     } elseif ($row['twohanded']>=1 && $sp<$twohanded_cost) {
         echo '<div class="hilite">
 Two Handed <span>'. $row['twohanded'].'</span> <span class="px14 gray"> / '.$twohanded_max.'</span>
@@ -396,14 +392,14 @@ Two Handed <span class="gray px14"> '. $row['twohanded'].' </span><span class="p
     } elseif ($row['twohanded']==0 && $twohanded_cost != 'max') {
         echo '<div class="hilite">
 Two Handed <span class="gray px14"> '. $row['twohanded'].' </span><span class="px14 gray"> / '.$twohanded_max.'</span>
-<input type="submit" class="" name="input1" value="learn two handed" />
+<br/><input type="submit" class="" name="input1" value="learn two handed" />
 <input type="submit" class="max" name="input1" value="max two handed" />
 <span class="px12 gold"> '.$twohanded_cost.' sp</span>
 </div>	';
     } elseif ($row['twohanded']>=0 && $sp>=$twohanded_cost) {
         echo '<div class="hilite">
 Two Handed <span>'. $row['twohanded'].'</span> <span class="px14 gray"> / '.$twohanded_max.'</span>
-<input type="submit" class="" name="input1" value="learn two handed" />
+<br/><input type="submit" class="" name="input1" value="learn two handed" />
 <input type="submit" class="max" name="input1" value="max two handed" />
 <span class="px12 gold"> '.$twohanded_cost.' sp</span>
 </div>	';
@@ -413,9 +409,8 @@ Two Handed <span>'. $row['twohanded'].'</span> <span class="px14 gray"> / '.$two
 
     // ---------------------------------------------------------------------------------- Ranged
     if ($row['ranged']>=1 && $ranged_cost == 'max') {
-        echo '<div class="hilite">
- Ranged <span class="green">'. $row['ranged'].'</span><span class="maxed greenBG px14">MAX</span>
-</div>	';
+        echo '<div class="hilite maxed">
+ Ranged <span>'. $row['ranged'].'</span></div>	';
     } elseif ($row['ranged']>=1 && $sp<$ranged_cost) {
         echo '<div class="hilite">
  Ranged <span>'. $row['ranged'].'</span> <span class="px14 gray"> / '.$ranged_max.'</span>
@@ -429,14 +424,14 @@ Ranged <span class="gray px14"> '. $row['ranged'].' </span><span class="px14 gra
     } elseif ($row['ranged']==0 && $ranged_cost != 'max') {
         echo '<div class="hilite">
 Ranged <span class="gray px14"> '. $row['ranged'].' </span><span class="px14 gray"> / '.$ranged_max.'</span>
-<input type="submit" class="" name="input1" value="learn ranged" />
+<br/><input type="submit" class="" name="input1" value="learn ranged" />
 <input type="submit" class="max" name="input1" value="max ranged" />
 <span class="px12 gold"> '.$ranged_cost.' sp</span>
 </div>	';
     } elseif ($row['ranged']>=0 && $sp>=$ranged_cost) {
         echo '<div class="hilite">
  Ranged <span>'. $row['ranged'].'</span> <span class="px14 gray"> / '.$ranged_max.'</span>
-<input type="submit" class="" name="input1" value="learn ranged" />
+<br/><input type="submit" class="" name="input1" value="learn ranged" />
 <input type="submit" class="max" name="input1" value="max ranged" />
 <span class="px12 gold"> '.$ranged_cost.' sp</span>
 </div>	';
@@ -452,9 +447,8 @@ Ranged <span class="gray px14"> '. $row['ranged'].' </span><span class="px14 gra
 
     // ---------------------------------------------------------------------------------- Slice
     if ($row['slice']>=1 && $slice_cost == 'max') {
-        echo '<div class="hilite">
- Slice <span class="green">'. $row['slice'].'</span><span class="maxed greenBG px14">MAX</span>
-</div>	';
+        echo '<div class="hilite maxed">
+ Slice <span>'. $row['slice'].'</span></div>	';
     } elseif ($row['slice']>=1 && $sp<$slice_cost) {
         echo '<div class="hilite">
  Slice <span>'. $row['slice'].'</span> <span class="px14 gray"> / '.$slice_max.'</span>
@@ -468,14 +462,14 @@ Slice <span class="gray px14"> '. $row['slice'].' </span><span class="px14 gray"
     } elseif ($row['slice']==0 && $slice_cost != 'max') {
         echo '<div class="hilite">
 Slice <span class="gray px14"> '. $row['slice'].' </span><span class="px14 gray"> / '.$slice_max.'</span>
-<input type="submit" class="" name="input1" value="learn slice" />
+<br/><input type="submit" class="" name="input1" value="learn slice" />
 <input type="submit" class="max" name="input1" value="max slice" />
 <span class="px12 gold"> '.$slice_cost.' sp</span>
 </div>	';
     } elseif ($row['slice']>=0 && $sp>=$slice_cost) {
         echo '<div class="hilite">
  Slice <span>'. $row['slice'].'</span> <span class="px14 gray"> / '.$slice_max.'</span>
-<input type="submit" class="" name="input1" value="learn slice" />
+<br/><input type="submit" class="" name="input1" value="learn slice" />
 <input type="submit" class="max" name="input1" value="max slice" />
 <span class="px12 gold"> '.$slice_cost.' sp</span>
 </div>	';
@@ -485,9 +479,8 @@ Slice <span class="gray px14"> '. $row['slice'].' </span><span class="px14 gray"
 
     // ---------------------------------------------------------------------------------- Smash
     if ($row['smash']>=1 && $smash_cost == 'max') {
-        echo '<div class="hilite">
- Smash <span class="green">'. $row['smash'].'</span><span class="maxed greenBG px14">MAX</span>
-</div>	';
+        echo '<div class="hilite maxed">
+ Smash <span>'. $row['smash'].'</span></div>	';
     } elseif ($row['smash']>=1 && $sp<$smash_cost) {
         echo '<div class="hilite">
  Smash <span>'. $row['smash'].'</span> <span class="px14 gray"> / '.$smash_max.'</span>
@@ -501,14 +494,14 @@ Smash <span class="gray px14"> '. $row['smash'].' </span><span class="px14 gray"
     } elseif ($row['smash']==0 && $smash_cost != 'max') {
         echo '<div class="hilite">
 Smash <span class="gray px14"> '. $row['smash'].' </span><span class="px14 gray"> / '.$smash_max.'</span>
-<input type="submit" class="" name="input1" value="learn smash" />
+<br/><input type="submit" class="" name="input1" value="learn smash" />
 <input type="submit" class="max" name="input1" value="max smash" />
 <span class="px12 gold"> '.$smash_cost.' sp</span>
 </div>	';
     } elseif ($row['smash']>=0 && $sp>=$smash_cost) {
         echo '<div class="hilite">
  Smash <span>'. $row['smash'].'</span> <span class="px14 gray"> / '.$smash_max.'</span>
-<input type="submit" class="" name="input1" value="learn smash" />
+<br/><input type="submit" class="" name="input1" value="learn smash" />
 <input type="submit" class="max" name="input1" value="max smash" />
 <span class="px12 gold"> '.$smash_cost.' sp</span>
 </div>	';
@@ -518,9 +511,8 @@ Smash <span class="gray px14"> '. $row['smash'].' </span><span class="px14 gray"
 
     // ---------------------------------------------------------------------------------- Aim
     if ($row['aim']>=1 && $aim_cost == 'max') {
-        echo '<div class="hilite">
- Aim <span class="green">'. $row['aim'].'</span><span class="maxed greenBG px14">MAX</span>
-</div>	';
+        echo '<div class="hilite maxed">
+ Aim <span>'. $row['aim'].'</span></div>	';
     } elseif ($row['aim']>=1 && $sp<$aim_cost) {
         echo '<div class="hilite">
  Aim <span>'. $row['aim'].'</span> <span class="px14 gray"> / '.$aim_max.'</span>
@@ -534,14 +526,14 @@ Aim <span class="gray px14"> '. $row['aim'].' </span><span class="px14 gray"> / 
     } elseif ($row['aim']==0 && $aim_cost != 'max') {
         echo '<div class="hilite">
 Aim <span class="gray px14"> '. $row['aim'].' </span><span class="px14 gray"> / '.$aim_max.'</span>
-<input type="submit" class="" name="input1" value="learn aim" />
+<br/><input type="submit" class="" name="input1" value="learn aim" />
 <input type="submit" class="max" name="input1" value="max aim" />
 <span class="px12 gold"> '.$aim_cost.' sp</span>
 </div>	';
     } elseif ($row['aim']>=0 && $sp>=$aim_cost) {
         echo '<div class="hilite">
  Aim <span>'. $row['aim'].'</span> <span class="px14 gray"> / '.$aim_max.'</span>
-<input type="submit" class="" name="input1" value="learn aim" />
+<br/><input type="submit" class="" name="input1" value="learn aim" />
 <input type="submit" class="max" name="input1" value="max aim" />
 <span class="px12 gold"> '.$aim_cost.' sp</span>
 </div>	';
@@ -555,9 +547,8 @@ Aim <span class="gray px14"> '. $row['aim'].' </span><span class="px14 gray"> / 
 
     // ---------------------------------------------------------------------------------- Magic Strike
     if ($row['magicstrike']>=1 && $magicstrike_cost == 'max') {
-        echo '<div class="hilite">
- Magic Strike <span class="green">'. $row['magicstrike'].'</span><span class="maxed greenBG px14">MAX</span>
-</div>	';
+        echo '<div class="hilite maxed">
+ Magic Strike <span>'. $row['magicstrike'].'</span></div>	';
     } elseif ($row['magicstrike']>=1 && $sp<$magicstrike_cost) {
         echo '<div class="hilite">
  Magic Strike <span>'. $row['magicstrike'].'</span> <span class="px14 gray"> / '.$magicstrike_max.'</span>
@@ -571,14 +562,14 @@ Magic Strike <span class="gray px14"> '. $row['magicstrike'].' </span><span clas
     } elseif ($row['magicstrike']==0 && $magicstrike_cost != 'max') {
         echo '<div class="hilite">
 Magic Strike <span class="gray px14"> '. $row['magicstrike'].' </span><span class="px14 gray"> / '.$magicstrike_max.'</span>
-<input type="submit" class="" name="input1" value="learn magic strike" />
+<br/><input type="submit" class="" name="input1" value="learn magic strike" />
 <input type="submit" class="max" name="input1" value="max magic strike" />
 <span class="px12 gold"> '.$magicstrike_cost.' sp</span>
 </div>	';
     } elseif ($row['magicstrike']>=0 && $sp>=$magicstrike_cost) {
         echo '<div class="hilite">
  Magic Strike <span>'. $row['magicstrike'].'</span> <span class="px14 gray"> / '.$magicstrike_max.'</span>
-<input type="submit" class="" name="input1" value="learn magic strike" />
+<br/><input type="submit" class="" name="input1" value="learn magic strike" />
 <input type="submit" class="max" name="input1" value="max magic strike" />
 <span class="px12 gold"> '.$magicstrike_cost.' sp</span>
 </div>	';
@@ -590,9 +581,8 @@ Magic Strike <span class="gray px14"> '. $row['magicstrike'].' </span><span clas
     echo '	<h2>Defense</h2>';
     // ---------------------------------------------------------------------------------- Toughness
     if ($row['toughness']>=1 && $toughness_cost == 'max') {
-        echo '<div class="hilite">
- Toughness <span class="green">'. $row['toughness'].'</span><span class="maxed greenBG px14">MAX</span>
-</div>	';
+        echo '<div class="hilite maxed">
+ Toughness <span>'. $row['toughness'].'</span></div>	';
     } elseif ($row['toughness']>=1 && $sp<$toughness_cost) {
         echo '<div class="hilite">
  Toughness <span>'. $row['toughness'].'</span> <span class="px14 gray"> / '.$toughness_max.'</span>
@@ -606,14 +596,14 @@ Toughness <span class="gray px14"> '. $row['toughness'].' </span><span class="px
     } elseif ($row['toughness']==0 && $toughness_cost != 'max') {
         echo '<div class="hilite">
 Toughness <span class="gray px14"> '. $row['toughness'].' </span><span class="px14 gray"> / '.$toughness_max.'</span>
-<input type="submit" class="" name="input1" value="learn toughness" />
+<br/><input type="submit" class="" name="input1" value="learn toughness" />
 <input type="submit" class="max" name="input1" value="max toughness" />
 <span class="px12 gold"> '.$toughness_cost.' sp</span>
 </div>	';
     } elseif ($row['toughness']>=0 && $sp>=$toughness_cost) {
         echo '<div class="hilite">
  Toughness <span>'. $row['toughness'].'</span> <span class="px14 gray"> / '.$toughness_max.'</span>
-<input type="submit" class="" name="input1" value="learn toughness" />
+<br/><input type="submit" class="" name="input1" value="learn toughness" />
 <input type="submit" class="max" name="input1" value="max toughness" />
 <span class="px12 gold"> '.$toughness_cost.' sp</span>
 </div>	';
@@ -624,9 +614,8 @@ Toughness <span class="gray px14"> '. $row['toughness'].' </span><span class="px
 
     // ---------------------------------------------------------------------------------- Block
     if ($row['block']>=1 && $block_cost == 'max') {
-        echo '<div class="hilite">
- Block <span class="green">'. $row['block'].'</span><span class="maxed greenBG px14">MAX</span>
-</div>	';
+        echo '<div class="hilite maxed">
+ Block <span>'. $row['block'].'</span></div>	';
     } elseif ($row['block']>=1 && $sp<$block_cost) {
         echo '<div class="hilite">
  Block <span>'. $row['block'].'</span> <span class="px14 gray"> / '.$block_max.'</span>
@@ -640,14 +629,14 @@ Block <span class="gray px14"> '. $row['block'].' </span><span class="px14 gray"
     } elseif ($row['block']==0 && $block_cost != 'max') {
         echo '<div class="hilite">
 Block <span class="gray px14"> '. $row['block'].' </span><span class="px14 gray"> / '.$block_max.'</span>
-<input type="submit" class="" name="input1" value="learn block" />
+<br/><input type="submit" class="" name="input1" value="learn block" />
 <input type="submit" class="max" name="input1" value="max block" />
 <span class="px12 gold"> '.$block_cost.' sp</span>
 </div>	';
     } elseif ($row['block']>=0 && $sp>=$block_cost) {
         echo '<div class="hilite">
  Block <span>'. $row['block'].'</span> <span class="px14 gray"> / '.$block_max.'</span>
-<input type="submit" class="" name="input1" value="learn block" />
+<br/><input type="submit" class="" name="input1" value="learn block" />
 <input type="submit" class="max" name="input1" value="max block" />
 <span class="px12 gold"> '.$block_cost.' sp</span>
 </div>	';
@@ -657,9 +646,8 @@ Block <span class="gray px14"> '. $row['block'].' </span><span class="px14 gray"
 
     // ---------------------------------------------------------------------------------- Dodge
     if ($row['ddge']>=1 && $ddge_cost == 'max') {
-        echo '<div class="hilite">
- Dodge <span class="green">'. $row['ddge'].'</span><span class="maxed greenBG px14">MAX</span>
-</div>	';
+        echo '<div class="hilite maxed">
+ Dodge <span>'. $row['ddge'].'</span></div>	';
     } elseif ($row['ddge']>=1 && $sp<$ddge_cost) {
         echo '<div class="hilite">
  Dodge <span>'. $row['ddge'].'</span> <span class="px14 gray"> / 10</span>
@@ -673,14 +661,14 @@ Dodge <span class="gray px14"> '. $row['ddge'].' </span><span class="px14 gray">
     } elseif ($row['ddge']==0 && $ddge_cost != 'max') {
         echo '<div class="hilite">
 Dodge <span class="gray px14"> '. $row['ddge'].' </span><span class="px14 gray"> / '.$ddge_max.'</span>
-<input type="submit" class="" name="input1" value="learn dodge" />
+<br/><input type="submit" class="" name="input1" value="learn dodge" />
 <input type="submit" class="max" name="input1" value="max dodge" />
 <span class="px12 gold"> '.$ddge_cost.' sp</span>
 </div>	';
     } elseif ($row['ddge']>=0 && $sp>=$ddge_cost) {
         echo '<div class="hilite">
  Dodge <span>'. $row['ddge'].'</span> <span class="px14 gray"> / '.$ddge_max.'</span>
-<input type="submit" class="" name="input1" value="learn dodge" />
+<br/><input type="submit" class="" name="input1" value="learn dodge" />
 <input type="submit" class="max" name="input1" value="max dodge" />
 <span class="px12 gold"> '.$ddge_cost.' sp</span>
 </div>	';
@@ -694,9 +682,8 @@ Dodge <span class="gray px14"> '. $row['ddge'].' </span><span class="px14 gray">
 
     // ----------------------------------------------------------------------------------Multi Arrow
     if ($row['multiarrow']>=1 && $multiarrow_cost == 'max') {
-        echo '<div class="hilite">
-Multi Arrow <span class="green">'. $row['multiarrow'].'</span><span class="maxed greenBG px14">MAX</span>
-</div>	';
+        echo '<div class="hilite maxed">
+Multi Arrow <span>'. $row['multiarrow'].'</span></div>	';
     } elseif ($row['multiarrow']>=1 && $sp<$multiarrow_cost) {
         echo '<div class="hilite">
 Multi Arrow <span>'. $row['multiarrow'].'</span> <span class="px14 gray"> / '.$multiarrow_max.'</span>
@@ -710,14 +697,14 @@ Multi Arrow <span class="gray px14"> '. $row['multiarrow'].' </span><span class=
     } elseif ($row['multiarrow']==0 && $multiarrow_cost != 'max') {
         echo '<div class="hilite">
 Multi Arrow <span class="gray px14"> '. $row['multiarrow'].' </span><span class="px14 gray"> / '.$multiarrow_max.'</span>
-<input type="submit" class="" name="input1" value="learn multi arrow" />
+<br/><input type="submit" class="" name="input1" value="learn multi arrow" />
 <input type="submit" class="max" name="input1" value="max multi arrow" />
 <span class="px12 gold"> '.$multiarrow_cost.' sp</span>
 </div>	';
     } elseif ($row['multiarrow']>=0 && $sp>=$multiarrow_cost) {
         echo '<div class="hilite">
 Multi Arrow <span>'. $row['multiarrow'].'</span> <span class="px14 gray"> / '.$multiarrow_max.'</span>
-<input type="submit" class="" name="input1" value="learn multi arrow" />
+<br/><input type="submit" class="" name="input1" value="learn multi arrow" />
 <input type="submit" class="max" name="input1" value="max multi arrow" />
 <span class="px12 gold"> '.$multiarrow_cost.' sp</span>
 </div>	';
@@ -727,9 +714,8 @@ Multi Arrow <span>'. $row['multiarrow'].'</span> <span class="px14 gray"> / '.$m
 
     // ----------------------------------------------------------------------------------Bolt Upgrade
     if ($row['boltupgrade']>=1 && $boltupgrade_cost == 'max') {
-        echo '<div class="hilite">
-Bolt Upgrade <span class="green">'. $row['boltupgrade'].'</span><span class="maxed greenBG px14">MAX</span>
-</div>	';
+        echo '<div class="hilite maxed">
+Bolt Upgrade <span>'. $row['boltupgrade'].'</span></div>	';
     } elseif ($row['boltupgrade']>=1 && $sp<$boltupgrade_cost) {
         echo '<div class="hilite">
 Bolt Upgrade <span>'. $row['boltupgrade'].'</span> <span class="px14 gray"> / '.$boltupgrade_max.'</span>
@@ -743,14 +729,14 @@ Bolt Upgrade <span class="gray px14"> '. $row['boltupgrade'].' </span><span clas
     } elseif ($row['boltupgrade']==0 && $boltupgrade_cost != 'max') {
         echo '<div class="hilite">
 Bolt Upgrade <span class="gray px14"> '. $row['boltupgrade'].' </span><span class="px14 gray"> / '.$boltupgrade_max.'</span>
-<input type="submit" class="" name="input1" value="learn bolt upgrade" />
+<br/><input type="submit" class="" name="input1" value="learn bolt upgrade" />
 <input type="submit" class="max" name="input1" value="max bolt upgrade" />
 <span class="px12 gold"> '.$boltupgrade_cost.' sp</span>
 </div>	';
     } elseif ($row['boltupgrade']>=0 && $sp>=$boltupgrade_cost) {
         echo '<div class="hilite">
 Bolt Upgrade <span>'. $row['boltupgrade'].'</span> <span class="px14 gray"> / '.$boltupgrade_max.'</span>
-<input type="submit" class="" name="input1" value="learn bolt upgrade" />
+<br/><input type="submit" class="" name="input1" value="learn bolt upgrade" />
 <input type="submit" class="max" name="input1" value="max bolt upgrade" />
 <span class="px12 gold"> '.$boltupgrade_cost.' sp</span>
 </div>	';
