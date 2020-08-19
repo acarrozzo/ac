@@ -1,0 +1,93 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #F7F7F7;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", "Helvetica", sans-serif;
+}
+
+.header {
+	width: 100vw;
+	height: 75px;
+	padding: 0px 25px;
+	background-color: #313131;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 5px solid #AF1E2D;
+}
+.header__title {
+	color: #F7F7F7;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 75px;
+	text-transform: uppercase;
+}
+.header__tools {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.btn {
+	width: 150px;
+	height: 35px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+
+	font-size: 16px;
+}
+.btn--pink {
+	color: #F7F7F7;
+	background-color: #D8008D;
+}
+.btn--red {
+	color: #F7F7F7;
+	background-color: #AF1E2D;
+}
+.btn:last-of-type {
+	margin-left: 15px;
+}
+.game {
+
+}
+.game__clicker {
+	border-radius: 5px;
+	background-color: #999;
+	cursor: pointer;
+	color: #fff;
+	font-size: 1.6rem;
+	font-weight: 900;
+	margin: 12px;
+	padding: 6px 32px;
+}
+.game__clicker:active {
+	background-color: #BF1E2D;
+}
+
+.game__clicker-counter {
+	font-size: 1.6rem;
+	    display: inline-block;
+	    background: #fff;
+}
+
+
+/* Progress Bar */
+.progress-bar {
+    width: 200px;
+    height: 5px;
+    background: #e0e0e0;
+    margin: 12px;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.progress-bar-fill {
+    display: block;
+    height: 5px;
+    background: #659cef;
+    border-radius: 3px;
+    /* transition: width 250ms ease-in-out; */
+}

@@ -25,26 +25,53 @@
 	</div>
 	<div class="collapserContent">
 
+		<!--- LG TACTICS ----->
+		<section>
+			<h3>LG TACTICS | A strategy-lite card game</h3>
+			<h4>The fast-paced fantasy card game with a clean and minimal style</h4>
+			<figure class="gal" data-pop>
+				<img src="img/tactics/tactics-psd-promo1.jpg" width="960" height="540" alt="LG TACTICS - strategy card game"/>
+			</figure>
+			<br/>
+			<p>LG TACTICS is available only this month on kickstarter.</p>
+			<p>Visit <a target="_blank" href="https://www.kickstarter.com/projects/archimedesgames/monster-party-playing-cards">
+				LG TACTICS here</a> or visit the link below.</p>
+				<br/>
+
+				<figure class="gal" data-pop>
+					<img src="img/tactics/tactics-psd-art2.jpg" width="960" height="540" alt="LG TACTICS - strategy card game"/>
+				</figure>
+				<br/>
+
+			<figure class="gal" data-pop>
+				<img src="img/tactics/tactics-psd-spread1.jpg" width="960" height="540" alt="LG TACTICS - strategy card game"/>
+			</figure>
+			<br/>
+
+
+
+				<p>You can <i>only</i> get them through Kickstarter and <i>only</i> this month. So check it out!</p>
+
+				<p><a target="_blank" class="btn big" href="https://www.kickstarter.com/projects/archimedesgames/monster-party-playing-cards">Get LG TACTICS here<i class="fa fa-angle-right"></i></a></p>
+		</section>
+
 		<!--- MONSTER PARTY TEASER ----->
 		<section>
 			<h3>Monster Party Playing Cards</h3>
-			<h4>Available only for a Limited Time</h4>
+			<h4>Thanks for making my five-suit deck a success!</h4>
+
 			<figure class="" data-pop>
-				<img src="img/monsterparty/monster-party-kickstarterpromo-b.jpg" width="1000" height="563" alt="Monster Party Playing Cards - Five Suit Deck"/>
+				<img src="img/monsterparty/monster-party-kickstarterabout-graybg.jpg" width="1200" height="675" alt="Monster Party Playing Cards - Five Suit Deck Spread"/>
 			</figure>
-			<br/>
-			<p>Monster Party Five Suit Deck is finally available! Go <a href="https://www.kickstarter.com/projects/archimedesgames/monster-party-playing-cards">here</a> or visit the link below. </p>
-			<br/>
-			<p><a class="btn big" href="https://www.kickstarter.com/projects/archimedesgames/monster-party-playing-cards">Get Monster Party here<i class="fa fa-angle-right"></i></a></p>
-							<figure class="" data-pop>
-								<img src="img/monsterparty/monster-party-kickstarterabout-graybg.jpg" width="1200" height="675" alt="Monster Party Playing Cards - Five Suit Deck Spread"/>
-							</figure>
-			<br/>
-			<p>You can <i>only</i> get them through Kickstarter and <i>only</i> this month. So check it out!</p>
+
+
+			<p>My first game release was an amazing success thanks to you. Thank you to everyone who picked up a deck or two. </p>
 				<figure class="" data-pop>
 					<img src="img/monsterparty/monster-party-kickstarterbox-graybg.jpg" width="1000" height="563" alt="Monster Party Playing Cards - Five Suit Deck"/>
 				</figure>
-				<p><a class="btn big" href="https://www.kickstarter.com/projects/archimedesgames/monster-party-playing-cards">Get Monster Party here<i class="fa fa-angle-right"></i></a></p>
+				<p>View the old campaign page
+				 <a target="_blank" href="https://www.kickstarter.com/projects/archimedesgames/monster-party-playing-cards">here</a> or visit the link below. </p>
+				<p><a target="_blank" class="btn big" href="https://www.kickstarter.com/projects/archimedesgames/monster-party-playing-cards">Monster Party<i class="fa fa-angle-right"></i></a></p>
 		</section>
 
 		<!--- DRIFT ----->
@@ -129,7 +156,7 @@
 	</div>
 		</div>
 		<div id="center">
-			<div class="collapser justMobile">
+			<div class="collapser expanded">
 				<h2>Personal Favs</h2>
 			</div>
 			<div class="collapserContent">
