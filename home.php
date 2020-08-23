@@ -34,7 +34,7 @@
 			</figure>
 			<br/>
 			<p>LG TACTICS is available only this month on kickstarter.</p>
-			<p>Visit <a target="_blank" href="https://www.kickstarter.com/projects/archimedesgames/monster-party-playing-cards">
+			<p>Visit <a target="_blank" href="/">
 				LG TACTICS here</a> or visit the link below.</p>
 				<br/>
 
@@ -52,7 +52,7 @@
 
 				<p>You can <i>only</i> get them through Kickstarter and <i>only</i> this month. So check it out!</p>
 
-				<p><a target="_blank" class="btn big" href="https://www.kickstarter.com/projects/archimedesgames/monster-party-playing-cards">Get LG TACTICS here<i class="fa fa-angle-right"></i></a></p>
+				<p><a target="_blank" class="btn big" href="/">Get LG TACTICS here<i class="fa fa-angle-right"></i></a></p>
 		</section>
 
 		<!--- MONSTER PARTY TEASER ----->
