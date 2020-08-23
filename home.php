@@ -28,7 +28,7 @@
 		<!--- LG TACTICS ----->
 		<section>
 			<h3>LG TACTICS | A strategy-lite card game</h3>
-			<h4>The fast-paced fantasy card game with a clean and minimal style</h4>
+			<h4>The easy to learn fantasy card game with a clean and minimal style</h4>
 			<figure class="gal" data-pop>
 				<img src="img/tactics/tactics-psd-promo1.jpg" width="960" height="540" alt="LG TACTICS - strategy card game"/>
 			</figure>
