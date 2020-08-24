@@ -33,9 +33,12 @@
 				<img src="img/tactics/tactics-psd-promo1.jpg" width="960" height="540" alt="LG TACTICS - strategy card game"/>
 			</figure>
 			<br/>
-			<p>LG TACTICS is available only this month on kickstarter.</p>
-			<p>Visit <a target="_blank" href="https://www.kickstarter.com/projects/archimedesgames/lg-tactics-strategy-card-game">
-				LG TACTICS here</a> or visit the link below.</p>
+			<p>LG TACTICS is available during September on kickstarter.</p>
+			<br/>
+
+			<h4>Sign Up</h4>
+			<p>Visit <a target="_blank" href="https://acarrozzo.com/archimedes/index.html">
+				Archimedes Games</a> and sign up so you receive early access and info for the next game. </p>
 				<br/>
 
 				<figure class="gal" data-pop>
