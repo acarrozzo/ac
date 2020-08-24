@@ -28,13 +28,13 @@
 		<!--- LG TACTICS ----->
 		<section>
 			<h3>LG TACTICS | A strategy-lite card game</h3>
-			<h4>The easy to learn fantasy card game with a clean and minimal style</h4>
+			<h4>The easy to learn fantasy battle card game with a clean and minimal style</h4>
 			<figure class="gal" data-pop>
 				<img src="img/tactics/tactics-psd-promo1.jpg" width="960" height="540" alt="LG TACTICS - strategy card game"/>
 			</figure>
 			<br/>
 			<p>LG TACTICS is available only this month on kickstarter.</p>
-			<p>Visit <a target="_blank" href="/">
+			<p>Visit <a target="_blank" href="https://www.kickstarter.com/projects/archimedesgames/lg-tactics-strategy-card-game">
 				LG TACTICS here</a> or visit the link below.</p>
 				<br/>
 
@@ -52,7 +52,7 @@
 
 				<p>You can <i>only</i> get them through Kickstarter and <i>only</i> this month. So check it out!</p>
 
-				<p><a target="_blank" class="btn big" href="/">Get LG TACTICS here<i class="fa fa-angle-right"></i></a></p>
+				<p><a target="_blank" class="btn big" href="https://www.kickstarter.com/projects/archimedesgames/lg-tactics-strategy-card-game">Get LG TACTICS here<i class="fa fa-angle-right"></i></a></p>
 		</section>
 
 		<!--- MONSTER PARTY TEASER ----->
