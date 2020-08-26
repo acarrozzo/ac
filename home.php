@@ -8,8 +8,8 @@
 			<span class="cImg">
 				<img src="img/intro/anthony-carrozzo-square1bw.jpg" width="360" height="360" alt="Anthony Carrozzo"/>
 			</span>
-			<p>What's up people. My name is Anthony and I have been working as a designer for over a decade now at a handful of equally amazing places. I am currently the lead designer and front-end developer at Newsday where I specialize in UI & UX for all their digital stuffs.</p>
-			<p> I have past experience in retail marketing, brand identity, music production & photography. And I always have a whole mess of other creative projects in the works.</p>
+			<p>What's up people. My name is Anthony and I have been working as a designer for over a decade now at a handful of equally amazing places. I am currently the lead designer and front-end developer at Newsday where I specialize in UI & UX for their digital stuffs.</p>
+			<p>I have past experience in retail marketing, brand identity, music production & photography. And I always have a whole mess of other creative projects in the works.</p>
 			<h5>Skills that pay the bills:</h5>
 			<p>UI, UX, SEO, HTML, SCSS, JS, PHP, Photoshop, Illustrator, InDesign, After Effects, Wordpress, Github, all that good stuff.</p>
 			<h5>Skills that don't pay any bills whatsoever:</h5>
@@ -28,35 +28,34 @@
 		<!--- LG TACTICS ----->
 		<section>
 			<h3>LG TACTICS | A strategy-lite card game</h3>
-			<h4>The easy to learn fantasy battle card game with a clean and minimal style</h4>
+			<h4>The easy to learn battle card game with a clean minimal style</h4>
 			<figure class="gal" data-pop>
 				<img src="img/tactics/tactics-psd-promo1.jpg" width="960" height="540" alt="LG TACTICS - strategy card game"/>
 			</figure>
 			<br/>
-			<p>LG TACTICS is available during September on kickstarter.</p>
-			<br/>
+			<p><a class="btn big" href="https://www.kickstarter.com/projects/archimedesgames/lg-tactics-strategy-card-game">LG TACTICS | View on Kickstarter<i class="fa fa-angle-right"></i></a></p>
 
-			<h4>Sign Up</h4>
-			<p>Visit <a target="_blank" href="https://acarrozzo.com/archimedes/index.html">
-				Archimedes Games</a> and sign up so you receive early access and info for the next game. </p>
-				<br/>
-
-				<figure class="gal" data-pop>
-					<img src="img/tactics/tactics-psd-art2.jpg" width="960" height="540" alt="LG TACTICS - strategy card game"/>
-				</figure>
-				<br/>
-
+			<p>With this game I challenged myself to remove layers of intricate mechanics I normally end up creating in card games. An ultra simplified take on the CCG genre, my intention is for this to act as a subtle introduction to the story and future installments in the Light Gray Series.</p>
+		<br/>
 			<figure class="gal" data-pop>
-				<img src="img/tactics/tactics-psd-spread1.jpg" width="960" height="540" alt="LG TACTICS - strategy card game"/>
+				<img src="img/tactics/tactics-psd-table1.jpg" width="960" height="540" alt="LG TACTICS - strategy card game"/>
 			</figure>
 			<br/>
+			<p>LG TACTICS is available only during September. And only on <a target="_blank" href="https://www.kickstarter.com/projects/archimedesgames/lg-tactics-strategy-card-game">Kickstarter</a>.</p>
 
-
-
-				<p>You can <i>only</i> get them through Kickstarter and <i>only</i> this month. So check it out!</p>
-
-				<p><a target="_blank" class="btn big" href="https://www.kickstarter.com/projects/archimedesgames/lg-tactics-strategy-card-game">Get LG TACTICS here<i class="fa fa-angle-right"></i></a></p>
 		</section>
+		<!--- ARCHIMEDES GAMES 1 ----->
+		<section>
+			<h3>Archimedes Game Co</h3>
+			<h4>Let's play</h4>
+			<figure class="gal" data-pop>
+				<img src="archimedes/img/archimedes-game-co-logo2.jpg" width="960" height="540" alt="Archimedes Game Co Logo 2"/>
+			</figure>
+			<br/>
+			<p>Visit <a target="_blank" href="https://acarrozzo.com/archimedes/index.html">
+				Archimedes Games</a> and sign up so you stay up to date with all my game happenings. </p>
+			<br/>
+			</section>
 
 		<!--- MONSTER PARTY TEASER ----->
 		<section>
@@ -72,9 +71,8 @@
 				<figure class="" data-pop>
 					<img src="img/monsterparty/monster-party-kickstarterbox-graybg.jpg" width="1000" height="563" alt="Monster Party Playing Cards - Five Suit Deck"/>
 				</figure>
-				<p>View the old campaign page
-				 <a target="_blank" href="https://www.kickstarter.com/projects/archimedesgames/monster-party-playing-cards">here</a> or visit the link below. </p>
-				<p><a target="_blank" class="btn big" href="https://www.kickstarter.com/projects/archimedesgames/monster-party-playing-cards">Monster Party<i class="fa fa-angle-right"></i></a></p>
+				<p>View the old campaign page here:
+				 <a target="_blank" href="https://www.kickstarter.com/projects/archimedesgames/monster-party-playing-cards">Monster Party Kickstarter Page 2019</a></p>
 		</section>
 
 		<!--- DRIFT ----->
