@@ -27,15 +27,15 @@
 
 		<!--- LG TACTICS ----->
 		<section>
-			<h3>LG TACTICS | A strategy-lite card game</h3>
-			<h4>The easy to learn battle card game with a clean minimal style</h4>
+
 			<figure class="gal" data-pop>
 				<img src="img/tactics/tactics-psd-promo1.jpg" width="960" height="540" alt="LG TACTICS - strategy card game"/>
 			</figure>
-			<br/>
+			<h3>LG TACTICS | A strategy-lite card game</h3>
+			<h4>The easy to learn battle card game with a clean minimal style</h4>
+			<p>With this game I challenged myself to remove layers of intricate mechanics I normally end up creating in card games. An ultra simplified take on the CCG genre, my intention is for this to act as a subtle introduction to the story and future installments in the Light Gray Series.</p>
 			<p><a class="btn big" href="https://www.kickstarter.com/projects/archimedesgames/lg-tactics-strategy-card-game">LG TACTICS | View on Kickstarter<i class="fa fa-angle-right"></i></a></p>
 
-			<p>With this game I challenged myself to remove layers of intricate mechanics I normally end up creating in card games. An ultra simplified take on the CCG genre, my intention is for this to act as a subtle introduction to the story and future installments in the Light Gray Series.</p>
 		<br/>
 			<figure class="gal" data-pop>
 				<img src="img/tactics/tactics-psd-table1.jpg" width="960" height="540" alt="LG TACTICS - strategy card game"/>

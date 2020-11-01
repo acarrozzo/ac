@@ -15,6 +15,8 @@ $red2:#c41520;
 $green:#70bf54;
 $green2:#079c42;
 
+//$red:#294a2f; // SAGE GREEN !!!
+
 $blue:#00aeef;
 $blue2:#006cb3;
 $yellow:#ffc20e;
@@ -45,6 +47,9 @@ $center:800px;
 //$left:25%;
 $primary:65%;
 $secondary:35%;
+
+
+
 
 @mixin transition($prop, $secs) {
     -webkit-transition: $prop $secs ease-in-out;
@@ -141,6 +146,10 @@ nav {
 	background-position: center;
 	ul {
 		background: rgba(0,0,0,.7);
+    display: flex;
+    overflow-x: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
 	}
 	li {
 		display: inline-block;
@@ -150,6 +159,7 @@ nav {
 	}
 	a {
 	  	padding: 6px $padding;
+      padding:6px 18px;
 	display: inline-block;
 	color: #fff;
 	font-weight: 900;
@@ -191,13 +201,12 @@ nav {
 
 /* ----- SECTIONS ----- */
 section {
-margin: -1px 20px 0 15px;
-    padding: 20px 0 60px 15px;
-  clear: both;
-  position: relative;
-  overflow-y: hidden;
-  border-bottom: solid 1px $red;
-  border-left: solid 1px $red;
+  margin: 0 20px;
+      padding: 20px 0 40px;
+      clear: both;
+      position: relative;
+    //  overflow-y: hidden;
+      border-bottom: solid 1px #ccc;
 }
 hr {
 	border: 0;
@@ -227,7 +236,7 @@ h1 {
 }
 h2, h3, h4, h5, h6 {
 	line-height: 1.3em;
-	font-style:italic;
+	//font-style:italic;
 	letter-spacing: -.02em;
 	padding: 0;
     margin: 0 ;
@@ -449,10 +458,11 @@ pre {
 }
 /* ----- MEDIA BOX ----- */
 figure  {
-	width:100%;
-	margin: 0;
+	//width:100%;
+	//margin: 0;
 	position:relative;
-	//margin:$padding 0 $padding/2;
+        margin: 0 -20px;
+      width: 100vw;
 }
 figcaption, .caption, h5 + p {
 	font-size: .9rem;
@@ -588,22 +598,26 @@ footer {
         top: 16px;
         line-height: 1em;
         font-size: 1.8rem;
-        color: #fff;
-
+        //color: #fff;
         height: 40px;
-        width: 40px;
-
-        left: 0;
-            border-radius: 0 50% 50% 0;
-    padding: 7px 11px 7px 7px;
-        background: $red;
-        background: linear-gradient($red, $red2);
+        //width: 40px;
+        //left: 0;
+        left: 20px;
+        //border-radius: 0 50% 50% 0;
+        padding: 7px 11px 7px 7px;
+        padding:0;
+        //background: $red;
+        //background: linear-gradient($red, $red2);
+        background: 0;
+        color: #000;
+        padding-top: 4px;
 	}
 }
 .collapser.expanded {
 	&:before {
       content:"\f106";
-      padding-top: 4px;}
+      padding-top: 4px;
+    }
 	}
 .collapser:not(.expanded) {
 	//border-bottom: solid 1px #ccc;
@@ -631,17 +645,29 @@ footer {
 /* ------------ RESPONSE  - Bigger than Phone */
 @media (min-width: $phoneBreak) {
   section {
-    margin: -1px 20px 0 35px;
-  padding: 20px 0 60px 35px;
+  //  margin: -1px 20px 0 35px;
+  //padding: 20px 0 60px 35px;
+  //margin: -1px 20px 0 30px;
+  //  padding: 20px 0 60px 0px;
+  overflow-y: hidden;
   }
-  nav li {
+  nav {
+    ul {display:block;}
+    li {
     width: auto;
   }
+}
+
+figure {
+    margin: 0;
+    width: 100%;
+}
+
   .cImg {
 		margin-top:0px;
 	}
   h2 {
-    padding-left:70px;
+  //  padding-left:70px;
   }
 	.list {
 		&.split {
@@ -673,9 +699,9 @@ footer {
 	}
   .collapser {
       &:before {
-        left: 15px;
-        padding: 7px 11px;
-        border-radius: 50%;
+      //  left: 15px;
+      //  padding: 7px 11px;
+      //  border-radius: 50%;
         }
   }
 	.leftDesk {

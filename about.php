@@ -36,7 +36,7 @@
 			<figure class="right" data-pop>
 				<img src="img/nd/nd-group-1.jpg" width="1440" height="859" alt="Newsday group at awards show"/>
 			</figure>
-			<p>Below is a quick summary of some of the cool places I've worked throughout the years. Many great friends and memories were made, as well as a couple bucks. </p>
+			<p>Below is a quick summary of some of the cool places I've worked throughout the years. Many great friends and memories were made. </p>
 
 		</section>
 		<section>
