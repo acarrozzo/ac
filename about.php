@@ -11,7 +11,7 @@
 			</span>
 
 
-			<p>My name is Anthony and I have been working as a designer for over 10 years now at a handful of equally amazing places. I am currently the lead designer and front-end developer at Newsday where I specialize in UI & UX for all their digital stuffs.</p>
+			<p>My name is Anthony and I have been working as a designer for over a decade now at a handful of equally amazing places. I am currently the lead designer and front-end developer at Newsday where I specialize in UI & UX for their digital stuffs.</p>
 			<p> I have past experience in retail marketing, brand identity, music production & photography. And I always have a whole mess of other creative projects in the works.</p>
 			<h5>Skills that pay the bills:</h5>
 			<p>UI, UX, SEO, HTML, SCSS, JS, PHP, Photoshop, Illustrator, InDesign, After Effects, Wordpress, Github, all that good stuff.</p>
@@ -40,8 +40,6 @@
 
 		</section>
 		<section>
-			<h3>Newsday</h3>
-			<h4>2011 - present | Isn't that special</h4>
 			<div id="slides-nd">
 				<img src="img/nd/football-helmets.jpg" width="1000" height="576" alt="Newsday Football Helmets Preview"/>
 				<img src="img/nd/article1.jpg" width="1000" height="576" alt="Newsday Article Preview"/>
@@ -56,6 +54,8 @@
 				<a href="#" class="slidesjs-previous slidesjs-navigation"><i class="fa fa-angle-left"></i></a>
 				<a href="#" class="slidesjs-next slidesjs-navigation"><i class="fa fa-angle-right"></i></a>
 			</div>
+			<h3>Newsday</h3>
+			<h4>2011 - present | Isn't that special</h4>
 			<p>The bread and butter of my experience at Newsday, News12 and amNY have been creating custom interactives and investigative journalism pieces that require a little extra flare when the normal article presentation just won't cut it.</p>
 			<p><strong> The slideshow above and the list below is a short example of projects that I both designed and coded.</strong></p>
 
@@ -73,8 +73,7 @@
 
 
 		<section>
-			<h3>Mobileistic</h3>
-			<h4>2009 - 2011 | Cell Baby Cell</h4>
+
 			<div id="slides-mob">
 				<img src="img/mob/mobileistic-lucky.jpg" width="1000" height="576" alt="Mobileistic Feeling Lucky Design "/>
 				<img src="img/mob/mobileistic1.jpg" width="1000" height="576" alt="Mobileistic Spread Design"/>
@@ -108,13 +107,14 @@
 						<img src="img/mob/mobileistic_catalog_page17.jpg" width="612" height="612" alt="Mobileistic Page Design"/>
 					</figure>
 			</div>
+			<h3>Mobileistic</h3>
+			<h4>2009 - 2011 | Cell Baby Cell</h4>
 			<p>Mobileistic is a retail and wholesale distributor of mobile phones, bluetooth headsets, speakers, cases and other wireless accessories. I designed and maintained their marketing materials from 2010 - 2012, and participated in some really fun trade shows in Orlando and Vegas during that time.</p>
 			<p>Product Catalog for cell phone accessories. View the whole <a target="_blank" href="img/mob/mob141-July2011-ProductCatalog_OL.pdf">PDF here.</a> </p>
 		</section>
 		<!--- UNITED NATIONS ----->
 		<section>
-			<h3>United Nations</h3>
-			<h4>2008 - 2009 | What a sweet view</h4>
+
 			<div id="slides-un">
 				<img src="img/un/un-logo.jpg" width="1000" height="576" alt="United Nations Logo"/>
 				<img src="img/un/un-web1.jpg" width="1000" height="576" alt="United Nations Web Preview"/>
@@ -122,22 +122,23 @@
 				<a href="#" class="slidesjs-previous slidesjs-navigation"><i class="fa fa-angle-left"></i></a>
 				<a href="#" class="slidesjs-next slidesjs-navigation"><i class="fa fa-angle-right"></i></a>
 			</div>
+			<h3>United Nations</h3>
+			<h4>2008 - 2009 | What a sweet view</h4>
 			<p>United Nations was a really cool place to work. The view from the 40th floor looking across the East River into Queens was so cool. And the insane selection of international foods in their cafeteria was delish. We also did a project here and there to assist in their peace keeping initiatives around the globe. Not too shabby.</p>
 		</section>
-		<!--- IDS MENUS ----->
+		<!--- S&B ----->
 		<section>
-			<h3>Steve & Barry's</h3>
-			<h4>2006 - 2008 | Retail & Fashion Design</h4>
 			<figure class="" data-pop>
 				<img src="img/sb/change/sb-cold.jpg" width="1000" height="576" alt="Steve & Barrys - Out of the Cold Poster Design"/>
 			</figure>
+			<h3>Steve & Barry's</h3>
+			<h4>2006 - 2008 | Retail & Fashion Design</h4>
 			<p>Steve & Barry's was one of the best. I really enjoyed designing for a retail environment and it was interesting to see the progress of their brand as they added celebrity clothing lines. I was also lucky enough to go to India to train fellow employees there. That was a great experience. S&B is also where I met the guys who would be my future bandmates in BFTZ. I honestly wish S&B didn't go bankrupt, because it was an absolute blast working there. </p>
 			<p>View all S&B designs <a href="design.php">here</a>
 		</section>
 		<!--- IDS MENUS ----->
 		<section>
-			<h3>I.D.S. Menus</h3>
-			<h4>2005 - 2006 | Designing Menus</h4>
+
 			<div id="slides-menu">
 				<img src="img/menu/menu-coffee.jpg" width="1000" height="576" alt="IDS Menus - Coffee Shop Menu"/>
 				<img src="img/menu/menu-pizzapasta.jpg" width="1000" height="576" alt="IDS Menus - Pizza and Pasta Menu"/>
@@ -147,18 +148,20 @@
 				<a href="#" class="slidesjs-previous slidesjs-navigation"><i class="fa fa-angle-left"></i></a>
 				<a href="#" class="slidesjs-next slidesjs-navigation"><i class="fa fa-angle-right"></i></a>
 			</div>
+			<h3>I.D.S. Menus</h3>
+			<h4>2005 - 2006 | Designing Menus</h4>
 			<p>International Display Systems was a great company to work for where I was mostly designing the big menu boards you might see at a movie theater or coffee shop. All the items and prices were on magnetic strips so it was easy for the user to mix up the menu. I also created some normal print menus as well as animated graphics in After Effects that were displayed on big screen TVs. What up Linda! </p>
 		</section>
 		<!--- POLYPLASTIC FORMS ----->
 		<section>
-			<h3>Polyplastic Forms</h3>
-			<h4>2004 - 2005 | Making Stuff with Mike</h4>
 			<div id="slides-poly">
 				<img src="img/poly/poly-group.jpg" width="1000" height="576" alt="PolyPlastics - Anthony and Mike on the Computer"/>
 				<img src="img/poly/poly-group.jpg" width="1000" height="576" alt="PolyPlastics - Anthony and Mike on the Computer alt"/>
 				<a href="#" class="slidesjs-previous slidesjs-navigation"><i class="fa fa-angle-left"></i></a>
 				<a href="#" class="slidesjs-next slidesjs-navigation"><i class="fa fa-angle-right"></i></a>
 			</div>
+			<h3>Polyplastic Forms</h3>
+			<h4>2004 - 2005 | Making Stuff with Mike</h4>
 			<p>Poly was my first job out of college, I started a month before I graduated. It was pretty cool, I operated a large format (6 foot) printer, a vinyl cutting machine, and a giant CAD machine where we created and carved out 3-dimensional products from wood, plastic, metal and foam. I worked with one of my closest friends MB, and man we had alot of fun making (and breaking) cool stuff. </p>
 			<figure class="left33 gal" data-pop>
 				<img src="img/poly/polyletters-1.jpg" width="418" height="650" alt="PolyPlastic Forms - 3D Metal Letters"/>

@@ -216,12 +216,12 @@
 		</section>
 
 		<section>
-			<h3>Exotic Snakes</h3>
-			<h4>Business Card Design</h4>
+
 			<figure class="gal" data-pop>
 				<img src="img/es/esbizcard1.jpg" width="650" height="300" alt="Exotic Snakes Business Card Preview"/>
 			</figure>
-
+			<h3>Exotic Snakes</h3>
+			<h4>Business Card Design</h4>
 			<p>Man you don't know? My dad is big time in the snake biz. Here's the new card I made him.</p>
 			<figure class="gal left" data-pop>
 				<img src="img/es/esbizcard2010_r1.jpg" width="650" height="447" alt="Exotic Snakes Business Card - Step 1"/>

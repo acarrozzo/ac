@@ -8,7 +8,8 @@
 <div class="collapserContent">
 <section>
 <p><strong>SS4ST</strong> is my solo music project. I like to create random tunes here and there for fun. I have finally compiled over 40 instrumentals into 3 albums and have them up on Spotify, iTunes, Amazon Music, and more. Enjoy.</p>
-<hr>
+</section>
+<section>
 <figure class="right50 gal" data-pop>
 <img src="img/music/art/drift_album_art.jpg" width="800" height="800" alt="Drift Album Art - Strange Sounds for Strange Times - Anthony Carrozzo music">
 </figure>
@@ -17,7 +18,8 @@
 <p>Drift is my most recent collection of instrumentals. This album is currently my favorite.</p>
 <iframe class="" src="https://open.spotify.com/embed/album/4jQO9Oi8tdWgxB0XoSTrkV" width="100%" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
-<hr>
+</section>
+<section>
 <figure class="right50 gal" data-pop>
 <img src="img/music/art/Bizarrr_AlbumArt.jpg" width="800" height="800" alt="Bizarr Album Art - Strange Sounds for Strange Times - Anthony Carrozzo music">
 </figure>
@@ -26,7 +28,8 @@
 <p>Bizarrr is a bit darker and stranger than the rest. </p>
 <iframe class="" src="https://open.spotify.com/embed/album/5NPZtvUeHQgeVSz2Zlw9Q3" width="100%" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
-<hr>
+</section>
+<section>
 <figure class="right50 gal" data-pop>
 <img src="img/music/art/TheLostInstrumentals_AlbumArt.jpg" width="800" height="800" alt="The Lost Instrumentals - Album Art - Strange Sounds for Strange Times - Anthony Carrozzo music">
 </figure>
@@ -91,11 +94,7 @@
 			<h3>The BFTZ Demo</h3>
 			<h4>Recorded 2012, Brooklyn NY</h4>
 			<p>Banned from the Zoo was a 5-member rock band from New York. We performed many shows between 2010 and 2015, mostly in the city, and recorded and released a 4 song demo. You can hear us on spotify and view us on YouTube.</p>
-			<ul class="list">
-				<li><a href="https://www.youtube.com/user/BFTZlive/videos" target="_blank">BFTZ Videos </a></li>
-				<li><a href="/bftz/index.html" target="_blank">BFTZ Site</a></li>
-
-			</ul>
+			BFTZ Links: <a href="https://www.youtube.com/user/BFTZlive/videos" target="_blank">Videos </a> | <a href="/bftz" target="_blank">Site</a>
 		</section>
 	</div>
 

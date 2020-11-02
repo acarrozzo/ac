@@ -203,10 +203,13 @@ nav {
 section {
   margin: 0 20px;
       padding: 20px 0 40px;
+      padding: 1.5rem 0 3rem;
       clear: both;
       position: relative;
+      display: inline-block;
     //  overflow-y: hidden;
-      border-bottom: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    border-bottom: solid 1px #ddd;
 }
 hr {
 	border: 0;
@@ -244,6 +247,7 @@ h2, h3, h4, h5, h6 {
 h2 {
   padding:20px 20px 0 55px;
   font-size: 1.8rem;
+      font-weight: 300;
   margin: 0;
   display: inline-block;
 	+ figure {margin-top:$padding;}
@@ -251,7 +255,8 @@ h2 {
 
 }
 h3 {
-	font-size: 1.6rem;
+  //font-size: 1.6rem;
+  font-size: 1.8rem;
 	line-height: 1.2em;
 	margin-top: 20px;
 	//&:first-child {margin: 0;}
@@ -263,11 +268,15 @@ h4 {
   margin: 2px 0 10px;
 
 	}
-h5 {
-	font-size: 1.1rem;
-	margin: 15px 0 0px;
-	//color: $red;
-}
+  h5 {
+  	font-size: 1.1rem;
+  	margin: 15px 0 0px;
+  	//color: $red;
+  }
+  h6 {
+  	font-size: 1rem;
+  	//margin: 15px 0 0px;
+  }
 p {
 	padding:10px 0;
 	font-size: 1.1rem;
@@ -649,7 +658,8 @@ footer {
   //padding: 20px 0 60px 35px;
   //margin: -1px 20px 0 30px;
   //  padding: 20px 0 60px 0px;
-  overflow-y: hidden;
+  overflow: hidden;
+
   }
   nav {
     ul {display:block;}

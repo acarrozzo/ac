@@ -1,19 +1,50 @@
 <?php include 'inc/top.php'; ?>
 
 <div id="center">
-	<!--- MONSTER PARTY TEASER ----->
-	<div class="collapser">
-		<h2>Monster Party</h2>
+	<!--- GAMES MAIN ----->
+	<div class="collapser expanded">
+		<h2>Published Games</h2>
 	</div>
-	<div class="collapserContent">
-	<section>
-		<h3>Illustrated Cards</h3>
-		<h4>Coming Fall 2019</h4>
-		<figure class="" data-pop>
-			<img src="img/monsterparty/monster-party-cards-teaser1.jpg" width="1000" height="563" alt="Monster Party Playing Cards - 3 cards"/>
-		</figure>
-				<p><a class="btn big" href="/archimedes/index.html">Monster Party Sign Up<i class="fa fa-angle-right"></i></a></p>
+	<div class="collapserContent ">
+
+		<!--- GAME | LG TACTICS ----->
+		<section>
+			<figure class="gal" data-pop>
+				<img src="img/tactics/tactics-psd-2-thank-you.jpg" width="960" height="540" alt="LG TACTICS - strategy card game"/>
+			</figure>
+			<figure class="gal right" data-pop>
+				<img src="img/tactics/tactics-psd-2-final-poster.jpg" width="960" height="540" alt="LG TACTICS - strategy card game"/>
+			</figure>
+
+			<h3>LG TACTICS | A strategy-lite card game</h3>
+			<h4>The easy to learn battle card game with a clean minimal style</h4>
+
+			<p>With this game I challenged myself to remove layers of intricate mechanics I normally end up creating in card games. An ultra simplified take on the CCG genre, my intention is for this to act as a subtle introduction to the story and future installments in the Light Gray Series.</p>
+
+			<p>View the campaign page here (September 2020): <a target="_blank" href="https://www.kickstarter.com/projects/archimedesgames/lg-tactics-strategy-card-game">LG TACTICS | Kickstarter Campaign</a>.</p>
+
 		</section>
+		<!--- GAME | MONSTER PARTY ----->
+		<section>
+			<h3>Monster Party | Five-Suit Deck</h3>
+			<h4>Thanks for making my first card deck a success!</h4>
+
+			<figure class="" data-pop>
+				<img src="img/monsterparty/monster-party-kickstarterabout-graybg.jpg" width="1200" height="675" alt="Monster Party Playing Cards - Five Suit Deck Spread"/>
+			</figure>
+
+
+			<p>My first game release was an amazing success thanks to you. Thank you to everyone who picked up a deck or two. </p>
+				<figure class="" data-pop>
+					<img src="img/monsterparty/monster-party-kickstarterbox-graybg.jpg" width="1000" height="563" alt="Monster Party Playing Cards - Five Suit Deck"/>
+				</figure>
+				<p>View the campaign page here (November 2019):
+				 <a target="_blank" href="https://www.kickstarter.com/projects/archimedesgames/monster-party-playing-cards">Monster Party Kickstarter Page</a></p>
+				 <p>Sign up for Archimedes Games Newsletter: <a target="_blank" href="/archimedes/index.html">Archimedes Game Co.</a></p>
+
+		</section>
+
+
 	</div>
 
 
