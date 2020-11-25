@@ -115,7 +115,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 103, ../assets/scss/archimedes.scss */
+/* line 106, ../assets/scss/archimedes.scss */
 body {
   font-family: "Lato", sans-serif;
   font-size: 16px;
@@ -125,44 +125,44 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 110, ../assets/scss/archimedes.scss */
+/* line 113, ../assets/scss/archimedes.scss */
 *, :after, :before {
   box-sizing: border-box;
 }
 
-/* line 114, ../assets/scss/archimedes.scss */
+/* line 117, ../assets/scss/archimedes.scss */
 main {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
 }
 
-/* line 115, ../assets/scss/archimedes.scss */
+/* line 118, ../assets/scss/archimedes.scss */
 a {
   color: #ef404a;
   text-decoration: none;
   line-height: 1.4em;
 }
 
-/* line 116, ../assets/scss/archimedes.scss */
+/* line 119, ../assets/scss/archimedes.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 117, ../assets/scss/archimedes.scss */
+/* line 120, ../assets/scss/archimedes.scss */
 img {
   width: 100%;
   height: auto;
 }
 
-/* line 118, ../assets/scss/archimedes.scss */
+/* line 121, ../assets/scss/archimedes.scss */
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 123, ../assets/scss/archimedes.scss */
+/* line 126, ../assets/scss/archimedes.scss */
 h1, h2, h3, h4, h5, h6, p, strong, span, .font, input {
   /*  font-family: 'Fredoka One', cursive;
   font-family: 'Bangers', cursive;
@@ -172,7 +172,7 @@ h1, h2, h3, h4, h5, h6, p, strong, span, .font, input {
   font-family: 'Baloo', sans-serif;
 }
 
-/* line 131, ../assets/scss/archimedes.scss */
+/* line 134, ../assets/scss/archimedes.scss */
 h1 {
   font-size: 0px;
   margin: 0 auto;
@@ -181,35 +181,49 @@ h1 {
   text-align: center;
   padding: 22px;
 }
-/* line 135, ../assets/scss/archimedes.scss */
+/* line 138, ../assets/scss/archimedes.scss */
 h1 img {
   max-width: 200px;
 }
 
-/* line 137, ../assets/scss/archimedes.scss */
+/* line 140, ../assets/scss/archimedes.scss */
+h2 {
+  font-size: 2.2rem;
+  margin: 20px 0 12px;
+  line-height: 1;
+}
+
+/* line 144, ../assets/scss/archimedes.scss */
+h3 {
+  font-size: 1.8rem;
+  line-height: 1em;
+  margin: 20px 0 0;
+}
+
+/* line 149, ../assets/scss/archimedes.scss */
 img {
   width: 100%;
 }
 
-/* line 138, ../assets/scss/archimedes.scss */
+/* line 150, ../assets/scss/archimedes.scss */
 header {
   background: url(../img/mp-signup-img2.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
   background-color: #000;
-  min-height: 90vh;
+  min-height: 85vh;
   padding: 50px 22px;
 }
 
-/* line 149, ../assets/scss/archimedes.scss */
+/* line 161, ../assets/scss/archimedes.scss */
 .top {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
   text-shadow: #000 0px 0px 10px, #000 0px 0px 20px, #000 0px 0px 5px;
 }
-/* line 152, ../assets/scss/archimedes.scss */
+/* line 164, ../assets/scss/archimedes.scss */
 .top h2 {
   font-size: 2.2rem;
   display: block;
@@ -218,7 +232,7 @@ header {
   padding: 0;
   margin: 0 0 12px;
 }
-/* line 160, ../assets/scss/archimedes.scss */
+/* line 172, ../assets/scss/archimedes.scss */
 .top p {
   font-size: 1.2rem;
   display: block;
@@ -228,24 +242,24 @@ header {
   margin: 0 0 12px;
   max-width: 460px;
 }
-/* line 168, ../assets/scss/archimedes.scss */
+/* line 180, ../assets/scss/archimedes.scss */
 .top p.small {
   font-size: 0.9rem;
   max-width: 310px;
   color: #aaa;
 }
-/* line 172, ../assets/scss/archimedes.scss */
+/* line 184, ../assets/scss/archimedes.scss */
 .top p.small i {
   font-size: 1rem;
 }
-/* line 175, ../assets/scss/archimedes.scss */
+/* line 187, ../assets/scss/archimedes.scss */
 .top h3 {
   font-size: 1.5rem;
   color: #fff;
   text-transform: uppercase;
   margin: 42px 0 8px;
 }
-/* line 181, ../assets/scss/archimedes.scss */
+/* line 193, ../assets/scss/archimedes.scss */
 .top strong {
   font-size: 1.5rem;
   color: #fff;
@@ -253,47 +267,55 @@ header {
   margin: 42px 0 8px;
 }
 
-/* line 188, ../assets/scss/archimedes.scss */
-.mid {
-  max-width: 800px;
-  margin: 0 auto 50px;
-  text-align: center;
+/* line 200, ../assets/scss/archimedes.scss */
+.rules {
+  background: #fff;
 }
-/* line 192, ../assets/scss/archimedes.scss */
+
+/* line 203, ../assets/scss/archimedes.scss */
+.mid {
+  max-width: 700px;
+  margin: 0 auto 0;
+  padding: 20px;
+  overflow: hidden;
+}
+/* line 208, ../assets/scss/archimedes.scss */
 .mid img {
   width: 100%;
 }
-/* line 193, ../assets/scss/archimedes.scss */
-.mid h2 {
-  font-size: 2.5rem;
-  margin: 22px 22px 12px;
-  padding-top: 22px;
-  line-height: 1;
-}
-/* line 194, ../assets/scss/archimedes.scss */
+/* line 209, ../assets/scss/archimedes.scss */
 .mid span {
   font-size: 1.2rem;
-  padding: 12px 0;
   display: block;
 }
-/* line 197, ../assets/scss/archimedes.scss */
+/* line 212, ../assets/scss/archimedes.scss */
 .mid strong {
-  font-size: 1.8rem;
-  display: block;
+  font-size: 1.3rem;
 }
-/* line 198, ../assets/scss/archimedes.scss */
+/* line 216, ../assets/scss/archimedes.scss */
 .mid p {
-  font-size: 1.2rem;
-  line-height: 1.2em;
-  margin: 12px auto 0;
-  padding: 0 22px;
+  font-family: "Lato", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  margin: 15px auto;
 }
-/* line 205, ../assets/scss/archimedes.scss */
+/* line 224, ../assets/scss/archimedes.scss */
+.mid li {
+  list-style: disc;
+  margin: 10px 15px 10px 25px;
+}
+/* line 227, ../assets/scss/archimedes.scss */
+.mid li p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4em;
+}
+/* line 233, ../assets/scss/archimedes.scss */
 .mid + .mid {
   border-top: solid 5px #000;
 }
 
-/* line 209, ../assets/scss/archimedes.scss */
+/* line 237, ../assets/scss/archimedes.scss */
 label {
   display: block;
   font-size: 16px;
@@ -301,7 +323,7 @@ label {
   font-weight: bold;
 }
 
-/* line 215, ../assets/scss/archimedes.scss */
+/* line 243, ../assets/scss/archimedes.scss */
 a.btn {
   position: relative;
   font-size: 1.6rem;
@@ -314,40 +336,44 @@ a.btn {
   background: #ef404a;
   color: #fff;
 }
-/* line 226, ../assets/scss/archimedes.scss */
+/* line 254, ../assets/scss/archimedes.scss */
 a.btn .fa {
   position: absolute;
   right: -22px;
   color: #ef404a;
 }
 
-/* line 232, ../assets/scss/archimedes.scss */
+/* line 260, ../assets/scss/archimedes.scss */
 .btn.big:hover {
   top: 1px;
   text-decoration: none;
 }
 
-/* line 235, ../assets/scss/archimedes.scss */
+/* line 263, ../assets/scss/archimedes.scss */
 footer {
   background: #000;
   text-align: center;
   padding: 22px 22px 50px;
 }
-/* line 238, ../assets/scss/archimedes.scss */
+/* line 266, ../assets/scss/archimedes.scss */
+footer p {
+  color: #fff;
+}
+/* line 267, ../assets/scss/archimedes.scss */
 footer a {
   color: #fff;
 }
-/* line 239, ../assets/scss/archimedes.scss */
+/* line 268, ../assets/scss/archimedes.scss */
 footer .links {
   margin: 12px 0;
 }
-/* line 240, ../assets/scss/archimedes.scss */
+/* line 269, ../assets/scss/archimedes.scss */
 footer .fa {
   color: #fff;
   font-size: 2rem;
   padding: 6px 12px;
 }
-/* line 242, ../assets/scss/archimedes.scss */
+/* line 271, ../assets/scss/archimedes.scss */
 footer .fa:hover {
   color: #ffc20e;
   color: -moz-linear-gradient(top, #ffc20e 0%, #dc661e 100%);
@@ -356,7 +382,7 @@ footer .fa:hover {
 }
 
 /* MailChimp Form Embed Code - Slim - 12/15/2015 v10.7 */
-/* line 254, ../assets/scss/archimedes.scss */
+/* line 283, ../assets/scss/archimedes.scss */
 #mc_embed_signup h2cc {
   font-weight: bold;
   padding: 0;
@@ -364,23 +390,23 @@ footer .fa:hover {
   font-size: 1.4em;
 }
 
-/* line 255, ../assets/scss/archimedes.scss */
+/* line 284, ../assets/scss/archimedes.scss */
 #mc_embed_signup input {
   border: 0;
   -webkit-appearance: none;
 }
 
-/* line 256, ../assets/scss/archimedes.scss */
+/* line 285, ../assets/scss/archimedes.scss */
 #mc_embed_signup input[type=checkbox] {
   -webkit-appearance: checkbox;
 }
 
-/* line 257, ../assets/scss/archimedes.scss */
+/* line 286, ../assets/scss/archimedes.scss */
 #mc_embed_signup input[type=radio] {
   -webkit-appearance: radio;
 }
 
-/* line 258, ../assets/scss/archimedes.scss */
+/* line 287, ../assets/scss/archimedes.scss */
 #mc_embed_signup .button {
   background: #ffc20e;
   background: -moz-linear-gradient(top, #ffc20e 0%, #dc661e 100%);
@@ -404,7 +430,7 @@ footer .fa:hover {
   font-weight: 900;
 }
 
-/* line 281, ../assets/scss/archimedes.scss */
+/* line 310, ../assets/scss/archimedes.scss */
 #mc_embed_signup .button:hover {
   background: #dc661e;
   background: -moz-linear-gradient(top, #dc661e 0%, #ffc20e 100%);
@@ -413,23 +439,23 @@ footer .fa:hover {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc661e', endColorstr='#ffc20e',GradientType=0 );
 }
 
-/* line 288, ../assets/scss/archimedes.scss */
+/* line 317, ../assets/scss/archimedes.scss */
 #mc_embed_signup .small-meta {
   font-size: 11px;
 }
 
-/* line 289, ../assets/scss/archimedes.scss */
+/* line 318, ../assets/scss/archimedes.scss */
 #mc_embed_signup .nowrap {
   white-space: nowrap;
 }
 
-/* line 290, ../assets/scss/archimedes.scss */
+/* line 319, ../assets/scss/archimedes.scss */
 #mc_embed_signup .clear {
   clear: none;
   display: inline;
 }
 
-/* line 292, ../assets/scss/archimedes.scss */
+/* line 321, ../assets/scss/archimedes.scss */
 #mc_embed_signup input.email {
   font-size: 1.2rem;
   padding: 8px 20px;
@@ -441,7 +467,7 @@ footer .fa:hover {
   border-radius: 60px;
 }
 
-/* line 302, ../assets/scss/archimedes.scss */
+/* line 331, ../assets/scss/archimedes.scss */
 #mc_embed_signup div#mce-responses {
   float: left;
   top: -1.4em;
@@ -452,7 +478,7 @@ footer .fa:hover {
   clear: both;
 }
 
-/* line 303, ../assets/scss/archimedes.scss */
+/* line 332, ../assets/scss/archimedes.scss */
 #mc_embed_signup div.response {
   margin: 1em 0;
   padding: 1em .5em .5em 0;
@@ -463,18 +489,18 @@ footer .fa:hover {
   width: 80%;
 }
 
-/* line 304, ../assets/scss/archimedes.scss */
+/* line 333, ../assets/scss/archimedes.scss */
 #mc_embed_signup #mce-error-response {
   display: none;
 }
 
-/* line 305, ../assets/scss/archimedes.scss */
+/* line 334, ../assets/scss/archimedes.scss */
 #mc_embed_signup #mce-success-response {
   color: #70bf54;
   display: none;
 }
 
-/* line 306, ../assets/scss/archimedes.scss */
+/* line 335, ../assets/scss/archimedes.scss */
 #mc_embed_signup label.error {
   display: block;
   float: none;
@@ -485,9 +511,27 @@ footer .fa:hover {
 }
 
 /* ------------ RESPONSE  - JUST Tablet */
+/* line 342, ../assets/scss/archimedes.scss */
+.left-img {
+  max-width: 300px;
+  max-width: 50%;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 349, ../assets/scss/archimedes.scss */
+.right-img {
+  max-width: 300px;
+  max-width: 50%;
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
 /* ------------ RESPONSE  - Bigger than Phone */
 @media (min-width: 680px) {
-  /* line 316, ../assets/scss/archimedes.scss */
+  /* line 361, ../assets/scss/archimedes.scss */
   header {
     background: url(../img/mp-signup-img.jpg);
     background-repeat: no-repeat;
@@ -497,11 +541,11 @@ footer .fa:hover {
     min-height: 570px;
   }
 
-  /* line 326, ../assets/scss/archimedes.scss */
+  /* line 371, ../assets/scss/archimedes.scss */
   .top h2 {
     font-size: 2.6rem;
   }
-  /* line 330, ../assets/scss/archimedes.scss */
+  /* line 375, ../assets/scss/archimedes.scss */
   .top p {
     font-size: 1.4rem;
   }

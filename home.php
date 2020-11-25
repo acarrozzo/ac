@@ -14,7 +14,9 @@
 			<h3>LG TACTICS | A strategy-lite card game</h3>
 			<h4>The easy to learn battle card game with a clean minimal style</h4>
 			<p>With this game I challenged myself to remove layers of intricate mechanics I normally end up creating in card games. An ultra simplified take on the CCG genre, my intention is for this to act as a subtle introduction to the story and future installments in the Light Gray Series.</p>
+			<p>Archimedes Game Co. Site: <a target="_blank" href="https://acarrozzo.com/archimedes/index.html">LG TACTICS | Info and Game Rules</a>.</p>
 			<p>View the campaign page here: <a target="_blank" href="https://www.kickstarter.com/projects/archimedesgames/lg-tactics-strategy-card-game">LG TACTICS | Kickstarter Campaign</a>.</p>
+
 		</section>
 		<!--- MONSTER PARTY TEASER ----->
 		<section>
@@ -143,26 +145,31 @@
 </div>
 
 <!--
-				<div class="collapser justMobileX">
-					<h2>Featured Projects</h2>
+				<div class="collapser justMobileX expanded">
+					<h2>Jump to</h2>
 				</div>
 				<div class="collapserContent">
+					<section>
+						<figure class="gal left" data-popX>
+							<img src="img/sb/denimpanels/denimpanel_women.jpg" width="1000" height="1000" alt="Steve & Barry's Denim Printed Panel"/>
+						</figure>
+						<h5>Retail Design</h5>
+						<a href="/design">Storefronts, brochures and signs galore <i class="fa fa-angle-right"></i></a>
+
+					</a>
+					</section>
+
+
 				<section>
-
-
-					<figure class="right gal" data-pop>
+					<figure class="left gal" data-pop>
 						<img src="img/sb/starbury/starbury-shoeoap.jpg" width="700" height="380" alt="S&B Starbury Shoe Print Banner"/>
 					</figure>
-					<h5>Starbury™</h5>
-					<p>Bigger than Basketball!</p>
-					<p>New York Knicks Stephon Marbury's clothing line - store visuals for 2007.</p>
-					<figure class="gal hide" data-pop>
-						<img src="img/sb/starbury/starbury-longoap.jpg" width="1000" height="177" alt="S&B Starbury Really Wide Banner"/>
-					</figure>
+					<h5>Celebrity Brands</h5>
+					<a href="/design">Storefronts, brochures and signs galore <i class="fa fa-angle-right"></i></a>
 				</section>
 			</div>
 
-		-->
+-->
 		</div>
 
 
