@@ -34,7 +34,7 @@ while ($row = $result->fetch_assoc()) {
     }
     // -------------------------------------------------------------------------- If room ready create random rand #
 if ($infight < 1 && $endfight != 1) {  // RAND GENERATOR
-        $rand = rand(1, 2);
+    	$rand = rand(1, 1);
 } else {
     $rand=0;
 }

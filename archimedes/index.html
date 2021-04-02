@@ -10,9 +10,36 @@
 <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
 <body class="fadeIn animated">
-  <h1><img src="img/archimedes-logo-top.png">Archimedes Game Co. | Game Designer</h1>
+<nav class="navbar">
+  <h1 class="navbar-brand">
+    Archimedes Game Company
+  </h1>
+  <ul class="nav-list">
+    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">LG TACTICS</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Monster Party</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Buy</a></li>
+  </ul>
+  <div class="menu-toggle">
+  <div class="hamburger">
+  </div>
+</div>
+</nav>
+
+
+</div>
+  <header>
+    <div>
+      <h2>Welcome to Archimedes</h2>
+      <a href="">Check out the games</a>
+    </div>
+  </header>
+  <div class="gray-logos">
+<p>GRAY LOGOS HERE - ARCHIMEDES - TACTICS - MONSTER PARTY
+  </div>
     <div class="mid">
       <img src="img/tactics-psd-box-front.jpg" width="960" height="540" alt="LG TACTICS - strategy battle card game"/>
           <h2>LG TACTICS | Strategy Card Game</h2>
@@ -139,7 +166,7 @@
         <p>View the <a target="_blank" href="https://www.kickstarter.com/projects/archimedesgames/monster-party-playing-cards">2019 Monster Party Kickstarter Campaign Page ></a></p>
       </div>
 
-      <header>
+      <section class="sign-up">
       <div class="top">
             <h2>Sign up to receive Archimedes Game News</h2>
             <p>Signing up will keep you up to date and allow early access to new games.</p>
@@ -158,7 +185,7 @@
           </div>
           <!--End mc_embed_signup-->
       </div>
-      </header>
+    </section>
 
 <!-- Footer -->
 <footer>
@@ -175,5 +202,12 @@
    </p>
  </div>
 </footer>
+<script>
+const navbar = document.querySelector(".navbar");
+const menuToggle = document.querySelector(".menu-toggle");
+menuToggle.addEventListener("click", () => {
+  navbar.classList.toggle("open");
+});
+</script>
 </body>
 </html>

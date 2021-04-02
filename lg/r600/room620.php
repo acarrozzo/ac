@@ -41,60 +41,19 @@ while ($row = $result->fetch_assoc()) {
     }
 
 
-
-
-
-    // -------------------------------------------------------------------------- After Battle - SAFE ROOM
-    if ($endfight == 1 && $input!='n' && $input!='north' && $input!='ne' && $input!='northeast' &&
-            $input!='e' && $input!='east' && $input!='se' && $input!='southeast' &&
-            $input!='s' && $input!='south' && $input!='sw' && $input!='southwest' &&
-            $input!='w' && $input!='west' && $input!='nw' && $input!='northwest' &&
-            $input!='u' && $input!='up' && $input!='d' && $input!='down') {
-        echo "This room is safe.<br/>";
-    }
     // -------------------------------------------------------------------------- If room ready create random rand #
-    if ($infight < 1 && $endfight != 1) {  // RAND GENERATOR
-            $rand = rand(1, 12);
-    } else {
-        $rand=0;
-    }
-    // -------------------------------------------------------------------------- INITIALIZE - 1/X
+    $rand = rand(1, 2);
+    // -------------------------------------------------------------------------- INITIALIZE - 1/2
     if (($rand == 1) && $infight==0 && $endfight==0) {
         $results = $link->query("UPDATE $user SET enemy = 'Dragon'");
         include('battle.php');
     }
-    // -------------------------------------------------------------------------- INITIALIZE - 1/X
-    if (($rand == 2) && $infight==0 && $endfight==0) {
-        $results = $link->query("UPDATE $user SET enemy = 'Dragon'");
-        include('battle.php');
-    }
-    // -------------------------------------------------------------------------- INITIALIZE - 1/X
-    if (($rand == 3) && $infight==0 && $endfight==0) {
-        $results = $link->query("UPDATE $user SET enemy = 'Yeti'");
-        include('battle.php');
-    }
-    // -------------------------------------------------------------------------- INITIALIZE - 1/X
-    if (($rand == 4) && $infight==0 && $endfight==0) {
-        $results = $link->query("UPDATE $user SET enemy = 'Snow Ogre'");
-        include('battle.php');
-    }
-    // -------------------------------------------------------------------------- INITIALIZE - 1/X
-    if (($rand == 5) && $infight==0 && $endfight==0) {
-        $results = $link->query("UPDATE $user SET enemy = 'Snow Ninja'");
-        include('battle.php');
-    }
-    // -------------------------------------------------------------------------- INITIALIZE - 1/X
-    if (($rand == 6) && $infight==0 && $endfight==0) {
-        $results = $link->query("UPDATE $user SET enemy = 'Snow Owl'");
-        include('battle.php');
-    }
-
-
     // -------------------------------------------------------------------------- IN BATTLE
     elseif ($infight >=1) {
         include('battle.php');
     }
 
+    // include ('battle-sets/mountains.php');
 
 
     // -------------------------------------------------------------------------- Battle TRAVEL

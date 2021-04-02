@@ -123,7 +123,7 @@ ul {
 	margin: 0;
 	padding: 0;
 }
-h1,h2,h3,h4,h5,h6,p,strong,span, .font, input {
+h1,h2,h3,h4,h5,h6,p,strong,span, .font, input, nav {
 /*  font-family: 'Fredoka One', cursive;
 font-family: 'Bangers', cursive;
 font-family: 'Lalezar', cursive;
@@ -131,11 +131,14 @@ font-family: 'Changa One', cursive;
 font-family: 'Chicle', cursive;*/
 font-family: 'Baloo', sans-serif;
 }
+
 h1 {
-  font-size: 0px;
-  margin: 0 auto;
-  background:#000;max-width:100%;text-align:center;padding:22px;
-  img {max-width:200px;}
+  font-size: 1.1rem;
+      display: inline-block;
+      font-weight: 500;
+      margin: 0;
+      padding: 0;
+        text-transform: uppercase;
 }
 h2 {font-size:2.2rem;
   margin:20px 0 12px;
@@ -147,7 +150,149 @@ h2 {font-size:2.2rem;
       margin: 20px 0 0;
   }
 img {width:100%;}
-header {
+nav {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list {
+  display: flex;
+      float: right;
+      list-style: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 80%;
+      height: 100vh;
+      background-color: #333333;
+      padding: 2rem;
+      flex-direction: column;
+      justify-content: space-around;
+      z-index: 2;
+      transform: translateX(-100%);
+      transition: transform 0.5s;
+
+
+      a {
+        color: #fff;
+        text-transform: uppercase;
+            font-size: 1.5rem;
+      }
+
+}
+.open .nav-list {
+  transform: translateX(0);
+}
+.menu-toggle {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+//  width: 3.2rem;
+//  height: 3.2rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.hamburger {
+  width: 1.5rem;
+  height: 3px;
+  background-color: #000;
+  border-radius: 2px;
+  border: none;
+  transition: all 0.7s ease-out;
+}
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  width: 1.5rem;
+  height: 3px;
+  background-color: #000;
+  border-radius: 2px;
+  border: none;
+}
+.hamburger::before {
+  transform: translateY(-8px);
+}
+.hamburger::after {
+  transform: translateY(8px);
+}
+.open .hamburger {
+  background: transparent;
+}
+.open .hamburger::before {
+  transform-origin: (0, 0);
+  transform: rotate(45deg);
+}
+.open .hamburger::after {
+  transform-origin: (0, 0);
+  transform: rotate(-45deg);
+}
+@media screen and (min-width: 1000px) {
+  .nav-list {
+    position: initial;
+    width: initial;
+    height: initial;
+    background-color: transparent;
+    padding: 0;
+    justify-content: initial;
+    flex-direction: row;
+    transform: initial;
+    transition: initial;
+    a {
+      color: #000;
+      font-size: 1rem;
+      padding: 0 0.7rem;
+      transition: all 0.1s;
+      &:hover {
+        border-bottom: 3px solid #000;
+        text-decoration:none;
+      }
+    }
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
+
+header  {
+  display:flex;
+  background: url(../img/tactics-psd-table1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      background-color: #000;
+      min-height: 55vh;
+      padding: 50px 22px;
+      position: relative;
+      -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.3);
+        top: 0;
+        left: 0;
+      }
+      > div {
+        color: #fff;
+        position: relative;
+      }
+
+}
+.sign-up {
   background: url(../img/mp-signup-img2.jpg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -358,7 +503,7 @@ footer {
 
 /* ------------ RESPONSE  - Bigger than Phone */
 @media (min-width: 680px) {
-  header {
+  .sign-up {
     background: url(../img/mp-signup-img.jpg);
     background-repeat: no-repeat;
     background-size: contain;

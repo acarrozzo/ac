@@ -426,7 +426,7 @@
             </div>
         </div>
     </div>
-    <!-- -------------------------------------------------------------------- 2 - BATTLE -->
+    <!---------------------------------------------------------------------- 2 - BATTLE -->
     <div class="tab-content battleTAB" id="tabs2">
         <ul class="subTabs">
             <li class="defaultSubTab"><a href="#" rel="tabs2a">Battle</a></li>

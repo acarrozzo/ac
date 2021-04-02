@@ -77,28 +77,6 @@ while ($row = $result->fetch_assoc()) {
     $quest49=$row['quest49'];
 
     $quest50=$row['quest50'];
-    $quest51=$row['quest51'];
-    $quest52=$row['quest52'];
-    $quest53=$row['quest53'];
-    $quest54=$row['quest54'];
-    $quest55=$row['quest55'];
-    $quest56=$row['quest56'];
-    $quest57=$row['quest57'];
-    $quest58=$row['quest58'];
-    $quest59=$row['quest59'];
-
-    $quest60=$row['quest60'];
-    $quest61=$row['quest61'];
-    $quest62=$row['quest62'];
-    $quest63=$row['quest63'];
-    $quest64=$row['quest64'];
-    $quest65=$row['quest65'];
-    $quest66=$row['quest66'];
-    $quest67=$row['quest67'];
-    $quest68=$row['quest68'];
-    $quest69=$row['quest69'];
-
-    $quest70=$row['quest70'];
 
     if (1==2) {
     } //nada
@@ -114,15 +92,15 @@ while ($row = $result->fetch_assoc()) {
             include('update_feed.php'); // --- update feed
         } elseif ($grandquest1 == 1 && ($quest1==2 && $quest2==2 && $quest3==2 && $quest4==2 && $quest5==2 && $quest6==2 && $quest7==2 && $quest8==2 && $quest9==2 && $quest10==2)) {
             echo 'You have Completed Grand Quest 1) Grassy Field Savior!';
-            $message = "<div class='questWin'><h5>Grand Quest 1 Completed!</h5>
+            $message = "<div class='questWin'><h5>Grand Quest 1 Completed!</h3>
 		<h4>Grassy Field Savior</h4>
 		Congrats! You have saved the Grassy Field from certain doom!
 	  	<h4>Rewards</h4>
-  	  	[ + 500 xp  ]<br />
-      	[ + 2000 $currency ]</div>";
+  	  	[ + 200 xp  ]<br />
+      	[ + 5000 $currency ]</div><br/>";
             include('update_feed.php'); // --- update feed
-            $results = $link->query("UPDATE $user SET currency = currency + 2000");
-            $results = $link->query("UPDATE $user SET xp = xp + 500");
+            $results = $link->query("UPDATE $user SET currency = currency + 5000");
+            $results = $link->query("UPDATE $user SET xp = xp + 200");
             $results = $link->query("UPDATE $user SET grandquest1 = 2");
         } elseif ($grandquest1 == 1) {
             echo $message = 'Grand Quest 1 not completed yet. To complete GQ1 you need to help the good people in the Grassy Field. Help the Old Man, the Young Soldier and Jack Lumber. O, and Freddy too! (Complete quests 1-10)<br/>';
@@ -143,14 +121,14 @@ while ($row = $result->fetch_assoc()) {
         } elseif ($grandquest2 == 1 &&
     ($quest11==2 && $quest12==2 && $quest13==2 && $quest14==2 && $quest15==2 && $quest16==2 && $quest17==2 && $quest18==2 && $quest19==2 && $quest20==2 && $quest21==2 && $quest22==2 && $quest23==2 && $quest24==2 && $quest25==2 && $quest26==2 && $quest27==2 && $quest28==2 && $quest29==2 && $quest30==2)) {
             echo 'You have Completed Grand Quest 2) Red Town Savior!';
-            $message = "<div class='questWin'><h5>Grand Quest 2 Completed!</h5>
+            $message = "<div class='questWin'><h5>Grand Quest 2 Completed!</h3>
 		<h4>Red Town Savior</h4>
 		Congrats! You have saved Red Town and the Forest from certain doom!
 	  	<h4>Rewards</h4>
   	  	[ + 5000 xp  ]<br />
-      	[ + 5000 $currency ]</div>";
+      	[ + 10000 $currency ]</div><br/>";
             include('update_feed.php'); // --- update feed
-            $results = $link->query("UPDATE $user SET currency = currency + 5000");
+            $results = $link->query("UPDATE $user SET currency = currency + 10000");
             $results = $link->query("UPDATE $user SET xp = xp + 5000");
             $results = $link->query("UPDATE $user SET grandquest2 = 2");
         } elseif ($grandquest2 == 1) {
@@ -173,14 +151,14 @@ while ($row = $result->fetch_assoc()) {
         } elseif ($grandquest3 == 1 &&
     ($quest31==2 && $quest32==2 && $quest33==2 && $quest34==2 && $quest35==2 && $quest36==2 && $quest37==2 && $quest38==2 && $quest39==2 && $quest40==2 && $quest41==2 && $quest42==2 && $quest43==2 && $quest44==2 && $quest45==2 && $quest46==2 && $quest47==2 && $quest48==2 && $quest49==2 && $quest50==2)) {
             echo 'You have Completed Grand Quest 3) Stone Mine Savior!';
-            $message = "<div class='questWin'><h5>Grand Quest 3 Completed!</h5>
+            $message = "<div class='questWin'><h5>Grand Quest 3 Completed!</h3>
 		<h4>Stone Mine Savior</h4>
 		Congrats! You have saved the Stone Mine and the Blue Ocean from certain doom!
 	  	<h4>Rewards</h4>
   	  	[ + 10,000 xp  ]<br />
-      	[ + 10,000 $currency ]</div>";
+      	[ + 20,000 $currency ]</div><br/>";
             include('update_feed.php'); // --- update feed
-            $results = $link->query("UPDATE $user SET currency = currency + 10000");
+            $results = $link->query("UPDATE $user SET currency = currency + 20000");
             $results = $link->query("UPDATE $user SET xp = xp + 10000");
             $results = $link->query("UPDATE $user SET grandquest3 = 2");
         } elseif ($grandquest3 == 1) {
@@ -188,35 +166,6 @@ while ($row = $result->fetch_assoc()) {
             include('update_feed.php'); // --- update feed
         }
     }
-
-    // -------------------------------------------------------------------------- GQ4) Mountain Savior
-    elseif ($input=='grand quest 4') {
-        if ($grandquest4 == 0) {
-            echo $message = "You Start Grand Quest 4) Mountain Savior!<br/>";
-            include('update_feed.php'); // --- update feed
-        $results = $link->query("UPDATE $user SET grandquest4 = 1"); // -- room change
-        } elseif ($grandquest4 == 2) {
-            echo $message="You already completed Grand Quest 4) Stone Mine Savior</br>";
-            include('update_feed.php'); // --- update feed
-        } elseif ($grandquest4 == 1 &&
-    ($quest51==2 && $quest52==2 && $quest53==2 && $quest54==2 && $quest55==2 && $quest56==2 && $quest57==2 && $quest58==2 && $quest59==2 && $quest60==2 && $quest61==2 && $quest62==2 && $quest63==2 && $quest64==2 && $quest65==2 && $quest66==2 && $quest67==2 && $quest68==2 && $quest69==2 && $quest70==2)) {
-            echo 'You have Completed Grand Quest 4) Mountain Savior!';
-            $message = "<div class='questWin'><h5>Grand Quest 4 Completed!</h5>
-		<h4>Mountain Savior</h4>
-		Congrats! You have saved the Stone Mountains and Dark Forest from certain doom!
-	  	<h4>Rewards</h4>
-  	  	[ + 20,000 xp  ]<br />
-      	[ + 20,000 $currency ]</div>";
-            include('update_feed.php'); // --- update feed
-            $results = $link->query("UPDATE $user SET currency = currency + 20000");
-            $results = $link->query("UPDATE $user SET xp = xp + 20000");
-            $results = $link->query("UPDATE $user SET grandquest4 = 2");
-        } elseif ($grandquest4 == 1) {
-            echo $message = 'Grand Quest 4 not completed yet. To complete GQ4 you need to help the good people of the Stone Mountain and Dark Forest. (Complete quests 51-70)<br/>';
-            include('update_feed.php'); // --- update feed
-        }
-    }
-
 
 
 

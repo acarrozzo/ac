@@ -10,7 +10,6 @@ if (!$result = $link->query($sql)) {
 
 // -------------------------DB OUTPUT!
 while ($row = $result->fetch_assoc()) {
-    //  $feed_add=$command.'<div class="message">'.$message.'</div>';
     $feed_add=$command.$message;
     $feed_new = $row['feed'].$feed_add; // --------------------- UPDATE FEED
     //  $query = $link->prepare("UPDATE $user SET feed = ? ");

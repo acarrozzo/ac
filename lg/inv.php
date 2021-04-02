@@ -12,8 +12,16 @@ while ($row = $result->fetch_assoc()) {
 
     //	<form id="mainForm" method="post" action="" name="formInput">
 
-    echo '<section  data-pop="inv" class="panelXXX" id="weap">
-<h2>1h Weapons<i>R</i></h2>
+    echo '<section  data-pop="inv" class="panelXXX" id="weap">';
+    echo '<div class="sticky tabs">
+    <a href="#onehanded" class="ddgrayBG btn">1H</a>
+    <a href="#twohanded" class="ddgrayBG btn">2H</a>
+    <a href="#range" class="ddgrayBG btn">Range</a>
+    <a href="#shield" class="ddgrayBG btn">Shield</a>
+    </div>';
+
+    echo '<div class="gbox" id="onehanded">';
+    echo '<h2>1h Weapons<i>R</i></h2>
 ';
     //-<span class="h2">1h Weapons<i>R</i></span>
 
@@ -421,7 +429,7 @@ while ($row = $result->fetch_assoc()) {
         } else {
             echo "<input type='submit' class='equipBtn' name='input1' value='equip steel dagger' /> ";
         }
-        echo "<span>".$row["steeldagger"]."x </span> <span class='gray'> steel </span> dagger <span>( <i class='lightred'>+18</i> str )</span>
+        echo "<span>".$row["steeldagger"]."x </span> <span class='lightergray'> steel </span> dagger <span>( <i class='lightred'>+18</i> str )</span>
 			<span class='sellPrice'>".$_SESSION['COSTsteeldagger']."</span>
 			<input type='submit' class='sellBtn' name='input1' value='sell steel dagger' /> </div>";
     }
@@ -432,7 +440,7 @@ while ($row = $result->fetch_assoc()) {
         } else {
             echo "<input type='submit' class='equipBtn' name='input1' value='equip steel sword' /> ";
         }
-        echo "<span>".$row["steelsword"]."x </span> <span class='gray'> steel </span> sword <span>( <i class='lightred'>+27</i> str )</span>
+        echo "<span>".$row["steelsword"]."x </span> <span class='lightergray'> steel </span> sword <span>( <i class='lightred'>+27</i> str )</span>
 			<span class='sellPrice'>".$_SESSION['COSTsteelsword']."</span>
 			<input type='submit' class='sellBtn' name='input1' value='sell steel sword' /> </div>";
     }
@@ -443,7 +451,7 @@ while ($row = $result->fetch_assoc()) {
         } else {
             echo "<input type='submit' class='equipBtn' name='input1' value='equip steel staff' /> ";
         }
-        echo "<span>".$row["steelstaff"]."x </span> <span class='gray'> steel </span> staff <span>( <i class='blue'>+22</i> mag, <i class='lightred'>+5</i> str )</span>
+        echo "<span>".$row["steelstaff"]."x </span> <span class='lightergray'> steel </span> staff <span>( <i class='blue'>+22</i> mag, <i class='lightred'>+5</i> str )</span>
 			<span class='sellPrice'>".$_SESSION['COSTsteelstaff']."</span>
 			<input type='submit' class='sellBtn' name='input1' value='sell steel staff' /> </div>";
     }
@@ -572,8 +580,7 @@ while ($row = $result->fetch_assoc()) {
 
 
 
-
-
+    echo '</div><div class="gbox" id="shield">';
     echo "<h2>Shields<i>L</i></h2>";
 
 
@@ -768,7 +775,7 @@ while ($row = $result->fetch_assoc()) {
         } else {
             echo "<input type='submit' class='equipBtn' name='input1' value='equip steel shield' /> ";
         }
-        echo "<span>".$row["steelshield"]."x </span> <span class='gray'> steel </span> shield <span>( <i class='gold'>+55</i> def )</span>
+        echo "<span>".$row["steelshield"]."x </span> <span class='lightblue'> steel </span> shield <span>( <i class='gold'>+55</i> def )</span>
 			<span class='sellPrice'>".$_SESSION['COSTsteelshield']."</span>
 			<input type='submit' class='sellBtn' name='input1' value='sell steel shield' />  </div>";
     }
@@ -779,7 +786,7 @@ while ($row = $result->fetch_assoc()) {
         } else {
             echo "<input type='submit' class='equipBtn' name='input1' value='equip steel kite shield' /> ";
         }
-        echo "<span>".$row["steelkiteshield"]."x </span> <span class='gray'> steel </span> kite shield <span>( <i class='gold'>+80</i> def, <i class='black'>-20</i> mag )</span>
+        echo "<span>".$row["steelkiteshield"]."x </span> <span class='lightblue'> steel </span> kite shield <span>( <i class='gold'>+80</i> def, <i class='black'>-20</i> mag )</span>
 			<span class='sellPrice'>".$_SESSION['COSTsteelkiteshield']."</span>
 			<input type='submit' class='sellBtn' name='input1' value='sell steel kite shield' />  </div>";
     }
@@ -845,13 +852,8 @@ while ($row = $result->fetch_assoc()) {
 
     echo '-';
 
-
-
-
-
+    echo '</div><div class="gbox" id="twohanded">';
     // ------------------------------------------------------------------------------------------------- 2h
-
-
     echo "<h2>2h Weapons<i>R+L</i></h2>";
 
     if ($row["training2hsword"] > 0) {
@@ -1396,7 +1398,7 @@ while ($row = $result->fetch_assoc()) {
 
     echo '-';
 
-
+    echo '</div><div class="gbox" id="range">';
     // ------------------------------------------------------------------------------------------------- RANGED
 
     echo "<h2>Ranged <span class='gold px10'>";
@@ -1416,9 +1418,20 @@ while ($row = $result->fetch_assoc()) {
         } else {
             echo "<input type='submit' class='equipBtn' name='input1' value='equip boomerang' /> ";
         }
-        echo "<span>".$row["boomerang"]."x </span> boomerang <span>( <i class='green'>+1</i> dex )</span>
+        echo "<span>".$row["boomerang"]."x </span> boomerang <span>( <i class='green'>+3</i> dex )</span>
 			<span class='sellPrice'>".$_SESSION['COSTboomerang']."</span>
 			<input type='submit' class='sellBtn' name='input1' value='sell boomerang' />  </div>";
+    }
+    if ($row["chakram"] > 0) {
+        echo "<div>";
+        if ($row["equipR"] == "chakram") {
+            echo "<span class='equipped'>active</span> ";
+        } else {
+            echo "<input type='submit' class='equipBtn' name='input1' value='equip chakram' /> ";
+        }
+        echo "<span>".$row["chakram"]."x </span>  chakram <span>( <i class='green'>+5</i> dex, <i class='blue'>+5</i> mag )</span>
+      <span class='sellPrice'>".$_SESSION['COSTchakram']."</span>
+      <input type='submit' class='sellBtn' name='input1' value='sell chakram' />  </div>";
     }
     if ($row["woodenbow"] > 0) {
         echo "<div>";
@@ -1701,7 +1714,7 @@ while ($row = $result->fetch_assoc()) {
         } else {
             echo "<input type='submit' class='equipBtn' name='input1' value='equip snow bow' /> ";
         }
-        echo "<span>".$row["snowbow"]."x </span> <span class='white'> snow </span> bow <span>( <i class='green'>+45</i> dex, <i class='blue'>+15</i> mag, <i class='gold'>+15</i> def )</span>
+        echo "<span>".$row["snowbow"]."x </span> <span class='white'> snow </span> bow <span>( <i class='green'>+45</i> dex, <i class='blue'>+15</i> mag, <i class='gold'>+15</i> def</span>
 			<span class='sellPrice'>".$_SESSION['COSTsnowbow']."</span>
 			<input type='submit' class='sellBtn' name='input1' value='sell snow bow' />  </div>";
     }
@@ -1856,6 +1869,7 @@ while ($row = $result->fetch_assoc()) {
 
 
     echo '<div><input type="submit" name="input1" value="unequip all" /></div><br>';
+    echo '</div>';
 
     echo "</section>";
 
@@ -1864,7 +1878,14 @@ while ($row = $result->fetch_assoc()) {
     echo "<section data-pop2='armor'  class='panel' id='armor'>";
 
 
+    echo '<div class="sticky tabs">
+    <a href="#head" class="ddgrayBG btn">Head</a>
+    <a href="#bod" class="ddgrayBG btn">Body</a>
+    <a href="#hands" class="ddgrayBG btn">Hands</a>
+    <a href="#feet" class="ddgrayBG btn">Feet</a>
+    </div>';
 
+    echo '<div class="gbox" id="head">';
 
 
     echo "
@@ -2149,7 +2170,7 @@ while ($row = $result->fetch_assoc()) {
         } else {
             echo "<input type='submit' class='equipBtn' name='input1' value='equip steel hood' /> ";
         }
-        echo "<span>".$row["steelhood"]."x </span> <span class='gray'>steel </span> hood  <span>( <i class='lightred'>+7</i> str, <i class='green'>+7</i> dex, <i class='gold'>+7</i> def )</span>
+        echo "<span>".$row["steelhood"]."x </span> <span class='lgray'>steel </span> hood  <span>( <i class='lightred'>+7</i> str, <i class='green'>+7</i> dex, <i class='gold'>+7</i> def )</span>
 			<span class='sellPrice'>".$_SESSION['COSTsteelhood']."</span>
 			<input type='submit' class='sellBtn' name='input1' value='sell steel hood' />  </div>";
     }
@@ -2160,7 +2181,7 @@ while ($row = $result->fetch_assoc()) {
         } else {
             echo "<input type='submit' class='equipBtn' name='input1' value='equip steel helmet' /> ";
         }
-        echo "<span>".$row["steelhelmet"]."x </span> <span class='gray'>steel </span> helmet  <span>( <i class='gold'>+45</i> def )</span>
+        echo "<span>".$row["steelhelmet"]."x </span> <span class='lgray'>steel </span> helmet  <span>( <i class='gold'>+45</i> def )</span>
 			<span class='sellPrice'>".$_SESSION['COSTsteelhelmet']."</span>
 			<input type='submit' class='sellBtn' name='input1' value='sell steel helmet' />  </div>";
     }
@@ -2171,7 +2192,7 @@ while ($row = $result->fetch_assoc()) {
         } else {
             echo "<input type='submit' class='equipBtn' name='input1' value='equip steel master helm' /> ";
         }
-        echo "<span>".$row["steelmasterhelm"]."x </span> <span class='gray'>steel </span> master helm  <span>( <i class='lightred'>+15</i> str, <i class='green'>+15</i> dex, <i class='gold'>+60</i> def )</span>
+        echo "<span>".$row["steelmasterhelm"]."x </span> <span class='lgray'>steel </span> master helm  <span>( <i class='lightred'>+15</i> str, <i class='green'>+15</i> dex, <i class='gold'>+60</i> def )</span>
 			<span class='sellPrice'>".$_SESSION['COSTsteelmasterhelm']."</span>
 			<input type='submit' class='sellBtn' name='input1' value='sell steel master helm' />  </div>";
     }
@@ -2199,6 +2220,7 @@ while ($row = $result->fetch_assoc()) {
     }
     echo '-';
 
+    echo '</div><div class="gbox" id="bod">';
 
     echo "<h2>Body</h2>";
 
@@ -2473,21 +2495,6 @@ while ($row = $result->fetch_assoc()) {
 			<span class='sellPrice'>".$_SESSION['COSTdemoncape']."</span>
 			<input type='submit' class='sellBtn' name='input1' value='sell demon cape' />  </div>";
     }
-
-
-    if ($row["gammarobe"] > 0) {
-        echo "<div>";
-        if ($row["equipBody"] == "gamma robe") {
-            echo "<span class='equipped'>active</span> ";
-        } else {
-            echo "<input type='submit' class='equipBtn' name='input1' value='equip gamma robe' /> ";
-        }
-        echo "<span>".$row["gammarobe"]."x </span> <span class='pink'> gamma </span> robe <span>( <i class='blue'>+15</i> mag, <i class='gold'>+50</i> def )</span>
-      <span class='sellPrice'>".$_SESSION['COSTgammarobe']."</span>
-      <input type='submit' class='sellBtn' name='input1' value='sell gamma robe' />  </div>";
-    }
-
-
     if ($row["silverpajamas"] > 0) {
         echo "<div>";
         if ($row["equipBody"] == "silver pajamas") {
@@ -2504,6 +2511,7 @@ while ($row = $result->fetch_assoc()) {
 
 
 
+    echo '</div><div class="gbox" id="hands">';
 
     echo "<h2>Hands</h2>";
 
@@ -2748,6 +2756,7 @@ while ($row = $result->fetch_assoc()) {
 
 
 
+    echo '</div><div class="gbox" id="feet">';
 
 
     echo "<h2>Feet</h2>";
@@ -2981,9 +2990,19 @@ while ($row = $result->fetch_assoc()) {
 
     echo '-';
 
-    echo "</section>
-	<section data-pop2='acc'  class='panel' id='acc'>
-	<h2>Ring1</h2>";
+    echo "</div></section>
+	<section data-pop2='acc'  class='panel' id='acc'>";
+
+    echo '<div class="sticky tabs">
+      <a href="#ring1" class="ddgrayBG btn">Ring1</a>
+      <a href="#ring2" class="ddgrayBG btn">Ring2</a>
+      <a href="#neck" class="ddgrayBG btn">Neck</a>
+      <a href="#artifact" class="ddgrayBG btn">Artifact</a>
+      </div>';
+
+    echo '<div class="gbox" id="ring1">';
+
+    echo '<h2>Ring1</h2>"';
 
 
     if ($row["ringofstrength"] > 0) {
@@ -3439,6 +3458,7 @@ while ($row = $result->fetch_assoc()) {
 
 
 
+    echo '</div><div class="gbox" id="ring2">';
 
 
 
@@ -3841,6 +3861,7 @@ while ($row = $result->fetch_assoc()) {
 
 
 
+    echo '</div><div class="gbox" id="neck">';
 
 
 
@@ -3981,6 +4002,7 @@ while ($row = $result->fetch_assoc()) {
 
 
 
+    echo '</div><div class="gbox" id="artifact">';
 
 
 
@@ -4019,6 +4041,7 @@ while ($row = $result->fetch_assoc()) {
 
 
 
+    echo '</div><div class="gbox">';
 
 
     echo "<h2>Tech</h2>";
@@ -4034,12 +4057,14 @@ while ($row = $result->fetch_assoc()) {
     }
 
 
+    echo '</div>';
 
 
 
     echo "</section>
-	<section data-pop2='comp' class='panel' id='comp'>
-	<h2>Companion</h2>";
+	<section data-pop2='comp' class='panel' id='comp'>";
+    echo '<div class="gbox">';
+    echo "<h2>Companion</h2>";
 
     if ($row["COMPdwarfaxeman"] > 0) {
         echo "<div>";
@@ -4061,6 +4086,7 @@ while ($row = $result->fetch_assoc()) {
         echo " elf ranger <span> ( attacks for 1-10 ranged damage )</span></div>";
     }
 
+    echo '</div><div class="gbox">';
 
 
     echo "<h2>Pet</h2>";
@@ -4083,6 +4109,9 @@ while ($row = $result->fetch_assoc()) {
         }
         echo " pet bat <span> ( bites for 0-3 damage, flies )</span></div>";
     }
+
+
+    echo '</div><div class="gbox">';
 
     echo "<h2>Mount/Vehicle</h2>";
 
@@ -4154,13 +4183,14 @@ while ($row = $result->fetch_assoc()) {
         } else {
             echo "<input type='submit' class='mountBtn' name='input1' value='mount green griffin' />";
         }
-        echo " <span>".$row["MOUNTgreengriffin"]."x </span> <span class='green'>green</span> griffin <span> ( <i class='green'>+50</i> dex, can fly )</span></div>";
+        echo " <span>".$row["MOUNTgreengriffin"]."x </span> <span class='lightred'>green</span> griffin <span> ( <i class='green'>+50</i> dex, can fly )</span></div>";
     }
 
 
 
 
 
+    echo '</div><div class="gbox">';
 
 
     echo "<h2>Robot</h2>";
@@ -4174,6 +4204,9 @@ while ($row = $result->fetch_assoc()) {
         echo " dire wolf <span> ( +50 str, +50 def )</span></div>";
     }
 
+
+
+    echo '</div><div class="gbox">';
 
     echo "<h2>Aura</h2>";
 
@@ -4205,10 +4238,13 @@ while ($row = $result->fetch_assoc()) {
     }
 
 
+    echo '</div>';
 
     echo "</section>
-	<section data-pop2='bag' class='panel' id='bag'>
-	<h2>Heal</h2>";
+	<section data-pop2='bag' class='panel' id='bag'>";
+    echo '<div class="gbox">';
+
+    echo "<h2>Heal</h2>";
 
     echo "<div class='px16 lightred'>+HP</span></div>";
     if ($row["redberry"] > 0) {
@@ -4269,6 +4305,7 @@ while ($row = $result->fetch_assoc()) {
 		<span>".$row["purplebalm"]."x </span> purple balm <span>( <i class='lightred'>+2000</i> hp, <i class='blue'>+2000</i> mp )</span></div>";
     }
 
+    echo '</div><div class="gbox">';
 
 
     echo "<h2>Buffs</h2>";
@@ -4325,9 +4362,10 @@ while ($row = $result->fetch_assoc()) {
 
 
 
+    echo '</div><div class="gbox">';
 
 
-    echo "<h2>Misc</h2>";
+    echo "<h2>Quest Items</h2>";
 
 
 
@@ -4347,7 +4385,7 @@ while ($row = $result->fetch_assoc()) {
         echo "<div><span>".$row["bigfoot"]."x </span> big foot</div>";
     }
 
-    //echo "<br><li class='px16 gold'>Keys</span></div>";
+    echo "<h2>Keys</h2>";
     if ($row["silverkey"] > 0) {
         echo "<div><span>".$row["silverkey"]."x </span> <span class='lightblue'>silver </span> key</div>";
     }
@@ -4356,6 +4394,7 @@ while ($row = $result->fetch_assoc()) {
     }
 
 
+    echo '</div><div class="gbox">';
 
     echo "<h2>Maps</h2>";
 
@@ -4380,6 +4419,7 @@ while ($row = $result->fetch_assoc()) {
 
 
 
+    echo '</div>';
 
 
     echo "</section>";

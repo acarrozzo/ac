@@ -245,7 +245,9 @@ if ($endfight !=1 && 1==1) {  // ---------------------------- SET ATTACK NUMBERS
 
 
         // ===================================================================================================== Flying Enemy Check
-        if ($_SESSION['eFly'] == 1  && (($weapontype != 3  || ($weapontype == 3 && $_SESSION['magiccast'] == 1  && $_SESSION['spell'] != 'magic strike'))) && $_SESSION['flying'] == 0) {
+        echo 'MagicCast::::: '.$_SESSION['magiccast'].'    ';
+      //  if ($_SESSION['eFly'] == 1  && (($weapontype != 3  || ($weapontype == 3 && $_SESSION['magiccast'] == 1  && $_SESSION['spell'] != 'magic strike'))) && $_SESSION['flying'] == 0) {
+          if ($_SESSION['eFly'] == 1  && $_SESSION['flying'] == 0 && ($weapontype != 3  && ($_SESSION['magiccast'] != 1 || $_SESSION['spell'] != 'magic strike'))) {
             echo "You need to use a ranged weapon to hit $the flying $enemy!<br/>";
             $message="<span class='yellow redBG'>You need to use a ranged weapon to hit $the flying $enemy!!!</span><br/>";
             //$flyingenemycheck = 1;
@@ -759,12 +761,6 @@ elseif ($infight == 1 && $enemyhp > 0 && ($ddgecheck <= $ddge)) { // YOU DODGE
         echo ''.$The.' '.$enemy.' BITES you for '.$edamagetotal.' damage!<br/>';
         $message="$The $enemy BITES you!
 	<span class='attack red'>( $edamage1 + $edamage2 ) = $edamagetotal</span><br/>";
-
-        $message="
-<span class='attackMath red'>( $edamage1 + $edamage2 ) = $edamagetotal</span>
-<strong class='ddgray'>$The $enemy </strong> <strong class='red'>BITES</strong> you for
-<strong class='attackBig red'>$edamagetotal</strong>";
-
         include('update_feed_alt.php'); // --- update feed
         $otherAttackCheck = 1;
     }
@@ -942,9 +938,10 @@ if ($enemyhp > 0) {
 		</span>";
 
         // include ('update_feed_alt.php'); // --- update feed
+
+        $message = "</div>"; // --- end of BATTLE FRAME
+        include('update_feed_alt.php'); // --- update feed
     }
-    $message = "</div>"; // --- end of BATTLE FRAME
-    include('update_feed_alt.php'); // --- update feed
 }
 //	$message = "<div class='defeated'> <strong>$enemy defeated! </strong></div>"; // BATTLE HUD // so the close div doesnt mess up the HUD
 

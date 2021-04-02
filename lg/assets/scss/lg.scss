@@ -5,9 +5,11 @@
 */
 
 @import 'mixins';
+
+@import 'vars';
+@import 'style-main';
 @import 'colors';
 
-@import 'style-main';
 @import 'mobilehack';
 
 @import 'stickman';
