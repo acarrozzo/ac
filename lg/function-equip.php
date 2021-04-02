@@ -888,6 +888,17 @@ if ($right == $left) { // ---- two handed check
         $results = $link->query("UPDATE $user SET equipR = 'boomerang'");
         $results = $link->query("UPDATE $user SET weapontype = 3");
     }
+    // --------------------------------------------------------------------------- equip chakram
+    if (($input=="equip chakram" || $input=="chakram") && $row['chakram'] > 0) {
+        echo $message = '<div class="menuAction"><i class="fa fa-check"></i>You equip your chakram</div>';
+        include('update_feed.php'); // --- update feed
+if ($right == $left) { // ---- two handed check
+    $results = $link->query("UPDATE $user SET equipR = '- - -'");
+    $results = $link->query("UPDATE $user SET equipL = '- - -'");
+}
+        $results = $link->query("UPDATE $user SET equipR = 'chakram'");
+        $results = $link->query("UPDATE $user SET weapontype = 3");
+    }
     // --------------------------------------------------------------------------- equip wooden bow
     if (($input=="equip wooden bow" || $input=="wooden bow") && $row['woodenbow'] > 0) {
         echo $message = '<div class="menuAction"><i class="fa fa-check"></i>You equip your wooden bow</div>';
@@ -1701,12 +1712,6 @@ if ($right == $left) { // ---- two handed check
         echo $message = '<div class="menuAction"><i class="fa fa-check"></i>You equip your demon cape</div>';
         include('update_feed.php'); // --- update feed
         $results = $link->query("UPDATE $user SET equipBody = 'demon cape'");
-    }
-    // --------------------------------------------------------------------------- equip gamma robe
-    if ($input=="equip gamma robe" && $row['gammarobe'] > 0) {
-        echo $message = '<div class="menuAction"><i class="fa fa-check"></i>You equip your gamma robe</div>';
-        include('update_feed.php'); // --- update feed
-        $results = $link->query("UPDATE $user SET equipBody = 'gamma robe'");
     }
     // --------------------------------------------------------------------------- equip silver pajamas
     if ($input=="equip silver pajamas" && $row['silverpajamas'] > 0) {

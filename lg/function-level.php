@@ -31,14 +31,14 @@ while ($row = $result->fetch_assoc()) {
 
     if ($input == "test") {
         echo "This is for test styling...<br/>";
-        $message = '
-				<div class="levelWin">
-				<h4>LEVEL UP!</h4>
-				<h4>You are now level '.$level.'</h4>
-				+'.$hp.' HP<br/>
-				+'.$mp.' MP<br/>
-				+'.$bp.' BP<br/>
-				+'.$sp.' SP</div>';
+        $message = '	<div class="levelWin">
+    <h3>LEVEL UP!</h3>
+    <h3 class="ddgray">You are now level '.$level.'</h3>
+    <h3>+'.$hp.' HP
+    +'.$mp.' MP<br/>
+    +'.$bp.' BP
+    +'.$sp.' SP
+    </h3></div>';
         include('update_feed.php'); // --- update feed
         $funflag=1;
     }
@@ -96,7 +96,8 @@ while ($row = $result->fetch_assoc()) {
             $rand2 = rand(0, $physicaltraining);
             $hp = $physicaltraining + $rand + $rand2;
             $rand = rand(0, $mentaltraining);
-            $mp = $mentaltraining + $rand;
+            $rand2 = rand(0, $physicaltraining);
+            $mp = $mentaltraining + $rand + $rand2;
             $bp =  1;
 
             // -------------------- SUPER GENEROUS SP
@@ -105,9 +106,10 @@ while ($row = $result->fetch_assoc()) {
             //if ($sp < 15) {$sp = rand (15,20);} // for low level SP, min 15
 
             // -------------------- BASE / REGULAR SP
-$sp = 25; // 25 base SP each level - BASE 25 SP
 
-// -------------------- LOW SP
+            $sp = 25; // 25 base SP each level - BASE 25 SP
+
+            // -------------------- LOW SP
             // $sp = 10; // 25 base SP each level - BASE 25 SP
 
             $nextlevel = ($level+1) * ($level+1) * ($level+1);
@@ -120,17 +122,18 @@ $sp = 25; // 25 base SP each level - BASE 25 SP
 
 
             $message = '	<div class="levelWin">
-				<h4>LEVEL UP!</h4>
-				<h4>You are now level '.$level.'</h4>
-				+'.$hp.' HP<br/>
-				+'.$mp.' MP<br/>
-				+'.$bp.' BP<br/>
-				+'.$sp.' SP</div>';
+            <h3>LEVEL UP!</h3>
+            <h3 class="ddgray">You are now level '.$level.'</h3>
+            <h3>+'.$hp.' HP
+            +'.$mp.' MP<br/>
+            +'.$bp.' BP
+            +'.$sp.' SP
+            </h3></div>';
             echo 'YOU ARE NOW LEVEL '.$level.'<br/>';
 
             echo "<div class='menuAction'><i class='fa fa-arrow-up green'> LEVEL UP!</i> <span class='px40 goldbox greenBG'>$level</span></div>";
 
-            include('update_feed_alt.php'); // --- update feed
+            include('update_feed.php'); // --- update feed
 
             $query = $link->query("UPDATE $user SET hpmax = hpmax + $hp ");
             $query = $link->query("UPDATE $user SET mpmax = mpmax + $mp ");
@@ -165,10 +168,15 @@ $sp = 25; // 25 base SP each level - BASE 25 SP
     $defincrease = $def + 1;
 
 
-    $strincrease10 = $str + 10;
-    $dexincrease10 = $dex + 10;
-    $magincrease10 = $mag + 10;
-    $defincrease10 = $def + 10;
+    //  $strincrease10 = $str + 10;
+    //  $dexincrease10 = $dex + 10;
+    //  $magincrease10 = $mag + 10;
+    //  $defincrease10 = $def + 10;
+
+    $strincreasemax = $str + $bp;
+    $dexincreasemax = $dex + $bp;
+    $magincreasemax = $mag + $bp;
+    $defincreasemax = $def + $bp;
 
     // --------------------------------------------------------------------------- SPEND BP FOR STATS!
     if ($input=='increase str' || $input=='+1 str') {
@@ -184,15 +192,15 @@ $sp = 25; // 25 base SP each level - BASE 25 SP
             $funflag=1;
         }
     }
-    if ($input=='+10 str') {
-        if ($bp<10) {
+    if ($input=='all str') {
+        if ($bp<1) {
             echo $message=$notenoughbp;
             include('update_feed.php');
             $funflag=1;
         } else {
-            echo $message = 'You spend 10 BP and increase your STR to '.$strincrease10.'</br>';
-            $query = $link->query("UPDATE $user SET str = str + 10");
-            $query = $link->query("UPDATE $user SET bp = bp - 10");
+            echo $message = 'You spend '.$bp.' BP and increase your STR to '.$strincreasemax.'</br>';
+            $query = $link->query("UPDATE $user SET str = str + $bp");
+            $query = $link->query("UPDATE $user SET bp = bp - $bp");
             include('update_feed.php');
             $funflag=1;
         }
@@ -210,15 +218,15 @@ $sp = 25; // 25 base SP each level - BASE 25 SP
         }
     }
 
-    if ($input=='+10 dex') {
-        if ($bp<10) {
+    if ($input=='all dex') {
+        if ($bp<1) {
             echo $message=$notenoughbp;
             include('update_feed.php');
             $funflag=1;
         } else {
-            echo $message = 'You spend 10 BP and increase your dex to '.$dexincrease10.'</br>';
-            $query = $link->query("UPDATE $user SET dex = dex + 10");
-            $query = $link->query("UPDATE $user SET bp = bp - 10");
+            echo $message = 'You spend '.$bp.' BP and increase your dex to '.$dexincreasemax.'</br>';
+            $query = $link->query("UPDATE $user SET dex = dex + $bp");
+            $query = $link->query("UPDATE $user SET bp = bp - $bp");
             include('update_feed.php');
             $funflag=1;
         }
@@ -236,15 +244,15 @@ $sp = 25; // 25 base SP each level - BASE 25 SP
         }
     }
 
-    if ($input=='+10 mag') {
-        if ($bp<10) {
+    if ($input=='all mag') {
+        if ($bp<1) {
             echo $message=$notenoughbp;
             include('update_feed.php');
             $funflag=1;
         } else {
-            echo $message = 'You spend 10 BP and increase your mag to '.$magincrease10.'</br>';
-            $query = $link->query("UPDATE $user SET mag = mag + 10");
-            $query = $link->query("UPDATE $user SET bp = bp - 10");
+            echo $message = 'You spend '.$bp.' BP and increase your mag to '.$magincreasemax.'</br>';
+            $query = $link->query("UPDATE $user SET mag = mag + $bp");
+            $query = $link->query("UPDATE $user SET bp = bp - $bp");
             include('update_feed.php');
             $funflag=1;
         }
@@ -262,15 +270,15 @@ $sp = 25; // 25 base SP each level - BASE 25 SP
         }
     }
 
-    if ($input=='+10 def') {
-        if ($bp<10) {
+    if ($input=='all def') {
+        if ($bp<1) {
             echo $message=$notenoughbp;
             include('update_feed.php');
             $funflag=1;
         } else {
-            echo $message = 'You spend 10 BP and increase your def to '.$defincrease10.'</br>';
-            $query = $link->query("UPDATE $user SET def = def + 10");
-            $query = $link->query("UPDATE $user SET bp = bp - 10");
+            echo $message = 'You spend '.$bp.' BP and increase your def to '.$defincreasemax.'</br>';
+            $query = $link->query("UPDATE $user SET def = def + $bp");
+            $query = $link->query("UPDATE $user SET bp = bp - $bp");
             include('update_feed.php');
             $funflag=1;
         }

@@ -412,6 +412,7 @@ if ($enemy == 'Kobold Master') {
     $results = $link->query("UPDATE $user SET enemyatt = 40");
     $results = $link->query("UPDATE $user SET enemydef = 50");
     $_SESSION['eLvl'] = 13;			// enemy level
+                $_SESSION['eMag'] = 1;			// enemy mag att, uses your mag as def
 }
 // --------------------------------------------------------------  kobold monk
 if ($enemy == 'Kobold Monk') {
@@ -1010,7 +1011,7 @@ if ($enemy == 'Black Frog') {
     $results = $link->query("UPDATE $user SET enemyatt = 100");
     $results = $link->query("UPDATE $user SET enemydef = 40");
     $_SESSION['eLvl'] = 30;			// enemy level
-        $_SESSION['eStrImm'] = 1;		// enemy str immune
+        $_SESSION['eStrImm'] = 0;		// enemy str immune
 }
 if ($enemy == 'Steel Gator') {
     $results = $link->query("UPDATE $user SET enemyhpmax = 800");
@@ -1052,93 +1053,6 @@ if ($enemy == 'Gamma Monk') {
         $_SESSION['eHeal'] = 1;		// enemy heals self
 }
 
-
-
-if ($enemy == 'Mithril Rat') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 800");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 150");
-    $results = $link->query("UPDATE $user SET enemydef = 80");
-    $_SESSION['eLvl'] = 30;			// enemy level
-        $_SESSION['eBite'] = 1;		// enemy bites you, 2x pure attack
-}
-if ($enemy == 'Mithril Crab') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 800");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 200");
-    $results = $link->query("UPDATE $user SET enemydef = 60");
-    $_SESSION['eLvl'] = 30;			// enemy level
-}
-if ($enemy == 'Mithril Scorpion') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 1000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 150");
-    $results = $link->query("UPDATE $user SET enemydef = 80");
-    $_SESSION['eLvl'] = 40;			// enemy level
-    $_SESSION['eCrit'] = 1;		// enemy critical attack, 1/10 chance x10 attack			((1-att)*10)
-}
-if ($enemy == 'Griffin') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 1500");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 250");
-    $results = $link->query("UPDATE $user SET enemydef = 150");
-    $_SESSION['eLvl'] = 50;			// enemy level
-        $_SESSION['eFly'] = 1;			// enemy flies, need ranged weapon
-        $_SESSION['eMag'] = 1;			// enemy mag att, uses your mag as def
-        $_SESSION['eMulti'] = 3;		// enemy LVL * 10% chance attack again (1 - 10)
-        $_SESSION['eStrImm'] = 1;		// enemy str immune
-}
-if ($enemy == 'Blue Frog') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 1000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 200");
-    $results = $link->query("UPDATE $user SET enemydef = 100");
-    $_SESSION['eLvl'] = 45;			// enemy level
-    $_SESSION['eMag'] = 1;			// enemy mag att, uses your mag as def
-    $_SESSION['eMagImm'] = 1;		// enemy mag immune
-    $_SESSION['eHeal'] = 1;		// enemy heals self
-}
-if ($enemy == 'Mithril Gator') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 1200");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 250");
-    $results = $link->query("UPDATE $user SET enemydef = 0");
-    $_SESSION['eLvl'] = 45;			// enemy level
-}
-if ($enemy == 'Mithril Golem') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 900");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 300");
-    $results = $link->query("UPDATE $user SET enemydef = 300");
-    $_SESSION['eLvl'] = 55;			// enemy level
-}
-if ($enemy == 'Minotaur') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 3000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 350");
-    $results = $link->query("UPDATE $user SET enemydef = 150");
-    $_SESSION['eLvl'] = 60;			// enemy level
-    $_SESSION['ePow'] = 1;			// enemy power attack, 1/3 chance x3 att					((1-att)*3)
-    $_SESSION['eRage'] = 1;		// enemy rage attack, 1/5 chance to do 2-4 pure hit combo	(200%, 300% or 400% pure damage)
-}
-if ($enemy == 'Cosmic Mage') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 1000");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 400");
-    $results = $link->query("UPDATE $user SET enemydef = 50");
-    $_SESSION['eLvl'] = 40;			// enemy level
-    $_SESSION['eMag'] = 1;			// enemy mag att, uses your mag as def
-    $_SESSION['eMagImm'] = 1;		// enemy mag immune
-}
-if ($enemy == 'Carbon Beast') {
-    $results = $link->query("UPDATE $user SET enemyhpmax = 800");
-    $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
-    $results = $link->query("UPDATE $user SET enemyatt = 500");
-    $results = $link->query("UPDATE $user SET enemydef = 0");
-    $_SESSION['eLvl'] = 40;			// enemy level
-        $_SESSION['ePow'] = 1;			// enemy power attack, 1/3 chance x3 att
-        $_SESSION['eDodge'] = 2;		// enemy dodges LVL x 10%
-}
 
 // --
 // --
@@ -1443,7 +1357,7 @@ if ($enemy == 'Yeti') {
     $results = $link->query("UPDATE $user SET enemyatt = 200");
     $results = $link->query("UPDATE $user SET enemydef = 80");
     $_SESSION['eLvl'] = 45;			// enemy level
-            $_SESSION['eMagImm'] = 1;		// enemy mag immune
+            $_SESSION['eMagImm'] = 0;		// enemy mag immune
 }
 if ($enemy == 'Snow Orge') {
     $results = $link->query("UPDATE $user SET enemyhpmax = 1500");
@@ -1479,7 +1393,7 @@ if ($enemy == 'Dragon') {
     $results = $link->query("UPDATE $user SET enemydef = 250");
     $_SESSION['eLvl'] = 60;			// enemy level
             $_SESSION['eFly'] = 1;			// enemy flies, need ranged weapon
-            $_SESSION['eDragonFire'] = 1;	// dragon fire = pure attack (no def ) + pow attack (x3 dam) --- 1/4 chance // 50% chance to catch on fire. when on fire, burn forever for 10-20 dam. need to use water to cure on fire
+      //      $_SESSION['eDragonFire'] = 1;	// dragon fire = pure attack (no def ) + pow attack (x3 dam) --- 1/4 chance // 50% chance to catch on fire. when on fire, burn forever for 10-20 dam. need to use water to cure on fire
 }
 
 // ------------------------------------------------------------------------ MOUNTAIN CATHEDRAL
@@ -1517,14 +1431,13 @@ if ($enemy == 'Fallen Priest') {
             $_SESSION['eMag'] = 1;			// enemy mag att, uses your mag as def
             $_SESSION['eHeal'] = 1;			// enemy heals self
 }
-if ($enemy == 'Fallen Angel') {
+if ($enemy == 'Fallen Priest') {
     $results = $link->query("UPDATE $user SET enemyhpmax = 4000");
     $results = $link->query("UPDATE $user SET enemyhp = enemyhpmax");
     $results = $link->query("UPDATE $user SET enemyatt = 400");
     $results = $link->query("UPDATE $user SET enemydef = 200");
     $_SESSION['eLvl'] = 60;			// enemy level
             $_SESSION['eMag'] = 1;			// enemy mag att, uses your mag as def
-            $_SESSION['eHeal'] = 1;			// enemy heals self
             $_SESSION['eFly'] = 1;			// enemy flies, need ranged weapon
 }
 if ($enemy == 'Risen Skeleton') {

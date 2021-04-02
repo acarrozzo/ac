@@ -59,7 +59,7 @@ $pajamashamanFlag = $row['pajamashamanFlag'];
     } else {
         $fireball_max = 0;
     }
-    if ($fireball_cost > $fireball_max) {
+    if ($fireball_cost > $fireball_max && $fireball_max > 0) {
         $fireball_cost = 'max';
     }
     // ----------------------------------------------------------------------------------Frostball MATH
@@ -74,7 +74,7 @@ $pajamashamanFlag = $row['pajamashamanFlag'];
     } else {
         $frostball_max = 0;
     }
-    if ($frostball_cost > $frostball_max) {
+    if ($frostball_cost > $frostball_max && $frostball_max > 0) {
         $frostball_cost = 'max';
     }
     // ----------------------------------------------------------------------------------Poison Dart MATH
@@ -85,7 +85,7 @@ $pajamashamanFlag = $row['pajamashamanFlag'];
     } else {
         $poisondart_max = 0;
     }
-    if ($poisondart_cost > $poisondart_max) {
+    if ($poisondart_cost > $poisondart_max && $poisondart_max > 0) {
         $poisondart_cost = 'max';
     }
     // ----------------------------------------------------------------------------------Atomic Blast MATH
@@ -97,7 +97,7 @@ $pajamashamanFlag = $row['pajamashamanFlag'];
     } else {
         $atomicblast_max = 0;
     }
-    if (($atomicblast_cost-10) > $atomicblast_max) {
+    if (($atomicblast_cost-10) > $atomicblast_max && $atomicblast_max > 0) {
         $atomicblast_cost = 'max';
     }
 
@@ -115,7 +115,7 @@ $pajamashamanFlag = $row['pajamashamanFlag'];
     } else {
         $heal_max = 0;
     }
-    if ($heal_cost > $heal_max) {
+    if ($heal_cost > $heal_max && $heal_max > 0) {
         $heal_cost = 'max';
     }
     // ----------------------------------------------------------------------------------regenerate MATH
@@ -126,7 +126,7 @@ $pajamashamanFlag = $row['pajamashamanFlag'];
     } else {
         $regenerate_max = 0;
     }
-    if ($regenerate_cost > $regenerate_max) {
+    if ($regenerate_cost > $regenerate_max && $regenerate_max > 0) {
         $regenerate_cost = 'max';
     }
     // ----------------------------------------------------------------------------------antidote MATH
@@ -137,7 +137,7 @@ $pajamashamanFlag = $row['pajamashamanFlag'];
     } else {
         $antidote_max = 0;
     }
-    if ($antidote_cost > $antidote_max) {
+    if ($antidote_cost > $antidote_max && $antidote_max > 0) {
         $antidote_cost = 'max';
     }
 
@@ -150,7 +150,7 @@ $pajamashamanFlag = $row['pajamashamanFlag'];
     } else {
         $magicarmor_max = 0;
     }
-    if ($magicarmor_cost > $magicarmor_max) {
+    if ($magicarmor_cost > $magicarmor_max && $magicarmor_max > 0) {
         $magicarmor_cost = 'max';
     }
     // ----------------------------------------------------------------------------------ironskin MATH
@@ -161,7 +161,7 @@ $pajamashamanFlag = $row['pajamashamanFlag'];
     } else {
         $ironskin_max = 0;
     }
-    if ($ironskin_cost > $ironskin_max) {
+    if ($ironskin_cost > $ironskin_max && $ironskin_max > 0) {
         $ironskin_cost = 'max';
     }
     // ----------------------------------------------------------------------------------wings MATH
@@ -172,7 +172,7 @@ $pajamashamanFlag = $row['pajamashamanFlag'];
     } else {
         $wings_max = 0;
     }
-    if ($wings_cost > $wings_max) {
+    if ($wings_cost > $wings_max && $wings_max > 0) {
         $wings_cost = 'max';
     }
     // ----------------------------------------------------------------------------------gills MATH
@@ -183,7 +183,7 @@ $pajamashamanFlag = $row['pajamashamanFlag'];
     } else {
         $gills_max = 0;
     }
-    if ($gills_cost > $gills_max) {
+    if ($gills_cost > $gills_max && $gills_max > 0) {
         $gills_cost = 'max';
     }
 
@@ -196,370 +196,289 @@ $pajamashamanFlag = $row['pajamashamanFlag'];
 
 
 
+    echo '<h3 class="spCount white">SP <span class="purple">'.$sp.'</span></h3>';
+    echo'<div class="gbox">';
+    echo '<h1>Spells</h1>';
+    echo '<p class="gray">Use SP to purchase and upgrade SKILLS and SPELLS. Spells will almost always consume MP to cast. To see more details about SPELLS and where you can learn them, scroll down. </p>';
+    echo '</div>';
+    echo'<div class="gbox">';
+    echo'<h2>Destruction</h2>';
+    echo'<p class="gray">Attack enemies with powerful Destruction magic</p>';
 
-
-    // ---------------------------------------------------------------------------------- // START SKILL MENU <article data-pop="spells" id="spells">
-    //	<form id="mainForm" method="post" action="" name="formInput">
-    echo '
-
-			<h2>Spells<span class="spCount white">You have <span class="px50 gold">'.$sp.'</span> sp</span></h2>';
-    echo '<h2>Destruction</h2>';
 
 
     // ---------------------------------------------------------------------------------- Fireball
-    if ($row['fireball']>=1 && $fireball_cost == 'max') {
-        echo '<div class="hilite maxed">
- Fireball <span class="maxed">'. $row['fireball'].'</span></div>	';
-    } elseif ($row['fireball']>=1 && $sp<$fireball_cost) {
-        echo '<div class="hilite">
- Fireball <span>'. $row['fireball'].'</span> <span class="px14 gray"> / '.$fireball_max.'</span>
-<span class="px12 darkestgray"> need '.$fireball_cost.' sp</span>
-</div>	';
-    } elseif ($row['fireball']==0 && $sp < 1 && $fireball_cost != 'max') {
-        echo '<div class="hilite">
-Fireball <span class="gray px14"> '. $row['fireball'].' </span><span class="px14 gray"> / '.$fireball_max.'</span>
-<span class="px12 darkestgray"> need '.$fireball_cost.' sp</span>
-</div>	';
-    } elseif ($row['fireball']==0 && $fireball_cost != 'max') {
-        echo '<div class="hilite">
-Fireball <span class="gray px14"> '. $row['fireball'].' </span><span class="px14 gray"> / '.$fireball_max.'</span>
-<br/><input type="submit" class="" name="input1" value="learn fireball" />
-<input type="submit" class="max" name="input1" value="max fireball" />
-<span class="px12 gold"> '.$fireball_cost.' sp</span>
-</div>	';
-    } elseif ($row['fireball']>=0 && $sp>=$fireball_cost) {
-        echo '<div class="hilite">
- Fireball <span>'. $row['fireball'].'</span> <span class="px14 gray"> / '.$fireball_max.'</span>
-<br/><input type="submit" class="" name="input1" value="learn fireball" />
-<input type="submit" class="max" name="input1" value="max fireball" />
-<span class="px12 gold"> '.$fireball_cost.' sp</span>
-</div>	';
-    } else {
-        echo '<div><span class="alt2"> Fireball </span></div>';
+    $stat=$button=$zeroskill=$cost=$maxcolor='';
+    $color="purple";
+    if ($fireball_cost == 'max') { // at max skill level
+        $button=$cost='hide';
+        $color=$maxcolor='gold';
+    } elseif ($fireball_max==0) { // skill not available yet
+        $stat =$button = $cost='hide';
+        $zeroskill = 'disable';
+    } elseif ($sp<$fireball_cost) { // not enough sp to upgrade skill
+        $button='disable';
     }
+    echo '<div class="gslice '.$zeroskill.'">';
+    echo '<span class="icon ddgray">'.file_get_contents("img/svg/fireball.svg").'</span>
+              <h4 class="inline '.$maxcolor.'">Fireball</h4>
+              <h3 class="inline '.$stat.'"><span class="'.$color.'">'.$row['fireball'].'</span></h3>
+              <span class="lgray '.$stat.'">/'.$fireball_max.'</span>
+              <div class="gray">Throw a fireball at your enemies</div>
+              <div class="purple '.$cost.'"> Cost for next level: '.$fireball_cost.' SP</div>
+              <button type="submit" class="purpleBG '.$button.'" name="input1" value="learn fireball">+1 Fireball</button>
+              <button type="submit" class="purpleBG '.$button.'" name="input1" value="max fireball">MAX Fireball</button>
+              ';
+    echo '</div>';
     // ---------------------------------------------------------------------------------- Frostball
-    if ($row['frostball']>=1 && $frostball_cost == 'max') {
-        echo '<div class="hilite maxed">
- Frostball <span class="maxed">'. $row['frostball'].'</span></div>	';
-    } elseif ($row['frostball']>=1 && $sp<$frostball_cost) {
-        echo '<div class="hilite">
- Frostball <span>'. $row['frostball'].'</span> <span class="px14 gray"> / '.$frostball_max.'</span>
-<span class="px12 darkestgray"> need '.$frostball_cost.' sp</span>
-</div>	';
-    } elseif ($row['frostball']==0 && $sp < 1 && $frostball_cost != 'max') {
-        echo '<div class="hilite">
-Frostball <span class="gray px14"> '. $row['frostball'].' </span><span class="px14 gray"> / '.$frostball_max.'</span>
-<span class="px12 darkestgray"> need '.$frostball_cost.' sp</span>
-</div>	';
-    } elseif ($row['frostball']==0 && $frostball_cost != 'max') {
-        echo '<div class="hilite">
-Frostball <span class="gray px14"> '. $row['frostball'].' </span><span class="px14 gray"> / '.$frostball_max.'</span>
-<br/><input type="submit" class="" name="input1" value="learn frostball" />
-<input type="submit" class="max" name="input1" value="max frostball" />
-<span class="px12 gold"> '.$frostball_cost.' sp</span>
-</div>	';
-    } elseif ($row['frostball']>=0 && $sp>=$frostball_cost) {
-        echo '<div class="hilite">
- Frostball <span>'. $row['frostball'].'</span> <span class="px14 gray"> / '.$frostball_max.'</span>
-<br/><input type="submit" class="" name="input1" value="learn frostball" />
-<input type="submit" class="max" name="input1" value="max frostball" />
-<span class="px12 gold"> '.$frostball_cost.' sp</span>
-</div>	';
-    } else {
-        echo '<div><span class="alt2"> Frostball </span></div>';
+    $stat=$button=$zeroskill=$cost=$maxcolor='';
+    $color="purple";
+    if ($frostball_cost == 'max') { // at max skill level
+        $button=$cost='hide';
+        $color=$maxcolor='gold';
+    } elseif ($frostball_max==0) { // skill not available yet
+        $stat =$button = $cost='hide';
+        $zeroskill = 'disable';
+    } elseif ($sp<$frostball_cost) { // not enough sp to upgrade skill
+        $button='disable';
     }
+    echo '<div class="gslice '.$zeroskill.'">';
+    echo '<span class="icon ddgray">'.file_get_contents("img/svg/frostball.svg").'</span>
+              <h4 class="inline '.$maxcolor.'">Frostball</h4>
+              <h3 class="inline '.$stat.'"><span class="'.$color.'">'.$row['frostball'].'</span></h3>
+              <span class="lgray '.$stat.'">/'.$frostball_max.'</span>
+              <div class="gray">Same as Fireball except cold</div>
+              <div class="purple '.$cost.'"> Cost for next level: '.$frostball_cost.' SP</div>
+              <button type="submit" class="purpleBG '.$button.'" name="input1" value="learn frostball">+1 Frostball</button>
+              <button type="submit" class="purpleBG '.$button.'" name="input1" value="max frostball">MAX Frostball</button>
+              ';
+    echo '</div>';
+
     // ---------------------------------------------------------------------------------- Poison Dart
-    if ($row['poisondart']>=1 && $poisondart_cost == 'max') {
-        echo '<div class="hilite maxed">
- Poison Dart <span class="maxed">'. $row['poisondart'].'</span></div>	';
-    } elseif ($row['poisondart']>=1 && $sp<$poisondart_cost) {
-        echo '<div class="hilite">
- Poison Dart <span>'. $row['poisondart'].'</span> <span class="px14 gray"> / '.$poisondart_max.'</span>
-<span class="px12 darkestgray"> need '.$poisondart_cost.' sp</span>
-</div>	';
-    } elseif ($row['poisondart']==0 && $sp < 1 && $poisondart_cost != 'max') {
-        echo '<div class="hilite">
-Poison Dart <span class="gray px14"> '. $row['poisondart'].' </span><span class="px14 gray"> / '.$poisondart_max.'</span>
-<span class="px12 darkestgray"> need '.$poisondart_cost.' sp</span>
-</div>	';
-    } elseif ($row['poisondart']==0 && $poisondart_cost != 'max') {
-        echo '<div class="hilite">
-Poison Dart <span class="gray px14"> '. $row['poisondart'].' </span><span class="px14 gray"> / '.$poisondart_max.'</span>
-<br/><input type="submit" class="" name="input1" value="learn poison dart" />
-<input type="submit" class="max" name="input1" value="max poison dart" />
-<span class="px12 gold"> '.$poisondart_cost.' sp</span>
-</div>	';
-    } elseif ($row['poisondart']>=0 && $sp>=$poisondart_cost) {
-        echo '<div class="hilite">
- Poison Dart <span>'. $row['poisondart'].'</span> <span class="px14 gray"> / '.$poisondart_max.'</span>
-<br/><input type="submit" class="" name="input1" value="learn poison dart" />
-<input type="submit" class="max" name="input1" value="max poison dart" />
-<span class="px12 gold"> '.$poisondart_cost.' sp</span>
-</div>	';
-    } else {
-        echo '<div><span class="alt2"> Poison Dart </span></div>';
+    $stat=$button=$zeroskill=$cost=$maxcolor='';
+    $color="purple";
+    if ($poisondart_cost == 'max') { // at max skill level
+        $button=$cost='hide';
+        $color=$maxcolor='gold';
+    } elseif ($poisondart_max==0) { // skill not available yet
+        $stat =$button = $cost='hide';
+        $zeroskill = 'disable';
+    } elseif ($sp<$poisondart_cost) { // not enough sp to upgrade skill
+        $button='disable';
     }
+    echo '<div class="gslice '.$zeroskill.'">';
+    echo '<span class="icon ddgray">'.file_get_contents("img/svg/poisondart.svg").'</span>
+              <h4 class="inline '.$maxcolor.'">Poison Dart</h4>
+              <h3 class="inline '.$stat.'"><span class="'.$color.'">'.$row['poisondart'].'</span></h3>
+              <span class="lgray '.$stat.'">/'.$poisondart_max.'</span>
+              <div class="gray">Launch a Poison Dart at your enemies to do damage over time</div>
+              <div class="purple '.$cost.'"> Cost for next level: '.$poisondart_cost.' SP</div>
+              <button type="submit" class="purpleBG '.$button.'" name="input1" value="learn poison dart">+1 Poison Dart</button>
+              <button type="submit" class="purpleBG '.$button.'" name="input1" value="max poison dart">MAX Poison Dart</button>
+              ';
+    echo '</div>';
     // ---------------------------------------------------------------------------------- Atomic Blast
-    if ($row['atomicblast']>=1 && $atomicblast_cost == 'max') {
-        echo '<div class="hilite maxed">
- Atomic Blast <span class="maxed">'. $row['atomicblast'].'</span></div>	';
-    } elseif ($row['atomicblast']>=1 && $sp<$atomicblast_cost) {
-        echo '<div class="hilite">
- Atomic Blast <span>'. $row['atomicblast'].'</span> <span class="px14 gray"> / '.$atomicblast_max.'</span>
-<span class="px12 darkestgray"> need '.$atomicblast_cost.' sp</span>
-</div>	';
-    } elseif ($row['atomicblast']==0 && $sp < 1 && $atomicblast_cost != 'max') {
-        echo '<div class="hilite">
-Atomic Blast <span class="gray px14"> '. $row['atomicblast'].' </span><span class="px14 gray"> / '.$atomicblast_max.'</span>
-<span class="px12 darkestgray"> need '.$atomicblast_cost.' sp</span>
-</div>	';
-    } elseif ($row['atomicblast']==0 && $atomicblast_cost != 'max') {
-        echo '<div class="hilite">
-Atomic Blast <span class="gray px14"> '. $row['atomicblast'].' </span><span class="px14 gray"> / '.$atomicblast_max.'</span>
-<br/><input type="submit" class="" name="input1" value="learn atomic blast" />
-<input type="submit" class="max" name="input1" value="max atomic blast" />
-<span class="px12 gold"> '.$atomicblast_cost.' sp</span>
-</div>	';
-    } elseif ($row['atomicblast']>=0 && $sp>=$atomicblast_cost) {
-        echo '<div class="hilite">
- Atomic Blast <span>'. $row['atomicblast'].'</span> <span class="px14 gray"> / '.$atomicblast_max.'</span>
-<br/><input type="submit" class="" name="input1" value="learn atomic blast" />
-<input type="submit" class="max" name="input1" value="max atomic blast" />
-<span class="px12 gold"> '.$atomicblast_cost.' sp</span>
-</div>	';
-    } else {
-        echo '<div><span class="alt2"> Atomic Blast </span></div>';
+    $stat=$button=$zeroskill=$cost=$maxcolor='';
+    $color="purple";
+    if ($atomicblast_cost == 'max') { // at max skill level
+        $button=$cost='hide';
+        $color=$maxcolor='gold';
+    } elseif ($atomicblast_max==0) { // skill not available yet
+        $stat =$button = $cost='hide';
+        $zeroskill = 'disable';
+    } elseif ($sp<$atomicblast_cost) { // not enough sp to upgrade skill
+        $button='disable';
     }
+    echo '<div class="gslice '.$zeroskill.'">';
+    echo '<span class="icon ddgray">'.file_get_contents("img/svg/atomicblast.svg").'</span>
+              <h4 class="inline '.$maxcolor.'">Atomic Blast</h4>
+              <h3 class="inline '.$stat.'"><span class="'.$color.'">'.$row['atomicblast'].'</span></h3>
+              <span class="lgray '.$stat.'">/'.$atomicblast_max.'</span>
+              <div class="gray">PRO SPELL: Atomic Blast causes devastating damage but is expensive to cast</div>
+              <div class="purple '.$cost.'"> Cost for next level: '.$atomicblast_cost.' SP</div>
+              <button type="submit" class="purpleBG '.$button.'" name="input1" value="learn atomic blast">+1 Atomic Blast</button>
+              <button type="submit" class="purpleBG '.$button.'" name="input1" value="max atomic blast">MAX Atomic Blast</button>
+              ';
+    echo '</div>';
+
 
     echo '<h2>Restoration</h2>';
+    echo'<p class="gray">Support your character with a variety of healing spells.</p>';
+
+
+
     // ---------------------------------------------------------------------------------- Heal
-    if ($row['heal']>=1 && $heal_cost == 'max') {
-        echo '<div class="hilite maxed">
- Heal <span class="maxed">'. $row['heal'].'</span></div>	';
-    } elseif ($row['heal']>=1 && $sp<$heal_cost) {
-        echo '<div class="hilite">
- Heal <span>'. $row['heal'].'</span> <span class="px14 gray"> / '.$heal_max.'</span>
-<span class="px12 darkestgray"> need '.$heal_cost.' sp</span>
-</div>	';
-    } elseif ($row['heal']==0 && $sp < 1 && $heal_cost != 'max') {
-        echo '<div class="hilite">
-Heal <span class="gray px14"> '. $row['heal'].' </span><span class="px14 gray"> / '.$heal_max.'</span>
-<span class="px12 darkestgray"> need '.$heal_cost.' sp</span>
-</div>	';
-    } elseif ($row['heal']==0 && $heal_cost != 'max') {
-        echo '<div class="hilite">
-Heal <span class="gray px14"> '. $row['heal'].' </span><span class="px14 gray"> / '.$heal_max.'</span>
-<br/><input type="submit" class="" name="input1" value="learn heal" />
-<input type="submit" class="max" name="input1" value="max heal" />
-<span class="px12 gold"> '.$heal_cost.' sp</span>
-</div>	';
-    } elseif ($row['heal']>=0 && $sp>=$heal_cost) {
-        echo '<div class="hilite">
- Heal <span>'. $row['heal'].'</span> <span class="px14 gray"> / '.$heal_max.'</span>
-<br/><input type="submit" class="" name="input1" value="learn heal" />
-<input type="submit" class="max" name="input1" value="max heal" />
-<span class="px12 gold"> '.$heal_cost.' sp</span>
-</div>	';
-    } else {
-        echo '<div><span class="alt2"> Heal </span></div>';
+    $stat=$button=$zeroskill=$cost=$maxcolor='';
+    $color="purple";
+    if ($heal_cost == 'max') { // at max skill level
+        $button=$cost='hide';
+        $color=$maxcolor='gold';
+    } elseif ($heal_max==0) { // skill not available yet
+        $stat =$button = $cost='hide';
+        $zeroskill = 'disable';
+    } elseif ($sp<$heal_cost) { // not enough sp to upgrade skill
+        $button='disable';
     }
-
+    echo '<div class="gslice '.$zeroskill.'">';
+    echo '<span class="icon ddgray">'.file_get_contents("img/svg/heal.svg").'</span>
+              <h4 class="inline '.$maxcolor.'">Heal</h4>
+              <h3 class="inline '.$stat.'"><span class="'.$color.'">'.$row['heal'].'</span></h3>
+              <span class="lgray '.$stat.'">/'.$heal_max.'</span>
+              <div class="gray">Heal your HP at any time</div>
+              <div class="purple '.$cost.'"> Cost for next level: '.$heal_cost.' SP</div>
+              <button type="submit" class="purpleBG '.$button.'" name="input1" value="learn heal">+1 Heal</button>
+              <button type="submit" class="purpleBG '.$button.'" name="input1" value="max heal">MAX Heal</button>
+              ';
+    echo '</div>';
     // ---------------------------------------------------------------------------------- Regenerate
-    if ($row['regenerate']>=1 && $regenerate_cost == 'max') {
-        echo '<div class="hilite maxed">
- Regenerate <span class="maxed">'. $row['regenerate'].'</span></div>	';
-    } elseif ($row['regenerate']>=1 && $sp<$regenerate_cost) {
-        echo '<div class="hilite">
- Regenerate <span>'. $row['regenerate'].'</span> <span class="px14 gray"> / '.$regenerate_max.'</span>
-<span class="px12 darkestgray"> need '.$regenerate_cost.' sp</span>
-</div>	';
-    } elseif ($row['regenerate']==0 && $sp < 1 && $regenerate_cost != 'max') {
-        echo '<div class="hilite">
-Regenerate <span class="gray px14"> '. $row['regenerate'].' </span><span class="px14 gray"> / '.$regenerate_max.'</span>
-<span class="px12 darkestgray"> need '.$regenerate_cost.' sp</span>
-</div>	';
-    } elseif ($row['regenerate']==0 && $regenerate_cost != 'max') {
-        echo '<div class="hilite">
-Regenerate <span class="gray px14"> '. $row['regenerate'].' </span><span class="px14 gray"> / '.$regenerate_max.'</span>
-<br/><input type="submit" class="" name="input1" value="learn regenerate" />
-<input type="submit" class="max" name="input1" value="max regenerate" />
-<span class="px12 gold"> '.$regenerate_cost.' sp</span>
-</div>	';
-    } elseif ($row['regenerate']>=0 && $sp>=$regenerate_cost) {
-        echo '<div class="hilite">
- Regenerate <span>'. $row['regenerate'].'</span> <span class="px14 gray"> / '.$regenerate_max.'</span>
-<br/><input type="submit" class="" name="input1" value="learn regenerate" />
-<input type="submit" class="max" name="input1" value="max regenerate" />
-<span class="px12 gold"> '.$regenerate_cost.' sp</span>
-</div>	';
-    } else {
-        echo '<div><span class="alt2"> Regenerate </span></div>';
+    $stat=$button=$zeroskill=$cost=$maxcolor='';
+    $color="purple";
+    if ($regenerate_cost == 'max') { // at max skill level
+        $button=$cost='hide';
+        $color=$maxcolor='gold';
+    } elseif ($regenerate_max==0) { // skill not available yet
+        $stat =$button = $cost='hide';
+        $zeroskill = 'disable';
+    } elseif ($sp<$regenerate_cost) { // not enough sp to upgrade skill
+        $button='disable';
     }
-
+    echo '<div class="gslice '.$zeroskill.'">';
+    echo '<span class="icon ddgray">'.file_get_contents("img/svg/regenerate.svg").'</span>
+              <h4 class="inline '.$maxcolor.'">Regenerate</h4>
+              <h3 class="inline '.$stat.'"><span class="'.$color.'">'.$row['regenerate'].'</span></h3>
+              <span class="lgray '.$stat.'">/'.$regenerate_max.'</span>
+              <div class="gray">Regenerate health over time</div>
+              <div class="purple '.$cost.'"> Cost for next level: '.$regenerate_cost.' SP</div>
+              <button type="submit" class="purpleBG '.$button.'" name="input1" value="learn regenerate">+1 Regenerate</button>
+              <button type="submit" class="purpleBG '.$button.'" name="input1" value="max regenerate">MAX Regenerate</button>
+              ';
+    echo '</div>';
     // ---------------------------------------------------------------------------------- Antidote
-    if ($row['antidote']>=1 && $antidote_cost == 'max') {
-        echo '<div class="hilite maxed">
- Antidote <span class="maxed">'. $row['antidote'].'</span></div>	';
-    } elseif ($row['antidote']>=1 && $sp<$antidote_cost) {
-        echo '<div class="hilite">
- Antidote <span>'. $row['antidote'].'</span> <span class="px14 gray"> / '.$antidote_max.'</span>
-<span class="px12 darkestgray"> need '.$antidote_cost.' sp</span>
-</div>	';
-    } elseif ($row['antidote']==0 && $sp < 1 && $antidote_cost != 'max') {
-        echo '<div class="hilite">
-Antidote <span class="gray px14"> '. $row['antidote'].' </span><span class="px14 gray"> / '.$antidote_max.'</span>
-<span class="px12 darkestgray"> need '.$antidote_cost.' sp</span>
-</div>	';
-    } elseif ($row['antidote']==0 && $antidote_cost != 'max') {
-        echo '<div class="hilite">
-Antidote <span class="gray px14"> '. $row['antidote'].' </span><span class="px14 gray"> / '.$antidote_max.'</span>
-<br/><input type="submit" class="" name="input1" value="learn antidote" />
-<input type="submit" class="max" name="input1" value="max antidote" />
-<span class="px12 gold"> '.$antidote_cost.' sp</span>
-</div>	';
-    } elseif ($row['antidote']>=0 && $sp>=$antidote_cost) {
-        echo '<div class="hilite">
- Antidote <span>'. $row['antidote'].'</span> <span class="px14 gray"> / '.$antidote_max.'</span>
-<br/><input type="submit" class="" name="input1" value="learn antidote" />
-<input type="submit" class="max" name="input1" value="max antidote" />
-<span class="px12 gold"> '.$antidote_cost.' sp</span>
-</div>	';
-    } else {
-        echo '<div><span class="alt2"> Antidote </span></div>';
+    $stat=$button=$zeroskill=$cost=$maxcolor='';
+    $color="purple";
+    if ($antidote_cost == 'max') { // at max skill level
+        $button=$cost='hide';
+        $color=$maxcolor='gold';
+    } elseif ($antidote_max==0) { // skill not available yet
+        $stat =$button = $cost='hide';
+        $zeroskill = 'disable';
+    } elseif ($sp<$antidote_cost) { // not enough sp to upgrade skill
+        $button='disable';
     }
+    echo '<div class="gslice '.$zeroskill.'">';
+    echo '<span class="icon ddgray">'.file_get_contents("img/svg/antidote.svg").'</span>
+              <h4 class="inline '.$maxcolor.'">Antidote</h4>
+              <h3 class="inline '.$stat.'"><span class="'.$color.'">'.$row['antidote'].'</span></h3>
+              <span class="lgray '.$stat.'">/'.$antidote_max.'</span>
+              <div class="gray">Cure yourself of poison and become immune for a short time</div>
+              <div class="purple '.$cost.'"> Cost for next level: '.$antidote_cost.' SP</div>
+              <button type="submit" class="purpleBG '.$button.'" name="input1" value="learn antidote">+1 Antidote</button>
+              <button type="submit" class="purpleBG '.$button.'" name="input1" value="max antidote">MAX Antidote</button>
+              ';
+    echo '</div>';
+
 
     echo '<h2>Alteration</h2>';
-
+    echo'<p class="gray">Manipulate yourself and the world around you to your advantage with Alteration spells.</p>';
 
     // ---------------------------------------------------------------------------------- Magic Armor
-    if ($row['magicarmor']>=1 && $magicarmor_cost == 'max') {
-        echo '<div class="hilite maxed">
- Magic Armor <span class="maxed">'. $row['magicarmor'].'</span></div>	';
-    } elseif ($row['magicarmor']>=1 && $sp<$magicarmor_cost) {
-        echo '<div class="hilite">
- Magic Armor <span>'. $row['magicarmor'].'</span> <span class="px14 gray"> / '.$magicarmor_max.'</span>
-<span class="px12 darkestgray"> need '.$magicarmor_cost.' sp</span>
-</div>	';
-    } elseif ($row['magicarmor']==0 && $sp < 1 && $magicarmor_cost != 'max') {
-        echo '<div class="hilite">
-Magic Armor <span class="gray px14"> '. $row['magicarmor'].' </span><span class="px14 gray"> / '.$magicarmor_max.'</span>
-<span class="px12 darkestgray"> need '.$magicarmor_cost.' sp</span>
-</div>	';
-    } elseif ($row['magicarmor']==0 && $magicarmor_cost != 'max') {
-        echo '<div class="hilite">
-Magic Armor <span class="gray px14"> '. $row['magicarmor'].' </span><span class="px14 gray"> / '.$magicarmor_max.'</span>
-<br/><input type="submit" class="" name="input1" value="learn magic armor" />
-<input type="submit" class="max" name="input1" value="max magic armor" />
-<span class="px12 gold"> '.$magicarmor_cost.' sp</span>
-</div>	';
-    } elseif ($row['magicarmor']>=0 && $sp>=$magicarmor_cost) {
-        echo '<div class="hilite">
- Magic Armor <span>'. $row['magicarmor'].'</span> <span class="px14 gray"> / '.$magicarmor_max.'</span>
-<br/><input type="submit" class="" name="input1" value="learn magic armor" />
-<input type="submit" class="max" name="input1" value="max magic armor" />
-<span class="px12 gold"> '.$magicarmor_cost.' sp</span>
-</div>	';
-    } else {
-        echo '<div><span class="alt2"> Magic Armor </span></div>';
+    $stat=$button=$zeroskill=$cost=$maxcolor='';
+    $color="purple";
+    if ($magicarmor_cost == 'max') { // at max skill level
+        $button=$cost='hide';
+        $color=$maxcolor='gold';
+    } elseif ($magicarmor_max==0) { // skill not available yet
+        $stat =$button = $cost='hide';
+        $zeroskill = 'disable';
+    } elseif ($sp<$magicarmor_cost) { // not enough sp to upgrade skill
+        $button='disable';
     }
-
+    echo '<div class="gslice '.$zeroskill.'">';
+    echo '<span class="icon ddgray">'.file_get_contents("img/svg/magicarmor.svg").'</span>
+              <h4 class="inline '.$maxcolor.'">Magic Armor</h4>
+              <h3 class="inline '.$stat.'"><span class="'.$color.'">'.$row['magicarmor'].'</span></h3>
+              <span class="lgray '.$stat.'">/'.$magicarmor_max.'</span>
+              <div class="gray">Magic Armor protects you by absorbing damage</div>
+              <div class="purple '.$cost.'"> Cost for next level: '.$magicarmor_cost.' SP</div>
+              <button type="submit" class="purpleBG '.$button.'" name="input1" value="learn magic armor">+1 Magic Armor</button>
+              <button type="submit" class="purpleBG '.$button.'" name="input1" value="max magic armor">MAX Magic Armor</button>
+              ';
+    echo '</div>';
     // ---------------------------------------------------------------------------------- Iron Skin
-    if ($row['ironskin']>=1 && $ironskin_cost == 'max') {
-        echo '<div class="hilite maxed">
- Iron Skin <span class="maxed">'. $row['ironskin'].'</span></div>	';
-    } elseif ($row['ironskin']>=1 && $sp<$ironskin_cost) {
-        echo '<div class="hilite">
- Iron Skin <span>'. $row['ironskin'].'</span> <span class="px14 gray"> / '.$ironskin_max.'</span>
-<span class="px12 darkestgray"> need '.$ironskin_cost.' sp</span>
-</div>	';
-    } elseif ($row['ironskin']==0 && $sp < 1 && $ironskin_cost != 'max') {
-        echo '<div class="hilite">
-Iron Skin <span class="gray px14"> '. $row['ironskin'].' </span><span class="px14 gray"> / '.$ironskin_max.'</span>
-<span class="px12 darkestgray"> need '.$ironskin_cost.' sp</span>
-</div>	';
-    } elseif ($row['ironskin']==0 && $ironskin_cost != 'max') {
-        echo '<div class="hilite">
-Iron Skin <span class="gray px14"> '. $row['ironskin'].' </span><span class="px14 gray"> / '.$ironskin_max.'</span>
-<br/><input type="submit" class="" name="input1" value="learn iron skin" />
-<input type="submit" class="max" name="input1" value="max iron skin" />
-<span class="px12 gold"> '.$ironskin_cost.' sp</span>
-</div>	';
-    } elseif ($row['ironskin']>=0 && $sp>=$ironskin_cost) {
-        echo '<div class="hilite">
- Iron Skin <span>'. $row['ironskin'].'</span> <span class="px14 gray"> / '.$ironskin_max.'</span>
-<br/><input type="submit" class="" name="input1" value="learn iron skin" />
-<input type="submit" class="max" name="input1" value="max iron skin" />
-<span class="px12 gold"> '.$ironskin_cost.' sp</span>
-</div>	';
-    } else {
-        echo '<div><span class="alt2"> Iron Skin </span></div>';
+    $stat=$button=$zeroskill=$cost=$maxcolor='';
+    $color="purple";
+    if ($ironskin_cost == 'max') { // at max skill level
+        $button=$cost='hide';
+        $color=$maxcolor='gold';
+    } elseif ($ironskin_max==0) { // skill not available yet
+        $stat =$button = $cost='hide';
+        $zeroskill = 'disable';
+    } elseif ($sp<$ironskin_cost) { // not enough sp to upgrade skill
+        $button='disable';
     }
-
-
+    echo '<div class="gslice '.$zeroskill.'">';
+    echo '<span class="icon ddgray">'.file_get_contents("img/svg/ironskin.svg").'</span>
+              <h4 class="inline '.$maxcolor.'">Iron Skin</h4>
+              <h3 class="inline '.$stat.'"><span class="'.$color.'">'.$row['ironskin'].'</span></h3>
+              <span class="lgray '.$stat.'">/'.$ironskin_max.'</span>
+              <div class="gray">Increase defense with Iron Skin</div>
+              <div class="purple '.$cost.'"> Cost for next level: '.$ironskin_cost.' SP</div>
+              <button type="submit" class="purpleBG '.$button.'" name="input1" value="learn iron skin">+1 Iron Skin</button>
+              <button type="submit" class="purpleBG '.$button.'" name="input1" value="max iron skin">MAX Iron Skin</button>
+              ';
+    echo '</div>';
     // ---------------------------------------------------------------------------------- Wings
-    if ($row['wings']>=1 && $wings_cost == 'max') {
-        echo '<div class="hilite maxed">
- Wings <span class="maxed">'. $row['wings'].'</span></div>	';
-    } elseif ($row['wings']>=1 && $sp<$wings_cost) {
-        echo '<div class="hilite">
- Wings <span>'. $row['wings'].'</span> <span class="px14 gray"> / '.$wings_max.'</span>
-<span class="px12 darkestgray"> need '.$wings_cost.' sp</span>
-</div>	';
-    } elseif ($row['wings']==0 && $sp < 1 && $wings_cost != 'max') {
-        echo '<div class="hilite">
-Wings <span class="gray px14"> '. $row['wings'].' </span><span class="px14 gray"> / '.$wings_max.'</span>
-<span class="px12 darkestgray"> need '.$wings_cost.' sp</span>
-</div>	';
-    } elseif ($row['wings']==0 && $wings_cost != 'max') {
-        echo '<div class="hilite">
-Wings <span class="gray px14"> '. $row['wings'].' </span><span class="px14 gray"> / '.$wings_max.'</span>
-<br/><input type="submit" class="" name="input1" value="learn wings" />
-<input type="submit" class="max" name="input1" value="max wings" />
-<span class="px12 gold"> '.$wings_cost.' sp</span>
-</div>	';
-    } elseif ($row['wings']>=0 && $sp>=$wings_cost) {
-        echo '<div class="hilite">
- Wings <span>'. $row['wings'].'</span> <span class="px14 gray"> / '.$wings_max.'</span>
-<br/><input type="submit" class="" name="input1" value="learn wings" />
-<input type="submit" class="max" name="input1" value="max wings" />
-<span class="px12 gold"> '.$wings_cost.' sp</span>
-</div>	';
-    } else {
-        echo '<div><span class="alt2"> Wings </span></div>';
+    $stat=$button=$zeroskill=$cost=$maxcolor='';
+    $color="purple";
+    if ($wings_cost == 'max') { // at max skill level
+        $button=$cost='hide';
+        $color=$maxcolor='gold';
+    } elseif ($wings_max==0) { // skill not available yet
+        $stat =$button = $cost='hide';
+        $zeroskill = 'disable';
+    } elseif ($sp<$wings_cost) { // not enough sp to upgrade skill
+        $button='disable';
     }
-
-
+    echo '<div class="gslice '.$zeroskill.'">';
+    echo '<span class="icon ddgray">'.file_get_contents("img/svg/wings.svg").'</span>
+              <h4 class="inline '.$maxcolor.'">Wings</h4>
+              <h3 class="inline '.$stat.'"><span class="'.$color.'">'.$row['wings'].'</span></h3>
+              <span class="lgray '.$stat.'">/'.$wings_max.'</span>
+              <div class="gray">Wings give you the ability to fly</div>
+              <div class="purple '.$cost.'"> Cost for next level: '.$wings_cost.' SP</div>
+              <button type="submit" class="purpleBG '.$button.'" name="input1" value="learn wings">+1 Wings</button>
+              <button type="submit" class="purpleBG '.$button.'" name="input1" value="max wings">MAX Wings</button>
+              ';
+    echo '</div>';
     // ---------------------------------------------------------------------------------- Gills
-    if ($row['gills']>=1 && $gills_cost == 'max') {
-        echo '<div class="hilite maxed">
- Gills <span class="maxed">'. $row['gills'].'</span></div>	';
-    } elseif ($row['gills']>=1 && $sp<$gills_cost) {
-        echo '<div class="hilite">
- Gills <span>'. $row['gills'].'</span> <span class="px14 gray"> / '.$gills_max.'</span>
-<span class="px12 darkestgray"> need '.$gills_cost.' sp</span>
-</div>	';
-    } elseif ($row['gills']==0 && $sp < 1 && $gills_cost != 'max') {
-        echo '<div class="hilite">
-Gills <span class="gray px14"> '. $row['gills'].' </span><span class="px14 gray"> / '.$gills_max.'</span>
-<span class="px12 darkestgray"> need '.$gills_cost.' sp</span>
-</div>	';
-    } elseif ($row['gills']==0 && $gills_cost != 'max') {
-        echo '<div class="hilite">
-Gills <span class="gray px14"> '. $row['gills'].' </span><span class="px14 gray"> / '.$gills_max.'</span>
-<br/><input type="submit" class="" name="input1" value="learn gills" />
-<input type="submit" class="max" name="input1" value="max gills" />
-<span class="px12 gold"> '.$gills_cost.' sp</span>
-</div>	';
-    } elseif ($row['gills']>=0 && $sp>=$gills_cost) {
-        echo '<div class="hilite">
- Gills <span>'. $row['gills'].'</span> <span class="px14 gray"> / '.$gills_max.'</span>
-<br/><input type="submit" class="" name="input1" value="learn gills" />
-<input type="submit" class="max" name="input1" value="max gills" />
-<span class="px12 gold"> '.$gills_cost.' sp</span>
-</div>	';
-    } else {
-        echo '<div><span class="alt2"> Gills </span></div>';
+    $stat=$button=$zeroskill=$cost=$maxcolor='';
+    $color="purple";
+    if ($gills_cost == 'max') { // at max skill level
+        $button=$cost='hide';
+        $color=$maxcolor='gold';
+    } elseif ($gills_max==0) { // skill not available yet
+        $stat =$button = $cost='hide';
+        $zeroskill = 'disable';
+    } elseif ($sp<$gills_cost) { // not enough sp to upgrade skill
+        $button='disable';
     }
+    echo '<div class="gslice '.$zeroskill.'">';
+    echo '<span class="icon ddgray">'.file_get_contents("img/svg/gills.svg").'</span>
+              <h4 class="inline '.$maxcolor.'">Gills</h4>
+              <h3 class="inline '.$stat.'"><span class="'.$color.'">'.$row['gills'].'</span></h3>
+              <span class="lgray '.$stat.'">/'.$gills_max.'</span>
+              <div class="gray">Gills allows you to breathe underwater</div>
+              <div class="purple '.$cost.'"> Cost for next level: '.$gills_cost.' SP</div>
+              <button type="submit" class="purpleBG '.$button.'" name="input1" value="learn gills">+1 Gills</button>
+              <button type="submit" class="purpleBG '.$button.'" name="input1" value="max gills">MAX Gills</button>
+              ';
+    echo '</div>';
+
+
+
+
+    ////////////////////////////////
+
 
 
     // ---------------------------------------------------------------------------------- SPELL DESCRIPTIONS
@@ -578,11 +497,11 @@ Gills <span class="gray px14"> '. $row['gills'].' </span><span class="px14 gray"
 <p class="px16">Launch a destructive Fireball at your enemy.</p>
 <p class="px14"><span class="red">Damage: </span> lvl + (rand(1-mag) + (lvl*5%))  </p>
 <p class="px14"><span class="blue">Cost: </span> 5 + (2*lvl) mp </p>
-<p><i class="gold">3</i> Pajama Shaman</p>
-<p><i class="gold">5</i> Traveling Wizard</p>
-<p><i class="gold">10</i> Wizard\'s Guild</p>
-<p><i class="gold">20</i> Star City</p>
-<p><i class="gold">30</i> Warlock\'s Guild</p>
+<p><i class="purple">3</i> Pajama Shaman</p>
+<p><i class="purple">5</i> Traveling Wizard</p>
+<p><i class="purple">10</i> Wizard\'s Guild</p>
+<p><i class="purple">20</i> Star City</p>
+<p><i class="purple">30</i> Warlock\'s Guild</p>
 </div>
 ';
     echo'
@@ -591,10 +510,10 @@ Gills <span class="gray px14"> '. $row['gills'].' </span><span class="px14 gray"
 <p class="px16">Launch a destructive Frostball at your enemy.</p>
 <p class="px14"><span class="red">Damage: </span> lvl + (rand(1-mag) + (lvl*5%))  </p>
 <p class="px14"><span class="blue">Cost: </span> 5 + (2*lvl) mp </p>
-<p><i class="gold">5</i> Traveling Wizard</p>
-<p><i class="gold">10</i> Wizard\'s Guild</p>
-<p><i class="gold">20</i> Star City</p>
-<p><i class="gold">30</i> Warlock\'s Guild</p>
+<p><i class="purple">5</i> Traveling Wizard</p>
+<p><i class="purple">10</i> Wizard\'s Guild</p>
+<p><i class="purple">20</i> Star City</p>
+<p><i class="purple">30</i> Warlock\'s Guild</p>
 </div>
 ';
     echo'
@@ -604,9 +523,9 @@ Gills <span class="gray px14"> '. $row['gills'].' </span><span class="px14 gray"
 <p class="px14"><span class="red">Damage: </span> lvl + (rand(1-mag) + (lvl*5%))  </p>
 <p class="px14"><span class="green">Poison: </span> rand (lvl*2) </p>
 <p class="px14"><span class="blue">Cost: </span> 5 + (3*lvl) mp </p>
-<p><i class="gold">10</i> Wizard\'s Guild</p>
-<p><i class="gold">20</i> Star City</p>
-<p><i class="gold">30</i> Warlock\'s Guild</p>
+<p><i class="purple">10</i> Wizard\'s Guild</p>
+<p><i class="purple">20</i> Star City</p>
+<p><i class="purple">30</i> Warlock\'s Guild</p>
 </div>
 ';
     echo'
@@ -615,9 +534,9 @@ Gills <span class="gray px14"> '. $row['gills'].' </span><span class="px14 gray"
 <p class="px16">Destroy your enemy with Atomic Power.</p>
 <p class="px14"><span class="red">Damage: </span>  lvl*rand(mag)  </p>
 <p class="px14"><span class="blue">Cost: </span> 100*lvl mp </p>
-<p><i class="gold">5</i> Wizard\'s Guild</p>
-<p><i class="gold">10</i> Star City</p>
-<p><i class="gold">15</i> Warlock\'s Guild</p>
+<p><i class="purple">5</i> Wizard\'s Guild</p>
+<p><i class="purple">10</i> Star City</p>
+<p><i class="purple">15</i> Warlock\'s Guild</p>
 </div>
 ';
 
@@ -631,11 +550,11 @@ Gills <span class="gray px14"> '. $row['gills'].' </span><span class="px14 gray"
 <p class="px16">Use Magic to Heal your Hit Points.</p>
 <p class="px14"><span class="green">Heal Amount: </span> rand(1,mag) + (rand(1,mag)*lvl)  </p>
 <p class="px14"><span class="blue">Cost: </span> 2*lvl mp </p>
-<p><i class="gold">3</i> Pajama Shaman</p>
-<p><i class="gold">5</i> Traveling Wizard</p>
-<p><i class="gold">10</i> Wizard\'s Guild</p>
-<p><i class="gold">20</i> Star City</p>
-<p><i class="gold">30</i> Knight\'s Guild</p>
+<p><i class="purple">3</i> Pajama Shaman</p>
+<p><i class="purple">5</i> Traveling Wizard</p>
+<p><i class="purple">10</i> Wizard\'s Guild</p>
+<p><i class="purple">20</i> Star City</p>
+<p><i class="purple">30</i> Knight\'s Guild</p>
 </div>
 ';
     echo'
@@ -643,10 +562,10 @@ Gills <span class="gray px14"> '. $row['gills'].' </span><span class="px14 gray"
 <h6 class="green">Regenerate</h6>
 <p class="px16">Regenerate your HP for many clicks.</p>
 <p class="px14"><span class="green">Regen Amount: </span> rand(lvl,lvl*2) hp  </p>
-<p class="px14"><span class="gold">Clicks: </span> rand(magbase, magmod) clicks  </p>
+<p class="px14"><span class="purple">Clicks: </span> rand(magbase, magmod) clicks  </p>
 <p class="px14"><span class="blue">Cost: </span> 20*lvl mp </p>
-<p><i class="gold">10</i> Wizard\'s Guild</p>
-<p><i class="gold">30</i> Knight\'s Guild</p>
+<p><i class="purple">10</i> Wizard\'s Guild</p>
+<p><i class="purple">30</i> Knight\'s Guild</p>
 </div>
 ';
 
