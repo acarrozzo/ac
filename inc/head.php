@@ -43,6 +43,7 @@ if ($page == 'about.php') {
 <link rel="icon" href="ac_favicon.ico">
 
 <!--- MY CSS ----->
+<link rel="stylesheet" href="css/core.min.css">
 <link rel="stylesheet" href="css/style.min.css">
 <!--- PHOTO GALLERY CSS ----->
 <link rel="stylesheet" href="css/slip/slippry.css">

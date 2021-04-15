@@ -19,7 +19,7 @@
 				<img src="img/sb/sbchange/sbchange-3.jpg" width="420" height="700" alt="Steve & Barry's Change Marketing Campaign Poster 3"/>
 			</figure>
 			<h3>Change</h3>
-			<h4>Fall 2006 Campaign</h4>
+			<h4 class="red">Fall 2006 Campaign</h4>
 			<p>Marketing campaign to make S&B appear more fashionable, modern and clean. I was part of the photoshoot and responsible for layout and typography.</p>
 		</section>
 		<section>
@@ -30,7 +30,7 @@
 				<img src="img/sb/denimpanels/denimpanel_men.jpg" width="1000" height="500" alt="Steve & Barry's Denim Printed Panel 2"/>
 			</figure>
 			<h3>Denim Panels</h3>
-			<h4>Slim, Boot, Flare, Loose, Relaxed, Skinny, you know...pants</h4>
+			<h4 class="red">Slim, Boot, Flare, Loose, Relaxed, Skinny, you know...pants</h4>
 			<p>These signs were located above the jeans section to let customers know the available styles in the section below.</p>
 		</section>
 		<section class="">
@@ -47,7 +47,7 @@
 				<img src="img/sb/bts06/bts06-5.jpg" width="432" height="720" alt="S&B Back to School Banner 3"/>
 			</figure>
 			<h3>Back To School</h3>
-			<h4>2006 Campaign</h4>
+			<h4 class="red">2006 Campaign</h4>
 			<p>Series of window banners and store signs used in the Steve & Barry's Back to School visual campaign for 2006.</p>
 		</section>
 		<section>
@@ -58,7 +58,7 @@
 				<img src="img/sb/sbwinter06/sbwinter06.jpg" width="409" height="677" alt="Steve & Barry's Winter Campaign, Out of the Cold Print Design 2"/>
 			</figure>
 			<h3>Get out of the Cold</h3>
-			<h4>and into some more store visuals.</h4>
+			<h4 class="red">and into some more store visuals.</h4>
 
 		</section>
 
@@ -79,7 +79,7 @@
 				<img src="img/sb/starbury/starbury-shoeoap.jpg" width="700" height="380" alt="S&B Starbury Shoe Print Banner"/>
 			</figure>
 			<h3>Starbury™</h3>
-			<h4>Bigger than Basketball!</h4>
+			<h4 class="red">Bigger than Basketball!</h4>
 			<p>New York Knicks Stephon Marbury's clothing line - store visuals for 2007.</p>
 			<figure class="gal hide" data-pop>
 				<img src="img/sb/starbury/starbury-longoap.jpg" width="1000" height="177" alt="S&B Starbury Really Wide Banner"/>
@@ -90,7 +90,7 @@
 				<img src="img/sb/bitten-satc/bitten-sjp-satc.jpg" width="800" height="667" alt="Bitten, Sex and the City, Sarah Jessica Parker, Print Poster"/>
 			</figure>
 			<h3>SJP Bitten</h3>
-			<h4>Sex and the City</h4>
+			<h4 class="red">Sex and the City</h4>
 			<p>Combination poster designed to promote Sarah Jessica's Clothing line BITTEN and her new Sex and the City movie.</p>
 		</section>
 		<section>
@@ -107,7 +107,7 @@
 				<img src="img/sb/dear2008/dear-13x19s.jpg" width="936" height="557" alt="dear by Amanda Bynes Store Sign Prints"/>
 			</figure>
 			<h3>dear™ by Amanda Bynes</h3>
-			<h4>2008 Visuals</h4>
+			<h4 class="red">2008 Visuals</h4>
 			<p>Celebrity Amanda Bynes exclusive clothing line. These store visuals were created in collaboration with an outside advertising agency.</p>
 
 		</section>
@@ -126,7 +126,7 @@
 				<img src="img/sb/bigben/bigben3.jpg" width="388" height="600" alt="Big Ben Wallace Poster Design 2"/>
 			</figure>
 			<h3>Big Ben Wallace</h3>
-			<h4>Even More Sneakers - only $7.95</h4>
+			<h4 class="red">Even More Sneakers - only $7.95</h4>
 			<p>Ben Wallace (Cleveland Cavaliers) exclusive basketball shoe promotional banners.</p>
 		</section>
 		<section>
@@ -134,7 +134,7 @@
 				<img src="img/sb/eleven-lb/eleven-lb-spread.jpg" width="900" height="696" alt="Eleven by Venus Williams Lookbook Preview"/>
 			</figure>
 			<h3>Eleven™ by Venus Williams</h3>
-			<h4>Lookbook</h4>
+			<h4 class="red">Lookbook</h4>
 			<p>Product Lookbook design, layout and product photo assistance for 2008 Eleven by Venus Williams lookbook. A Steve & Barry's brand.</p>
 			<figure class="left20 gal clear" data-pop>
 				<img src="img/sb/eleven-lb/eleven-lb-1.jpg" width="396" height="612" alt="Eleven by Venus Williams Lookbook Cover "/>
@@ -164,7 +164,7 @@
 				<img src="img/nichart/nichartpostcard_2.jpg" width="429" height="600" alt="Nicolette Hart Postcard Flyer Back"/>
 			</figure>
 			<h3>Nicolette Hart</h3>
-			<h4>Logo & Flyer Design</h4>
+			<h4 class="red">Logo & Flyer Design</h4>
 			<p>Nicolette Hart is a pop artist and acted in the Broadway show "RENT". I designed this logo and flyer.</p>
 
 		</section>
@@ -179,7 +179,7 @@
 				<img src="img/sb/grantboxing/grantboxing3.jpg" width="700" height="350" alt="Evander Holyfield Grant Boxing Boxing Glove Banner"/>
 			</figure>
 			<h3>Grant Boxing</h3>
-			<h4>Evander Holyfield</h4>
+			<h4 class="red">Evander Holyfield</h4>
 			<p>Visual campaign for Evander Holyfield's athletic clothing and accessories line. Unfortunately they never got to the stores after Holyfield was tested positive for steroid use. O well.</p>
 		</section>
 
@@ -196,7 +196,7 @@
 				<img src="img/camp/camplified_poster_2011.jpg" width="800" height="1236" alt="Camplified Poster Design 2011"/>
 			</figure>
 			<h3>Camplified </h3>
-			<h4>Tour Posters</h4>
+			<h4 class="red">Tour Posters</h4>
 			<p>Camplified has been hosting summer camp concert tours for the last 10 years or so. I have helped them design their official summer tour posters since then. The posters feature tour dates and photos for the bands and artists. These posters are the highlight printed piece for each years tour.</p>
 			<figure class="left20 gal clear" data-pop>
 				<img src="img/camp/camplified_poster_2012.jpg" width="800" height="1236" alt="Camplified Poster Design 2012"/>
@@ -221,7 +221,7 @@
 				<img src="img/es/esbizcard1.jpg" width="650" height="300" alt="Exotic Snakes Business Card Preview"/>
 			</figure>
 			<h3>Exotic Snakes</h3>
-			<h4>Business Card Design</h4>
+			<h4 class="red">Business Card Design</h4>
 			<p>Man you don't know? My dad is big time in the snake biz. Here's the new card I made him.</p>
 			<figure class="gal left" data-pop>
 				<img src="img/es/esbizcard2010_r1.jpg" width="650" height="447" alt="Exotic Snakes Business Card - Step 1"/>
@@ -237,7 +237,7 @@
 				<img src="img/fun/pokerposter.jpg" width="629" height="800" alt="Anthony Carrozzo No Limits Poker Poster Design"/>
 			</figure>
 			<h3>No Limits</h3>
-			<h4>Poker Poster</h4>
+			<h4 class="red">Poker Poster</h4>
 			<p>One of my favorite old designs, I created this poker poster for myself and my friends.</p>
 		</section>
 		<section>
@@ -245,7 +245,7 @@
 				<img src="img/sb/summerblowout/summerblowout.jpg" width="480" height="800" alt="S&B Summer Blowout Sale Poster Type Design"/>
 			</figure>
 			<h3>Summer Blowout</h3>
-			<h4>Sale</h4>
+			<h4 class="red">Sale</h4>
 			<p>Yet another sale sign. Solid type though.</p>
 		</section>
 
@@ -254,7 +254,7 @@
 				<img src="img/sb/newtshirtarrivals/newtshirtarrivals.jpg" width="420" height="700" alt="Fresh out of the Box, New T-shirt arrival print design"/>
 			</figure>
 			<h3>Fresh out of the box</h3>
-			<h4>New Tees</h4>
+			<h4 class="red">New Tees</h4>
 			<p>In-store banner to hang above the newest T-shirts.</p>
 		</section>
 		<section>
@@ -262,7 +262,7 @@
 				<img src="img/sb/apposters/apposter-1.jpg" width="468" height="684" alt="Human Resource Poster Design - Shake on it"/>
 			</figure>
 			<h3>Shop Talk</h3>
-			<h4>With the Care Crew</h4>
+			<h4 class="red">With the Care Crew</h4>
 			<p>Making boring human resource posters as exciting as possible. Series of informative posters hung around the corporate office.</p>
 			<figure class="left20 gal" data-pop>
 				<img src="img/sb/apposters/apposter-3.jpg" width="468" height="684" alt="Human Resource Poster Design - Call the Hotline"/>
@@ -277,7 +277,7 @@
 				<img src="img/sb/newtshirtarrivals/kelloggs.jpg" width="479" height="700" alt="Kellogg's New T-shirt arrivals. Tony the Tiger, they're Great!"/>
 			</figure>
 			<h3>Kellogg's</h3>
-			<h4>Branded Tees</h4>
+			<h4 class="red">Branded Tees</h4>
 			<p>Tony the Tiger approves.</p>
 
 		</section>
@@ -290,7 +290,7 @@
 				<img src="img/mob/bb-bold.jpg" width="612" height="792" alt="BlackBerry Bold Device Flyer Design"/>
 			</figure>
 			<h3>Blackberry</h3>
-			<h4>Flyer</h4>
+			<h4 class="red">Flyer</h4>
 			<p>No one uses Blackberries anymore right? Texting on them with the full keyboard was the bomb though. </p>
 		</section>
 		<section>
@@ -298,7 +298,7 @@
 				<img src="img/toyotasellsheet/toyotasellsheet.jpg" width="544" height="700" alt="Toyota Sell Sheet Design"/>
 			</figure>
 			<h3>Toyota</h3>
-			<h4>Parts Center</h4>
+			<h4 class="red">Parts Center</h4>
 			<p>Direct mail brochure sent to Toyota Part Centers.</p>
 		</section>
 
@@ -365,7 +365,7 @@
 				<img src="img/web/newsday_sports_superbowl_twitter.jpg" width="1080" height="700" alt="Newsday Sports Twitter Skin Graphic Design"/>
 			</figure>
 			<h3>Newsday Sports</h3>
-			<h4>Twitter Skin</h4>
+			<h4 class="red">Twitter Skin</h4>
 			<p>Updates to the top graphics for Newsday Sport's Twitter Channel.</p>
 			<figure class="left20 gal" data-pop>
 				<img src="img/web/newsday_sports_twitter2.jpg" width="1251" height="975" alt="Newsday Sports Twitter Skin Graphic Design 2016"/>
@@ -381,7 +381,7 @@
 				<img src="img/web/web-marveltshirts.jpg" width="800" height="675" alt="S&B Marvel T-shirts Mini Website Design"/>
 			</figure>
 			<h3>Marvel Tees</h3>
-			<h4>Mini Site</h4>
+			<h4 class="red">Mini Site</h4>
 			<p>Mini flash website showcasing all the available Marvel T-shirts available at S&B, including the Incredible Hulk, Iron Man, Spider Man, X-Men & more.</p>
 		</section>
 		<section>
@@ -389,7 +389,7 @@
 				<img src="img/web/pw-131-Inauguration_Blast.jpg" width="600" height="875" alt="Songs of Change Obama Email Blast Web Design"/>
 			</figure>
 			<h3>Songs of Change</h3>
-			<h4>Inauguration Email Blast</h4>
+			<h4 class="red">Inauguration Email Blast</h4>
 			<p>After President Barack Obama's Inauguration, Primary Wave had me create an email blast graphic with links to songs of Change.</p>
 		</section>
 		<section>
@@ -397,7 +397,7 @@
 				<img src="img/web/web-venusblast.jpg" width="780" height="600" alt="Venus Williams US Open email blast design"/>
 			</figure>
 			<h3>Venus Williams</h3>
-			<h4>U.S. Open Email Blast</h4>
+			<h4 class="red">U.S. Open Email Blast</h4>
 			<p>Win a trip to NYC and watch Venus play in the U.S. Open. Sponsered by her Eleven clothing brand.</p>
 		</section>
 
@@ -406,7 +406,7 @@
 				<img src="img/web/puritans_pride_1.jpg" width="402" height="650" alt="Puritans Pride Email Blast Design"/>
 			</figure>
 			<h3>Puritans Pride </h3>
-			<h4>Email Blast</h4>
+			<h4 class="red">Email Blast</h4>
 			<p>Direct email for the popular supplement company.</p>
 		</section>
 		<section>
@@ -414,7 +414,7 @@
 				<img src="img/web/web-liaac.jpg" width="1000" height="576" alt="LIAAC website redesign"/>
 			</figure>
 			<h3>LIAAC </h3>
-			<h4>Web Design</h4>
+			<h4 class="red">Web Design</h4>
 			<p>Partial redesign for the Long Island Association for Aids Care site.</p>
 		</section>
 
@@ -423,7 +423,7 @@
 				<img src="img/web-sbportal/web-sbportal-1.jpg" width="941" height="647" alt="S&B Portal Web Design - Bitten"/>
 			</figure>
 			<h3>Celebrity Brand</h3>
-			<h4>Portal Designs</h4>
+			<h4 class="red">Portal Designs</h4>
 			<p>Landing website for all the celebrity brands. </p>
 			<figure class="gal left33 clear" data-pop>
 				<img src="img/web-sbportal/web-sbportal-2.jpg" width="941" height="647" alt="S&B Portal Web Design - Wonderwall, Laird Hamilton"/>
@@ -524,7 +524,7 @@
 				<img src="img/illustration/mask_3.jpg" width="1584" height="1000" alt="Mask cartoon illustration drawing book cover"/>
 			</figure>
 			<h3>Mask</h3>
-			<h4>Illustration</h4>
+			<h4 class="red">Illustration</h4>
 			<p>Check it out, we have a bunch of imposters. A ninja (turtle), a ghost, Batman and Jason Vhorhes. </p>
 		</section>
 		<section>
@@ -532,7 +532,7 @@
 				<img src="img/illustration/camera_3.jpg" width="1200" height="748" alt="sony digital camera illustration drawing"/>
 			</figure>
 			<h3>Digital Camera</h3>
-			<h4>Illustration</h4>
+			<h4 class="red">Illustration</h4>
 			<p>Detailed rendering of what used to be a top of line 3.2 Megapixel camera.</p>
 		</section>
 		<section>
@@ -542,7 +542,7 @@
 			</figure>
 
 			<h3>Veronica</h3>
-			<h4>Senior Project</h4>
+			<h4 class="red">Senior Project</h4>
 			<p>For my Senior Project I went with a 1950's diner theme and illustrated a life size waitress on rollerskates. I worked at Poly at the time so had the sweet hook up for the huge print. Mounted it to some cardboard and put some burgers on a tray and everyone was happy. </p>
 			<figure class="clear gal left33" data-pop>
 				<img src="img/illustration/veronica-photo1.jpg" width="800" height="600" alt="veronica print big printer anthony carrozzo large format"/>

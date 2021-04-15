@@ -290,6 +290,9 @@ header  {
         color: #fff;
         position: relative;
       }
+      h2 {
+    text-shadow: 1px 1px 6px rgba(0,0,0,.5);
+  }
 
 }
 .sign-up {
@@ -387,15 +390,16 @@ label {
 }
 a.btn {
   position: relative;
-  font-size: 1.6rem;
-  text-decoration: none;
-  padding: 12px 24px;
-  display: inline-block;
-  border-radius: 11px;
-  box-shadow: 1px 1px 9px #ccc;
-  line-height: 1;
-  background: #ef404a;
-  color: #fff;
+      font-size: 1rem;
+      text-decoration: none;
+      padding: 8px 24px;
+      display: inline-block;
+      border-radius: 10px;
+      background: #ef404a;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 900;
+  box-shadow: 1px 1px 3px rgba(0,0,0,.5);
   .fa {
       position: absolute;
       right: -22px;
@@ -405,6 +409,22 @@ a.btn {
 .btn.big:hover {
 top:1px;text-decoration: none;
 }
+
+.icons {
+  max-width: 800px;
+      display: flex;
+      margin: 0 auto;
+      justify-content:space-evenly;
+      opacity: .2;
+     .icon {
+       flex: 1;
+       max-width: 100px;
+    }
+}
+
+
+
+
 footer {
   background:#000;text-align: center;
   padding:22px 22px 50px;
