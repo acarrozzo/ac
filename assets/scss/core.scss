@@ -1,0 +1,250 @@
+/* ACARROZZO 2018 STYLES */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+$color0: #000000;
+$color1: #111111;
+$color2: #222222;
+$color3: #333333;
+$color4: #666666;
+$color5: #999999;
+$color6: #aaaaaa;
+$color7: #cccccc;
+$color8: #eeeeee;
+$color9: #f7f7f7;
+$color10: #ffffff;
+
+/* ---------------------------- 5 COLORS */
+// LG COLORS
+$red:#db6c64;
+$blue:#689cc1;
+$green:#7ebe63;
+$gold:#f1b238;
+$purple:#9f8ac2;
+
+// AC COLORS
+$red:#ef404a;
+$green:#70bf54;
+$blue:#00aeef;
+$yellow:#ffc20e;
+$purple:#a880b9;
+
+
+/* ----- MAIN ----- */
+html {
+  font-family: sans-serif;
+  line-height: 1em;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  transition: color .2s,  background .2s;
+  margin: 0;
+  background: $color1;
+  color: $color6;
+  color: $color9;
+  &.day {
+  background: $color9;
+  color: $color1;
+}
+}
+
+
+h1, h2, h3, h4, h5, h6, p {
+  color: $color9;
+  padding:0;
+  line-height: 1em;
+}
+.day {
+  h1, h2, h3, h4, h5, h6, p {
+  color: $color1;
+}
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.4rem;
+  //line-height: 1.3em;
+}
+h3 {
+  font-size: 1.8rem;
+//  line-height: 1.2em;
+}
+h4 {
+  font-size: 1.2rem;
+}
+h5 {
+  font-size: 1.1rem;
+}
+h6 {
+  font-size: 1rem;
+}
+a {
+  color:$red;
+}
+
+p {
+  	font-size: 1.1rem;
+  	line-height: 1.6em;
+  	margin: 0 0 1rem;
+    //color: $color9;
+  	&:first-of-type {
+  		margin-top: 0;
+  	}
+    &:last-child {
+      margin-bottom: 0;
+    }
+    + p {
+      margin:1rem 0;
+    }
+
+}
+
+section {
+  margin:0 2rem;
+  padding: 2rem 0;
+
+}
+svg {
+  fill: $color4;
+}
+
+
+
+/* ----- CORE BAR ----- */
+.corebar {
+  //  position: absolute;
+    bottom: 0;
+    right: 0;
+  //  background: rgba(0,0,0,0.6);
+    left: 0;
+    height: 30px;
+    overflow: hidden;
+    z-index: 1;
+    display:flex;
+  //  text-align: right;
+    align-items: center;
+      justify-content: center;
+        font-size: 0.8rem;
+        background: $color0;
+        border-top: solid 1px $color3;
+        .day & {
+          background: $color8;
+          border-color:$color7;
+        }
+    > a, p {
+  //  flex: 1;
+    white-space: nowrap;
+  //  flex-basis: auto;
+    text-decoration: none;
+    padding: 2rem;
+    color:$color4;
+    .day & {
+    color:$color6;
+    }
+    &:hover {color:$red;}
+    }
+    // ----- DAY NIGHT TOGGLE BUTTON
+    a.toggle-day {
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      width: 2rem;
+      padding: 0.5rem;
+      .sun {display:none;}
+      .day & {
+        .sun {display: block;}
+        .moon {display: none;}
+      }
+    }
+}
+/* ----- FOOTER ----- */
+footer {
+  padding:2rem;
+  text-align:center;
+    background: $color0;
+        .day & {
+          background: $color8;
+        }
+      }
+
+
+/* ----- CORE MACHINE - MOVE TO ITS OWN PARTIAL ----- */
+.core-machine {
+  text-align:center;
+  max-width: 600px;
+  margin:0 auto;
+}
+.icon {
+  max-width: 80px;
+
+  &.hexagon {
+    display: block;
+    margin: 5rem auto;
+
+    fill {
+      color: $color2;
+    }
+  }
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+
+> * {
+  padding: 2rem;
+flex: 1;
+text-align: center;
+margin: 0.1rem;
+}
+}
+
+
+
+body {
+.red {color:$red; svg {fill: $red;}}
+.green {color:$green; svg {fill: $green;}}
+.blue {color:$blue; svg {fill: $blue;}}
+.gold {color:$gold; svg {fill: $gold;}}
+.purple {color:$purple; svg {fill: $purple;}}
+
+.redBG {background:$red;color:$color9;}
+.greenBG {background:$green;color:$color9;}
+.blueBG {background:$blue;color:$color9;}
+.goldBG {background:$gold;color:$color9;}
+.purpleBG {background:$purple;color:$color9;}
+
+.color0 {color:$color0; svg {fill: $color0;}}
+.color1 {color:$color1; svg {fill: $color1;}}
+.color2 {color:$color2; svg {fill: $color2;}}
+.color3 {color:$color3; svg {fill: $color3;}}
+.color4 {color:$color4; svg {fill: $color4;}}
+.color5 {color:$color5; svg {fill: $color5;}}
+.color6 {color:$color6; svg {fill: $color6;}}
+.color7 {color:$color7; svg {fill: $color7;}}
+.color8 {color:$color8; svg {fill: $color8;}}
+.color9 {color:$color9; svg {fill: $color9;}}
+.color10 {color:$color10; svg {fill: $color10;}}
+
+.BG0 {background:$color0;}
+.BG1 {background:$color1;}
+.BG2 {background:$color2;}
+.BG3 {background:$color3;}
+.BG4 {background:$color4;}
+.BG5 {background:$color5;}
+.BG6 {background:$color6;}
+.BG7 {background:$color7;}
+.BG8 {background:$color8;}
+.BG9 {background:$color9;}
+.BG10 {background:$color10;}
+
+.day .color0 {color:$color10; svg {fill: $color10;}} // ???
+.day .swap {color:$color10; svg {fill: $color10;}}
+
+}

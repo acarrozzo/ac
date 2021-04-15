@@ -17,7 +17,7 @@
 			</figure>
 
 			<h3>LG TACTICS | A strategy-lite card game</h3>
-			<h4>The easy to learn battle card game with a clean minimal style</h4>
+			<h4 class="red">The easy to learn battle card game with a clean minimal style</h4>
 
 			<p>With this game I challenged myself to remove layers of intricate mechanics I normally end up creating in card games. An ultra simplified take on the CCG genre, my intention is for this to act as a subtle introduction to the story and future installments in the Light Gray Series.</p>
 
@@ -27,7 +27,7 @@
 		<!--- GAME | MONSTER PARTY ----->
 		<section>
 			<h3>Monster Party | Five-Suit Deck</h3>
-			<h4>Thanks for making my first card deck a success!</h4>
+			<h4 class="red">Thanks for making my first card deck a success!</h4>
 
 			<figure class="" data-pop>
 				<img src="img/monsterparty/monster-party-kickstarterabout-graybg.jpg" width="1200" height="675" alt="Monster Party Playing Cards - Five Suit Deck Spread"/>
@@ -80,7 +80,7 @@
 				<figcaption>Playable on mobile, tablet, or desktop.</figcaption>
 			</figure>
 			<p>Initially this project started as a way for me to learn PHP, but it quickly evolved into something more. Interact with friendly NPC's, accept their quests and battle all types of enemies. Gain skills and spells to aid you in your adventure. Equip strong armor and wield powerful weapons.</p>
-			<h4>Light Gray is a turn based roleplaying game where you take on the role of a Young Adventurer in a vast world. </h4>
+			<h4 class="red">Light Gray is a turn based roleplaying game where you take on the role of a Young Adventurer in a vast world. </h4>
 				<!--	<p>The demo below is a work in progress, but fully playable with over 50 quests, hundreds of items, and many hours of playtime.</p>
 	<p><a href="http://www.lightgrayrpg.com" target="_blank" class="btn">Play the demo now</a>			</p>-->
 			<figure class="gal" data-pop>

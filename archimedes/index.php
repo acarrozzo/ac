@@ -6,6 +6,7 @@
 <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<!--<link rel="stylesheet" href="../css/core.css">-->
 <link rel="stylesheet" href="css/archimedes.css">
 <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,12 +17,12 @@
     Archimedes Game Company
   </h1>
   <ul class="nav-list">
-    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-    <li class="nav-item"><a class="nav-link" href="#">LG TACTICS</a></li>
-    <li class="nav-item"><a class="nav-link" href="#">Monster Party</a></li>
-    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-    <li class="nav-item"><a class="nav-link" href="#">Buy</a></li>
+    <!--<li class="nav-item"><a class="nav-link" href="#">Home</a></li>-->
+    <li class="nav-item"><a class="nav-link" href="#tactics">LG TACTICS</a></li>
+    <li class="nav-item"><a class="nav-link" href="#monsterparty">Monster Party</a></li>
+    <!--<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>-->
+    <li class="nav-item"><a class="nav-link" href="https://www.etsy.com/shop/ArchimedesCreations" target="_blank">Buy</a></li>
   </ul>
   <div class="menu-toggle">
   <div class="hamburger">
@@ -34,13 +35,22 @@
   <header>
     <div>
       <h2>Welcome to Archimedes</h2>
-      <a href="">Check out the games</a>
+      <a href="#tactics" class="btn">Check out the games</a>
     </div>
   </header>
   <div class="gray-logos">
-<p>GRAY LOGOS HERE - ARCHIMEDES - TACTICS - MONSTER PARTY
+
+
+
+<p class="icons">
+<?php
+echo '<span class="icon">'.file_get_contents("../img/svg/logo-archimedes-games-1.svg").'</span>';
+echo '<span class="icon">'.file_get_contents("../img/svg/logo-tactics.svg").'</span>';
+echo '<span class="icon">'.file_get_contents("../img/svg/logo-monster-party.svg").'</span>';
+?>
+</p>
   </div>
-    <div class="mid">
+    <div id="tactics" class="mid">
       <img src="img/tactics-psd-box-front.jpg" width="960" height="540" alt="LG TACTICS - strategy battle card game"/>
           <h2>LG TACTICS | Strategy Card Game</h2>
           <p class="">Jump to <a href="#rules">Game Rules</a><br/></p>
@@ -158,7 +168,7 @@
 
 </div>
 </section>
-  <div class="mid">
+  <div id="monsterparty" class="mid">
     <h2>Monster Party | Five-Suit Deck</h3>
         <p>Released 11/2019</p>
         <img  class="right-img" src="../img/monsterparty/monster-party-kickstarterabout-graybg.jpg" width="1200" height="675" alt="Monster Party Playing Cards - Five Suit Deck Spread"/>
@@ -202,6 +212,11 @@
    </p>
  </div>
 </footer>
+
+
+<?php //include '../inc/corebar.php'; ?>
+
+
 <script>
 const navbar = document.querySelector(".navbar");
 const menuToggle = document.querySelector(".menu-toggle");

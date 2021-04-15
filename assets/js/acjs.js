@@ -2,13 +2,13 @@
 
 
 // SlidesJS Required ----->
-// WALLPAPERS SLIDES	
+// WALLPAPERS SLIDES
 $(function () {
 	$("[id^=slides].wallpapers").slidesjs({ // any id that starts with slides will work
 		width: 1000,
 		height: 625,
-		navigation: true 
-		
+		navigation: true
+
 	});
 });
 
@@ -17,12 +17,12 @@ $(function () {
 		width: 1280,
 		height: 720,
 		navigation: true
-		
+
 	});
 });
 
 
-// DEFAULT SLIDES	 
+// DEFAULT SLIDES
 $(function () {
 	$("[id^=slides]").slidesjs({ // any id that starts with slides will work
 		width: 1000,
@@ -31,7 +31,7 @@ $(function () {
 	});
 });
 
-// MAX FULL SCREEN	
+// MAX FULL SCREEN
 /* $( ".maxBtn" ).on( "click", function (e) {
 		if ( $( '[id^=slides]' ).hasClass( 'max' ) ) {
 			$( '[id^=slides]' ).removeClass( 'max' ); // makes close icon spin back into menu icon
@@ -39,8 +39,8 @@ $(function () {
 			$(this).siblings('[id^=slides]').addClass( 'max' );
 			//this.update();
 		}
-	} ); //End mbtn click	
-	
+	} ); //End mbtn click
+
 */
 
 // ---- NAV / MENU BUTTON - OPENS MENU
@@ -53,8 +53,8 @@ $(function () {
 			$( 'body' ).addClass( 'menuOpen' ); // makes menu icon spin around when clicked, turn into close icon
 		}
 	} ); //End mbtn click
-	
-	
+
+
 // ---- THE TOGGLE - SWAPS .alt on the body. maybe use for time of day
 
 	$( ".theToggle" ).on( "click", function (e) {
@@ -65,8 +65,8 @@ $(function () {
 			$( 'body' ).addClass( 'toggle' ); // makes menu icon spin around when clicked, turn into close icon
 		}
 	} ); //End mbtn click
-	
-	
+
+
 // ---- MINUS BUTTON - opens up alternative menu
 	$( ".minusBtn, .minus" ).on( "click", function (e) {
 		e.preventDefault();
@@ -76,7 +76,7 @@ $(function () {
 			$( 'body' ).addClass( 'minusOpen' ); // makes menu icon spin around when clicked, turn into close icon
 		}
 	} ); //End mbtn click
-	
+
 	*/
 
 
@@ -146,7 +146,7 @@ but really, it's usually best to find the `.closest` shared ancestor and then `.
     $(this).children(".fa").toggleClass("fa-angle-up").toggleClass("fa-angle-down");
     });
 	*/
-if ($(window).width() >= 800) {  
+if ($(window).width() >= 800) {
 	$('.collapser').each(function(){
 		if($(this).hasClass('justTablet')) {
 			$(this).addClass("expanded");
@@ -154,7 +154,7 @@ if ($(window).width() >= 800) {
 	});
 }
 
-if ($(window).width() >= 800) {  
+if ($(window).width() >= 800) {
 	$('.collapser').each(function(){
 		if($(this).hasClass('justMobile')) {
 			$(this).addClass("expanded");
@@ -165,7 +165,7 @@ if ($(window).width() >= 800) {
 
 
 $('.nav-column li').each(function(){
-   
+
 });
 
 
@@ -176,7 +176,7 @@ $(".collapser").on("click", function () {
 		setTimeout(function(){
             item.toggleClass('expanded');
       },450);
-	} 
+	}
 	else {
 		item.next('.collapserContent').slideDown(500);
         item.toggleClass('expanded');
@@ -188,11 +188,13 @@ $(".collapser:not(.expanded)").on("click", function (e) {
 
 });
 
-/*--  TC + MIKE CANNON PROJECT - JS REFERENCE 
+
+
+/*--  TC + MIKE CANNON PROJECT - JS REFERENCE
 
 $(".addInput").on("click",function(e){
 	e.preventDefault();
-	
+
  	var ele = $(this),
 		parent = ele.closest(".table_calculator"),
 		container = parent.find(".inputContain"),
@@ -200,20 +202,20 @@ $(".addInput").on("click",function(e){
 		input_count = parseInt(last_input.attr("name").match(/([0-9]+)$/)),
 		markup = last_input[0].outerHTML,
 		new_element;
-	
+
 	input_count++;
-	
+
 	container.append(markup);
-	
+
 	new_element = container.find("input[type='text']").last();
-	
+
 	new_element.attr("name", "s" + (input_count));
-	
+
 	if(input_count >= 5){
 		$(".addInput").addClass("hide");
 	}
-	
-	
+
+
 });
 
 
@@ -265,6 +267,6 @@ $(".addInput").on("click",function(e){
 				});
 			});
 		</script>
-		
+
 -->
 */

@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 
 		uglify: {
 			files: {
-				src: 'js/acjs.js', // source files mask
+				src: 'js/core.js', // source files mask
 				dest: 'js/', // destination folder
 				expand: true, // allow dynamic building
 				flatten: true, // remove all unnecessary nesting
@@ -23,12 +23,19 @@ module.exports = function(grunt) {
 			}
 		},
 
-		concat: {
+	/*	concat: {
 			dist:{
 				src: ['assets/js/*.js', '!assets/js/app.js'],
 				dest: 'js/acjs.js'
 			}
 		},
+		*/
+		concat: {
+				dist:{
+					src: ['assets/js/*.js', '!assets/js/app.js'],
+					dest: 'js/core.js'
+				}
+			},
 
 		cssmin: {
 			target: {

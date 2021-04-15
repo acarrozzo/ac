@@ -62,7 +62,7 @@
 				<img src="img/photo/trip20/footaction-fireescape-reebok800.jpg" width="800" height="400" alt="footaction reebok sneaker photo shoot"/>
 			</figure>
 			<h5>Foot Action </h5>
-			<p>I was hired to do product photography and turn the resulting images into a cinematography style gif. Just a little bit of motion.</p>
+			<p class="red">I was hired to do product photography and turn the resulting images into a cinematography style gif. Just a little bit of motion.</p>
 			<figure class="gal" data-pop>
 				<img src="img/photo/trip20/FootAction-RedReebok.gif" width="720" height="480" alt="animated gif cinemagraphic footaction red reebok sneaker"/>
 			</figure>

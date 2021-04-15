@@ -1,3 +1,6 @@
+//@import 'core';
+
+
 /* ACARROZZO 2018 STYLES */
 *, *:before, *:after { box-sizing: border-box; }
 $red:#e81616; // bright red
@@ -87,7 +90,13 @@ XXX* { // TEMPORARY TRANSITION ALL
 /* ----- MAIN ----- */
 html {   font-family: 'Droid Serif', 'Helvetica', sans-serif; line-height: 1em; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
 
-body { margin: 0; background: #f7f7f7;color: #333;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+body {
+  //margin: 0;
+  //background: #f7f7f7;
+  //color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 main {width: 100%;max-width: $mainWidth;margin: 0 auto;}
 a {color:$red;text-decoration:none;line-height:1.4em;}
 a:hover {text-decoration:underline;}
@@ -109,7 +118,8 @@ a[target="_blank"]:after {
 	padding: 6px;
 	border-radius: 50px;
 	margin: 0 0 10px;
-      box-shadow: 1px 1px 6px #aaa;
+  //    box-shadow: 1px 1px 6px #aaa;
+      box-shadow:1px 1px 6px rgba(0,0,0,.5);
     &.big {
       padding: 12px;
       max-width: 400px;
@@ -214,8 +224,8 @@ section {
       position: relative;
       display: inline-block;
     //  overflow-y: hidden;
-    border-bottom: solid 1px #ccc;
-    border-bottom: solid 1px #ddd;
+  //  border-bottom: solid 1px #ccc;
+    border-bottom:solid 1px #999;
 }
 hr {
 	border: 0;
@@ -286,14 +296,7 @@ h4 {
   	//margin: 15px 0 0px;
   }
 p {
-	padding:10px 0;
-	font-size: 1.1rem;
-	line-height: 1.6em;
-	margin: 0;
-	color: #333;
-	&:first-child {
-		padding-top: 0;
-	}
+
  }
 
 /* ----- POSITION STYLES ----- */
@@ -528,11 +531,12 @@ figcaption, .caption, h5 + p {
 
 /* ----- FOOTER ----- */
 footer {
-    background: #333;
-    color: #eee;
+  //  background: $color2;
+    //color: #eee;
     text-align:center;
     clear:both;
     margin: 0 auto;
+        padding: 0 0 22px;
 	section {
 		border: 0;
 		margin: 0 auto;
@@ -626,7 +630,8 @@ footer {
         //background: $red;
         //background: linear-gradient($red, $red2);
         background: 0;
-        color: #000;
+        //color: #000;
+        //color: $color5;
         padding-top: 4px;
 	}
 }
