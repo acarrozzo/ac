@@ -8,15 +8,29 @@
 
 		<!--- LG TACTICS ----->
 		<section>
+		<!--- 	<figure class="gal" data-pop>-->
+				<a class="none" target="_blank" href="https://www.etsy.com/shop/ArchimedesCreations">
+					<img src="img/tactics/tactics-psd-2-etsy.jpg" width="960" height="540" alt="LG TACTICS - strategy card game - etsy store"/>
+				</a>
+		<!--- 	</figure>-->
+			<h3>Now on Etsy!</h3>
+			<h4 class="red">Did you miss out on Monster Party or LG TACTICS?</h4>
+			<p>Well today's your lucky day. Visit the Archimedes store using the links below and pick up some cool card games.</p>
+			<p>• Archimedes Games Store: <a target="_blank" href="https://www.etsy.com/shop/ArchimedesCreations">Etsy storefront</a>.</p>
+			<p>• Monster Party | Five-Suit Deck: <a target="_blank" href="https://www.etsy.com/listing/972919207/monster-party-playing-cards-five-suit">Buy here</a>.</p>
+			<p>• LG TACTICS | Strategy Card Game: <a target="_blank" href="https://www.etsy.com/listing/1161023409/lg-tactics-strategy-card-game">Buy here</a>.</p>
+
+		</section>
+		<!--- LG TACTICS ----->
+		<section>
 			<figure class="gal" data-pop>
 				<img src="img/tactics/tactics-psd-2-thank-you.jpg" width="960" height="540" alt="LG TACTICS - strategy card game"/>
 			</figure>
 			<h3>LG TACTICS | A strategy-lite card game</h3>
 			<h4 class="red">The easy to learn battle card game with a clean minimal style</h4>
 			<p>With this game I challenged myself to remove layers of intricate mechanics I normally end up creating in card games. An ultra simplified take on the CCG genre, my intention is for this to act as a subtle introduction to the story and future installments in the Light Gray Series.</p>
-			<p>Archimedes Game Co. Site: <a target="_blank" href="https://acarrozzo.com/archimedes/index.html">LG TACTICS | Info and Game Rules</a>.</p>
+			<p>Archimedes Game Co. Site: <a target="_blank" href="https://acarrozzo.com/archimedes/index.php">LG TACTICS | Info and Game Rules</a>.</p>
 			<p>View the campaign page here: <a target="_blank" href="https://www.kickstarter.com/projects/archimedesgames/lg-tactics-strategy-card-game">LG TACTICS | Kickstarter Campaign</a>.</p>
-
 		</section>
 		<!--- MONSTER PARTY TEASER ----->
 		<section>
@@ -38,7 +52,7 @@
 			<h3>Archimedes Game Co</h3>
 			<h4 class="red">Let's play</h4>
 
-			<p>Visit <a target="_blank" href="https://acarrozzo.com/archimedes/index.html">
+			<p>Visit <a target="_blank" href="https://acarrozzo.com/archimedes/index.php">
 				Archimedes Games</a> and sign up so you stay up to date with all my game happenings. </p>
 			</section>
 		<!--- DRIFT ----->

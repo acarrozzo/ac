@@ -107,6 +107,9 @@ a[target="_blank"]:after {
 	font-family:FontAwesome;
 	&:hover {text-decoration:none;}
 }
+a[target="_blank"].none:after {
+display: none;
+}
 .btn {
   position: relative;
 	text-align: center;
