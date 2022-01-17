@@ -35,7 +35,8 @@
   <header>
     <div>
       <h2>Welcome to Archimedes</h2>
-      <a href="#tactics" class="btn">Check out the games</a>
+      <p><a href="#tactics" class="btn">Check out the games</a></p>
+      <p><a href="https://www.etsy.com/shop/ArchimedesCreations" target="_blank" class="btn">Visit the Store</a></p>
     </div>
   </header>
   <div class="gray-logos">
