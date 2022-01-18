@@ -1,7 +1,7 @@
 <footer>
 	<section>
 		<h3>Hey look at that</h3>
-		<h4>You've reached the footer</h4>
+		<h4 class="red">You've reached the footer</h4>
 
 		<ul>
 			<?php
@@ -36,6 +36,6 @@
 			<p class="no-click"><strong>contact: </strong> <span class="red">acarrozzo@gmail.com</span></p>
 
 	</section>
-	<p class="smallText"> ©1998 - 2019 acarrozzo. All Rights Reserved. <a href="/">Take Me Home</a>
+	<p class="smallText"> ©1998 - 2021 acarrozzo. All Rights Reserved. <a href="/">Take Me Home</a>
 	</p>
 </footer>

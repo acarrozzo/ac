@@ -8,15 +8,29 @@
 
 		<!--- LG TACTICS ----->
 		<section>
+		<!--- 	<figure class="gal" data-pop>-->
+				<a class="none" target="_blank" href="https://www.etsy.com/shop/ArchimedesCreations">
+					<img src="img/tactics/tactics-psd-2-etsy.jpg" width="960" height="540" alt="LG TACTICS - strategy card game - etsy store"/>
+				</a>
+		<!--- 	</figure>-->
+			<h3>Now on Etsy!</h3>
+			<h4 class="red">Did you miss out on Monster Party or LG TACTICS?</h4>
+			<p>Well today's your lucky day. Visit the Archimedes store using the links below and pick up some cool card games.</p>
+			<p>• Archimedes Games Store: <a target="_blank" href="https://www.etsy.com/shop/ArchimedesCreations">Etsy storefront</a>.</p>
+			<p>• Monster Party | Five-Suit Deck: <a target="_blank" href="https://www.etsy.com/listing/972919207/monster-party-playing-cards-five-suit">Buy here</a>.</p>
+			<p>• LG TACTICS | Strategy Card Game: <a target="_blank" href="https://www.etsy.com/listing/1161023409/lg-tactics-strategy-card-game">Buy here</a>.</p>
+
+		</section>
+		<!--- LG TACTICS ----->
+		<section>
 			<figure class="gal" data-pop>
 				<img src="img/tactics/tactics-psd-2-thank-you.jpg" width="960" height="540" alt="LG TACTICS - strategy card game"/>
 			</figure>
 			<h3>LG TACTICS | A strategy-lite card game</h3>
-			<h4>The easy to learn battle card game with a clean minimal style</h4>
+			<h4 class="red">The easy to learn battle card game with a clean minimal style</h4>
 			<p>With this game I challenged myself to remove layers of intricate mechanics I normally end up creating in card games. An ultra simplified take on the CCG genre, my intention is for this to act as a subtle introduction to the story and future installments in the Light Gray Series.</p>
-			<p>Archimedes Game Co. Site: <a target="_blank" href="https://acarrozzo.com/archimedes/index.html">LG TACTICS | Info and Game Rules</a>.</p>
+			<p>Archimedes Game Co. Site: <a target="_blank" href="https://acarrozzo.com/archimedes/index.php">LG TACTICS | Info and Game Rules</a>.</p>
 			<p>View the campaign page here: <a target="_blank" href="https://www.kickstarter.com/projects/archimedesgames/lg-tactics-strategy-card-game">LG TACTICS | Kickstarter Campaign</a>.</p>
-
 		</section>
 		<!--- MONSTER PARTY TEASER ----->
 		<section>
@@ -24,7 +38,7 @@
 				<img src="img/monsterparty/monster-party-spread.jpg" width="1200" height="675" alt="Monster Party Playing Cards - Five Suit Deck Spread"/>
 			</figure>
 			<h3>Monster Party | Five-Suit Deck</h3>
-			<h4>Thanks for making my first card deck a success!</h4>
+			<h4 class="red">Thanks for making my first card deck a success!</h4>
 			<p>My first game release was an amazing success thanks to you. Thank you to everyone who picked up a deck or two. </p>
 				<p>View the old campaign page here:
 				 <a target="_blank" href="https://www.kickstarter.com/projects/archimedesgames/monster-party-playing-cards">Monster Party Kickstarter Page 2019</a></p>
@@ -36,9 +50,9 @@
 				<img src="archimedes/img/archimedes-game-co-logo2.jpg" width="960" height="540" alt="Archimedes Game Co Logo 2"/>
 			</figure>
 			<h3>Archimedes Game Co</h3>
-			<h4>Let's play</h4>
+			<h4 class="red">Let's play</h4>
 
-			<p>Visit <a target="_blank" href="https://acarrozzo.com/archimedes/index.html">
+			<p>Visit <a target="_blank" href="https://acarrozzo.com/archimedes/index.php">
 				Archimedes Games</a> and sign up so you stay up to date with all my game happenings. </p>
 			</section>
 		<!--- DRIFT ----->
@@ -48,7 +62,7 @@
 			<img src="img/music/art/drift_album_art.jpg" width="800" height="800" alt="Drift Album Art - Strange Sounds for Strange Times - Anthony Carrozzo music">
 			</figure>
 			<h3>Drift</h3>
-			<h4>The Album</h4>
+			<h4 class="red">The Album</h4>
 			<p class="">My third instrumental album is available on
 				<a href="https://open.spotify.com/artist/7zvD650rgpU4CLOLzZlEan" target="_blank">Spotify</a>,
 				<a href="https://itunes.apple.com/us/artist/strange-sounds-for-strange-times/1369233894" target="_blank">iTunes</a>, and
@@ -74,7 +88,7 @@
 				<a href="#" class="slidesjs-next slidesjs-navigation"><i class="fa fa-angle-right"></i></a>
 			</div>
 			<h3>The Fighter & The Father</h3>
-			<h4>Chris Weidman</h4>
+			<h4 class="red">Chris Weidman</h4>
 			<p>The following project was made in collaboration with the Sports editors and Multimedia department for a unique video experience. View Long Islands own MMA champ Chris Weidman in this dual video experience, where you have the ability to swap between 2 video feeds synced up to the same audio. </p>
 			<p>Very proud of this one since it got me a trip into the city to attend the 60th NY Emmy Awards, while netting me a shiny trophy to boot.</p>
 			<p>View site: <a href="http://projects.newsday.com/projects/sports/mma/chris-weidman-ufc-life/" target="_blank">Chris Weidman: Father & Fighter </a>
@@ -94,7 +108,7 @@
 			<a href="#" class="slidesjs-next slidesjs-navigation"><i class="fa fa-angle-right"></i></a>
 		</div>
 		<h3>Pathway to Power</h3>
-		<h4>One man's rise shines light on LI's corrosive system</h4>
+		<h4 class="red">One man's rise shines light on LI's corrosive system</h4>
 		<p>A massive investigative news piece that was many years in the making. I was very fortunate to be a part of it and was responsible for the user interface, chapter navigation, and graphics for both the article and video. </p>
 		<p>The story follows a street thug turned millionaire as he gained political and business connections exposing corruption, crime and overall shadiness.</p>
 		<p>These are the stories journalists live for and it was satisfying to be a part of the team and make it all come together.</p>
@@ -114,7 +128,7 @@
 				<figcaption>Demo album cover</figcaption>
 			</figure>
 			<h3>BFTZ</h3>
-			<h4>Banned from the Zoo</h4>				<p>Banned from the Zoo is a 5-member rock band from New York. We performed many shows between 2010 and 2015, mostly in the city, and recorded and released a 4 song demo. Feel free to listen and download.</p>
+			<h4 class="red">Banned from the Zoo</h4>				<p>Banned from the Zoo is a 5-member rock band from New York. We performed many shows between 2010 and 2015, mostly in the city, and recorded and released a 4 song demo. Feel free to listen and download.</p>
 			<a href="/bftz" target="_blank">BFTZ Site</a> | <a href="music.php">Listen Now <i class="fa fa-angle-right"></i></a>
 	<!-- <iframe src="https://open.spotify.com/embed/artist/4Vk47aQ2waOiow6JS1YTwl" width="100%" height="280px" frameborder="0" allowtransparency="true"></iframe>-->
 		</section>
@@ -136,11 +150,11 @@
 					<p>What's up people. My name is Anthony and I have been working as a designer for over a decade now at a handful of equally amazing places. I am currently the lead designer and front-end developer at Newsday where I specialize in UI & UX for their digital stuffs.</p>
 					<p> I have past experience in retail marketing, brand identity, music production & photography. And I always have a whole mess of other creative projects in the works.</p>
 					<h5>Skills that pay the bills:</h5>
-					<p>UI, UX, SEO, HTML, SCSS, JS, PHP, Photoshop, Illustrator, InDesign, After Effects, Wordpress, Github, all that good stuff.</p>
+					<p class="red">UI, UX, SEO, HTML, SCSS, JS, PHP, Photoshop, Illustrator, InDesign, After Effects, Wordpress, Github, all that good stuff.</p>
 					<h5>Skills that don't pay any bills whatsoever:</h5>
-					<p>Music, Photography, Writing, Numchucks.</p>
+					<p class="red">Music, Photography, Writing, Numchucks.</p>
 					<h5>Feel free to contact:</h5>
-					<p>acarrozzo@gmail.com</p>
+					<p class="red">acarrozzo@gmail.com</p>
 				</section>
 </div>
 
@@ -197,7 +211,7 @@
 				<a href="#" class="slidesjs-next slidesjs-navigation"><i class="fa fa-angle-right"></i></a>
 			</div>
 			<h3>For Funsies</h3>
-			<h4>Wallpapers</h4>
+			<h4 class="red">Wallpapers</h4>
 			<p>I enjoy creating a design here and there for no reason at all. I like to make minimally styled backgrounds that can be used on the desktop. Feel free to right click and download any of these to use yourself.</p>
 		</section>
 

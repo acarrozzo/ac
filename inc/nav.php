@@ -1,5 +1,6 @@
 <?php
 //$page = basename( $_SERVER[ 'PHP_SELF' ] );
+
 echo '<nav style="background-image:url(';
 //if ($page=='index.php') { echo "http://acarrozzo.com/2018/img/intro/yellowflower.jpg"; }
 if ($page == 'index.php') {
@@ -57,7 +58,7 @@ if ($page == 'about.php') {
 echo ')">';
 ?>
 
-<h1>Anthony Carrozzo : <?php echo $name;?></h1>
+<h1 class="color10">Anthony Carrozzo : <?php echo $name;?></h1>
 <?php  // RANDOM ICON
 /*
 $icon = rand( 1, 8 );
