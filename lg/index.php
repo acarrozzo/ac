@@ -27,7 +27,7 @@ if (!isset($_SESSION['username'])) {			// IF NO ONE IS LOGGED IN SHOW TITLE SCRE
     //<h1 class="purple">VEGAXXX</h1>';
     echo '<br/>';
 
-echo '<p class="">DEMO v0.1 | Last updated: 4/5/2020 <a class="black hide" href="#">| View Changelog</a>
+echo '<p class="">DEMO v0.1 | Last updated: 4/23/2022 <a class="black hide" href="#">| View Changelog</a>
 </p>';
 echo '<br/>';
 //    <a class="btn redBG" href="#info">LG Info</a>
@@ -90,7 +90,7 @@ Lore
     $infobar = ''; ?>
 
 
-<div  class="infoBlock panel action" data-pop="action">
+<div  class="infoBlock panel" data-pop="action">
 <?php echo $infobar; ?>
 
 
@@ -285,7 +285,7 @@ showTime();
 </div>
 
 <!-- INV PANEL -->
-<div class="panel inv" data-pop="inv">
+<div class="panel" data-pop="inv">
   <?php echo $infobar;
     echo $closeMenuBtn; ?>
 	<?php // include ('futureEQUIPPED.php');?>
@@ -300,7 +300,7 @@ showTime();
 </div>
 
 <!-- QUESTS PANEL -->
-<div class="panel quests" data-pop="quests" id="quests">
+<div class="panel" data-pop="quests" id="quests">
   <?php echo $infobar;
     echo $closeMenuBtn; ?>
 	<?php include('quests.php'); ?>
@@ -312,7 +312,7 @@ showTime();
 	</div>
  </div>
 <!-- WORLD PANEL -->
-<div class="panel world" data-pop="world">
+<div class="panel" data-pop="world">
   <?php echo $infobar;
     echo $closeMenuBtn; ?>
     	<section data-pop="teleport" id="teleport" class="teleportXXX"> <?php include('teleport.php'); ?> </section>
