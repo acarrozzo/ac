@@ -7,11 +7,11 @@
 	<div class="collapserContent">
 		<section class="XnoBorder">
 			<span class="cImg">
-				<img src="img/intro/anthony-carrozzo-square1.jpg" width="360" height="360" alt="Anthony Carrozzo"/>
+				<img src="img/intro/anthony-carrozzo-square1bw.jpg" width="360" height="360" alt="Anthony Carrozzo"/>
 			</span>
 
 
-			<p>My name is Anthony and I have been working as a designer for over a decade now at a handful of equally amazing places. I am currently the lead designer and front-end developer at Newsday where I specialize in UI & UX for their digital stuffs.</p>
+			<p>Hey what's up. My name's Anthony and I have been working as a designer for over a decade now at a handful of equally amazing places. I am currently designing and front-end developing at Newsday where I specialize in UI & UX for their digital stuffs.</p>
 			<p> I have past experience in retail marketing, brand identity, music production & photography. And I always have a whole mess of other creative projects in the works.</p>
 			<h5>Skills that pay the bills:</h5>
 			<p class="red">UI, UX, SEO, HTML, SCSS, JS, PHP, Photoshop, Illustrator, InDesign, After Effects, Wordpress, Github, all that good stuff.</p>

@@ -41,7 +41,7 @@ html {
 }
 
 body {
-  transition: color .2s,  background .2s;
+//  transition: color .2s,  background .2s;
   margin: 0;
   background: $color1;
   color: $color6;
@@ -91,16 +91,16 @@ a {
 p {
   	font-size: 1.1rem;
   	line-height: 1.6em;
-  	margin: 0 0 1rem;
+  	margin: 1rem 0;
     //color: $color9;
   	&:first-of-type {
-  		margin-top: 0;
+  	//	margin-top: 0;
   	}
     &:last-child {
-      margin-bottom: 0;
+    //  margin-bottom: 0;
     }
     + p {
-      margin:1rem 0;
+    //  margin:1rem 0;
     }
 
 }
@@ -127,6 +127,7 @@ svg {
     overflow: hidden;
     z-index: 1;
     display:flex;
+    padding: 20px;
   //  text-align: right;
     align-items: center;
       justify-content: center;

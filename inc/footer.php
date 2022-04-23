@@ -33,9 +33,9 @@
 		<span class="cImg">
 			<img src="img/intro/anthony-carrozzo-square2.jpg" width="360" height="360" alt="Anthony L Carrozzo"/>
 		</span>
-			<p class="no-click"><strong>contact: </strong> <span class="red">acarrozzo@gmail.com</span></p>
+			<p class="no-click"><span class="gray">contact: </span> </p><p><span class="red">acarrozzo@gmail.com</span></p>
 
 	</section>
-	<p class="smallText"> ©1998 - 2021 acarrozzo. All Rights Reserved. <a href="/">Take Me Home</a>
+	<p class="smallText"> ©1998 - 5228 acarrozzo. All Rights Reserved. <a href="/">Take Me Home</a>
 	</p>
 </footer>

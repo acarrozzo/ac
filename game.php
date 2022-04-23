@@ -3,7 +3,7 @@
 <div id="center">
 	<!--- GAMES MAIN ----->
 	<div class="collapser expanded">
-		<h2>Published Games</h2>
+		<h2>Released Games</h2>
 	</div>
 	<div class="collapserContent ">
 
@@ -53,7 +53,7 @@
 	</div>
 	<div class="collapserContent">
 		<section class="grid padding">
-			<p>Coin & Castle is a simple clicker game I am currently creating. Inspired by the <a href="http://www.decisionproblem.com/paperclips/index2.html" target="_blank">paperclips</a> game, I want to create something similar with a medieval castle building theme like the original warcraft.</p>
+			<p>Coin & Castle is a simple clicker game I sometimes work on. Inspired by the <a href="http://www.decisionproblem.com/paperclips/index2.html" target="_blank">paperclips</a> game, I want to create something similar with a medieval castle building theme like the original warcraft.</p>
 			<figure class="gal" data-pop>
 				<img src="img/coin/coin-comp1.png" width="483" height="969" alt="coin & castle demo screenshot 1"/>
 				<figcaption>Coin & Castle starts with finding a single coin</figcaption>
@@ -80,7 +80,7 @@
 				<figcaption>Playable on mobile, tablet, or desktop.</figcaption>
 			</figure>
 			<p>Initially this project started as a way for me to learn PHP, but it quickly evolved into something more. Interact with friendly NPC's, accept their quests and battle all types of enemies. Gain skills and spells to aid you in your adventure. Equip strong armor and wield powerful weapons.</p>
-			<h4 class="red">Light Gray is a turn based roleplaying game where you take on the role of a Young Adventurer in a vast world. </h4>
+			<h2 class="red">Light Gray is a turn based roleplaying game where you take on the role of a Young Adventurer in a vast world. </h4>
 				<!--	<p>The demo below is a work in progress, but fully playable with over 50 quests, hundreds of items, and many hours of playtime.</p>
 	<p><a href="http://www.lightgrayrpg.com" target="_blank" class="btn">Play the demo now</a>			</p>-->
 			<figure class="gal" data-pop>
@@ -170,11 +170,11 @@
 </div>
 -->
 <div class="collapser">
-	<h2>Stop playin</h2>
+	<h2>Just playin</h2>
 </div>
 <div class="collapserContent">
 	<section>
-		<p>When I was a kid I used to rip the surface off of board games and draw my own. I would draw new paths and label them with unique events. I would create cards with cool actions. Utilize some dice, some lego figures as character pieces, and I would have myself a custom game.
+		<p>When I was a kid I used to rip the surface off of board games and draw my own. I would draw new paths and label them with unique events. I would create cards with cool actions. Utilize some dice, some lego figures as character pieces, and I would have myself a fun game.
 		<p>I loved doing this.</p>
 		<p>In college I started pursuing a degree in Computer Science with the goal of making cool stuff. I quickly learned that field wasn't suited for my goals, so I switched over to Visual Communications and Graphic Design. An excellent decision since it gave me the balance between the creative and technical aspects of making said cool stuff.</p>
 	<!--	<p>I don't make games professionally whatsoever but it is a goal of mine to one day have an active multi-player world of my own creation. That vision is currently Light Gray, and has been going on in the background for many years. It has been quite an endeavor so far, educational, fulfilling and often cathartic.</p>-->

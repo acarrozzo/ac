@@ -1,26 +1,39 @@
 
 
-<div id="primary">
+<div id="center">
 	<div class="collapser expanded">
 		<h2>What's New & Cool</h2>
 	</div>
 	<div class="collapserContent">
 
-		<!--- LG TACTICS ----->
+		<!--- ETSY STORE ----->
 		<section>
-		<!--- 	<figure class="gal" data-pop>-->
-				<a class="none" target="_blank" href="https://www.etsy.com/shop/ArchimedesCreations">
-					<img src="img/tactics/tactics-psd-2-etsy.jpg" width="960" height="540" alt="LG TACTICS - strategy card game - etsy store"/>
-				</a>
-		<!--- 	</figure>-->
-			<h3>Now on Etsy!</h3>
-			<h4 class="red">Did you miss out on Monster Party or LG TACTICS?</h4>
-			<p>Well today's your lucky day. Visit the Archimedes store using the links below and pick up some cool card games.</p>
-			<p>• Archimedes Games Store: <a target="_blank" href="https://www.etsy.com/shop/ArchimedesCreations">Etsy storefront</a>.</p>
-			<p>• Monster Party | Five-Suit Deck: <a target="_blank" href="https://www.etsy.com/listing/972919207/monster-party-playing-cards-five-suit">Buy here</a>.</p>
-			<p>• LG TACTICS | Strategy Card Game: <a target="_blank" href="https://www.etsy.com/listing/1161023409/lg-tactics-strategy-card-game">Buy here</a>.</p>
-
+		 	<figure class="gal" data-pop>
+		<!---		<a class="none" target="_blank" href="https://www.etsy.com/shop/ArchimedesCreations">-->
+					<img src="img/tactics/tactics-psd-2-etsy.jpg" width="960" height="540" alt="LG TACTICS - strategy card game - Monster Party - five card deck - etsy store"/>
+		<!---		</a>-->
+		 	</figure>
+			<h3>Store Up</h3>
+			<h4 class="red">Finally</h4>
+			<p>And that's great if you happened to miss out on Monster Party or TACTICS and were like, "Man I missed out on Monster Party <i>AND</i> TACTICS". </p>
+			<p>Well then gentle soul, today is your lucky day. You can swing by the Archimedes store using the links below.</p>
+			<p>• Archimedes Games Store: <a target="_blank" href="https://www.etsy.com/shop/ArchimedesCreations">Etsy storefront</a></p>
+			<p>• Monster Party | Five-Suit Deck: <a target="_blank" href="https://www.etsy.com/listing/972919207/monster-party-playing-cards-five-suit">Buy here</a></p>
+			<p>• LG TACTICS | Strategy Card Game: <a target="_blank" href="https://www.etsy.com/listing/1161023409/lg-tactics-strategy-card-game">Buy here</a></p>
 		</section>
+
+
+
+<!---House Deck Coming Soon ----->
+<section>
+<!---		<figure class="gal" data-pop>-->
+			<img src="img/housedeck/housedeck-card-back-2-coming-soon.jpg" width="960" height="540" alt="New York House Deck - Coming Soon 2022"/>
+<!---	</figure>-->
+
+	<h3>Coming Soon | 2022</h3>
+	<h4 class="red">A supercool deck of playing cards</h4>
+</section>
+
 		<!--- LG TACTICS ----->
 		<section>
 			<figure class="gal" data-pop>
@@ -138,25 +151,7 @@
 
 
 
-		<div id="right">
-			<div class="collapser justMobile">
-				<h2>About Me</h2>
-			</div>
-			<div class="collapserContent">
-				<section>
-					<span class="cImg">
-						<img src="img/intro/anthony-carrozzo-square1bw.jpg" width="360" height="360" alt="Anthony Carrozzo"/>
-					</span>
-					<p>What's up people. My name is Anthony and I have been working as a designer for over a decade now at a handful of equally amazing places. I am currently the lead designer and front-end developer at Newsday where I specialize in UI & UX for their digital stuffs.</p>
-					<p> I have past experience in retail marketing, brand identity, music production & photography. And I always have a whole mess of other creative projects in the works.</p>
-					<h5>Skills that pay the bills:</h5>
-					<p class="red">UI, UX, SEO, HTML, SCSS, JS, PHP, Photoshop, Illustrator, InDesign, After Effects, Wordpress, Github, all that good stuff.</p>
-					<h5>Skills that don't pay any bills whatsoever:</h5>
-					<p class="red">Music, Photography, Writing, Numchucks.</p>
-					<h5>Feel free to contact:</h5>
-					<p class="red">acarrozzo@gmail.com</p>
-				</section>
-</div>
+
 
 <!--
 				<div class="collapser justMobileX expanded">
@@ -190,7 +185,7 @@
 
 		<div id="center">
 			<div class="collapser expanded">
-				<h2>Personal Favs</h2>
+				<h2>Bonus</h2>
 			</div>
 			<div class="collapserContent">
 		<section>
