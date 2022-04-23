@@ -1,0 +1,83 @@
+<style>
+  .frates {
+    margin-top: -22px;
+    padding:22px;
+  }
+
+  .frates a {
+    display: inline-block;
+    padding: 32px 22px;
+    color: #FFF;
+    margin: 6px 0;
+    text-align: center;
+    border-radius: 4px;
+    width: 100%
+  }
+
+  .frates a svg {
+    background: #FFF;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    padding: 15px 12px;
+    margin: 12px auto;
+    border-radius: 50%;
+    font-size: 32px;
+  }
+
+  .frates span {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    padding: 0 0 8px;
+  }
+
+  .frates a.blue {
+    background-color: #005995;
+  }
+
+  .frates a.blue svg {
+    color: #005995;
+    fill: #005995;
+  }
+
+  .frates a.green {
+    background-color: #2e965e;
+  }
+
+  .frates a.green svg {
+    color: #2e965e;
+    fill: #2e965e;
+  }
+
+  .frates strong {
+    font-size: 26px;
+    letter-spacing: -0.8px;
+    color: #FFF;
+  }
+
+  @media(min-width: 680px) {
+    .frates {
+      padding:0;
+      margin-bottom:22px;
+    }
+    .frates a {
+      width: 49.5%;
+    }
+  }
+</style>
+<div class="module frates">
+  <h3>Personal Finance Rates</h3>
+  <a class="blue" href="https://www.rateseeker.com/newsday30yrfixed">
+    <svg class="home-icon"> <use href="/img/site-icon-sprites.svg#home"></use> </svg>
+
+    <span>Search the latest</span>
+    <strong>Mortgage Rates</strong>
+  </a>
+  <a class="green" href="https://www.rateseeker.com/newsday60-month-cd-rate">
+    <svg class="dollar"> <use href="/img/site-icon-sprites.svg#dollar"></use> </svg>
+    <span>Find the Highest</span>
+    <strong>CD Rates</strong>
+  </a>
+</div>

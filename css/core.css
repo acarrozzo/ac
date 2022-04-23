@@ -18,7 +18,6 @@ html {
 
 /* line 43, ../assets/scss/core.scss */
 body {
-  transition: color .2s,  background .2s;
   margin: 0;
   background: #111111;
   color: #aaaaaa;
@@ -81,18 +80,6 @@ a {
 p {
   font-size: 1.1rem;
   line-height: 1.6em;
-  margin: 0 0 1rem;
-}
-/* line 96, ../assets/scss/core.scss */
-p:first-of-type {
-  margin-top: 0;
-}
-/* line 99, ../assets/scss/core.scss */
-p:last-child {
-  margin-bottom: 0;
-}
-/* line 102, ../assets/scss/core.scss */
-p + p {
   margin: 1rem 0;
 }
 
@@ -117,33 +104,34 @@ svg {
   overflow: hidden;
   z-index: 1;
   display: flex;
+  padding: 20px;
   align-items: center;
   justify-content: center;
   font-size: 0.8rem;
   background: #000000;
   border-top: solid 1px #333333;
 }
-/* line 136, ../assets/scss/core.scss */
+/* line 137, ../assets/scss/core.scss */
 .day .corebar {
   background: #eeeeee;
   border-color: #cccccc;
 }
-/* line 140, ../assets/scss/core.scss */
+/* line 141, ../assets/scss/core.scss */
 .corebar > a, .corebar p {
   white-space: nowrap;
   text-decoration: none;
   padding: 2rem;
   color: #666666;
 }
-/* line 147, ../assets/scss/core.scss */
+/* line 148, ../assets/scss/core.scss */
 .day .corebar > a, .day .corebar p {
   color: #aaaaaa;
 }
-/* line 150, ../assets/scss/core.scss */
+/* line 151, ../assets/scss/core.scss */
 .corebar > a:hover, .corebar p:hover {
   color: #ef404a;
 }
-/* line 153, ../assets/scss/core.scss */
+/* line 154, ../assets/scss/core.scss */
 .corebar a.toggle-day {
   position: fixed;
   top: 0;
@@ -152,59 +140,59 @@ svg {
   width: 2rem;
   padding: 0.5rem;
 }
-/* line 160, ../assets/scss/core.scss */
+/* line 161, ../assets/scss/core.scss */
 .corebar a.toggle-day .sun {
   display: none;
 }
-/* line 162, ../assets/scss/core.scss */
+/* line 163, ../assets/scss/core.scss */
 .day .corebar a.toggle-day .sun {
   display: block;
 }
-/* line 163, ../assets/scss/core.scss */
+/* line 164, ../assets/scss/core.scss */
 .day .corebar a.toggle-day .moon {
   display: none;
 }
 
 /* ----- FOOTER ----- */
-/* line 168, ../assets/scss/core.scss */
+/* line 169, ../assets/scss/core.scss */
 footer {
   padding: 2rem;
   text-align: center;
   background: #000000;
 }
-/* line 172, ../assets/scss/core.scss */
+/* line 173, ../assets/scss/core.scss */
 .day footer {
   background: #eeeeee;
 }
 
 /* ----- CORE MACHINE - MOVE TO ITS OWN PARTIAL ----- */
-/* line 179, ../assets/scss/core.scss */
+/* line 180, ../assets/scss/core.scss */
 .core-machine {
   text-align: center;
   max-width: 600px;
   margin: 0 auto;
 }
 
-/* line 184, ../assets/scss/core.scss */
+/* line 185, ../assets/scss/core.scss */
 .icon {
   max-width: 80px;
 }
-/* line 187, ../assets/scss/core.scss */
+/* line 188, ../assets/scss/core.scss */
 .icon.hexagon {
   display: block;
   margin: 5rem auto;
 }
-/* line 191, ../assets/scss/core.scss */
+/* line 192, ../assets/scss/core.scss */
 .icon.hexagon fill {
   color: #222222;
 }
 
-/* line 196, ../assets/scss/core.scss */
+/* line 197, ../assets/scss/core.scss */
 .flex {
   display: flex;
   flex-wrap: wrap;
 }
-/* line 200, ../assets/scss/core.scss */
+/* line 201, ../assets/scss/core.scss */
 .flex > * {
   padding: 2rem;
   flex: 1;
@@ -212,216 +200,216 @@ footer {
   margin: 0.1rem;
 }
 
-/* line 211, ../assets/scss/core.scss */
+/* line 212, ../assets/scss/core.scss */
 body .red {
   color: #ef404a;
 }
-/* line 211, ../assets/scss/core.scss */
+/* line 212, ../assets/scss/core.scss */
 body .red svg {
   fill: #ef404a;
 }
-/* line 212, ../assets/scss/core.scss */
+/* line 213, ../assets/scss/core.scss */
 body .green {
   color: #70bf54;
 }
-/* line 212, ../assets/scss/core.scss */
+/* line 213, ../assets/scss/core.scss */
 body .green svg {
   fill: #70bf54;
 }
-/* line 213, ../assets/scss/core.scss */
+/* line 214, ../assets/scss/core.scss */
 body .blue {
   color: #00aeef;
 }
-/* line 213, ../assets/scss/core.scss */
+/* line 214, ../assets/scss/core.scss */
 body .blue svg {
   fill: #00aeef;
 }
-/* line 214, ../assets/scss/core.scss */
+/* line 215, ../assets/scss/core.scss */
 body .gold {
   color: #f1b238;
 }
-/* line 214, ../assets/scss/core.scss */
+/* line 215, ../assets/scss/core.scss */
 body .gold svg {
   fill: #f1b238;
 }
-/* line 215, ../assets/scss/core.scss */
+/* line 216, ../assets/scss/core.scss */
 body .purple {
   color: #a880b9;
 }
-/* line 215, ../assets/scss/core.scss */
+/* line 216, ../assets/scss/core.scss */
 body .purple svg {
   fill: #a880b9;
 }
-/* line 217, ../assets/scss/core.scss */
+/* line 218, ../assets/scss/core.scss */
 body .redBG {
   background: #ef404a;
   color: #f7f7f7;
 }
-/* line 218, ../assets/scss/core.scss */
+/* line 219, ../assets/scss/core.scss */
 body .greenBG {
   background: #70bf54;
   color: #f7f7f7;
 }
-/* line 219, ../assets/scss/core.scss */
+/* line 220, ../assets/scss/core.scss */
 body .blueBG {
   background: #00aeef;
   color: #f7f7f7;
 }
-/* line 220, ../assets/scss/core.scss */
+/* line 221, ../assets/scss/core.scss */
 body .goldBG {
   background: #f1b238;
   color: #f7f7f7;
 }
-/* line 221, ../assets/scss/core.scss */
+/* line 222, ../assets/scss/core.scss */
 body .purpleBG {
   background: #a880b9;
   color: #f7f7f7;
 }
-/* line 223, ../assets/scss/core.scss */
+/* line 224, ../assets/scss/core.scss */
 body .color0 {
   color: #000000;
 }
-/* line 223, ../assets/scss/core.scss */
+/* line 224, ../assets/scss/core.scss */
 body .color0 svg {
   fill: #000000;
 }
-/* line 224, ../assets/scss/core.scss */
+/* line 225, ../assets/scss/core.scss */
 body .color1 {
   color: #111111;
 }
-/* line 224, ../assets/scss/core.scss */
+/* line 225, ../assets/scss/core.scss */
 body .color1 svg {
   fill: #111111;
 }
-/* line 225, ../assets/scss/core.scss */
+/* line 226, ../assets/scss/core.scss */
 body .color2 {
   color: #222222;
 }
-/* line 225, ../assets/scss/core.scss */
+/* line 226, ../assets/scss/core.scss */
 body .color2 svg {
   fill: #222222;
 }
-/* line 226, ../assets/scss/core.scss */
+/* line 227, ../assets/scss/core.scss */
 body .color3 {
   color: #333333;
 }
-/* line 226, ../assets/scss/core.scss */
+/* line 227, ../assets/scss/core.scss */
 body .color3 svg {
   fill: #333333;
 }
-/* line 227, ../assets/scss/core.scss */
+/* line 228, ../assets/scss/core.scss */
 body .color4 {
   color: #666666;
 }
-/* line 227, ../assets/scss/core.scss */
+/* line 228, ../assets/scss/core.scss */
 body .color4 svg {
   fill: #666666;
 }
-/* line 228, ../assets/scss/core.scss */
+/* line 229, ../assets/scss/core.scss */
 body .color5 {
   color: #999999;
 }
-/* line 228, ../assets/scss/core.scss */
+/* line 229, ../assets/scss/core.scss */
 body .color5 svg {
   fill: #999999;
 }
-/* line 229, ../assets/scss/core.scss */
+/* line 230, ../assets/scss/core.scss */
 body .color6 {
   color: #aaaaaa;
 }
-/* line 229, ../assets/scss/core.scss */
+/* line 230, ../assets/scss/core.scss */
 body .color6 svg {
   fill: #aaaaaa;
 }
-/* line 230, ../assets/scss/core.scss */
+/* line 231, ../assets/scss/core.scss */
 body .color7 {
   color: #cccccc;
 }
-/* line 230, ../assets/scss/core.scss */
+/* line 231, ../assets/scss/core.scss */
 body .color7 svg {
   fill: #cccccc;
 }
-/* line 231, ../assets/scss/core.scss */
+/* line 232, ../assets/scss/core.scss */
 body .color8 {
   color: #eeeeee;
 }
-/* line 231, ../assets/scss/core.scss */
+/* line 232, ../assets/scss/core.scss */
 body .color8 svg {
   fill: #eeeeee;
 }
-/* line 232, ../assets/scss/core.scss */
+/* line 233, ../assets/scss/core.scss */
 body .color9 {
   color: #f7f7f7;
 }
-/* line 232, ../assets/scss/core.scss */
+/* line 233, ../assets/scss/core.scss */
 body .color9 svg {
   fill: #f7f7f7;
 }
-/* line 233, ../assets/scss/core.scss */
+/* line 234, ../assets/scss/core.scss */
 body .color10 {
   color: #ffffff;
 }
-/* line 233, ../assets/scss/core.scss */
+/* line 234, ../assets/scss/core.scss */
 body .color10 svg {
   fill: #ffffff;
 }
-/* line 235, ../assets/scss/core.scss */
+/* line 236, ../assets/scss/core.scss */
 body .BG0 {
   background: #000000;
 }
-/* line 236, ../assets/scss/core.scss */
+/* line 237, ../assets/scss/core.scss */
 body .BG1 {
   background: #111111;
 }
-/* line 237, ../assets/scss/core.scss */
+/* line 238, ../assets/scss/core.scss */
 body .BG2 {
   background: #222222;
 }
-/* line 238, ../assets/scss/core.scss */
+/* line 239, ../assets/scss/core.scss */
 body .BG3 {
   background: #333333;
 }
-/* line 239, ../assets/scss/core.scss */
+/* line 240, ../assets/scss/core.scss */
 body .BG4 {
   background: #666666;
 }
-/* line 240, ../assets/scss/core.scss */
+/* line 241, ../assets/scss/core.scss */
 body .BG5 {
   background: #999999;
 }
-/* line 241, ../assets/scss/core.scss */
+/* line 242, ../assets/scss/core.scss */
 body .BG6 {
   background: #aaaaaa;
 }
-/* line 242, ../assets/scss/core.scss */
+/* line 243, ../assets/scss/core.scss */
 body .BG7 {
   background: #cccccc;
 }
-/* line 243, ../assets/scss/core.scss */
+/* line 244, ../assets/scss/core.scss */
 body .BG8 {
   background: #eeeeee;
 }
-/* line 244, ../assets/scss/core.scss */
+/* line 245, ../assets/scss/core.scss */
 body .BG9 {
   background: #f7f7f7;
 }
-/* line 245, ../assets/scss/core.scss */
+/* line 246, ../assets/scss/core.scss */
 body .BG10 {
   background: #ffffff;
 }
-/* line 247, ../assets/scss/core.scss */
+/* line 248, ../assets/scss/core.scss */
 body .day .color0 {
   color: #ffffff;
 }
-/* line 247, ../assets/scss/core.scss */
+/* line 248, ../assets/scss/core.scss */
 body .day .color0 svg {
   fill: #ffffff;
 }
-/* line 248, ../assets/scss/core.scss */
+/* line 249, ../assets/scss/core.scss */
 body .day .swap {
   color: #ffffff;
 }
-/* line 248, ../assets/scss/core.scss */
+/* line 249, ../assets/scss/core.scss */
 body .day .swap svg {
   fill: #ffffff;
 }
