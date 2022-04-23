@@ -301,8 +301,7 @@ $pajamashamanFlag = $row['pajamashamanFlag'];
               ';
     echo '</div>';
 
-    echo '</div>';
-    echo'<div class="gbox">';
+
     echo '<h2>Restoration</h2>';
     echo'<p class="gray">Support your character with a variety of healing spells.</p>';
 
@@ -378,8 +377,7 @@ $pajamashamanFlag = $row['pajamashamanFlag'];
               ';
     echo '</div>';
 
-    echo '</div>';
-    echo'<div class="gbox">';
+
     echo '<h2>Alteration</h2>';
     echo'<p class="gray">Manipulate yourself and the world around you to your advantage with Alteration spells.</p>';
 
@@ -476,7 +474,7 @@ $pajamashamanFlag = $row['pajamashamanFlag'];
               ';
     echo '</div>';
 
-    echo '</div>';
+
 
 
     ////////////////////////////////

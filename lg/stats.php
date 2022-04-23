@@ -49,6 +49,10 @@ while ($row = $result->fetch_assoc()) {
     //------------------
 
 
+
+
+
+
     // --------------------------------------------------------------------------- USERNAME + LVL
     // --------------------------------------------------------------------------- USERNAME + LVL
     // --------------------------------------------------------------------------- USERNAME + LVL
@@ -66,8 +70,8 @@ while ($row = $result->fetch_assoc()) {
     $char = file_get_contents("img/svg/char-soldier.svg");
     $char = file_get_contents("img/svg/char-beastmaster.svg");
     $char = file_get_contents("img/svg/char-barbarian.svg");
-    $char = file_get_contents("img/svg/char-commander.svg");
     $char = file_get_contents("img/svg/char-ranger1.svg");
+    $char = file_get_contents("img/svg/char-commander.svg");
 
 
     echo '<div class="gbox">';
@@ -359,7 +363,7 @@ while ($row = $result->fetch_assoc()) {
     echo '<div class="topright"><a class="btn" href="" class="menuIcon" data-link="inv">Open INV ></a></div>';
     echo '<div><span class="eqpcat">Right</span> '. $row['equipR'].'<span class="iStat">';
     include('buff-right.php');
-    echo '</span>';
+    '</span>';
 
 
     $held = $row['equipR'];
@@ -368,7 +372,7 @@ while ($row = $result->fetch_assoc()) {
     || $held=='silver bow' || $held=='steel bow' || $held=='ranger bow'
     || $held=='mithril bow' || $held=='black bow') {
         $_SESSION['bow_equipped'] = 1;
-        echo '<span class="ammo"><span class="gold"> arrows </span> x'.$row['arrows'].'</span> ';
+        echo '<span class="ammo"><span class="gold">arrows </span> x'.$row['arrows'].'</span> ';
     } else {
         $_SESSION['bow_equipped'] = 0;
     }
@@ -378,22 +382,22 @@ while ($row = $result->fetch_assoc()) {
     || $held=='silver crossbow' || $held=='steel crossbow' || $held=='keeper\'s crossbow'
     || $held=='mithril crossbow' || $held=='black crossbow') {
         $_SESSION['crossbow_equipped'] = 1;
-        echo '<span class="ammo"><span class="gold"> bolts </span> x'.$row['bolts'].'</span> ';
+        echo '<span class="ammo"><span class="gold">bolts </span> x'.$row['bolts'].'</span> ';
     } else {
         $_SESSION['crossbow_equipped'] = 0;
     }
 
     if ($held=='javelin') {
-        echo '<span class="ammo"><span class="alt gold"> qty </span> x'.$row['javelin'].'</span> ';
+        echo '<span class="ammo"><span class="alt gold">qty </span> x'.$row['javelin'].'</span> ';
     }
     if ($held=='iron javelin') {
-        echo '<span class="ammo"><span class="alt gold" qty </span> x'.$row['ironjavelin'].'</span> ';
+        echo '<span class="ammo"><span class="alt gold">qty </span> x'.$row['ironjavelin'].'</span> ';
     }
     if ($held=='steel javelin') {
-        echo '<span class="ammo"><span class="alt gold"> qty </span> x'.$row['steeljavelin'].'</span> ';
+        echo '<span class="ammo"><span class="alt gold">qty </span> x'.$row['steeljavelin'].'</span> ';
     }
     if ($held=='mithril javelin') {
-        echo '<span class="ammo"><span class="alt gold"> qty </span> x'.$row['mithriljavelin'].'</span> ';
+        echo '<span class="ammo"><span class="alt gold">qty </span> x'.$row['mithriljavelin'].'</span> ';
     }
 
 
@@ -523,24 +527,28 @@ while ($row = $result->fetch_assoc()) {
     $defEQ = $row['defmod'] - $row['def'];
     echo '<div>';
     // ----------------------------------------------------------------------------------------------------------- STR
-    echo '<span class="statcat red"> STR </span> ';
     if ($row['strmod'] ==  0) {
-        echo ' '. $row['str'].' ';
+        echo '<span class="statcat red">STR</span> '. $row['str'].' ';
     } elseif ($row['strmod'] >=  $row['str']) {
-        echo 'base<span class="red">'. $row['str'].' </span> + eq<span class="red">'.$strEQ.'</span>';
+        echo '<span class="statcat red">STR '. $row['str'].' </span> + <span class="red">'.$strEQ.'</span> Eqp ';
     } elseif ($row['strmod'] <  $row['str']) {
-        echo 'base<span class="black">'.$row['str'].'</span> + eq<span class="black">'.$strEQ.'</span>';
+        echo '<span class="statcat red">STR '.$row['str'].'</span> + <span class="black">'.$strEQ.'</span> Eqp ';
     }
+    //$maxstr = 	$row['strmod'];
+
     if ($weapontype==1) {
-        echo ' + one-handed<span class="red">'.$onehanded.'</span>  ';
+        echo ' + <span class="red">'.$onehanded.'</span> one-handed ';
         $row['strmod'] += $onehanded;
         $results = $link->query("UPDATE $user SET strmod = strmod + $onehanded");
     }
+
     if ($weapontype==2) {
-        echo ' + two-handed<span class="red">'.$twohanded.'</span>   ';
+        echo ' + <span class="red">'.$twohanded.'</span>  two-handed ';
         $row['strmod'] += $twohanded;
         $results = $link->query("UPDATE $user SET strmod = strmod + $twohanded");
     }
+
+
     if ($_SESSION['reds']>0) {
         echo ' <span class="red"> +20</span>';
         $row['strmod'] += 20;
@@ -548,12 +556,12 @@ while ($row = $result->fetch_assoc()) {
     }
 
     if ($_SESSION['coffee']>0) {
-        echo ' <span class="lightbrown"> +5</span>';
-        $row['strmod'] += 5;
-        $results = $link->query("UPDATE $user SET strmod = strmod + 5");
+        echo ' <span class="lightbrown"> +10</span>';
+        $row['strmod'] += 10;
+        $results = $link->query("UPDATE $user SET strmod = strmod + 10");
     }
 
-    echo '<span class="maxstat"><span class="red"> '.$row['strmod'].' </span></span>';
+    echo '<span class="maxstat">  <span class="red">'.$row['strmod'].'</span></span>';
 
     echo '</div>';
 
@@ -566,36 +574,35 @@ while ($row = $result->fetch_assoc()) {
 
     // ----------------------------------------------------------------------------------------------------------- DEX
     echo '<div>';
-    echo '<span class="statcat green"> DEX </span> ';
-
     if ($row['dexmod'] ==  0) {
-        echo 'base'. $row['dex'].' ';
+        echo '<span class="statcat green">DEX</span> '. $row['dex'].' ';
     } elseif ($row['dexmod'] >=  $row['dex']) {
-        echo 'base<span class="green">'. $row['dex'].' </span> + eq<span class="green">'.$dexEQ.'</span>';
+        echo '<span class="statcat green">DEX '. $row['dex'].' </span> + <span class="green">'.$dexEQ.'</span> Eqp ';
     } elseif ($row['dexmod'] <  $row['dex']) {
-        echo 'base<span class="black">'.$row['dex'].'</span> + eq<span class="black">'.$dexEQ.'</span>';
+        echo '<span class="statcat green">DEX '.$row['dex'].'</span> + <span class="black">'.$dexEQ.'</span> Eqp ';
     }
     if ($weapontype==3) {
-        echo '<span class=""> + ranged<span class="green">'.$ranged.'</span>  </span>';
+        echo '<span class=""> + '.$ranged.' ranged </span>';
         $row['dexmod'] += $ranged;
         $results = $link->query("UPDATE $user SET dexmod = dexmod + $ranged");
     }
+
     if ($_SESSION['greens']>0) {
         echo ' <span class="green"> +20</span>';
         $row['dexmod'] += 20;
         $results = $link->query("UPDATE $user SET dexmod = dexmod +20");
     }
+
+
     if ($_SESSION['coffee']>0) {
-        echo ' <span class="lightbrown"> +5</span>';
-        $row['dexmod'] += 5;
-        $results = $link->query("UPDATE $user SET dexmod = dexmod +5");
+        echo ' <span class="lightbrown"> +10</span>';
+        $row['dexmod'] += 10;
+        $results = $link->query("UPDATE $user SET dexmod = dexmod +10");
     }
 
+    echo '<span class="maxstat">  <span class="green">'.$row['dexmod'].'</span></span>';
     $maxdex = $row['dexmod'];
-    echo '<span class="maxstat"><span class="green"> '.$row['dexmod'].' </span></span>';
-
     echo '</div>';
-
 
     if ($bp>0) {
         echo '<button type="submit" class="yellowBG ddgray" name="input1" value="+1 dex" >+1 DEX</button>';
@@ -606,30 +613,31 @@ while ($row = $result->fetch_assoc()) {
 
     // ----------------------------------------------------------------------------------------------------------- MAG
     echo '<div>';
-    echo '<span class="statcat blue"> MAG </span>';
 
     if ($row['magmod'] ==  0) {
-        echo 'base'. $row['mag'].' ';
+        echo '<span class="statcat blue">MAG</span> '. $row['mag'].' ';
     } elseif ($row['magmod'] >=  $row['mag']) {
-        echo 'base<span class="blue">'. $row['mag'].' </span> + eq<span class="blue">'.$magEQ.'</span>  ';
+        echo '<span class="statcat blue">MAG '. $row['mag'].' </span> + <span class="blue">'.$magEQ.'</span> Eqp ';
     } elseif ($row['magmod'] <  $row['mag']) {
-        echo 'base<span class="black">'.$row['mag'].'</span> + eq<span class="black">'.$magEQ.'</span>  ';
+        echo '<span class="statcat blue">MAG '.$row['mag'].'</span> + <span class="black">'.$magEQ.'</span> Eqp ';
     }
     if ($weapontype==4) {
         echo '<span class=""> + null </span>';
     }
+
     if ($_SESSION['blues']>0) {
         echo ' <span class="blue"> +20</span>';
         $row['magmod'] += 20;
         $results = $link->query("UPDATE $user SET magmod = magmod + 20");
     }
     if ($_SESSION['coffee']>0) {
-        echo ' <span class="lightbrown"> +5</span>';
-        $row['magmod'] += 5;
-        $results = $link->query("UPDATE $user SET magmod = magmod + 5");
+        echo ' <span class="lightbrown"> +10</span>';
+        $row['magmod'] += 10;
+        $results = $link->query("UPDATE $user SET magmod = magmod + 10");
     }
+
+    echo '<span class="maxstat">  <span class="blue">'.$row['magmod'].'</span></span>';
     $maxmag = $row['magmod'];
-    echo '<span class="maxstat">  <span class="blue"> '.$row['magmod'].' </span></span>';
     echo '</div>';
 
     if ($bp>0) {
@@ -640,18 +648,18 @@ while ($row = $result->fetch_assoc()) {
     }
     // ----------------------------------------------------------------------------------------------------------- DEF
     echo '<div>';
-    echo '<span class="statcat gold"> DEF </span>';
+
     if ($row['defmod'] ==  0) {
-        echo 'base'. $row['def'].' ';
+        echo '<span class="statcat gold">DEF</span> '. $row['def'].' ';
     } elseif ($row['defmod'] >=  $row['def']) {
-        echo 'base<span class="gold">'. $row['def'].' </span> + eq<span class="gold">'.$defEQ.'</span> ';
+        echo '<span class="statcat gold">DEF '. $row['def'].' </span> + <span class="gold">'.$defEQ.'</span> Eqp';
     } elseif ($row['defmod'] <  $row['def']) {
-        echo 'base<span class="black">'.$row['def'].'</span> + eq<span class="black">'.$defEQ.'</span> ';
+        echo '<span class="statcat gold">DEF '.$row['def'].'</span> + <span class="black">'.$defEQ.'</span> Eqp ';
     }
 
 
     if ($row['toughness'] >=1) {
-        echo ' + tough<span class="gold">'.$row['toughness'].'</span>  ';
+        echo ' <span class="gold"> + '.$row['toughness'].'</span> tough ';
         $row['defmod'] += $row['toughness'];
     }
 
@@ -662,9 +670,9 @@ while ($row = $result->fetch_assoc()) {
         $results = $link->query("UPDATE $user SET defmod = defmod + 20");
     }
     if ($_SESSION['coffee']>0) {
-        echo ' <span class="lightbrown"> +5</span>';
-        $row['defmod'] += 5;
-        $results = $link->query("UPDATE $user SET defmod = defmod + 5");
+        echo ' <span class="lightbrown"> +10</span>';
+        $row['defmod'] += 10;
+        $results = $link->query("UPDATE $user SET defmod = defmod + 10");
     }
 
     // shield check for block
@@ -676,17 +684,18 @@ while ($row = $result->fetch_assoc()) {
                             || $row['equipL'] == 'sphinx shield' || $row['equipL'] == 'ranger shield' || $row['equipL'] == 'ultima shield') {
         $doubleBlock = ($row['block']*2);
         $row['defmod'] += $doubleBlock;
-        echo ' + block<span class="gold">'.$doubleBlock.'</span>  ';
+        echo ' <span class="gold"> + '.$doubleBlock.'</span> block ';
     }
 
 
     if ($_SESSION['ironskin_amount'] > 0) {
-        echo ' + ironskin<span class="gold">'.$_SESSION['ironskin_amount'].'</span> ';
+        echo ' <span class="lightbrown"> + '.$_SESSION['ironskin_amount'].'</span> ironskin';
         $row['defmod'] += $_SESSION['ironskin_amount'];
     }
 
+    echo '<span class="maxstat">  <span class="gold">'.$row['defmod'].'</span></span>';
     $maxdef = $row['defmod'];
-    echo '<span class="maxstat">  <span class="gold"> '.$row['defmod'].' </span></span>';
+
     echo '</div>';
 
 
@@ -699,7 +708,7 @@ while ($row = $result->fetch_assoc()) {
 
     $statTotal = $row['strmod'] + $row['dexmod'] + $row['magmod'] + $row['defmod'];
 
-    echo '<div><span  class="maxstat"><h4 class="white">Stat Total </h4> <span class="white maxstat">'. $statTotal .'</span></span></div>';
+    echo '<span  class="maxstat"><h4 class="white">Stat Total </h4> <span class="white maxstat">'. $statTotal .'</span></span>';
 
 
 

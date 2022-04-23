@@ -38,10 +38,7 @@ while ($row = $result->fetch_assoc()) {
     +'.$mp.' MP<br/>
     +'.$bp.' BP
     +'.$sp.' SP
-    </h3>
-    <a href data-link2="skills" class="btn purpleBG">Open Skills </a>
-    <a href data-link2="spells" class="btn purpleBG">Open Spells </a>
-    </div>';
+    </h3></div>';
         include('update_feed.php'); // --- update feed
         $funflag=1;
     }
@@ -124,20 +121,17 @@ while ($row = $result->fetch_assoc()) {
             $count = number_format($count2, 0);
 
 
-            echo $message = '	<div class="levelWin">
+            $message = '	<div class="levelWin">
             <h3>LEVEL UP!</h3>
             <h3 class="ddgray">You are now level '.$level.'</h3>
             <h3>+'.$hp.' HP
             +'.$mp.' MP<br/>
             +'.$bp.' BP
             +'.$sp.' SP
-            </h3>
-            <a href data-link2="skills" class="btn purpleBG">Open Skills </a>
-            <a href data-link2="spells" class="btn purpleBG">Open Spells </a>
-            </div>';
-            //echo 'YOU ARE NOW LEVEL '.$level.'<br/>';
+            </h3></div>';
+            echo 'YOU ARE NOW LEVEL '.$level.'<br/>';
 
-          //  echo "<div class='menuAction'><i class='fa fa-arrow-up green'> LEVEL UP!</i> <span class='px40 goldbox greenBG'>$level</span></div>";
+            echo "<div class='menuAction'><i class='fa fa-arrow-up green'> LEVEL UP!</i> <span class='px40 goldbox greenBG'>$level</span></div>";
 
             include('update_feed.php'); // --- update feed
 
@@ -155,7 +149,6 @@ while ($row = $result->fetch_assoc()) {
 
 
             $message = '<div class="battlestatus">You have defeated the '.$enemy.'!<br/> YOU ARE NOW LEVEL '.$level.'!</div>';
-
         }
     }
 
