@@ -5,7 +5,8 @@ echo '<nav style="background-image:url(';
 //if ($page=='index.php') { echo "http://acarrozzo.com/2018/img/intro/yellowflower.jpg"; }
 if ($page == 'index.php') {
 //  echo "img/bg/flag_bg.jpg";
-echo "img/bg/rocks_bg.jpg";
+//echo "img/bg/rocks_bg.jpg";
+echo "img/bg/sky_bg.jpg";
 //echo "img/bg/panels_bg.jpg";
     //$icon="icon-ac-icon-a";
     $icon = file_get_contents("img/svg/ac-icon-a.svg");
