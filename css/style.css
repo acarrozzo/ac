@@ -726,7 +726,6 @@ footer li a {
   color: #fff;
   background: #ef404a;
   background: linear-gradient(#ef404a, #c41520);
-  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
   border-radius: 50px;
   margin: 5px;
 }
