@@ -364,7 +364,7 @@ setTimeout(showTime, 1000);
 function refreshData()
 {
 x = 5;  // 5 Seconds
-  console.log('xxxxxxx');
+//  console.log('xxxxxxx');
 // Do your thing here
 setTimeout(refreshData, x*100);
 }

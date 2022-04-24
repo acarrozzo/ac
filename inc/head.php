@@ -57,6 +57,7 @@ echo file_get_contents("css/core.min.css");
 <!--- FONT CSS ----->
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,700i">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
 <!--<link rel="stylesheet" href="https://file.myfontastic.com/TCGhgaeZJzPgzSiUf3dwjZ/icons.css" >-->
 
 <!--- EXPERIMENT GOOGLE FONTS CSS -----
